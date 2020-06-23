@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import { Layout, Menu, Button } from 'antd'
 import Checklist from './Routes/Checklist/Checklist';
+import Gear from './Routes/Gear/Gear';
 import Navbar from './Components/Navbar/Navbar'
 
 import './App.css';
@@ -22,6 +23,11 @@ class App extends React.Component {
                     exact
                     path={'/checklist'}
                     component={Checklist}
+                />
+                <Route
+                    exact
+                    path={'/gear'}
+                    component={Gear}
                 />
               
             </Switch>

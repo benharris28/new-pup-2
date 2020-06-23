@@ -28,7 +28,7 @@ class Checklist extends React.Component {
                         direction="vertical"
                         size="large">
                     
-                    <Link to={'/'}>
+                    <Link to={'/gear'}>
                         <Card
                             className="checklist-card"
                             hoverable

@@ -21,7 +21,7 @@ render() {
     return (
         <nav className="menuBar">
           <div className="logo">
-            <a href="">logo</a>
+            <a href="">Doggo</a>
           </div>
           <div className="menuCon">
             <div className="leftMenu">
