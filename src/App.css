@@ -1,10 +1,84 @@
 @import '~antd/dist/antd.css';
 
+
+/* Global Styles */ 
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #191b22;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #35b8be;
+  font-size: 55px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #191b22;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #191b22;
+  font-size: 28px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #08090a;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+/* Page Styles */
+
+/* Food Carousel Styling */
+.ant-carousel .slick-slide {
+  text-align: center;
+ 
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+
+/* Gear Page Styling */
+
+.card_purchase_button {
+  margin-top: 2rem;
+}
+
+.gear-card {
+  width: 100%;
+}
 /* Checklist Styles */
 
-.checklist-content {
+.page-content {
   margin-top: 4rem;
-  text-align: center;
 }
 
 .checklist-card {
@@ -12,7 +86,7 @@
 }
 
 .checklist-card-image {
-  height: 200px;
+  
   object-fit: cover;
 }
 

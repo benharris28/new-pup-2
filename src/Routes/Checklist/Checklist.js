@@ -14,8 +14,9 @@ class Checklist extends React.Component {
             <div>
                 <Layout>
                     <Content 
-                        className="checklist-content" 
-                        style={{ padding: '0 50px' }}>
+                    
+                        style={{ padding: '0 50px' }}
+                        className="page-content">
                     
                     <div className="checklist-title">
                         <h1>Russell's Checklist</h1>
@@ -23,6 +24,8 @@ class Checklist extends React.Component {
 
                         
                     </div>
+                    
+                    <div className="card-box">
                     
                     <Space 
                         direction="vertical"
@@ -42,7 +45,7 @@ class Checklist extends React.Component {
                     
                 
                 
-                    <Link to={'/gear'}>
+                    <Link to={'/food'}>
                         <Card
                             className="checklist-card"
                             hoverable
@@ -59,7 +62,7 @@ class Checklist extends React.Component {
                         </Card>
                     </Link>
 
-                    <Link to={'/gear'}>
+                    <Link to={'/vet'}>
                         <Card
                             className="checklist-card"
                             hoverable
@@ -76,7 +79,7 @@ class Checklist extends React.Component {
                         </Card>
                     </Link>
 
-                    <Link to={'/gear'}>
+                    <Link to={'/training'}>
                         <Card
                             className="checklist-card"
                             hoverable
@@ -93,7 +96,7 @@ class Checklist extends React.Component {
                         </Card>
                     </Link>
 
-                    <Link to={'/gear'}>
+                    <Link to={'/guide'}>
                         <Card
                             className="checklist-card"
                             hoverable
@@ -117,6 +120,7 @@ class Checklist extends React.Component {
                    
 
                     </Space>
+                    </div>
                     </Content>
 
 
