@@ -1,5 +1,6 @@
 import React from 'react';
-import { Layout, Content, Space, Card, Col, Row, Progress } from 'antd';
+import { Link } from 'react-router-dom';
+import { Layout, Content, Button} from 'antd';
 
 class Vet extends React.Component {
     render() {
@@ -9,9 +10,20 @@ class Vet extends React.Component {
             <div>
                 <Layout>
                     <Content
-                        style={{ padding: '0 50px' }}>
+                        style={{ padding: '0 50px' }}
+                        className="page-content">
+                        
+                        <div className="back-to-checklist-button">
+                            <Link to='/checklist'>
+                                <Button 
+                                    type="primary">
+                                        Back to checklist
+                                </Button>
+                            </Link>
+                                    
+                        </div> 
                         <div>
-                            <h1>All the gear you need</h1>
+                            <h2>Let's find the best vet near you</h2>
                         </div>
                     </Content>
                 </Layout>

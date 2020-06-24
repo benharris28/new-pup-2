@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Layout, Content, Space, Card, Col, Row, Progress } from 'antd';
-import 'antd/dist/antd.css'
+import { Layout, Content, Space, Card, Col, Row, Progress, Button } from 'antd';
 
 class Checklist extends React.Component {
     
@@ -42,6 +41,7 @@ class Checklist extends React.Component {
                         </Card>
                     </Link>
                    
+                    
                     
                 
                 

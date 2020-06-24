@@ -41,6 +41,19 @@ class Food extends React.Component {
                         <div>
                             <h1>Let's find the most nutritious food</h1>
                         </div>
+                        
+                        <div className="page-intro">
+                            <h4>
+                                Fresh? Raw? Grain Free?
+                            </h4>
+                            <h5>
+                                Our resident veterinary nutritionist says that fresh food is healthiest and easiest to digest. It's also the most expensive. 
+                            </h5>
+                            <h5>
+                                If fresh is beyond your budget, we also have 2 great other options for you!
+                            </h5>
+                        </div>
+                        
                         <div className="food_picker">
                         <Carousel afterChange={this.onChange}>
                             <div>
@@ -100,6 +113,9 @@ class Food extends React.Component {
                             <h3>4</h3>
                             </div>
                         </Carousel>
+                        </div>
+                        <div className="more-info">
+                            <p>Want to learn more about nutrition and it's impact on your pet's health? Click here</p>
                         </div>
                     </Content>
                 </Layout>
