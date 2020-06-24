@@ -55,6 +55,7 @@ class Food extends React.Component {
                         </div>
                         
                         <div className="food_picker">
+                        <h4>Food Selector</h4>
                         <Carousel afterChange={this.onChange}>
                             <div>
                                 <Card
