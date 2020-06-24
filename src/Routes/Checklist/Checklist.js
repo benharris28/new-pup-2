@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Layout, Content, Space, Card, Col, Row, Progress, Button } from 'antd';
+import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
 
 class Checklist extends React.Component {
     
@@ -23,6 +23,7 @@ class Checklist extends React.Component {
 
                         
                     </div>
+
                     
                     <div className="card-box">
                     
@@ -31,6 +32,7 @@ class Checklist extends React.Component {
                         size="large">
                     
                     <Link to={'/gear'}>
+                        <Badge count={'5 items todo'} offset={[-30,0]}>
                         <Card
                             className="checklist-card"
                             hoverable
@@ -39,6 +41,7 @@ class Checklist extends React.Component {
                         >
                             <Meta className="checklist-card-text" title="Get the gear" description="Complete by June 25th" />
                         </Card>
+                        </Badge>
                     </Link>
                    
                     
