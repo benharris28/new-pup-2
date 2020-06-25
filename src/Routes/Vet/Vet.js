@@ -1,8 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Map from '../../Components/Map/Map'
 import { Layout, Content, Button} from 'antd';
 
+
 class Vet extends React.Component {
+
+    state = {
+        // change to default location for that city
+        userLocation: null
+    }
+
+    componentDidMount = () => {
+        window.navigator.geolocation.getCurrentPosition((latlng) => {
+            this.setState({
+                userLocation: {
+                    lat: latlng.coords.latitude,
+                    lng: latlng.coords.longitude
+                }
+            })
+        })
+    }
+
     render() {
         const { Content } = Layout;
 
@@ -10,9 +29,9 @@ class Vet extends React.Component {
             <div>
                 <Layout>
                     <Content
-                        style={{ padding: '0 50px' }}
-                        className="page-content">
-                        
+                        style={{ padding: '0 50px'}}
+                        className='page-content'>
+
                         <div className="back-to-checklist-button">
                             <Link to='/checklist'>
                                 <Button 
@@ -22,13 +41,15 @@ class Vet extends React.Component {
                             </Link>
                                     
                         </div> 
+
                         <div>
-                            <h2>Let's find the best vet near you</h2>
+                            <h1>Let's find the best vet near you</h1>
+                            <Map center={this.state.userLocation} />
                         </div>
-                    </Content>
+
+                        </Content>
                 </Layout>
-                        
-                    
+               
             </div>
         )
     }
