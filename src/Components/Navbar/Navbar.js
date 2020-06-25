@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RightMenu from '../RightMenu/RightMenu'
 import LeftMenu from '../LeftMenu/LeftMenu'
-import { Drawer, Button } from 'antd';
+import { Drawer, Button, Row, Col } from 'antd';
 class Navbar extends Component {
   state = {
     current: 'mail',
@@ -20,30 +20,33 @@ onClose = () => {
 render() {
     return (
         <nav className="menuBar">
-          <div className="logo">
-            <a href="">Doggo</a>
-          </div>
-          <div className="menuCon">
-            <div className="leftMenu">
-              <LeftMenu />
-            </div>
-            <div className="rightMenu">
-                <RightMenu />
-            </div>
-            <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
-              <span className="barsBtn"></span>
-            </Button>
+            <Row gutter={8}>
+                <Col flex="auto">
+                    <a href=" ">Doggo</a>
+                </Col>
+                <Col xs={0} sm={6} justify="end">
+                    <RightMenu />
+                </Col>
+                <Col xs={6} sm={0}>
+                    <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
+                        <span className="barsBtn"></span>
+                    </Button>
+                </Col>
+            </Row>
+        
+           
+          
+            
             <Drawer
-              title="Basic Drawer"
+              title="Menu"
               placement="right"
               closable={false}
               onClose={this.onClose}
               visible={this.state.visible}
             >
-              <LeftMenu />
-              <RightMenu />
+                <RightMenu />
             </Drawer>
-</div>
+
         </nav>
     );
   }

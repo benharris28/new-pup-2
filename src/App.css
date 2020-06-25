@@ -66,6 +66,12 @@ h5 {
 
 /* Page Styles */
 
+/* Navbar Styles */ 
+
+.menu-drawer {
+  display: flex;
+  flex-direction: column;
+}
 /* Survival Guide Styling */
 
 .survival-guide-steps {
@@ -250,5 +256,11 @@ h5 {
 @media(min-width: 767px) {
   .card-box {
     display: flex;
+  }
+
+  .menu-drawer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

@@ -27,9 +27,7 @@ class Checklist extends React.Component {
                     
                     <div className="card-box">
                     
-                    <Space 
-                        direction="vertical"
-                        size="large">
+                   
                     
                     <Link to={'/gear'}>
                         <Badge count={'5 items todo'} offset={[-30,0]}>
@@ -122,7 +120,7 @@ class Checklist extends React.Component {
                         
                    
 
-                    </Space>
+                  
                     </div>
                     </Content>
 
