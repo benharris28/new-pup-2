@@ -1,4 +1,5 @@
 import React from 'react'
+import config from '../../config';
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
 const markers = {
@@ -15,6 +16,7 @@ class Map extends React.Component {
 
     }
     render() {
+        console.log(config.API_KEY)
         const latlng = [
             {
                 vetId: 1,
@@ -33,7 +35,7 @@ class Map extends React.Component {
         }
         return (
             <>
-                <LoadScript googleMapsApiKey="AIzaSyBfXkw_pMSi40bTLQOETGLh_2HCU2rsaPc">
+                <LoadScript googleMapsApiKey={config.API_KEY}>
                     <GoogleMap center={this.props.center} mapContainerStyle={containerStyle} zoom={10} >
                         {latlng.map((marker, index) => 
                            
