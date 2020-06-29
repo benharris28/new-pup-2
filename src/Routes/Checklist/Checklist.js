@@ -27,11 +27,27 @@ class Checklist extends React.Component {
                 badge_count: 5
             },
             {
-                link: '/food',
-                image: "https://i.insider.com/5b1fc0281ae6621a008b4fb2?width=1100&format=jpeg&auto=webp",
-                title: 'Find the best food',
+                link: '/vet',
+                image: "https://trupanion.com/blog/wp-content/uploads/2019/04/ThankYourVeterinarian-1024x682.jpg",
+                title: 'Find a local veterinarian',
                 description: "Complete by June 25th",
-                alt_text: "food to buy",
+                alt_text: "find a vet",
+                badge_count: 5
+            },
+            {
+                link: '/training',
+                image: "https://tailblazerspets.com/blog/wp-content/uploads/2015/02/golden-pups.png",
+                title: 'Sign up for puppy socialization',
+                description: "Complete by June 25th",
+                alt_text: "puppy socialization",
+                badge_count: 1
+            },
+            {
+                link: '/guide',
+                image: "https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg",
+                title: "Read Doggo's 24 hour survival guide", 
+                description: "Everything you needt to know, including how to get ready, give your first meal, housetrain, and more!",
+                alt_text: "24 hour guide",
                 badge_count: 5
             },
         ]
@@ -53,93 +69,33 @@ class Checklist extends React.Component {
 
                     
                     <div className="card-box">
+                    <Row
+                       gutter={[16, 24]} >
                     
+                        {cardList.map(card => 
+                        <Col
+                            className="gutter-row" span={24}
+                            key={card.link}>
+
+                            <Link to={card.link}>
+                                <Badge count={`${card.badge_count} items todo`} offset={[-30,0]}>
+                                <Card
+                                    className="checklist-card"
+                                    hoverable
+                                    cover={<img className="checklist-card-image" alt={card.alt_text} src={card.image} />}
+                                    
+                                >
+                                    <Meta className="checklist-card-text" title={card.title} description={card.description} />
+                                </Card>
+                                </Badge>
+                            </Link>
+                        </Col>
+                        )}
+                    
+                    </Row>
                    
                     
-                    <Link to={'/gear'}>
-                        <Badge count={'5 items todo'} offset={[-30,0]}>
-                        <Card
-                            className="checklist-card"
-                            hoverable
-                            cover={<img className="checklist-card-image" alt="example" src="https://www.rover.com/blog/wp-content/uploads/2020/01/Screen-Shot-2020-01-21-at-1.41.21-PM.png" />}
-                            
-                        >
-                            <Meta className="checklist-card-text" title="Get the gear" description="Complete by June 25th" />
-                        </Card>
-                        </Badge>
-                    </Link>
                    
-                    
-                    
-                
-                
-                    <Link to={'/food'}>
-                        <Card
-                            className="checklist-card"
-                            hoverable
-                            cover={<img className="checklist-card-image" 
-                                        alt="pet food" 
-                                        src="https://i.insider.com/5b1fc0281ae6621a008b4fb2?width=1100&format=jpeg&auto=webp" />}
-                            
-                        >
-                            <Meta 
-                                className="checklist-card-text" 
-                                title="Find the best food" 
-                                description="Complete by June 25th" 
-                                />
-                        </Card>
-                    </Link>
-
-                    <Link to={'/vet'}>
-                        <Card
-                            className="checklist-card"
-                            hoverable
-                            cover={<img className="checklist-card-image" 
-                                        alt="find a vet" 
-                                        src="https://trupanion.com/blog/wp-content/uploads/2019/04/ThankYourVeterinarian-1024x682.jpg" />}
-                            
-                        >
-                            <Meta 
-                                className="checklist-card-text" 
-                                title="Find a local veterinarian" 
-                                description="Complete by June 27th" 
-                                />
-                        </Card>
-                    </Link>
-
-                    <Link to={'/training'}>
-                        <Card
-                            className="checklist-card"
-                            hoverable
-                            cover={<img className="checklist-card-image" 
-                                        alt="puppy socialization" 
-                                        src="https://tailblazerspets.com/blog/wp-content/uploads/2015/02/golden-pups.png" />}
-                            
-                        >
-                            <Meta 
-                                className="checklist-card-text" 
-                                title="Sign up for puppy socialization" 
-                                description="Complete by July 1st" 
-                                />
-                        </Card>
-                    </Link>
-
-                    <Link to={'/guide'}>
-                        <Card
-                            className="checklist-card"
-                            hoverable
-                            cover={<img className="checklist-card-image" 
-                                        alt="24 hour guide" 
-                                        src="https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg" />}
-                            
-                        >
-                            <Meta 
-                                className="checklist-card-text" 
-                                title="Read Doggo's 24 hour survival guide" 
-                                description="Everything you needt to know, including how to get ready, give your first meal, housetrain, and more!" 
-                                />
-                        </Card>
-                    </Link>
 
                           
 
