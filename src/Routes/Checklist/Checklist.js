@@ -8,6 +8,33 @@ class Checklist extends React.Component {
     render() {
         const { Content } = Layout;
         const { Meta } = Card;
+
+        const cardList = [
+            {
+                link: '/gear',
+                image: "https://www.rover.com/blog/wp-content/uploads/2020/01/Screen-Shot-2020-01-21-at-1.41.21-PM.png",
+                title: 'Get the gear',
+                description: "Complete by June 25th",
+                alt_text: "gear to buy",
+                badge_count: 5
+            },
+            {
+                link: '/food',
+                image: "https://i.insider.com/5b1fc0281ae6621a008b4fb2?width=1100&format=jpeg&auto=webp",
+                title: 'Find the best food',
+                description: "Complete by June 25th",
+                alt_text: "food to buy",
+                badge_count: 5
+            },
+            {
+                link: '/food',
+                image: "https://i.insider.com/5b1fc0281ae6621a008b4fb2?width=1100&format=jpeg&auto=webp",
+                title: 'Find the best food',
+                description: "Complete by June 25th",
+                alt_text: "food to buy",
+                badge_count: 5
+            },
+        ]
     
         return (
             <div>

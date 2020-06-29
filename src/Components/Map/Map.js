@@ -2,12 +2,13 @@ import React from 'react'
 import config from '../../config';
 import {GoogleMap, LoadScript, Marker} from '@react-google-maps/api';
 
-const markers = {
 
-}
 class Map extends React.Component {
     
-    
+    state = {
+        markers: this.props.markers
+    }
+
     getMarkers(){
         // ajax?
         // reverse geocode address from vet page input (geocoder is in server app)
@@ -16,7 +17,9 @@ class Map extends React.Component {
 
     }
     render() {
+        const { markers } = this.props
         console.log(config.API_KEY)
+        console.log(markers)
         const latlng = [
             {
                 vetId: 1,
@@ -37,10 +40,10 @@ class Map extends React.Component {
             <>
                 <LoadScript googleMapsApiKey={config.API_KEY}>
                     <GoogleMap center={this.props.center} mapContainerStyle={containerStyle} zoom={10} >
-                        {latlng.map((marker, index) => 
+                        {markers.map((marker, index) => 
                            
                             <Marker 
-                                key={marker.vetId}
+                                key={marker.marker_id}
                                 position={{ lat: marker.lat, lng: marker.lng }}/>
                         )}
                     </GoogleMap>

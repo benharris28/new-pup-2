@@ -32,6 +32,7 @@ class Vet extends React.Component {
                 const lat = res.results[0].geometry.location.lat
                 const lng = res.results[0].geometry.location.lng
                 console.log(lat)
+                console.log(lng)
                 
                 MapApiService.getMarkers(lat,lng)
                     .then(markers => {
@@ -49,6 +50,7 @@ class Vet extends React.Component {
     }
     render() {
         const { Content } = Layout;
+        console.log(this.state.markers)
 
         return (
             <div>
@@ -78,7 +80,9 @@ class Vet extends React.Component {
                                 Hello
                             </Button>
                             
-                            <Map center={this.state.userLocation} />
+                            <Map 
+                                center={this.state.userLocation}
+                                markers={this.state.markers} />
                         </div>
 
                         </Content>
