@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
+import MapApiService from '../../services/map-api-service'
 import { Layout, Content, Button} from 'antd';
 
 
@@ -8,7 +9,9 @@ class Vet extends React.Component {
 
     state = {
         // change to default location for that city
-        userLocation: null
+        userLocation: null,
+        postal: '',
+        markers: []
     }
 
     componentDidMount = () => {
@@ -22,6 +25,28 @@ class Vet extends React.Component {
         })
     }
 
+    handleSubmit = () => {
+        MapApiService.getGeocode(this.state.postal)
+            .then(res => {
+                console.log(res)
+                const lat = res.results[0].geometry.location.lat
+                const lng = res.results[0].geometry.location.lng
+                console.log(lat)
+                
+                MapApiService.getMarkers(lat,lng)
+                    .then(markers => {
+                        this.setState({
+                            markers: markers
+                        })
+                    })
+            })
+    }
+
+    handleInput = (postal) => {
+        this.setState({
+            postal: postal
+        })
+    }
     render() {
         const { Content } = Layout;
 
@@ -44,6 +69,15 @@ class Vet extends React.Component {
 
                         <div>
                             <h1>Let's find the best vet near you</h1>
+                            <input
+                                type="text"
+                                onChange={e => this.handleInput(e.target.value)}
+                                 />
+                            <Button
+                                onClick={this.handleSubmit}>
+                                Hello
+                            </Button>
+                            
                             <Map center={this.state.userLocation} />
                         </div>
 
