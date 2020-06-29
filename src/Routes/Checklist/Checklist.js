@@ -74,7 +74,7 @@ class Checklist extends React.Component {
                     
                         {cardList.map(card => 
                         <Col
-                            className="gutter-row" span={24}
+                            className="gutter-row" sm={24} md={8}
                             key={card.link}>
 
                             <Link to={card.link}>
