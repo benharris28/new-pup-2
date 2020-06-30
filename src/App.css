@@ -66,6 +66,9 @@ h5 {
 
 /* Page Styles */
 
+/* Card based pages */
+
+
 /* Navbar Styles */ 
 
 .menu-drawer {
@@ -264,11 +267,17 @@ h5 {
 @media(min-width: 767px) {
   .card-box {
     display: flex;
+    
   }
 
   .menu-drawer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-content {
+    padding-left: 200px;
+    padding-right: 20%;
   }
 }

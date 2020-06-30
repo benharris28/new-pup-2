@@ -4,6 +4,9 @@ import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 
 
 class Checklist extends React.Component {
     
+    componentDidMount = () => {
+        // Get data from context
+    }
     
     render() {
         const { Content } = Layout;
@@ -51,6 +54,8 @@ class Checklist extends React.Component {
                 badge_count: 5
             },
         ]
+
+       
     
         return (
             <div>

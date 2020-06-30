@@ -7,6 +7,7 @@ class MarkComplete extends React.Component {
     state = {
         count: 5,
         show: true,
+        complete: this.props.complete
       };
     
     markComplete = (tag)=> {
@@ -26,7 +27,8 @@ class MarkComplete extends React.Component {
                         className="mark_complete_button"
                         onClick={() => this.markComplete(tag)}>
                         Complete
-                        <CheckOutlined />
+                        {this.state.complete && <CheckOutlined />}
+                        
                     </Button>
                 </Tooltip>
             </div>

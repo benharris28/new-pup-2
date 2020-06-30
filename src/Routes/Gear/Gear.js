@@ -6,7 +6,10 @@ import { Layout, Content, Space, Card, Col, Row, Button, Checkbox } from 'antd';
 
 class Gear extends React.Component {
     state = {
-        gear: ProductData.products
+        gear: ProductData.products,
+        gear_dog_crate: false,
+        gear_dog_bowls: true
+        
     }
 
     render() {
@@ -14,6 +17,11 @@ class Gear extends React.Component {
         const { Content } = Layout;
         const { Meta } = Card;
         const { gear } = this.state;
+
+        // Combine gear list with gear status from users table
+       const gearTest = {
+
+       }
 
         return (
             <div>
@@ -38,37 +46,50 @@ class Gear extends React.Component {
                         </div>
                        
                         <div className="card-box">
-                            <Space
-                                direction="vertical"
-                                size="large">
+                            <Row
+                                gutter={[16, 24]} >
 
-                            {gear.map(gearCard => 
-                                <Card
-                                hoverable
-                                className="gear-card"
-                                cover={<img 
-                                    alt="example" 
-                                    src={gearCard.image} />}
-                              >
-                                <Meta
-                                    title={gearCard.product} 
-                                    description={gearCard.description_text}> 
+                                {gear.map(gearCard => 
+                                    <Col
+                                    className="gutter-row" sm={24} md={8}
+                                    key={gearCard.id}>
+                                        <Card
+                                        hoverable
+                                        className="gear-card"
+                                        cover={<img 
+                                            alt="example" 
+                                            src={gearCard.image} />}
+                                    >
+                                        <Meta
+                                            title={gearCard.product} 
+                                            description={gearCard.description_text}> 
 
-                                </Meta> 
-                                
-                                <div className="card_purchase_button">
-                                    <a target='_blank' rel="noopener noreferrer" href={`${gearCard.canada_link}`}>
-                                        <Button 
-                                            type="primary">
-                                                Buy now
-                                        </Button>
-                                    </a>
-                                    <MarkComplete tag={gearCard.tag}/>
-                                </div> 
+                                        </Meta> 
+                                        
+                                        <div className="card_purchase_button">
+                                            <a target='_blank' rel="noopener noreferrer" href={`${gearCard.canada_link}`}>
+                                                <Button 
+                                                    type="primary">
+                                                        Buy now
+                                                </Button>
+                                            </a>
+                                            <MarkComplete tag={gearCard.tag} />
+                                        </div> 
 
-                              </Card>)}
+                                    </Card>
+                                </Col>
+                                )}
 
-                            </Space>
+                            </Row>
+                            <div className="next-section-button">
+                                <Link to='/food'>
+                                    <Button>
+                                        Up Next: Find the best food
+                                    </Button>               
+                                </Link>
+
+                            </div>
+
                         </div>
 
                     </Content>

@@ -57,22 +57,23 @@ class Food extends React.Component {
                         <div className="food_picker">
                         <h4>Food Selector</h4>
                         <Carousel afterChange={this.onChange}>
+                            {food.map(foodCard => 
                             <div>
                                 <Card
                                     hoverable
                                     className="food-card"
                                     cover={<img 
                                         alt="example" 
-                                        src={foodOne.image} />}
+                                        src={foodCard.image} />}
                                 >
                                     <Meta
-                                        title={foodOne.product} 
-                                        description={foodOne.description_text}> 
+                                        title={foodCard.product} 
+                                        description={foodCard.description_text}> 
 
                                     </Meta> 
                                     
                                     <div className="card_purchase_button">
-                                        <a target='_blank' rel="noopener noreferrer" href={`${foodOne.canada_link}`}>
+                                        <a target='_blank' rel="noopener noreferrer" href={`${foodCard.canada_link}`}>
                                             <Button 
                                                 type="primary">
                                                     Buy now
@@ -82,42 +83,24 @@ class Food extends React.Component {
 
                                 </Card>
                             </div>
-                            <div>
-                            <Card
-                                    hoverable
-                                    className="food-card"
-                                    cover={<img 
-                                        alt="example" 
-                                        src={foodTwo.image} />}
-                                >
-                                    <Meta
-                                        title={foodTwo.product} 
-                                        description={foodTwo.description_text}> 
-
-                                    </Meta> 
-                                    
-                                    <div className="card_purchase_button">
-                                        <a target='_blank' rel="noopener noreferrer" href={`${foodOne.canada_link}`}>
-                                            <Button 
-                                                type="primary">
-                                                    Buy now
-                                            </Button>
-                                        </a>
-                                    </div> 
-
-                                </Card>
-                            </div>
-                            <div>
-                            <h3>3</h3>
-                            </div>
-                            <div>
-                            <h3>4</h3>
-                            </div>
+                            )}
+                            
                         </Carousel>
                         </div>
+                        
                         <div className="more-info">
                             <p>Want to learn more about nutrition and it's impact on your pet's health? Click here</p>
                         </div>
+
+                        <div className="next-section-button">
+                                <Link to='/vet'>
+                                    <Button>
+                                        Up Next: Find a local vet
+                                    </Button>               
+                                </Link>
+
+                            </div>                   
+
                     </Content>
                 </Layout>
                         
