@@ -107,8 +107,11 @@ h5 {
 
 /* Gear Page Styling */
 
+
 .card_purchase_button {
   margin-top: 2rem;
+  display: flex;
+  justify-content: space-between
 }
 
 .gear-card {

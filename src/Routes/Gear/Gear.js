@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import ProductData from '../../BackupData/ProductData'
-import { Layout, Content, Space, Card, Col, Row, Button } from 'antd';
+import { Layout, Content, Space, Card, Col, Row, Button, Checkbox } from 'antd';
 
 class Gear extends React.Component {
     state = {
@@ -36,9 +36,7 @@ class Gear extends React.Component {
                             <h1>All the gear you need</h1>
                             <h5>Here are the absolute essentials for bringing a puppy home. Top trainer, XX trainer, recommends these products</h5>
                         </div>
-                        <div>
-                            <MarkComplete />
-                        </div>
+                       
                         <div className="card-box">
                             <Space
                                 direction="vertical"
@@ -65,6 +63,9 @@ class Gear extends React.Component {
                                                 Buy now
                                         </Button>
                                     </a>
+                                    <Button>
+                                        <Checkbox>Complete</Checkbox>
+                                    </Button>
                                 </div> 
 
                               </Card>)}
