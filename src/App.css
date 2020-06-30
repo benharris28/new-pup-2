@@ -148,7 +148,12 @@ h5 {
 }
 
 
+/* Mark Complete Styling */
 
+.mark-complete-button:hover {
+  background-color: blue;
+
+}
 /* Checklist Card Progress Bar */
 
 

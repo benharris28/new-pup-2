@@ -2,6 +2,7 @@ export default {
     "products": [
         {
             "id": 1,
+            "tag": "gear_dog_crate",
             "active": true,
             "image": "https://snoozerpetproducts.com/wp-content/uploads/2014/05/snoozer-crate-pad-pillow1.jpg",
             "product": "Dog Crate",
@@ -18,6 +19,7 @@ export default {
         },
         {
             "id": 2,
+            "tag": "gear_dog_bowl",
             "active": true,
             "image": "https://images-na.ssl-images-amazon.com/images/I/61DyPXgNcpL._AC_SL1500_.jpg",
             "product": "dog bowls - set of 2",
@@ -34,6 +36,7 @@ export default {
         },
         {
             "id": 3,
+            "tag": "gear_dog_collar",
             "active": false,
             "image": "https://m.media-amazon.com/images/I/6140xkCMmeL._AC_SS350_.jpg",
             "product": "Dog Collar",

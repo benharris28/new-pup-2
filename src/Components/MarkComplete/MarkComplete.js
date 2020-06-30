@@ -1,5 +1,7 @@
 import React from 'react';
-import { Badge, Button, Switch } from 'antd';
+import { Badge, Button, Tooltip} from 'antd';
+import { CheckOutlined } from '@ant-design/icons';
+
 
 class MarkComplete extends React.Component {
     state = {
@@ -7,19 +9,26 @@ class MarkComplete extends React.Component {
         show: true,
       };
     
-    onChange = show => {
-        this.setState({ show });
+    markComplete = (tag)=> {
+        
+        // Set context value to complete
+        // Patch database
       };
     
     render() {
+        const {tag} = this.props;
+        
         return (
             <div>
-                <div style={{ marginTop: 10 }}>
-                    <Badge dot={this.state.show}>
-                        <a href="#" className="head-example" />
-                    </Badge>
-                    <Switch onChange={this.onChange} checked={this.state.show} />
-                </div>
+               <Tooltip title="Mark Complete">
+                   
+                    <Button 
+                        className="mark_complete_button"
+                        onClick={() => this.markComplete(tag)}>
+                        Complete
+                        <CheckOutlined />
+                    </Button>
+                </Tooltip>
             </div>
            
         )

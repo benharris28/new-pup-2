@@ -63,9 +63,7 @@ class Gear extends React.Component {
                                                 Buy now
                                         </Button>
                                     </a>
-                                    <Button>
-                                        <Checkbox>Complete</Checkbox>
-                                    </Button>
+                                    <MarkComplete tag={gearCard.tag}/>
                                 </div> 
 
                               </Card>)}

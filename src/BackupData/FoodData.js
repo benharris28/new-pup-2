@@ -2,6 +2,7 @@ export default {
     "food": [
         {
             "id": 1,
+            "tag": "gear_dog_food",
             "brand": "Farmer's Dog",
             "product": "Fresh Food Subscription",
             "category": "Fresh Food",
@@ -18,6 +19,7 @@ export default {
         },
         {
             "id": 2,
+            "tag": "gear_dog_food",
             "brand": "Stella & Chewy's",
             "product": "Cage-Free Chicken Raw Coated Kibble for Puppies",
             "category": "Premium Kibble",
