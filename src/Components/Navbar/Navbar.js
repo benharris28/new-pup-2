@@ -19,10 +19,10 @@ onClose = () => {
   };
 render() {
     return (
-        <nav className="menuBar">
-            <Row gutter={8}>
+        <nav className="menu-bar">
+            <Row className="navbar-row" gutter={8} align="middle">
                 <Col flex="auto">
-                    <a href=" ">Doggo</a>
+                    <a className="logo" href=" ">Doggo</a>
                 </Col>
                 <Col xs={0} sm={6} justify="end">
                     <RightMenu />
