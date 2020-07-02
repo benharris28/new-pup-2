@@ -71,9 +71,6 @@ h5 {
 
 /* Navbar Styles */ 
 
-.navbar-row {
-
-}
 
 .menu-drawer {
   display: flex;
@@ -83,6 +80,10 @@ h5 {
 /* Puppy Socialization */
 
 .alert-box {
+  margin-top: 2rem;
+}
+
+.trainer-card {
   margin-top: 2rem;
 }
 
@@ -159,6 +160,7 @@ h5 {
 
 .card-content {
   display: flex;
+  
 }
 
 
@@ -167,6 +169,18 @@ h5 {
 .mark-complete-button:hover {
   background-color: blue;
 
+}
+
+/* Mark Complete Standalone Component */
+
+.mark-complete-standalone {
+  margin-top: 2rem;
+}
+
+.complete-box {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 /* Checklist Card Progress Bar */
 

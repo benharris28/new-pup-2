@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import ProductData from '../../BackupData/ProductData'
+import ApiContext from '../../ApiContext';
 import { Layout, Content, Space, Card, Col, Row, Button, Checkbox } from 'antd';
 
 class Gear extends React.Component {
+    static contextType = ApiContext;
+    
     state = {
         gear: ProductData.products,
         gear_dog_crate: false,

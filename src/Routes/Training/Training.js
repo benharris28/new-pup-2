@@ -1,10 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import Trainers from '../../BackupData/Trainers'
+import ApiContext from '../../ApiContext';
+import MarkCompleteStandAlone from '../../Components/MarkCompleteStandAlone/MarkCompleteStandAlone'
 import { Layout, Content, Button, Alert, Card } from 'antd';
 
 class Training extends React.Component {
+    
+    static contextType = ApiContext;
+    
+    state = {
+        trainers: Trainers.trainers
+    }
     render() {
         const { Content } = Layout;
+        const { trainers } = this.state;
 
         return (
             <div>
@@ -42,11 +52,15 @@ class Training extends React.Component {
                         
                         <div>
                             <h5>Here are some recommended socialization classes near you</h5>
-                            
-                                <Card type="inner" title="When Hounds Fly" extra={<a href="#">More</a>}>
-                                    Inner Card content
-                                </Card>
+                                {trainers.map(trainer => 
+                                    <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
+                                        <p>{trainer.blurb}</p>
+                                        <p>{trainer.address}</p>
+                                    </Card>
+                                )}
+                                
                         </div>
+                        <MarkCompleteStandAlone />
                     </Content>
                 </Layout>
                         

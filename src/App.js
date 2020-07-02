@@ -8,6 +8,7 @@ import Vet from './Routes/Vet/Vet';
 import Training from './Routes/Training/Training';
 import SurvivalGuide from './Routes/SurvivalGuide/SurvivalGuide';
 import Navbar from './Components/Navbar/Navbar'
+import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
 
 import './App.css';
@@ -15,12 +16,13 @@ import './App.css';
 class App extends React.Component {
 
   state = {
-    
+    activeUser: UserData.users[0]
   }
 
   render() {
+    console.log(this.state.activeUser)
     const value = {
-
+      activeUser: this.state.activeUser
     }
 
     const { Content, Footer } = Layout;

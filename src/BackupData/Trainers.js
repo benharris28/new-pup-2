@@ -19,7 +19,7 @@ export default {
             "tag": "dog_trainer",
             "city": "Toronto",
             "state": "Ontario",
-            "name": "Tne Center for Canine Education",
+            "name": "The Center for Canine Education",
             "address": "388 Carlaw Ave, Toronto, ON M4M 2T4",
             "phone": null,
             "email": null,
