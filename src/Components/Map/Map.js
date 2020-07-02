@@ -44,7 +44,8 @@ class Map extends React.Component {
                            
                             <Marker 
                                 key={marker.marker_id}
-                                position={{ lat: marker.lat, lng: marker.lng }}/>
+                                position={{ lat: marker.lat, lng: marker.lng }}
+                                label={marker.marker_id}/>
                         )}
                     </GoogleMap>
                 </LoadScript>

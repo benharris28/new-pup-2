@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
-import { Layout, Content, Button} from 'antd';
+import { Layout, Content, Button, Alert, Card} from 'antd';
 
 
 class Vet extends React.Component {
@@ -50,6 +50,7 @@ class Vet extends React.Component {
     }
     render() {
         const { Content } = Layout;
+        const { markers } = this.state;
         console.log(this.state.markers)
 
         return (
@@ -69,20 +70,48 @@ class Vet extends React.Component {
                                     
                         </div> 
 
+                        <div className="alert-box">
+                            <Alert
+                                message="Heads Up!"
+                                description="Book your first checkup within 2 days of bringing home Russell (July 10th)"
+                                type="warning"
+                                showIcon
+                                closable
+                                /> 
+                        </div>
+
                         <div>
                             <h1>Let's find the best vet near you</h1>
-                            <input
-                                type="text"
-                                onChange={e => this.handleInput(e.target.value)}
-                                 />
-                            <Button
-                                onClick={this.handleSubmit}>
-                                Hello
-                            </Button>
+                            <div className="page-intro">
+                                You will need to book a checkup within 2 days of bringing home Russell
+                            </div>
+                           
+                            <div className="find_vet_input">
+                                <h5>Enter your postal code to find reputable vets near you</h5>
+                                <input
+                                    type="text"
+                                    onChange={e => this.handleInput(e.target.value)}
+                                    />
+                                <Button
+                                    onClick={this.handleSubmit}>
+                                    Find vets
+                                </Button>
+                            </div>
                             
-                            <Map 
-                                center={this.state.userLocation}
-                                markers={this.state.markers} />
+                            <div className="vet_map">
+                                <Map 
+                                    center={this.state.userLocation}
+                                    markers={this.state.markers} />
+                            </div>
+                            <div className="vet_list">
+                                {markers.map(marker => 
+                                <Card key={marker.id} title={marker.name} extra={<a href="#">More</a>}>
+                                    <p>{marker.address}</p>
+                                   
+                                </Card>
+                                )}
+
+                            </div>
                         </div>
 
                         </Content>
