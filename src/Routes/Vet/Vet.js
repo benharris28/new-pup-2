@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
-import { Layout, Content, Button, Alert, Card} from 'antd';
+import { Layout, Content, Button, Alert, Card, List, Avatar} from 'antd';
 
 
 class Vet extends React.Component {
@@ -103,15 +103,21 @@ class Vet extends React.Component {
                                     center={this.state.userLocation}
                                     markers={this.state.markers} />
                             </div>
+
+                            {markers[0] !== null && 
                             <div className="vet_list">
+                                <h4>List View</h4>
+                               
                                 {markers.map(marker => 
-                                <Card key={marker.id} title={marker.name} extra={<a href="#">More</a>}>
+                                <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
                                     <p>{marker.address}</p>
                                    
                                 </Card>
                                 )}
 
                             </div>
+                            }
+                   
                         </div>
 
                         </Content>

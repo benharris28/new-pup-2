@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import RightMenu from '../RightMenu/RightMenu'
-import LeftMenu from '../LeftMenu/LeftMenu'
+import dog from '../../Assets/dog.png'
 import { Drawer, Button, Row, Col } from 'antd';
 class Navbar extends Component {
   state = {
@@ -22,7 +22,10 @@ render() {
         <nav className="menu-bar">
             <Row className="navbar-row" gutter={8} align="middle">
                 <Col flex="auto">
+                  <div className="logo-box">
+                    <img className="logo-photo" src={dog} alt="dog logo" />
                     <a className="logo" href=" ">Doggo</a>
+                  </div>
                 </Col>
                 <Col xs={0} sm={6} justify="end">
                     <RightMenu />

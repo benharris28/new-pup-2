@@ -77,6 +77,28 @@ h5 {
   flex-direction: column;
 }
 
+.logo-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  padding-top: 5px;
+  color: black;
+}
+
+.logo-photo {
+  height: 35px;
+  margin-right: 0.75rem;
+  padding-top: 0.4rem;
+}
+
+/* Vet Page */
+
+.vet-card {
+  margin-top: 1rem;
+}
+
 /* Puppy Socialization */
 
 .alert-box {
@@ -242,6 +264,7 @@ h5 {
   width: 20px;
   height: 2px;
   background: #1890ff;
+  background: black;
   position: relative;
 }
 .barsBtn:after,.barsBtn:before{
@@ -251,7 +274,7 @@ h5 {
   top: -6px;
   left: 0;
   height: 2px;
-  background: #1890ff;
+  background: black;
 }
 .barsBtn:after{
   top: auto;
