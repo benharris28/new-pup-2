@@ -1,31 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Layout, Content, Steps, Button, message, Card } from 'antd';
+import PrepareHome from '../../Components/PrepareHome/PrepareHome'
+import { Layout, Content, Steps, Button, Collapse  } from 'antd';
+import { CaretRightOutlined } from '@ant-design/icons';
 
-const { Step } = Steps;
 
-const steps = [
-  {
-    title: 'Prepare your home',
-    content: 'This is example content for prepare home',
-  },
-  {
-    title: 'Pick Up Pup',
-    content: 'Second-content',
-  },
-  {
-    title: 'Teach a few tricks',
-    content: 'Last-content',
-  },
-  {
-    title: 'Feed your first meals',
-    content: 'Last-content',
-  },
-  {
-    title: 'House training',
-    content: 'Last-content',
-  },
-];
+const { Panel } = Collapse;
+
 
 class SurvivalGuide extends React.Component {
   constructor(props) {
@@ -35,15 +16,8 @@ class SurvivalGuide extends React.Component {
     };
   }
 
-  next() {
-    const current = this.state.current + 1;
-    this.setState({ current });
-  }
 
-  prev() {
-    const current = this.state.current - 1;
-    this.setState({ current });
-  }
+  
 
   render() {
     const { current } = this.state;
@@ -72,34 +46,69 @@ class SurvivalGuide extends React.Component {
                     <h5>Here are the absolute essentials for bringing a puppy home. Top trainer, XX trainer, recommends these products</h5>
                 </div>
             
-                <Steps className="survival-guide-steps" current={current}>
-                {steps.map(item => (
-                    <Step key={item.title} title={item.title} />
-                ))}
-                </Steps>
-                
-                <div className="steps-content">
-                    <h5>{steps[current].title}</h5>
-                    {steps[current].content}
-                </div>
+                <div>
+                  <Collapse
+                    bordered={false}
+                    defaultActiveKey={['0']}
+                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                    className="site-collapse-custom-collapse"
+                  >
+                    <Panel header="Step 1: Prepare your home" key="1" className="site-collapse-custom-panel">
+                      <PrepareHome />
+                    </Panel>
+                    
+                  </Collapse>
 
-                <div className="steps-action">
-                {current < steps.length - 1 && (
-                    <Button type="primary" onClick={() => this.next()}>
-                    Next
-                    </Button>
-                )}
-                {current === steps.length - 1 && (
-                    <Button type="primary" onClick={() => message.success('Processing complete!')}>
-                    Done
-                    </Button>
-                )}
-                {current > 0 && (
-                    <Button style={{ margin: '0 8px' }} onClick={() => this.prev()}>
-                    Previous
-                    </Button>
-                )}
+                  <Collapse
+                    bordered={false}
+                    defaultActiveKey={['0']}
+                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                    className="site-collapse-custom-collapse"
+                  >
+                    <Panel header="Step 2: Pick up pup" key="1" className="site-collapse-custom-panel">
+                      <PrepareHome />
+                    </Panel>
+                   
+                  </Collapse>
+
+                  <Collapse
+                    bordered={false}
+                    defaultActiveKey={['0']}
+                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                    className="site-collapse-custom-collapse"
+                  >
+                    <Panel header="Step 3: Try some tricks" key="1" className="site-collapse-custom-panel">
+                      <PrepareHome />
+                    </Panel>
+                   
+                  </Collapse>
+
+                  <Collapse
+                    bordered={false}
+                    defaultActiveKey={['0']}
+                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                    className="site-collapse-custom-collapse"
+                  >
+                    <Panel header="Step 4: Pup's first meal" key="1" className="site-collapse-custom-panel">
+                      <PrepareHome />
+                    </Panel>
+                   
+                  </Collapse>
+
+                  <Collapse
+                    bordered={false}
+                    defaultActiveKey={['0']}
+                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
+                    className="site-collapse-custom-collapse"
+                  >
+                    <Panel header="Step 5: Pup's first night" key="1" className="site-collapse-custom-panel">
+                      <PrepareHome />
+                    </Panel>
+                   
+                  </Collapse>
+                  
                 </div>
+                
         </Content>
         </Layout>
       </div>
