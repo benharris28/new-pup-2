@@ -65,7 +65,7 @@ class Checklist extends React.Component {
                         style={{ padding: '0 50px' }}
                         className="page-content">
                     
-                    <div className="checklist-title">
+                    <div className="page-intro">
                         <h1>Russell's Checklist</h1>
                         <h5>Coming home in 17 days!</h5>
 
@@ -85,12 +85,12 @@ class Checklist extends React.Component {
                             <Link to={card.link}>
                                 <Badge count={`${card.badge_count} items todo`} offset={[-30,0]}>
                                 <Card
-                                    className="checklist-card"
+                                    className="card"
                                     hoverable
-                                    cover={<img className="checklist-card-image" alt={card.alt_text} src={card.image} />}
+                                    cover={<img className="card-image" alt={card.alt_text} src={card.image} />}
                                     
                                 >
-                                    <Meta className="checklist-card-text" title={card.title} description={card.description} />
+                                    <Meta className="card-text" title={card.title} description={card.description} />
                                 </Card>
                                 </Badge>
                             </Link>

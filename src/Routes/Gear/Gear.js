@@ -30,7 +30,7 @@ class Gear extends React.Component {
             <div>
                 <Layout>
                     <Content
-                        style={{ padding: '0 50px' }}
+                        //style={{ padding: '0 50px' }}
                         className="page-content">
                         
                         <div className="back-to-checklist-button">
@@ -43,14 +43,16 @@ class Gear extends React.Component {
                                     
                         </div> 
 
-                        <div>
+                        <div className="page-intro">
                             <h1>All the gear you need</h1>
                             <h5>Here are the absolute essentials for bringing a puppy home. Top trainer, XX trainer, recommends these products</h5>
                         </div>
                        
                         <div className="card-box">
                             <Row
-                                gutter={[16, 24]} >
+                                justify="space-around"
+                                gutter={[48, 40]}
+                                 >
 
                                 {gear.map(gearCard => 
                                     <Col
@@ -58,12 +60,14 @@ class Gear extends React.Component {
                                     key={gearCard.id}>
                                         <Card
                                         hoverable
-                                        className="gear-card"
-                                        cover={<img 
+                                        className="card"
+                                        cover={<img
+                                            className="card-image" 
                                             alt="example" 
                                             src={gearCard.image} />}
                                     >
                                         <Meta
+                                            className="card-content"
                                             title={gearCard.product} 
                                             description={gearCard.description_text}> 
 
@@ -84,7 +88,10 @@ class Gear extends React.Component {
                                 )}
 
                             </Row>
-                            <div className="next-section-button">
+                            
+
+                        </div>
+                        <div className="next-section-button">
                                 <Link to='/food'>
                                     <Button>
                                         Up Next: Find the best food
@@ -92,8 +99,6 @@ class Gear extends React.Component {
                                 </Link>
 
                             </div>
-
-                        </div>
 
                     </Content>
                 </Layout>
