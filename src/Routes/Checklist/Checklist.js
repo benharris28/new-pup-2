@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ProgressBar from '../../Components/ProgressBar/ProgressBar'
 import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
 
 class Checklist extends React.Component {
@@ -70,6 +71,9 @@ class Checklist extends React.Component {
                         <h5>Coming home in 17 days!</h5>
 
                         
+                    </div>
+                    <div className="progress-bar-box">
+                        <ProgressBar />
                     </div>
 
                     
