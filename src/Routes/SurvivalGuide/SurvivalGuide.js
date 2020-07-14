@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import PrepareHome from '../../Components/PrepareHome/PrepareHome'
+import PrepareHome from '../GuidePages/PrepareHome'
 import { Layout, Content, Steps, Button, Avatar  } from 'antd';
 import { CaretRightOutlined, UserOutlined } from '@ant-design/icons';
 

@@ -235,6 +235,35 @@ h6 {
   text-align: center;
 }
 
+.guide-direction-button {
+  width: 20%;
+  text-align: center;
+}
+
+/* PrepareHome Page */
+
+.guide-progress {
+  background-color: white;
+  text-align: center;
+}
+.guide-control-bar {
+  display: flex;
+}
+
+.guide-step-count {
+  width: 60%;
+  text-align: center;
+}
+
+.icon-box {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.prepare-home-icon {
+  font-size: 40px;
+}
+
 /* Food Page */
 .food-expert {
   text-align: center;
