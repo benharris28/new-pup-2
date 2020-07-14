@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import PrepareHome from '../../Components/PrepareHome/PrepareHome'
-import { Layout, Content, Steps, Button, Collapse  } from 'antd';
-import { CaretRightOutlined } from '@ant-design/icons';
+import { Layout, Content, Steps, Button, Avatar  } from 'antd';
+import { CaretRightOutlined, UserOutlined } from '@ant-design/icons';
 
 
-const { Panel } = Collapse;
 
 
 class SurvivalGuide extends React.Component {
@@ -22,13 +21,39 @@ class SurvivalGuide extends React.Component {
   render() {
     const { current } = this.state;
     const { Content } = Layout;
+
+    const points = [
+      {
+          image: null,
+          title: 'Get your home ready for Russell'
+      },
+      {
+          image: null,
+          title: 'Pick up Russell'
+      },
+      {
+          image: null,
+          title: 'Teach Russell a few tricks'
+      },
+      {
+          image: null,
+          title: 'Give Russell his first meal'
+      },
+      {
+        image: null,
+        title: 'Housetrain Russell'
+    },
+
+      
+
+  ]
     
     return (
     
       <div>
         <Layout>
             <Content
-                style={{ padding: '0 40px' }}
+                //style={{ padding: '0 40px' }}
                 className="page-content">
 
                 <div className="back-to-checklist-button">
@@ -42,72 +67,37 @@ class SurvivalGuide extends React.Component {
                 </div> 
                 
                 <div className="page-intro">
-                    <h2>Your first 24 hours: Survival Guide</h2>
+                    <div className="title-box">
+                      <h5>Survival Guide</h5>
+                    </div>
+                    
+                    <h1>Your first 24 hours with Russell</h1>
                     <h5>Here are the absolute essentials for bringing a puppy home. Top trainer, XX trainer, recommends these products</h5>
                 </div>
-            
-                <div>
-                  <Collapse
-                    bordered={false}
-                    defaultActiveKey={['0']}
-                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                    className="site-collapse-custom-collapse"
-                  >
-                    <Panel header="Step 1: Prepare your home" key="1" className="site-collapse-custom-panel">
-                      <PrepareHome />
-                    </Panel>
-                    
-                  </Collapse>
 
-                  <Collapse
-                    bordered={false}
-                    defaultActiveKey={['0']}
-                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                    className="site-collapse-custom-collapse"
-                  >
-                    <Panel header="Step 2: Pick up pup" key="1" className="site-collapse-custom-panel">
-                      <PrepareHome />
-                    </Panel>
-                   
-                  </Collapse>
-
-                  <Collapse
-                    bordered={false}
-                    defaultActiveKey={['0']}
-                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                    className="site-collapse-custom-collapse"
-                  >
-                    <Panel header="Step 3: Try some tricks" key="1" className="site-collapse-custom-panel">
-                      <PrepareHome />
-                    </Panel>
-                   
-                  </Collapse>
-
-                  <Collapse
-                    bordered={false}
-                    defaultActiveKey={['0']}
-                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                    className="site-collapse-custom-collapse"
-                  >
-                    <Panel header="Step 4: Pup's first meal" key="1" className="site-collapse-custom-panel">
-                      <PrepareHome />
-                    </Panel>
-                   
-                  </Collapse>
-
-                  <Collapse
-                    bordered={false}
-                    defaultActiveKey={['0']}
-                    expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
-                    className="site-collapse-custom-collapse"
-                  >
-                    <Panel header="Step 5: Pup's first night" key="1" className="site-collapse-custom-panel">
-                      <PrepareHome />
-                    </Panel>
-                   
-                  </Collapse>
-                  
+                
+                <div className="guide-steps-detail">
+                            <h4>Your tasks</h4>
+                            <div className="guide-points">
+                                {points.map(point => 
+                                    <div className="guide-action">
+                                        <Avatar className="guide-avatar" size={50} icon={<UserOutlined />} />
+                                        <div className="guide-content">
+                                        <h6>{point.title}</h6>
+                                        </div>
+                                        
+                                    </div>
+                            )}
+                            
+                            </div>
                 </div>
+                <div className="guide-start">
+                  <h5>Ready to start?</h5>
+                  <Button>
+                    Start your guide
+                  </Button>
+                </div>
+                
                 
         </Content>
         </Layout>

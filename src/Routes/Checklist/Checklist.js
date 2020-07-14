@@ -63,7 +63,7 @@ class Checklist extends React.Component {
                 <Layout>
                     <Content 
                     
-                        style={{ padding: '0 50px' }}
+                        //style={{ padding: '0 50px' }}
                         className="page-content">
                     
                     <div className="page-intro">

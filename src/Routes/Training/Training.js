@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom'
 import Trainers from '../../BackupData/Trainers'
 import ApiContext from '../../ApiContext';
 import MarkCompleteStandAlone from '../../Components/MarkCompleteStandAlone/MarkCompleteStandAlone'
-import { Layout, Content, Button, Alert, Card } from 'antd';
+import { Layout, Content, Button, Alert, Card, Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 class Training extends React.Component {
-    
+
     static contextType = ApiContext;
-    
+
     state = {
         trainers: Trainers.trainers
     }
@@ -16,21 +17,43 @@ class Training extends React.Component {
         const { Content } = Layout;
         const { trainers } = this.state;
 
+        const points = [
+            {
+                image: null,
+                title: 'Accept handling from humans, groomers, and vets'
+            },
+            {
+                image: null,
+                title: 'Prevent fear, anxiety, and depression'
+            },
+            {
+                image: null,
+                title: 'Practice being left alone / housetrained'
+            },
+            {
+                image: null,
+                title: 'Learn how to play appropriately with other dogs'
+            },
+
+            
+
+        ]
+
         return (
             <div>
                 <Layout>
                     <Content
-                        style={{ padding: '0 50px' }}
+                        //style={{ padding: '0 50px' }}
                         className="page-content">
-                        
+
                         <div className="back-to-checklist-button">
                             <Link to='/checklist'>
-                                <Button 
+                                <Button
                                     type="primary">
-                                        Back to checklist
+                                    Back to checklist
                                 </Button>
                             </Link>
-                                    
+
                         </div>
 
                         <div className="alert-box">
@@ -40,31 +63,47 @@ class Training extends React.Component {
                                 type="warning"
                                 showIcon
                                 closable
-                                /> 
+                            />
                         </div>
 
-                        <div>
+                        <div className="page-intro">
                             <h1>Let's socialize your pup</h1>
                         </div>
                         <div>
-                            Not just about play - socializing your puppy is amongst the most important steps to raising a well-adjusted pup who is not fearful and plays well with humans and other dogs
+                            It's a scary world for new puppies - loud noises, lots of humans, vet visits, and other dogs! Puppy classes are extremely important to prepare your dog for this crazy world!
                         </div>
                         
+                        <div className="training-detail">
+                            <h4>What you'll learn</h4>
+                            <div className="training-learning-points">
+                                {points.map(point => 
+                                    <div className="training-action">
+                                        <Avatar className="training-avatar" size={50} icon={<UserOutlined />} />
+                                        <div className="training-content">
+                                        <h6>{point.title}</h6>
+                                        </div>
+                                        
+                                    </div>
+                            )}
+                            
+                            </div>
+
+                        </div>
                         <div>
-                            <h5>Here are some recommended socialization classes near you</h5>
-                                {trainers.map(trainer => 
-                                    <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
-                                        <p>{trainer.blurb}</p>
-                                        <p>{trainer.address}</p>
-                                    </Card>
-                                )}
-                                
+                            <h4>Here are some recommended puppy classes near you</h4>
+                            {trainers.map(trainer =>
+                                <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
+                                    <p>{trainer.blurb}</p>
+                                    <p>{trainer.address}</p>
+                                </Card>
+                            )}
+
                         </div>
                         <MarkCompleteStandAlone />
                     </Content>
                 </Layout>
-                        
-                    
+
+
             </div>
         )
     }

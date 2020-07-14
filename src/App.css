@@ -7,7 +7,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #191b22;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -17,7 +17,7 @@ h2 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #35b8be;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 1;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -27,7 +27,7 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #191b22;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1;
   font-weight: 700;
 }
@@ -36,7 +36,7 @@ h4 {
   margin-top: 10px;
   margin-bottom: 10px;
   color: #191b22;
-  font-size: 28px;
+  font-size: 25px;
   line-height: 1.1;
   font-weight: 700;
 }
@@ -46,6 +46,16 @@ h5 {
   margin-bottom: 10px;
   color: #08090a;
   font-size: 18px;
+  line-height: 1;
+  font-weight: 300;
+  letter-spacing: -0.03em;
+}
+
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #08090a;
+  font-size: 14px;
   line-height: 1;
   font-weight: 300;
   letter-spacing: -0.03em;
@@ -65,6 +75,19 @@ h5 {
 }
 
 /* Page Styles */
+/* All Pages */
+
+.page-intro {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.page-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
 
 /* Card based pages */
 
@@ -126,14 +149,44 @@ h5 {
 
 /* Vet Page */
 
+.vet-map {
+  margin-top: 2rem;
+}
+
 .vet-card {
   margin-top: 1rem;
 }
 
+.next-section-button {
+  margin-top: 2rem;
+}
 /* Puppy Socialization */
 
 .alert-box {
   margin-top: 2rem;
+}
+
+.training-detail {
+  margin-top: 2rem;
+}
+.training-action {
+  display: flex;
+ 
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.training-content {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.training-learning-points {
+  margin-top: 2rem;
+}
+
+.training-avatar {
+  margin-bottom: 1rem;
 }
 
 .trainer-card {
@@ -142,15 +195,70 @@ h5 {
 
 /* Survival Guide Styling */
 
+
+.title-box h5 {
+  color: coral;
+  font-weight: 500;
+}
+
 .page-image {
   width: 100%
 }
 
-.site-collapse-custom-collapse {
+.guide-detail {
+  margin-top: 2rem;
+}
+.guide-action {
+  display: flex;
+ 
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.guide-content {
+  width: 60%;
+  margin-left: 1rem;
+}
+
+.guide-points {
   margin-top: 1rem;
 }
 
+.guide-avatar {
+  margin-bottom: 1rem;
+}
 
+.guide-start {
+  background-color: white;
+  border: 1px solid coral;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Food Page */
+.food-expert {
+  text-align: center;
+  background-color: white;
+  padding: 1rem;
+}
+
+.food-avatar {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+}
+
+.food-card-image {
+  height: 300px;
+  object-fit: cover;
+}
+.food-card-content {
+  text-align: left;
+}
+
+.more-info {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 /* Food Carousel Styling */
 .ant-carousel .slick-slide {
   text-align: center;
@@ -178,9 +286,6 @@ h5 {
 }
 /* Checklist Styles */
 
-.page-content {
-  margin-top: 4rem;
-}
 
 /* Progress Bar */
 

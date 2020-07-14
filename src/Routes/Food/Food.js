@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import FoodData from '../../BackupData/FoodData'
-import { Layout, Content, Carousel, Card, Button} from 'antd';
+import { Layout, Content, Carousel, Card, Button, Avatar} from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 class Food extends React.Component {
     state = {
@@ -25,7 +26,7 @@ class Food extends React.Component {
             <div>
                 <Layout>
                     <Content
-                        style={{ padding: '0 50px' }}
+                        //style={{ padding: '0 50px' }}
                         className="page-content">
                         
                         <div className="back-to-checklist-button">
@@ -43,34 +44,41 @@ class Food extends React.Component {
                         </div>
                         
                         <div className="page-intro">
-                            <h4>
-                                Fresh? Raw? Grain Free?
-                            </h4>
-                            <h5>
-                                Our resident veterinary nutritionist says that fresh food is healthiest and easiest to digest. It's also the most expensive. 
-                            </h5>
-                            <h5>
-                                If fresh is beyond your budget, we also have 2 great other options for you!
-                            </h5>
+                            <div className="food-expert">
+                                <Avatar className="food-avatar" size={64} icon={<UserOutlined />} />
+                                <div>
+                                    <h5>Meet Jane, vetinary nutritionist</h5>
+                                    <p>Nutrition is amongst the most important choice you can make for health and lifespan of your pup. Foods that are fresh and don't contain preservatives / additives tend to be healthiest</p>
+                                    <p>I tend to avoid recommending raw food for it's higher risk of contamination</p>
+                                </div>
+                            </div>
+                           
                         </div>
                         
                         <div className="food_picker">
-                        <h4>Food Selector</h4>
-                        <Carousel afterChange={this.onChange}>
+                        <h4>Jane's Food Recommendations</h4>
+                        <p>I have a recommendation for every budget level</p>
+                        
+                        <Carousel 
+                            afterChange={this.onChange}
+                            >
                             {food.map(foodCard => 
                             <div>
                                 <Card
                                     hoverable
                                     className="food-card"
-                                    cover={<img 
+                                    cover={<img
+                                        className="food-card-image" 
                                         alt="example" 
                                         src={foodCard.image} />}
                                 >
-                                    <Meta
-                                        title={foodCard.product} 
-                                        description={foodCard.description_text}> 
-
-                                    </Meta> 
+                                 
+                                    <div className="food-card-content">
+                                            <h5>{foodCard.brand}</h5>
+                                            <p>{foodCard.product}</p>
+                                            <p>{foodCard.description_text}</p>
+                                            <p>Russell's estimated cost per month: ${foodCard.cost_small_dog}</p>
+                                        </div> 
                                     
                                     <div className="card_purchase_button">
                                         <a target='_blank' rel="noopener noreferrer" href={`${foodCard.canada_link}`}>

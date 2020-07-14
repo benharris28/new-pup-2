@@ -9,9 +9,9 @@ export default {
             "image": "https://www.thefarmersdog.com/images/recipes-slideshow-1-b2b8ec.webp",
             "rating": "4.8/5",
             "number_of_ratings": 1000,
-            "cost_large_dog": "$500 per month (estimate)",
-            "cost_medium_dog": "$300 per month (estimate)",
-            "cost_small_dog": "$150 per month (estimate)",
+            "cost_large_dog": 500,
+            "cost_medium_dog": 300,
+            "cost_small_dog": 150,
             "purchase_text": "Subscribe to Farmer's Dog",
             "description_text": "Gently cooked meals that are flash frozen and delivered directly to your door. This is the healthiest food available, but at higher price point than Kibble",
             "link": "https://www.thefarmersdog.com/" 
