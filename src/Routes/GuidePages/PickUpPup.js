@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Russ_car from '../../Assets/Russ_car.JPG'
 import { Layout, Content, Button } from 'antd';
 
 class PickUpPup extends React.Component {
@@ -19,7 +20,8 @@ class PickUpPup extends React.Component {
                             </Link>
 
                         </div>
-                        <div>
+                        <div className="intro">
+                         <img className="russ-image" src={Russ_car} alt="russell" />
                         <h3>Time to pickup Russell!</h3>
                         <div>
                             Overview
@@ -32,7 +34,20 @@ class PickUpPup extends React.Component {
                         </div>
                         </div>
                         <div>
-                            
+                           <h4>The big day is here</h4> 
+                           <p>Get ready! Your life will change forever today in the best way possible! Get excited and don't forget a few handy tips</p>
+
+                        </div>
+                        <div>
+                            <h4>Bring towels!</h4>
+                            <p>Dogs can get nauseous and anxious during their first few trips in a car. Spread a few towels down to help catch / cleanup any mess</p>
+
+        
+                        </div>
+                        <div>
+                            <h4>
+
+                            </h4>
                         </div>
 
                     </Content>

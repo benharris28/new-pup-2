@@ -264,6 +264,19 @@ h6 {
   font-size: 40px;
 }
 
+/* Pickup Pup */
+
+.intro {
+  
+  margin-top: 3rem;
+}
+.russ-image {
+  width: 225px;
+  max-height: 225px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* Food Page */
 .food-expert {
   text-align: center;

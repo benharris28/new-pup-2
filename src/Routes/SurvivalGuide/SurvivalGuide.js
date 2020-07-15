@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import PrepareHome from '../GuidePages/PrepareHome'
 import { Layout, Content, Steps, Button, Avatar  } from 'antd';
-import { CaretRightOutlined, UserOutlined } from '@ant-design/icons';
+import { CaretRightOutlined, UserOutlined, HomeOutlined, CarOutlined } from '@ant-design/icons';
 
 
 
@@ -24,11 +24,11 @@ class SurvivalGuide extends React.Component {
 
     const points = [
       {
-          image: null,
+          image: <HomeOutlined />,
           title: 'Get your home ready for Russell'
       },
       {
-          image: null,
+          image: <CarOutlined />,
           title: 'Pick up Russell'
       },
       {
@@ -81,7 +81,7 @@ class SurvivalGuide extends React.Component {
                             <div className="guide-points">
                                 {points.map(point => 
                                     <div className="guide-action">
-                                        <Avatar className="guide-avatar" size={50} icon={<UserOutlined />} />
+                                        <Avatar className="guide-avatar" size={50} icon={point.image} />
                                         <div className="guide-content">
                                         <h6>{point.title}</h6>
                                         </div>
