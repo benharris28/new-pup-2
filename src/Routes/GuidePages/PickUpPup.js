@@ -44,11 +44,15 @@ class PickUpPup extends React.Component {
 
         
                         </div>
-                        <div>
-                            <h4>
+                        <div className="next-section-button">
+                                <Link to='/food'>
+                                    <Button>
+                                        Up Next: Pup is home!
+                                    </Button>               
+                                </Link>
+                                
 
-                            </h4>
-                        </div>
+                            </div>
 
                     </Content>
                 </Layout>

@@ -93,9 +93,12 @@ class SurvivalGuide extends React.Component {
                 </div>
                 <div className="guide-start">
                   <h5>Ready to start?</h5>
-                  <Button>
-                    Start your guide
-                  </Button>
+                  <Link to='/guide/prepare-home'>
+                                    <Button 
+                                        type="primary">
+                                            Start your guide
+                                    </Button>
+                                </Link>
                 </div>
                 
                 

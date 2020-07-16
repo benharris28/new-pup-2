@@ -29,7 +29,7 @@ class PrepareHome extends React.Component {
                     className="page-content">
 
                     <               div className="back-to-checklist-button">
-                        <Link to='/checklist'>
+                        <Link to='/guide'>
                             <Button
                                 type="primary">
                                 Back to Guide Menu
