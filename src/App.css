@@ -88,6 +88,11 @@ h6 {
   margin-top: 4rem;
 }
 
+.guide-page-content {
+  width: 100%;
+  margin: auto;
+  margin-top: 4rem;
+}
 
 /* Card based pages */
 
@@ -275,6 +280,27 @@ h6 {
   max-height: 225px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+/* pup home page */
+
+.guide-content-one {
+  padding: 2rem;
+  background-color: #FFEEFF;
+  color: rgb(39, 21, 68)
+  
+}
+
+.guide-content-two {
+  padding: 2rem;
+  background-color:#FFFFEE;
+  
+}
+
+.guide-content-three {
+  padding: 2rem;
+  background-color:#FFEEDD;
+  
 }
 
 /* Food Page */
