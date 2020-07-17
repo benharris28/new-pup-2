@@ -9,6 +9,7 @@ import Training from './Routes/Training/Training';
 import SurvivalGuide from './Routes/SurvivalGuide/SurvivalGuide';
 import PrepareHome from './Routes/GuidePages/PrepareHome'
 import PickUpPup from './Routes/GuidePages/PickUpPup'
+import PupHome from './Routes/GuidePages/PupHome'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
@@ -77,6 +78,11 @@ class App extends React.Component {
                       exact
                       path={'/guide/pickup-pup'}
                       component={PickUpPup}
+                  />
+                  <Route
+                      exact
+                      path={'/guide/pup-home'}
+                      component={PupHome}
                   />
                 
               </Switch>
