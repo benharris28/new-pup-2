@@ -4,7 +4,7 @@ import { Layout, Content, Button } from 'antd';
 import { WarningOutlined } from '@ant-design/icons';
 
 
-class PupHome extends React.Component {
+class CrateTrain extends React.Component {
     render() {
         const { Content } = Layout;
         return (
@@ -132,4 +132,4 @@ class PupHome extends React.Component {
     }
 }
 
-export default PupHome;
+export default CrateTrain;
