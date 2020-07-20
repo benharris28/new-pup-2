@@ -169,8 +169,8 @@ h6 {
 }
 
 .guide-banner-title h5 {
-  color: orangered;
-  font-weight: 800;
+  color:white;
+  font-weight: 900;
   font-size: 2rem;
 }
 
@@ -181,7 +181,7 @@ h6 {
 }
 
 .secondary-banner {
-  background-color: #8B5F78;
+  background-color:#2E7D32;
   color: white;
   padding: 2rem;
 }
@@ -205,7 +205,7 @@ h6 {
 .card-image {
   
   object-fit: cover;
-  max-height: 200px;
+  max-height: 250px;
   
 }
 

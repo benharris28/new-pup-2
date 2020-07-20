@@ -93,9 +93,7 @@ class Checklist extends React.Component {
                             <h5>Go through each item and mark them complete as you go!</h5>
                         </div>
 
-                        <div className="progress-bar-box">
-                            <ProgressBar />
-                        </div>
+                        
 
 
                         <div className="card-box">

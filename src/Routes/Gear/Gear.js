@@ -4,7 +4,8 @@ import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import ProductData from '../../BackupData/ProductData'
 import ApiContext from '../../ApiContext';
 import { Layout, Content, Space, Card, Col, Row, Button, Checkbox } from 'antd';
-
+import dog_gear from '../../Assets/dog_gear.jpg'
+import bowl_illustration from '../../Assets/bowl_illustration.png'
 class Gear extends React.Component {
     static contextType = ApiContext;
 
@@ -31,7 +32,7 @@ class Gear extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <img className="guide-banner-image" src="https://www.kimballstock.com/images/dog-stock-photos.jpg" alt="puppy" />
+                        <img className="guide-banner-image" src={dog_gear} alt="puppy" />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
