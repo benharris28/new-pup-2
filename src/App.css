@@ -121,6 +121,26 @@ h6 {
   padding-top: 0.4rem;
 }
 
+.next-section-button {
+  width: 100%;
+  height: 100px;
+  background-color: #524A66;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.next-section-button button {
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #FF5D1A;
+  color: white;
+  
+  
+}
+
 /* Cards (In Checklist and Gear Pages) */
 
 
