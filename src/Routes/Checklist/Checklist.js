@@ -2,13 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import ProgressBar from '../../Components/ProgressBar/ProgressBar'
 import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
+import Russ_banner from '../../Assets/Russ_banner.JPG'
+import { ClockCircleOutlined } from '@ant-design/icons';
 
 class Checklist extends React.Component {
-    
+
     componentDidMount = () => {
         // Get data from context
     }
-    
+
     render() {
         const { Content } = Layout;
         const { Meta } = Card;
@@ -49,79 +51,98 @@ class Checklist extends React.Component {
             {
                 link: '/guide',
                 image: "https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg",
-                title: "Read Doggo's 24 hour survival guide", 
+                title: "Read Doggo's 24 hour survival guide",
                 description: "Everything you needt to know, including how to get ready, give your first meal, housetrain, and more!",
                 alt_text: "24 hour guide",
                 badge_count: 5
             },
         ]
 
-       
-    
+
+
         return (
             <div>
                 <Layout>
-                    <Content 
-                    
+                    <div className="guide-banner">
+
+                        <img className="guide-banner-image" src={Russ_banner} alt="puppy" />
+
+                        
+
+                        <div className="guide-banner-title">
+                            <h5>Russell's Checklist</h5>
+                            <h3>Advice from the pros to get 100% ready for Russell</h3>
+
+                        </div>
+
+                    </div>
+                    <div className="secondary-banner">
+                        <div className="checklist-icon-box">
+                            <ClockCircleOutlined className="clock-icon" />
+                        </div>
+                        
+                        <h5>Russell comes home in 21 days. Let's get started!</h5>
+                    </div>
+                    <Content
+
                         //style={{ padding: '0 50px' }}
                         className="page-content">
-                    
-                    <div className="page-intro">
-                        <h1>Russell's Checklist</h1>
-                        <h5>Coming home in 17 days!</h5>
 
-                        
-                    </div>
-                    <div className="progress-bar-box">
-                        <ProgressBar />
-                    </div>
+                       <div className="page-intro">
+                            <h1>Checklist Todo's</h1>
+                            <h5>Go through each item and mark them complete as you go!</h5>
+                        </div>
 
-                    
-                    <div className="card-box">
-                    <Row
-                       gutter={[16, 24]} >
-                    
-                        {cardList.map(card => 
-                        <Col
-                            className="gutter-row" sm={24} md={8}
-                            key={card.link}>
+                        <div className="progress-bar-box">
+                            <ProgressBar />
+                        </div>
 
-                            <Link to={card.link}>
-                                <Badge count={`${card.badge_count} items todo`} offset={[-30,0]}>
-                                <Card
-                                    className="card"
-                                    hoverable
-                                    cover={<img className="card-image" alt={card.alt_text} src={card.image} />}
-                                    
-                                >
-                                    <Meta className="card-text" title={card.title} description={card.description} />
-                                </Card>
-                                </Badge>
-                            </Link>
-                        </Col>
-                        )}
-                    
-                    </Row>
-                   
-                    
-                   
 
-                          
+                        <div className="card-box">
+                            <Row
+                                gutter={[16, 24]} >
 
-                
-                        
-                   
+                                {cardList.map(card =>
+                                    <Col
+                                        className="gutter-row" sm={24} md={8}
+                                        key={card.link}>
 
-                  
-                    </div>
+                                        <Link to={card.link}>
+                                            <Badge count={`${card.badge_count} items todo`} offset={[-30, 0]}>
+                                                <Card
+                                                    className="card"
+                                                    hoverable
+                                                    cover={<img className="card-image" alt={card.alt_text} src={card.image} />}
+
+                                                >
+                                                    <Meta className="card-text" title={card.title} description={card.description} />
+                                                </Card>
+                                            </Badge>
+                                        </Link>
+                                    </Col>
+                                )}
+
+                            </Row>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
                     </Content>
 
 
 
 
                 </Layout>
-                
-              
+
+
             </div>
         )
     }
