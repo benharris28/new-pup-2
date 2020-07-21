@@ -3,6 +3,12 @@ import crate_illustration from '../Assets/crate_illustration.png'
 import bowl_illustration from '../Assets/bowl_illustration.png'
 import collar_illustration from '../Assets/collar_illustration.png'
 import leash_illustration from '../Assets/leash_illustration.png'
+import brush_illustration from '../Assets/brush_illustration.png'
+import poo_bag_illustration from '../Assets/poo_bag_illustration.png'
+import dog_tag_illustration from '../Assets/dog_tag_illustration.png'
+import treats_illustration from '../Assets/treats_illustration.png'
+import shampoo_illustration from '../Assets/shampoo_illustration.png'
+
 
 export default {
     "products": [
@@ -74,6 +80,92 @@ export default {
             "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
     
         },
+        {
+            "id": 5,
+            "tag": "brush",
+            "active": true,
+            "image": brush_illustration,
+            "product": "Brush",
+            "brand": "Blueberry Pet Classics",
+            "category": "Dog Collar",
+            "cost_large_dog": 10,
+            "cost_medium_dog": 10,
+            "cost_small_dog": 10,
+            "purchase_text": "Buy a brush",
+            "description_text": "Highly rated and durable, this collar is simple and easy. Most new puppies will need a size small. Make sure to choose a regular collar and not martingale",
+            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Collar-Collars/dp/B00HWQO66O/ref=sr_1_5?dchild=1&keywords=blueberry%2Bdog%2Bcollar&qid=1590942935&sr=8-5&th=1",
+            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
+    
+        },
+        {
+            "id": 6,
+            "tag": "treats",
+            "active": true,
+            "image": treats_illustration,
+            "product": "Treats",
+            "brand": "Blueberry Pet Classics",
+            "category": "Dog Collar",
+            "cost_large_dog": 10,
+            "cost_medium_dog": 10,
+            "cost_small_dog": 10,
+            "purchase_text": "Buy a brush",
+            "description_text": "Highly rated and durable, this collar is simple and easy. Most new puppies will need a size small. Make sure to choose a regular collar and not martingale",
+            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Collar-Collars/dp/B00HWQO66O/ref=sr_1_5?dchild=1&keywords=blueberry%2Bdog%2Bcollar&qid=1590942935&sr=8-5&th=1",
+            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
+    
+        },
+        {
+            "id": 7,
+            "tag": "shampoo",
+            "active": true,
+            "image": shampoo_illustration,
+            "product": "Shampoo",
+            "brand": "Blueberry Pet Classics",
+            "category": "Dog Collar",
+            "cost_large_dog": 10,
+            "cost_medium_dog": 10,
+            "cost_small_dog": 10,
+            "purchase_text": "Buy a brush",
+            "description_text": "Highly rated and durable, this collar is simple and easy. Most new puppies will need a size small. Make sure to choose a regular collar and not martingale",
+            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Collar-Collars/dp/B00HWQO66O/ref=sr_1_5?dchild=1&keywords=blueberry%2Bdog%2Bcollar&qid=1590942935&sr=8-5&th=1",
+            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
+    
+        },
+        {
+            "id": 8,
+            "tag": "tag",
+            "active": true,
+            "image": dog_tag_illustration,
+            "product": "Dog Tag",
+            "brand": "Blueberry Pet Classics",
+            "category": "Dog Collar",
+            "cost_large_dog": 10,
+            "cost_medium_dog": 10,
+            "cost_small_dog": 10,
+            "purchase_text": "Buy a brush",
+            "description_text": "Highly rated and durable, this collar is simple and easy. Most new puppies will need a size small. Make sure to choose a regular collar and not martingale",
+            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Collar-Collars/dp/B00HWQO66O/ref=sr_1_5?dchild=1&keywords=blueberry%2Bdog%2Bcollar&qid=1590942935&sr=8-5&th=1",
+            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
+    
+        },
+        {
+            "id": 9,
+            "tag": "poo_bag",
+            "active": true,
+            "image": poo_bag_illustration,
+            "product": "Poo Bags",
+            "brand": "Blueberry Pet Classics",
+            "category": "Dog Collar",
+            "cost_large_dog": 10,
+            "cost_medium_dog": 10,
+            "cost_small_dog": 10,
+            "purchase_text": "Buy a brush",
+            "description_text": "Highly rated and durable, this collar is simple and easy. Most new puppies will need a size small. Make sure to choose a regular collar and not martingale",
+            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Collar-Collars/dp/B00HWQO66O/ref=sr_1_5?dchild=1&keywords=blueberry%2Bdog%2Bcollar&qid=1590942935&sr=8-5&th=1",
+            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sxin_7_ac_d_rm?ac_md=1-1-ZG9nIGNvbGxhcg%3D%3D-ac_d_rm&crid=NGCF9VC5T5F2&cv_ct_cx=collar+for+dogs&dchild=1&keywords=collar+for+dogs&pd_rd_i=B00HRQAUN2&pd_rd_r=7eb9dcfd-cd68-45f0-b1d5-f947e38dfce1&pd_rd_w=q1wTe&pd_rd_wg=wGmpU&pf_rd_p=a0516f22-66df-4efd-8b9a-279a864d1512&pf_rd_r=0ET6DZEX5YTGZ85AGYEY&psc=1&qid=1590942732&sprefix=collar%2Caps%2C166&sr=1-2-12d4272d-8adb-4121-8624-135149aa9081"
+    
+        },
+       
        
 
 

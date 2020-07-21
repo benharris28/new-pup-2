@@ -147,6 +147,7 @@ h6 {
   
   z-index: 2;
   text-align: center;
+  position: relative;
   
 } 
 
@@ -163,7 +164,7 @@ h6 {
   position: absolute;
  
   width: 80%;
-  top: 65%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -451,6 +452,17 @@ h6 {
 .gear-card {
   width: 100%;
 }
+
+.gear-drawer {
+  width: 60%;
+}
+
+.gear-info-card {
+  width: 90%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
 /* Checklist Styles */
 
 .checklist-icon-box {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import ProductData from '../../BackupData/ProductData'
 import ApiContext from '../../ApiContext';
-import { Layout, Content, Space, Card, Col, Row, Button, Checkbox } from 'antd';
+import { Layout, Content, Space, Card, Col, Row, Button, Drawer } from 'antd';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
 import gear_banner from '../../Assets/gear_banner.png'
@@ -14,15 +14,37 @@ class Gear extends React.Component {
     state = {
         gear: ProductData.products,
         gear_dog_crate: false,
-        gear_dog_bowls: true
+        gear_dog_bowls: true,
+        visible: false,
+        placement: 'right'
 
     }
+
+    showDrawer = () => {
+        this.setState({
+            visible: true,
+        });
+    };
+
+    onClose = () => {
+        this.setState({
+            visible: false,
+        });
+    };
+
+    onChange = e => {
+        this.setState({
+            placement: e.target.value,
+        });
+    };
+
 
     render() {
 
         const { Content } = Layout;
         const { Meta } = Card;
-        const { gear } = this.state;
+        const { gear, placement, visible } = this.state;
+        const fullWidth = global.window.innerWidth;
 
         // Combine gear list with gear status from users table
         const gearTest = {
@@ -34,7 +56,7 @@ class Gear extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <img className="guide-banner-image" src={gear_banner} alt="puppy" />
+                        <img className="guide-banner-image" src={dog_gear} alt="puppy" />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
@@ -57,7 +79,7 @@ class Gear extends React.Component {
                         //style={{ padding: '0 50px' }}
                         className="page-content">
 
-                        
+
 
                         <div className="page-intro">
                             <h1>All the gear you need</h1>
@@ -66,7 +88,7 @@ class Gear extends React.Component {
 
                         <div className="card-box">
                             <Row
-                                justify="space-around"
+
                                 gutter={[48, 40]}
                             >
 
@@ -75,6 +97,7 @@ class Gear extends React.Component {
                                         className="gutter-row" sm={24} md={8}
                                         key={gearCard.id}>
                                         <Card
+                                            onClick={this.showDrawer}
                                             hoverable
                                             className="card"
                                             cover={<img
@@ -104,6 +127,28 @@ class Gear extends React.Component {
                                 )}
 
                             </Row>
+
+                            <Drawer
+                                title="Gear Options"
+                                placement={placement}
+                                closable={false}
+                                onClose={this.onClose}
+                                visible={visible}
+                                key={placement}
+                                width={fullWidth > 500? fullWidth - 300 : 300}
+                                className="gear-drawer"
+                            >
+                                <Card 
+                                    title="Default size card"
+                                    className="gear-info-card" 
+                                    extra={<a href="#">More</a>}>
+                                    <p>Card content</p>
+                                    <p>Card content</p>
+                                    <p>Card content</p>
+                                </Card>
+                                <p>Some contents...</p>
+                                <p>Some contents...</p>
+                            </Drawer>
 
 
                         </div>
