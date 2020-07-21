@@ -161,6 +161,7 @@ h6 {
 
 .guide-banner-title {
   position: absolute;
+ 
   width: 80%;
   top: 65%;
   left: 50%;
@@ -325,7 +326,7 @@ h6 {
   position: absolute;
   width: 70%;
   top: 15%;
-  left: 30%;
+  left: 100px;
   transform: translate(-50%, -50%);
   color: white;
 }
