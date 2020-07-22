@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import ProductData from '../../BackupData/ProductData'
+import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
 import { Layout, Content, Space, Card, Col, Row, Button, Drawer } from 'antd';
 import dog_gear from '../../Assets/dog_gear.jpg'
@@ -12,17 +13,19 @@ class Gear extends React.Component {
     static contextType = ApiContext;
 
     state = {
-        gear: ProductData.products,
+        gear: GearData.categories,
         gear_dog_crate: false,
         gear_dog_bowls: true,
         visible: false,
-        placement: 'right'
+        placement: 'right',
+        category: 1
 
     }
 
-    showDrawer = () => {
+    showDrawer = (id) => {
         this.setState({
             visible: true,
+            category: id
         });
     };
 
@@ -45,11 +48,14 @@ class Gear extends React.Component {
         const { Meta } = Card;
         const { gear, placement, visible } = this.state;
         const fullWidth = global.window.innerWidth;
+        const gearFilter = gear.filter(g => g.category_id == this.state.category)
+        console.log(gearFilter)
+        
 
         // Combine gear list with gear status from users table
-        const gearTest = {
+       
 
-        }
+        
 
         return (
             <div>
@@ -95,30 +101,31 @@ class Gear extends React.Component {
                                 {gear.map(gearCard =>
                                     <Col
                                         className="gutter-row" sm={24} md={8}
-                                        key={gearCard.id}>
+                                        key={gearCard.category_id}>
                                         <Card
-                                            onClick={this.showDrawer}
+                                            onClick={() => this.showDrawer(gearCard.category_id)}
                                             hoverable
                                             className="card"
                                             cover={<img
                                                 className="card-image"
                                                 alt="example"
-                                                src={gearCard.image} />}
+                                                src={gearCard.category_image} />}
                                         >
                                             <Meta
                                                 className="card-content"
-                                                title={gearCard.product}
+                                                title={gearCard.category}
                                                 description={gearCard.description_text}>
 
                                             </Meta>
 
                                             <div className="card_purchase_button">
-                                                <a target='_blank' rel="noopener noreferrer" href={`${gearCard.canada_link}`}>
-                                                    <Button
-                                                        type="primary">
-                                                        Buy now
+                                                
+                                                <Button
+                                                        type="primary"
+                                                        onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                        See products
                                                 </Button>
-                                                </a>
+                                                
                                                 <MarkComplete tag={gearCard.tag} />
                                             </div>
 
@@ -138,16 +145,38 @@ class Gear extends React.Component {
                                 width={fullWidth > 500? fullWidth - 300 : 300}
                                 className="gear-drawer"
                             >
+                                <div className="drawer-intro">
+                                    <h5>{gearFilter[0].category}</h5>
+                                    {gearFilter[0].category_description}
+                                </div>
+                                {gearFilter[0].products.map(product => 
                                 <Card 
-                                    title="Default size card"
+                                  
                                     className="gear-info-card" 
-                                    extra={<a href="#">More</a>}>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
-                                    <p>Card content</p>
+                                    cover={<img
+                                        className="card-image"
+                                        alt="example"
+                                        src={product.image} />}
+                                   >
+                                        <Meta
+                                                className="card-content"
+                                                title={product.product}
+                                                description={product.description_text}>
+
+                                        </Meta>
+
+                                        <div className="card_purchase_button">
+                                                <a target='_blank' rel="noopener noreferrer" href={`${product.canada_link}`}>
+                                                    <Button
+                                                        type="primary">
+                                                        Buy it!
+                                                </Button>
+                                                </a>
+                                               
+                                            </div>
+                                  
                                 </Card>
-                                <p>Some contents...</p>
-                                <p>Some contents...</p>
+                               )}
                             </Drawer>
 
 

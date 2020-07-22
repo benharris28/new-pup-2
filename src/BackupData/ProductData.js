@@ -11,6 +11,7 @@ import shampoo_illustration from '../Assets/shampoo_illustration.png'
 
 
 export default {
+    
     "products": [
         {
             "id": 1,
