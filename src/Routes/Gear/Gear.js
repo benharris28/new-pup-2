@@ -49,6 +49,7 @@ class Gear extends React.Component {
         const { gear, placement, visible } = this.state;
         const fullWidth = global.window.innerWidth;
         const gearFilter = gear.filter(g => g.category_id == this.state.category)
+        const drawerZIndex = visible? 1000 : -1
         console.log(gearFilter)
         
 
@@ -62,7 +63,7 @@ class Gear extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <img className="guide-banner-image" src={dog_gear} alt="puppy" />
+                        <div className="guide-banner-image"  />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
@@ -144,6 +145,7 @@ class Gear extends React.Component {
                                 visible={visible}
                                 key={placement}
                                 width={fullWidth > 500? fullWidth - 300 : 300}
+                                zIndex={drawerZIndex}               
                                 className="gear-drawer"
                             >
                                 <div className="drawer-intro">

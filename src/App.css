@@ -157,6 +157,7 @@ h6 {
   min-height: 600px;
   object-fit: cover;
   opacity: 1.2;
+  background-color: #F1948A;
   
 }
 
@@ -625,7 +626,7 @@ h6 {
   }
 
   .card-content {
-    height: 150px;
+    max-height: 150px;
   }
 
 

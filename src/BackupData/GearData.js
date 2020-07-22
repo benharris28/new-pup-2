@@ -128,25 +128,167 @@ export default {
                         
                     },
                     {
-                        "id": 4,
-                        "tag": "dog_bowl",
+                        "id": 6,
+                        "tag": "dog_leash",
                         "type": "premium",
                         "active": true,
-                        "image": "https://images-na.ssl-images-amazon.com/images/I/91eSpA7VKUL._AC_SL1500_.jpg",
-                        "product": "Small Dog Bowls Set of 2",
-                        "brand": "Keks",
-                        "category": "Dog Bowls",
-                        "category_id": 2,
-                        "cost_canada": 29,
-                        "cost_us": 24,
-                        "purchase_text": "Buy these bowls",
-                        "description_text": "Stainless steel bowls with an anti-slip silicone pad. They look good too!",
-                        "canada_link": "https://www.amazon.ca/Stainless-Non-Skid-Silicone-Collapsible-Travel/dp/B01MYZ2FX4/ref=sr_1_10?crid=3OA4RLL2YO3LJ&dchild=1&keywords=puppy+dog+bowls&qid=1595439696&sprefix=puppy+dog+bowls%2Caps%2C338&sr=8-10",
-                        "us_link": "https://www.amazon.com/KEKS-Stainless-Non-Skid-Silicone-Collapsible/dp/B01MYZ2FX4/ref=sr_1_2_sspa?crid=3BVNEHRZW2IOZ&dchild=1&keywords=keks+small+dog+bowl&qid=1595440072&sprefix=keks+%2Caps%2C170&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExMUtLTlRNMDRSTjlWJmVuY3J5cHRlZElkPUEwNzE0NDg4VUgwUjE4VEFGRkxOJmVuY3J5cHRlZEFkSWQ9QTA0NDk2OTVNWDg3NVZKM1I4VE4md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl"
+                        "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
+                        "product": "6 Feet Slip Lead Dog Leash",
+                        "brand": "BAAPET",
+                        "category": "Dog Leash",
+                        "category_id": 3,
+                        "cost_canada": 16,
+                        "cost_us": 10,
+                        "purchase_text": "Buy this leash",
+                        "description_text": "Strong nylon leash with padded handle",
+                        "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
+                        "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
                         
                     },
                     
+                    
                 ]
                 },
+                {
+                    "category_id": 4,
+                    "category": "Collar",
+                    "category_image": collar_illustration,
+                    "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
+                    "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                    "products": [
+                        {
+                            "id": 7,
+                            "tag": "dog_collar",
+                            "type": "basic",
+                            "active": true,
+                            "image": "https://images-na.ssl-images-amazon.com/images/I/71ULk5IiTaL._AC_SL1500_.jpg",
+                            "product": "Nylon Leash, 1-Inch X 6-Feet",
+                            "brand": "PetSafe",
+                            "category": "Dog Leash",
+                            "category_id": 3,
+                            "cost_canada": 12,
+                            "cost_us": 8,
+                            "purchase_text": "Buy this leash",
+                            "description_text": "Highly rated - will do the trick!",
+                            "canada_link": "https://www.amazon.ca/PetSafe-Nylon-Leash-1-Inch-6-Feet/dp/B000H594RS/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGxlYXNo-ac_d_rm&crid=Q3LNA3JY67WZ&cv_ct_cx=dog+leash&dchild=1&keywords=dog+leash&pd_rd_i=B000H594RS&pd_rd_r=d367e81c-5515-4d2b-bd84-095d003dcd8a&pd_rd_w=W1ujB&pd_rd_wg=Xq97b&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=ERJNZXHX86N7676D225M&psc=1&qid=1595441683&sprefix=dog+leash%2Caps%2C171&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                            "us_link": "https://www.amazon.com/PetSafe-Nylon-Leash-Royal-Blue/dp/B000OGP9WE/ref=sr_1_4?crid=1BIW6PQJRQD15&dchild=1&keywords=petsafe+leash&qid=1595441841&sprefix=petsafe+lesh%2Caps%2C170&sr=8-4"
+                            
+                        },
+                        {
+                            "id": 6,
+                            "tag": "dog_leash",
+                            "type": "premium",
+                            "active": true,
+                            "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
+                            "product": "6 Feet Slip Lead Dog Leash",
+                            "brand": "BAAPET",
+                            "category": "Dog Leash",
+                            "category_id": 3,
+                            "cost_canada": 16,
+                            "cost_us": 10,
+                            "purchase_text": "Buy this leash",
+                            "description_text": "Strong nylon leash with padded handle",
+                            "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
+                            "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
+                            
+                        },
+                        
+                        
+                    ]
+                    },
+                    {
+                        "category_id": 5,
+                        "category": "Dog Tag",
+                        "category_image": dog_tag_illustration,
+                        "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
+                        "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                        "products": [
+                            {
+                                "id": 9,
+                                "tag": "dog_collar",
+                                "type": "basic",
+                                "active": true,
+                                "image": "https://images-na.ssl-images-amazon.com/images/I/71ULk5IiTaL._AC_SL1500_.jpg",
+                                "product": "Nylon Leash, 1-Inch X 6-Feet",
+                                "brand": "PetSafe",
+                                "category": "Dog Leash",
+                                "category_id": 3,
+                                "cost_canada": 12,
+                                "cost_us": 8,
+                                "purchase_text": "Buy this leash",
+                                "description_text": "Highly rated - will do the trick!",
+                                "canada_link": "https://www.amazon.ca/PetSafe-Nylon-Leash-1-Inch-6-Feet/dp/B000H594RS/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGxlYXNo-ac_d_rm&crid=Q3LNA3JY67WZ&cv_ct_cx=dog+leash&dchild=1&keywords=dog+leash&pd_rd_i=B000H594RS&pd_rd_r=d367e81c-5515-4d2b-bd84-095d003dcd8a&pd_rd_w=W1ujB&pd_rd_wg=Xq97b&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=ERJNZXHX86N7676D225M&psc=1&qid=1595441683&sprefix=dog+leash%2Caps%2C171&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                "us_link": "https://www.amazon.com/PetSafe-Nylon-Leash-Royal-Blue/dp/B000OGP9WE/ref=sr_1_4?crid=1BIW6PQJRQD15&dchild=1&keywords=petsafe+leash&qid=1595441841&sprefix=petsafe+lesh%2Caps%2C170&sr=8-4"
+                                
+                            },
+                            {
+                                "id": 10,
+                                "tag": "dog_leash",
+                                "type": "premium",
+                                "active": true,
+                                "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
+                                "product": "6 Feet Slip Lead Dog Leash",
+                                "brand": "BAAPET",
+                                "category": "Dog Leash",
+                                "category_id": 3,
+                                "cost_canada": 16,
+                                "cost_us": 10,
+                                "purchase_text": "Buy this leash",
+                                "description_text": "Strong nylon leash with padded handle",
+                                "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
+                                "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
+                                
+                            },
+                            
+                            
+                        ]
+                        },
+                        {
+                            "category_id": 6,
+                            "category": "Poo Bags",
+                            "category_image": poo_bag_illustration,
+                            "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
+                            "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                            "products": [
+                                {
+                                    "id": 9,
+                                    "tag": "dog_collar",
+                                    "type": "basic",
+                                    "active": true,
+                                    "image": "https://images-na.ssl-images-amazon.com/images/I/71ULk5IiTaL._AC_SL1500_.jpg",
+                                    "product": "Nylon Leash, 1-Inch X 6-Feet",
+                                    "brand": "PetSafe",
+                                    "category": "Dog Leash",
+                                    "category_id": 3,
+                                    "cost_canada": 12,
+                                    "cost_us": 8,
+                                    "purchase_text": "Buy this leash",
+                                    "description_text": "Highly rated - will do the trick!",
+                                    "canada_link": "https://www.amazon.ca/PetSafe-Nylon-Leash-1-Inch-6-Feet/dp/B000H594RS/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGxlYXNo-ac_d_rm&crid=Q3LNA3JY67WZ&cv_ct_cx=dog+leash&dchild=1&keywords=dog+leash&pd_rd_i=B000H594RS&pd_rd_r=d367e81c-5515-4d2b-bd84-095d003dcd8a&pd_rd_w=W1ujB&pd_rd_wg=Xq97b&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=ERJNZXHX86N7676D225M&psc=1&qid=1595441683&sprefix=dog+leash%2Caps%2C171&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                    "us_link": "https://www.amazon.com/PetSafe-Nylon-Leash-Royal-Blue/dp/B000OGP9WE/ref=sr_1_4?crid=1BIW6PQJRQD15&dchild=1&keywords=petsafe+leash&qid=1595441841&sprefix=petsafe+lesh%2Caps%2C170&sr=8-4"
+                                    
+                                },
+                                {
+                                    "id": 10,
+                                    "tag": "dog_leash",
+                                    "type": "premium",
+                                    "active": true,
+                                    "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
+                                    "product": "6 Feet Slip Lead Dog Leash",
+                                    "brand": "BAAPET",
+                                    "category": "Dog Leash",
+                                    "category_id": 3,
+                                    "cost_canada": 16,
+                                    "cost_us": 10,
+                                    "purchase_text": "Buy this leash",
+                                    "description_text": "Strong nylon leash with padded handle",
+                                    "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
+                                    "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
+                                    
+                                },
+                                
+                                
+                            ]
+                            },
     ]
 }
