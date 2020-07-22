@@ -95,7 +95,7 @@ class Gear extends React.Component {
                         <div className="card-box">
                             <Row
 
-                                gutter={[48, 40]}
+                                gutter={[16,24]}
                             >
 
                                 {gear.map(gearCard =>
@@ -134,7 +134,8 @@ class Gear extends React.Component {
                                 )}
 
                             </Row>
-
+                            </div>                           
+                            
                             <Drawer
                                 title="Gear Options"
                                 placement={placement}
@@ -146,15 +147,16 @@ class Gear extends React.Component {
                                 className="gear-drawer"
                             >
                                 <div className="drawer-intro">
-                                    <h5>{gearFilter[0].category}</h5>
-                                    {gearFilter[0].category_description}
+                                    <h4>{gearFilter[0].category}</h4>
+                                    <h5>{gearFilter[0].category_description}</h5>
+                                    <h5>{gearFilter[0].choice_description}</h5>
                                 </div>
                                 {gearFilter[0].products.map(product => 
                                 <Card 
-                                  
+                                    key={product.category_id}
                                     className="gear-info-card" 
                                     cover={<img
-                                        className="card-image"
+                                        className="drawer-image"
                                         alt="example"
                                         src={product.image} />}
                                    >
@@ -180,7 +182,7 @@ class Gear extends React.Component {
                             </Drawer>
 
 
-                        </div>
+                        
 
 
                     </Content>

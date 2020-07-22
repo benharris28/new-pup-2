@@ -98,7 +98,7 @@ class Checklist extends React.Component {
 
                         <div className="card-box">
                             <Row
-                                gutter={[16, 24]} >
+                                gutter={[40, 24]} >
 
                                 {cardList.map(card =>
                                     <Col

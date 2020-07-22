@@ -201,13 +201,14 @@ h6 {
 
 .card {
   width: 100%;
-  max-width: 300px;
+  
 }
 
 .card-image {
   
   object-fit: cover;
   max-height: 250px;
+  
   
 }
 
@@ -460,7 +461,7 @@ h6 {
 .gear-info-card {
   width: 90%;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .drawer-intro {
@@ -618,7 +619,7 @@ h6 {
 @media(min-width: 767px) {
  
   .card-box {
-    display: flex;
+    /*display: flex;*/
     margin: auto;
     
   }
