@@ -434,12 +434,22 @@ h6 {
   text-align: center;
  
   line-height: 160px;
-  background: #364d79;
+  /*background: #364d79;*/
   overflow: hidden;
 }
 
 .ant-carousel .slick-slide h3 {
   color: #fff;
+}
+
+.carousel-control {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.carousel-control h4 {
+  margin: auto;
+  text-align: center;
 }
 
 /* Gear Page Styling */

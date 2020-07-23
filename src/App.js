@@ -4,6 +4,7 @@ import { Layout, Menu, Button } from 'antd'
 import Checklist from './Routes/Checklist/Checklist';
 import Gear from './Routes/Gear/Gear';
 import Food from './Routes/Food/Food';
+import Nutrition from './Routes/Nutrition/Nutrition';
 import Vet from './Routes/Vet/Vet';
 import Training from './Routes/Training/Training';
 import SurvivalGuide from './Routes/SurvivalGuide/SurvivalGuide';
@@ -54,7 +55,7 @@ class App extends React.Component {
                   <Route
                       exact
                       path={'/food'}
-                      component={Food}
+                      component={Nutrition}
                   />
                   <Route
                       exact
