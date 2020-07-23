@@ -488,6 +488,33 @@ h6 {
   font-size: 1rem;
 }
 
+.carousel-test {
+  position: relative;
+  
+}
+
+.food-card-title {
+  width: 70%;
+  margin: auto;
+}
+
+.left-arrow {
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 2%;
+  left: 5%;
+  font-size: 2rem;
+}
+
+.right-arrow {
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 2%;
+  right: 5%;
+  font-size: 2rem;
+}
 
 /* Gear Page Styling */
 
