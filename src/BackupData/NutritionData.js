@@ -1,9 +1,11 @@
+import farmers_dog from '../Assets/farmers_dog.png'
+
 export default {
     "categories": [
         {
         "category_id": 7,
         "category": "Food",
-        "category_image": crate_illustration,
+        "category_image": '',
         "category_description": "Dog Food",
         "choice_description": "Check out two dog crates for your pup. One is economic and one is fancy. Both will do the trick!",
         "products": [
@@ -12,7 +14,7 @@ export default {
                 "tag": "food",
                 "type": "Gently Cooked Fresh Food",
                 "active": true,
-                "image": "https://www.petful.com/wp-content/uploads/2018/05/the-farmers-dog-cost-pricing.jpg",
+                "image": farmers_dog,
                 "product": "Fresh Food Subscription",
                 "brand": "Farmer's Dog",
                 "category": "Dog Crate",
@@ -20,7 +22,8 @@ export default {
                 "cost_canada": 100,
                 "cost_us": 80,
                 "purchase_text": "Subscribe to Farmer's Dog",
-                "description_text": "Stainless steel and escape proof. This crate will do the trick!",
+                "extra_detail": "High in protein, good level of fats, and limited ingredients",
+                "description_text": "This is our top recommendation. Recipes are gently cooked to preserve nutrient values and easy for your dog to digest. Uses high quality ingredients",
                 "canada_link": "https://www.amazon.ca/MidWest-Folding-Divider-Protecting-Leak-Proof/dp/B000TZ59ES/ref=zg_bs_6292338011_2?_encoding=UTF8&psc=1&refRID=BG4AX6Y2PHJ12FZDFYYD",
                 "us_link": "https://www.amazon.com/MidWest-Folding-Divider-Protecting-Leak-Proof/dp/B000QFWCJ6/ref=sr_1_2_sspa?dchild=1&keywords=dog+crate&qid=1590942319&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFYUUtRU01JOVlOUEYmZW5jcnlwdGVkSWQ9QTA0MzQ5ODUyVExDRFpaNDIwODBRJmVuY3J5cHRlZEFkSWQ9QTA1NTM1ODgzS1hZRDlVQ0U5UzVJJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="
         

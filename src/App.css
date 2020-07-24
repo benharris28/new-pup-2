@@ -514,6 +514,11 @@ h6 {
   top: 2%;
   right: 5%;
   font-size: 2rem;
+
+}
+
+.nutrition-collapse {
+  border: 0px;
 }
 
 /* Gear Page Styling */

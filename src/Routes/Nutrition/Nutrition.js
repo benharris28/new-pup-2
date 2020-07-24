@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import FoodData from '../../BackupData/FoodData'
+import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import { Layout, Content, Carousel, Card, Button, Avatar, Row, Col } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 class Nutrition extends React.Component {
     state = {
-        format: ''
+        format: '',
+        food: NutritionData.categories[0].products
     }
     
     setFormat = (format) => {
@@ -18,6 +20,7 @@ class Nutrition extends React.Component {
     
     render() {
         const { Content } = Layout;
+        console.log(this.state.food)
         return (
             <div>
                 <Layout>
@@ -78,10 +81,11 @@ class Nutrition extends React.Component {
                             }
                         </div>
                     </div>
+                    <NutritionMobile food={this.state.food}/>
                     <Content
                         className="page-content">
 
-                            <NutritionMobile />
+                            
 
                     </Content>
 
