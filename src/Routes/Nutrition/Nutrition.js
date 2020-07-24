@@ -82,6 +82,14 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
                     <NutritionMobile food={this.state.food}/>
+                    <div className="next-section-button">
+                            <Link to='/vet'>
+                                <Button>
+                                    Up Next: Find a local vet
+                                    </Button>
+                            </Link>
+
+                        </div>
                     <Content
                         className="page-content">
 

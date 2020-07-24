@@ -69,15 +69,18 @@ class NutritionMobile extends React.Component {
 
                     <Carousel className="carousel" ref={node => (this.carousel = node)} {...props}>
                         {food.map(foodCard =>
-                            <div>
+                            <div className="food-card">
                                 <div className="food-card-title">
                                     <h4>{foodCard.type}</h4>
                                 </div>
+                                
+                              
+                                
                                 <Card
                                     key={foodCard.id}
-                                    foodType={() => this.updateTitle(foodCard.type)}
+                                
 
-                                    hoverable
+                                
                                     className="food-card"
                                     cover={<img
                                         className="food-card-image"
@@ -89,12 +92,22 @@ class NutritionMobile extends React.Component {
                                         <h5>{foodCard.brand}</h5>
                                         <p>{foodCard.product}</p>
                                         <p>{foodCard.description_text}</p>
-                                        <p>Russell's estimated cost per month: ${foodCard.cost_small_dog}</p>
+                                        
+                                        <h5>What we like</h5>
+                                        <p>{foodCard.what_we_like}</p>
+
+                                        <h5>Key Ingredients</h5>
+                                        <p>{foodCard.key_ingredients}</p>
+                                        
                                     </div>
 
                                     <Collapse defaultActiveKey={['1']} ghost className="nutrition-collapse">
-                                        <Panel header="Nutrition Detail" key="1">
-                                            <p>{foodCard.extra_detail}</p>
+                                    <Panel header="Cost Estimator" key="1">
+                                        <p>Estimated cost per month - Puppy: ${foodCard.cost_per_lb * 10}</p>
+                                        <p>Russell's estimated cost per month: ${foodCard.cost_per_lb * 70}</p>
+                                        </Panel>
+                                        <Panel header="Nutrition Detail" key="2">
+                                            <p>{foodCard.full_ingredients}</p>
                                         </Panel>
                                       
                                     </Collapse>
