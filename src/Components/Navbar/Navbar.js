@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RightMenu from '../RightMenu/RightMenu'
 import dog from '../../Assets/dog.png'
 import { Drawer, Button, Row, Col } from 'antd';
+
 class Navbar extends Component {
   state = {
     current: 'mail',

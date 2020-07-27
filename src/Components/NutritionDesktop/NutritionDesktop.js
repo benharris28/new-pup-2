@@ -8,26 +8,15 @@ class NutritionDesktop extends React.Component {
 
 
 
-    constructor(props) {
-        super(props);
-        this.next = this.next.bind(this);
-        this.previous = this.previous.bind(this);
-        this.carousel = React.createRef();
-        this.card = React.createRef();
-    }
-
     state = {
         food: this.props.food,
         tab: 1,
         
 
     }
-    next() {
-        this.carousel.next();
-    }
+   
+    setFormat = () => {
 
-    previous() {
-        this.carousel.prev();
     }
 
 
@@ -56,9 +45,7 @@ class NutritionDesktop extends React.Component {
 
 
                 <div className="carousel-test">
-                    <div className="left-arrow">
-                        <LeftOutlined onClick={this.previous} />
-                    </div>
+                    
 
 
 
@@ -66,9 +53,13 @@ class NutritionDesktop extends React.Component {
                    
 
                         <div className="food-card">
-                            <div className="food-card-title">
-                                <h4>{foodCard.type}</h4>
-                            </div>
+                                <div className="picker">
+                                    <Row justify="space-between">
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">{this.state.food[0].type}</Button></Col>
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")}className="picker-button" type="primary">{this.state.food[1].type}</Button></Col>
+                                    </Row>
+                            
+                                </div>
 
                             <div className="nutrition-desktop">
 
@@ -127,7 +118,7 @@ class NutritionDesktop extends React.Component {
                     
 
                     <div className="right-arrow">
-                        <RightOutlined onClick={this.next} />
+                        
                     </div>
 
                 </div>

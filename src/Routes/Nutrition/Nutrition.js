@@ -10,6 +10,7 @@ import { UserOutlined } from '@ant-design/icons';
 class Nutrition extends React.Component {
     state = {
         format: '',
+        windowSize: '',
         food: NutritionData.categories[0].products
     }
     
@@ -18,12 +19,21 @@ class Nutrition extends React.Component {
             format: format
         })
     }
+
+
+    handleResize = () => {
+        this.setState({
+            windowSize: window.innerWidth
+        })
+    }
     
     render() {
         const { Content } = Layout;
         console.log(this.state.food)
+        const width = window.addEventListener('resize', this.handleResize);
         const fullWidth = global.window.innerWidth;
         console.log(fullWidth)
+        console.log(this.state.windowSize)
         return (
             <div>
                 <Layout>
