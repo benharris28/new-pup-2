@@ -13,7 +13,7 @@ class Nutrition extends React.Component {
         windowSize: '',
         food: NutritionData.categories[0].products
     }
-    
+
     setFormat = (format) => {
         this.setState({
             format: format
@@ -26,7 +26,7 @@ class Nutrition extends React.Component {
             windowSize: window.innerWidth
         })
     }
-    
+
     render() {
         const { Content } = Layout;
         console.log(this.state.food)
@@ -53,79 +53,110 @@ class Nutrition extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>The Gear You Need</h3>
+                            <h3>Everything you need to know about dog food</h3>
 
                         </div>
 
                     </div>
-                    <div className="nutrition-types">
-                        <h4>There's more than one way to buy dog food</h4>
-                        <div className="nutrition-types-container">
-                            <div className="nutrition-type-item">
-                                <div className="food-type-image-box">
-                                    
-                                </div>
-                                <h4>Gently Cooked</h4>
-                                <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
-                            </div>
+                    <div className="content-section white">
 
-                            <div className="nutrition-type-item">
-                                <div className="food-type-image-box">
-                                    
+
+                        <div className="nutrition-types content">
+                            <h3>There's more than one way to buy dog food</h3>
+                            <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
+                            <div className="nutrition-types-container">
+                                <div className="nutrition-type-item">
+                                    <div className="food-type-image-box">
+
+                                    </div>
+                                    <h4>Gently Cooked</h4>
+                                    <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
                                 </div>
-                                <h4>Raw</h4>
-                                <h5>Meat, bone, and fruits/vegetables that are ground down and left raw to preserve all nutrient values</h5>
-                            </div>
-                            
-                            <div className="nutrition-type-item">
-                                <div className="food-type-image-box">
-                                    
+
+                                <div className="nutrition-type-item">
+                                    <div className="food-type-image-box">
+
+                                    </div>
+                                    <h4>Raw</h4>
+                                    <h5>Meat, bone, and fruits/vegetables that are ground down and left raw to preserve all nutrient values</h5>
                                 </div>
-                                <h4>Kibble</h4>
-                                <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
+
+                                <div className="nutrition-type-item">
+                                    <div className="food-type-image-box">
+
+                                    </div>
+                                    <h4>Kibble</h4>
+                                    <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
+                                </div>
+
                             </div>
-                           
                         </div>
                     </div>
-                    <div className="nutrition-formats green">
-                        <h4>What's the deal with grain free?</h4>
-                        <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
+
+                    <div className="content-section green">
+                        <div className="nutrition-formats content">
+                            <h4>What to look for in dog food</h4>
+                            <div className="what-to-look-for-container">
+                                <div className="what-to-look-for">
+                                    <div className="what-to-look-for-icon">
+
+                                    </div>
+                                    <h4>Minimally Processed</h4>
+                                </div>
+                            </div>
+                            <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
+                        </div>
                     </div>
 
-                    <div className="nutrition-formats blue">
-                       <h4>Should I get a food subscription?</h4>
-                        <div className="picker">
-                            <Row justify="space-between">
-                                <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">Subscription</Button></Col>
-                                <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")}className="picker-button" type="primary">Pick Up</Button></Col>
-                            </Row>
-                    
+                    <div className="content-section blue">
+                        <div className="nutrition-formats content">
+                            <h4>What's the deal with grain free?</h4>
+                            <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
                         </div>
-                        <div className="format-detail">
-                            {this.state.format === "subscription"  
-                            ? <h5>Pay a monthly fee and have the food you need delivered to your home</h5>
-                            : <h5>Pickup your pup's food from your local store when you need it</h5>
+                    </div>
+
+                    <div className="content-section yellow">
+                        <div className="nutrition-formats content">
+                            <h4>Should I get a food subscription?</h4>
+                            <div className="picker">
+                                <Row justify="space-between">
+                                    <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">Subscription</Button></Col>
+                                    <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")} className="picker-button" type="primary">Pick Up</Button></Col>
+                                </Row>
+
+                            </div>
+                            <div className="format-detail">
+                                {this.state.format === "subscription"
+                                    ? <h5>Pay a monthly fee and have the food you need delivered to your home</h5>
+                                    : <h5>Pickup your pup's food from your local store when you need it</h5>
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="content-section white">
+                        <div className="content">
+
+                            {fullWidth < 700
+                                ? <NutritionMobile food={this.state.food} />
+                                : <NutritionDesktop food={this.state.food} />
                             }
-                        </div>
-                    </div>
-                    
-                    {fullWidth < 700 
-                        ?  <NutritionMobile food={this.state.food}/> 
-                        : <NutritionDesktop food={this.state.food}/>
-                    }
-                   
-                    <div className="next-section-button">
-                            <Link to='/vet'>
-                                <Button>
-                                    Up Next: Find a local vet
-                                    </Button>
-                            </Link>
 
                         </div>
+                    </div>
+
+                    <div className="next-section-button">
+                        <Link to='/vet'>
+                            <Button>
+                                Up Next: Find a local vet
+                                    </Button>
+                        </Link>
+
+                    </div>
                     <Content
                         className="page-content">
 
-                            
+
 
                     </Content>
 

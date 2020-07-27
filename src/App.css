@@ -471,6 +471,7 @@ h6 {
 }
 
 /* Nutrition Page Styling */
+
 .food-type-image-box {
   background-color: grey;
   width: 150px;
@@ -478,9 +479,14 @@ h6 {
   margin: auto;
 }
 
+.what-to-look-for-icon {
+  background-color: grey;
+  width: 100px;
+  height: 100px;
+}
+
 .nutrition-types {
   padding: 2rem;
-  background-color: #FEF9E7;
   text-align: center;
 }
 
@@ -490,7 +496,7 @@ h6 {
 
 .nutrition-formats {
   padding: 2rem;
-  background-color: #EBF5FB;
+ 
 }
 
 .blue {
@@ -499,6 +505,14 @@ h6 {
 
 .green {
   background-color: #D1F2EB;
+}
+
+.yellow {
+  background-color: #FEF9E7;
+}
+
+.white {
+  background-color: white;
 }
 
 
@@ -758,6 +772,14 @@ h6 {
 
 @media(min-width: 767px) {
  
+  /* Global Styles */
+
+  .content {
+    width: 75%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: auto;
+  }
   .card-box {
     /*display: flex;*/
     margin: auto;
@@ -828,6 +850,20 @@ h6 {
   .nutrition-image-box {
     max-width: 500px;
     max-height: 500px;
+  }
+
+  
+  .what-to-look-for {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .format-detail {
+    margin: auto;
+    text-align: center;
   }
 
   .food-card-image {
