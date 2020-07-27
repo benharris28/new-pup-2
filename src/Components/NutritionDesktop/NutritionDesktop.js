@@ -10,13 +10,15 @@ class NutritionDesktop extends React.Component {
 
     state = {
         food: this.props.food,
-        tab: 1,
+        tab: 0,
         
 
     }
    
-    setFormat = () => {
-
+    setTab = (selectedTab) => {
+        this.setState({
+            tab: selectedTab
+        })
     }
 
 
@@ -55,15 +57,15 @@ class NutritionDesktop extends React.Component {
                         <div className="food-card">
                                 <div className="picker">
                                     <Row justify="space-between">
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">{this.state.food[0].type}</Button></Col>
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")}className="picker-button" type="primary">{this.state.food[1].type}</Button></Col>
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("0")} className={this.state.tab == 0 ? "picker-button checked" : "picker-button"} type="primary">{this.state.food[0].type}</Button></Col>
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("1")} className="picker-button" type="primary">{this.state.food[1].type}</Button></Col>
                                     </Row>
                             
                                 </div>
 
                             <div className="nutrition-desktop">
 
-                                <div>
+                                <div className="nutrition-image-box">
                                     <img
                                         className="food-card-image"
                                         alt="example"

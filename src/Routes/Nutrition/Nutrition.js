@@ -60,18 +60,27 @@ class Nutrition extends React.Component {
                     </div>
                     <div className="nutrition-types">
                         <h4>There's more than one way to buy dog food</h4>
-                        <div>
-                            <div>
+                        <div className="nutrition-types-container">
+                            <div className="nutrition-type-item">
+                                <div className="food-type-image-box">
+                                    
+                                </div>
                                 <h4>Gently Cooked</h4>
                                 <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
                             </div>
 
-                            <div>
+                            <div className="nutrition-type-item">
+                                <div className="food-type-image-box">
+                                    
+                                </div>
                                 <h4>Raw</h4>
                                 <h5>Meat, bone, and fruits/vegetables that are ground down and left raw to preserve all nutrient values</h5>
                             </div>
                             
-                            <div>
+                            <div className="nutrition-type-item">
+                                <div className="food-type-image-box">
+                                    
+                                </div>
                                 <h4>Kibble</h4>
                                 <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
                             </div>

@@ -471,9 +471,21 @@ h6 {
 }
 
 /* Nutrition Page Styling */
+.food-type-image-box {
+  background-color: grey;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
 .nutrition-types {
   padding: 2rem;
   background-color: #FEF9E7;
+  text-align: center;
+}
+
+.nutrition-type-item {
+  margin-top: 3rem;
 }
 
 .nutrition-formats {
@@ -505,15 +517,22 @@ h6 {
 }
 
 .picker-button {
-  background-color: #34495E;
-  border: 0px;
+  background-color: white;
+  border: 1px solid #34495E;
+  color: #34495E;
   width: 100%;
   height: 100%;
   font-size: 1rem;
 }
 
+.checked {
+  background-color: #34495E;
+  color: white;
+}
+
 .carousel-intro {
   padding: 2rem;
+  background-color: white;
 }
 
 .carousel-test {
@@ -766,9 +785,6 @@ h6 {
     height: 250px;
   }
 
-  .card-content {
-   
-  }
 
 
 
@@ -790,5 +806,34 @@ h6 {
   .page-intro {
     margin-top: 5rem;
     margin-bottom: 2rem;
+  }
+
+  /* Nutrition Page */
+
+  .picker {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+
+  .nutrition-types-container {
+    display: flex;
+    justify-content: space-around
+  }
+
+  .nutrition-type-item {
+    width: 300px;
+  }
+
+  .nutrition-image-box {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .food-card-image {
+    width: 100%;
+    max-height: 500px;
+    
+    border: 0px;
   }
 }
