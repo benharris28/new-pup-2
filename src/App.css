@@ -485,7 +485,7 @@ h6 {
   height: 100px;
 }
 
-.nutrition-types {
+.nutrition {
   padding: 2rem;
   text-align: center;
 }
@@ -856,9 +856,16 @@ h6 {
   .what-to-look-for {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 50%;
+    justify-content: flex-start;
+    width: 70%;
     margin: auto;
+    margin-top: 2rem;
+    
+  }
+
+  .what-to-look-for-content {
+    text-align: left;
+    margin-left: 2rem;
   }
   
   .format-detail {
