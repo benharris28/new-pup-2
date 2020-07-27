@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import FoodData from '../../BackupData/FoodData'
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
+import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
 import { Layout, Content, Carousel, Card, Button, Avatar, Row, Col } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
@@ -21,6 +22,8 @@ class Nutrition extends React.Component {
     render() {
         const { Content } = Layout;
         console.log(this.state.food)
+        const fullWidth = global.window.innerWidth;
+        console.log(fullWidth)
         return (
             <div>
                 <Layout>
@@ -65,7 +68,12 @@ class Nutrition extends React.Component {
                            
                         </div>
                     </div>
-                    <div className="nutrition-formats">
+                    <div className="nutrition-formats green">
+                        <h4>What's the deal with grain free?</h4>
+                        <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
+                    </div>
+
+                    <div className="nutrition-formats blue">
                        <h4>Should I get a food subscription?</h4>
                         <div className="picker">
                             <Row justify="space-between">
@@ -81,7 +89,12 @@ class Nutrition extends React.Component {
                             }
                         </div>
                     </div>
-                    <NutritionMobile food={this.state.food}/>
+                    
+                    {fullWidth < 700 
+                        ?  <NutritionMobile food={this.state.food}/> 
+                        : <NutritionDesktop food={this.state.food}/>
+                    }
+                   
                     <div className="next-section-button">
                             <Link to='/vet'>
                                 <Button>

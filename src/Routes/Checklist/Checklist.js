@@ -65,7 +65,7 @@ class Checklist extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <img className="guide-banner-image" src={Russ_banner} alt="puppy" />
+                    <div className="guide-banner-image" />
 
                         
 

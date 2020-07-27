@@ -186,7 +186,7 @@ h6 {
 }
 
 .secondary-banner {
-  background-color:#2E7D32;
+  background-color:#154360;
   color: white;
   padding: 2rem;
 }
@@ -204,11 +204,13 @@ h6 {
 
 .card {
   width: 100%;
+  max-width: 300px;
   
 }
 
 .card-image {
-  
+  width: 100%;
+  max-width: 300px;
   object-fit: cover;
   max-height: 250px;
   
@@ -479,6 +481,14 @@ h6 {
   background-color: #EBF5FB;
 }
 
+.blue {
+  background-color: #EBF5FB;
+}
+
+.green {
+  background-color: #D1F2EB;
+}
+
 
 
 .format-picker {
@@ -544,6 +554,11 @@ h6 {
   border: 0px;
 }
 
+/* Nutrition Desktop */
+
+.nutrition-desktop {
+  display: flex;
+}
 /* Gear Page Styling */
 
 
@@ -730,8 +745,29 @@ h6 {
     
   }
 
+  .card {
+    width: 100%;
+   
+    
+  }
+  
+  .card-image {
+    width: 100%;
+    object-fit: cover;
+  
+   
+    
+    
+  }
+
+  
+
+  .card-text {
+    height: 250px;
+  }
+
   .card-content {
-    max-height: 150px;
+   
   }
 
 
