@@ -65,39 +65,63 @@ class Nutrition extends React.Component {
                             <h3>There's more than one way to buy dog food</h3>
                             <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
                             <div className="nutrition-types-container">
-                                <div className="nutrition-type-item">
-                                    <div className="food-type-image-box">
+                                <Row
+                                    gutter={[40, 24]}
+                                >
 
-                                    </div>
-                                    <h4>Gently Cooked</h4>
-                                    <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
-                                </div>
+                                    <Col
+                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="nutrition-type-item">
+                                            <div className="food-type-image-box">
 
-                                <div className="nutrition-type-item">
-                                    <div className="food-type-image-box">
+                                            </div>
+                                            <h4>Gently Cooked</h4>
+                                            <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
+                                        </div>
+                                    </Col>
+                                    <Col
+                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="nutrition-type-item">
+                                            <div className="food-type-image-box">
 
-                                    </div>
-                                    <h4>Raw</h4>
-                                    <h5>Meat, bone, and fruits/vegetables that are ground down and left raw to preserve all nutrient values</h5>
-                                </div>
+                                            </div>
+                                            <h4>Raw</h4>
+                                            <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
+                                        </div>
+                                    </Col>
+                                    <Col
+                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="nutrition-type-item">
+                                            <div className="food-type-image-box">
 
-                                <div className="nutrition-type-item">
-                                    <div className="food-type-image-box">
+                                            </div>
+                                            <h4>Canned</h4>
+                                            <h5>Food is cooked until 70% of the moisture (water) is removed to maintain shelf stability</h5>
+                                        </div>
+                                    </Col>
 
-                                    </div>
-                                    <h4>Kibble</h4>
-                                    <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
-                                </div>
+                                    <Col
+                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="nutrition-type-item">
+                                            <div className="food-type-image-box">
 
+                                            </div>
+                                            <h4>Kibble</h4>
+                                            <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
+                                        </div>
+                                    </Col>
+
+                                </Row>
                             </div>
                         </div>
                     </div>
+
 
                     <div className="content-section green">
                         <div className="nutrition content">
                             <h3>What to look for in dog food</h3>
                             <div className="what-to-look-for-container">
-                            <div className="what-to-look-for">
+                                <div className="what-to-look-for">
                                     <div className="what-to-look-for-icon">
 
                                     </div>
@@ -105,7 +129,7 @@ class Nutrition extends React.Component {
                                         <h4>Fresher is better</h4>
                                         <h5>The more food is cooked (processed), the less nutrients are preserved </h5>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="what-to-look-for">
                                     <div className="what-to-look-for-icon">
@@ -115,7 +139,7 @@ class Nutrition extends React.Component {
                                         <h4>We prefer "gently cooked" to "raw"</h4>
                                         <h5>While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="what-to-look-for">
                                     <div className="what-to-look-for-icon">
@@ -125,7 +149,7 @@ class Nutrition extends React.Component {
                                         <h4>No artificial flavors or preservatives</h4>
                                         <h5>Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
                                     </div>
-                                    
+
                                 </div>
                                 <div className="what-to-look-for">
                                     <div className="what-to-look-for-icon">
@@ -135,9 +159,9 @@ class Nutrition extends React.Component {
                                         <h4>Animal protein is first or second on the ingredient list</h4>
                                         <h5>Look for whole ingredients and words you recognize!</h5>
                                     </div>
-                                    
+
                                 </div>
-                                
+
                             </div>
                             <h5>Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their "compound names" Don't fear if you see items like "dicalcium phosphate" or "zinc glutonate" on the ingredient list </h5>
                         </div>

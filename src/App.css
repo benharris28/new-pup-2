@@ -486,11 +486,13 @@ h6 {
 }
 
 .nutrition {
-  padding: 2rem;
+  
   text-align: center;
 }
 
 .nutrition-type-item {
+  
+  margin: auto;
   margin-top: 3rem;
 }
 
@@ -775,7 +777,7 @@ h6 {
   /* Global Styles */
 
   .content {
-    width: 75%;
+    width: 90%;
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin: auto;
@@ -844,7 +846,8 @@ h6 {
   }
 
   .nutrition-type-item {
-    width: 300px;
+    width: 250px;
+    padding: 1rem;
   }
 
   .nutrition-image-box {
