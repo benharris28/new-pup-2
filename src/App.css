@@ -200,17 +200,33 @@ h6 {
 
 
 /* Cards (In Checklist and Gear Pages) */
+.gear-row {
+  margin: auto;
+  text-align: center;
+}
 
+.gear-card-box {
+  margin: auto;
+}
 
-.card {
+.card-box {
+  /*display: flex;*/
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.gear-card {
   width: 100%;
   max-width: 300px;
+  margin: auto;
   
 }
 
 .card-image {
   width: 100%;
-  max-width: 300px;
+  
   object-fit: cover;
   max-height: 250px;
   
@@ -612,9 +628,7 @@ h6 {
 
 }
 
-.gear-card {
-  width: 100%;
-}
+
 
 .gear-drawer {
   width: 60%;
@@ -624,10 +638,12 @@ h6 {
   width: 90%;
   margin: auto;
   margin-top: 1.5rem;
+  max-width: 500px;
 }
 
 .drawer-intro {
-  padding: 1rem;
+  padding: 2rem;
+  
 }
 
 /* Checklist Styles */
@@ -791,6 +807,7 @@ h6 {
   .card-box {
     /*display: flex;*/
     margin: auto;
+    text-align: center;
     
   }
 

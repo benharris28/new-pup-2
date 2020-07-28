@@ -18,7 +18,8 @@ class Gear extends React.Component {
         gear_dog_bowls: true,
         visible: false,
         placement: 'right',
-        category: 1
+        category: 1,
+        windowSize: ''
 
     }
 
@@ -41,6 +42,28 @@ class Gear extends React.Component {
         });
     };
 
+    handleResize = () => {
+        this.setState({
+            windowSize: window.innerWidth
+        })
+    }
+
+    handleDrawerSize = () => {
+        const { windowSize } = this.state;
+        
+        if(windowSize > 900) {
+            return 600
+        }
+
+        if (windowSize > 500 && windowSize < 900) {
+            return 350
+        }
+
+        else {
+            return 300
+        }
+    }
+
 
     render() {
 
@@ -50,6 +73,10 @@ class Gear extends React.Component {
         const fullWidth = global.window.innerWidth;
         const gearFilter = gear.filter(g => g.category_id == this.state.category)
         const drawerZIndex = visible? 1000 : -1
+        const width = window.addEventListener('resize', this.handleResize);
+        const drawerSize = this.handleDrawerSize()
+       
+        console.log(drawerSize)
         console.log(gearFilter)
         
 
@@ -95,18 +122,19 @@ class Gear extends React.Component {
 
                         <div className="card-box">
                             <Row
-
+                                className="gear-row"
                                 gutter={[16,24]}
                             >
 
                                 {gear.map(gearCard =>
                                     <Col
-                                        className="gutter-row" sm={24} md={8}
+                                        className="gutter-row" sm={24} md={12} lg={8}
                                         key={gearCard.category_id}>
+                                        <div className="gear-card-box">
                                         <Card
                                             onClick={() => this.showDrawer(gearCard.category_id)}
                                             hoverable
-                                            className="card"
+                                            className="gear-card"
                                             cover={<img
                                                 className="card-image"
                                                 alt="example"
@@ -131,7 +159,9 @@ class Gear extends React.Component {
                                             </div>
 
                                         </Card>
+                                        </div>
                                     </Col>
+
                                 )}
 
                             </Row>
@@ -144,7 +174,7 @@ class Gear extends React.Component {
                                 onClose={this.onClose}
                                 visible={visible}
                                 key={placement}
-                                width={fullWidth > 500? fullWidth - 300 : 300}
+                                width={drawerSize}
                                 zIndex={drawerZIndex}               
                                 className="gear-drawer"
                             >
