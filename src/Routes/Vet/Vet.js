@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
-import { Layout, Content, Button, Alert, Card, List, Avatar } from 'antd';
+import { Layout, Content, Button, Alert, Card, Row, Col } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 class Vet extends React.Component {
@@ -81,60 +81,96 @@ class Vet extends React.Component {
                     <div className="content-section white">
                         <div className="checklist-page content center">
 
-                        
-                        <div className="checklist-page-section-intro">
-                            <h1>Let's find Russell a great vet!</h1>
-                            <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
-                        </div>
+
+                            <div className="checklist-page-section-intro">
+                                <h1>Let's find Russell a great vet!</h1>
+                                <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
+                            </div>
                         </div>
                     </div>
 
                     <div className="content-section green">
                         <div className="checklist-page content center">
                             <div className="checklist-page-alert">
-                            <ExclamationCircleOutlined className="checklist-icon" />
-                            <h3>Heads up!</h3>
-                            <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                                <ExclamationCircleOutlined className="checklist-icon" />
+                                <h3>Heads up!</h3>
+                                <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
                             </div>
-                            
+
                         </div>
                     </div>
+
+                    <div className="content-section white">
+                        <div className="checklist-page content">
+                            <Row>
+                                <Col className="gutter-row vet-grid" sm={24} md={12} lg={12}>
+                                    <div className="vet-finder-input">
+
+                                        <div className="checklist-page-section-intro">
+
+                                            <h3>Vets near you</h3>
+                                            <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                                        </div>
+
+                                        <div className="find_vet_input">
+                                            <h5>Enter your postal code to find reputable vets near you</h5>
+                                            <input
+                                                type="text"
+                                                onChange={e => this.handleInput(e.target.value)}
+                                            />
+                                            <Button
+                                                onClick={this.handleSubmit}>
+                                                Find vets
+                                            </Button>
+                                        </div>
+
+                                    </div>
+                                </Col>
+                                
+                                <Col className="gutter-row" sm={24} md={12} lg={12}>
+                                <div className="vet-map">
+                                <Map
+                                    center={this.state.userLocation}
+                                    markers={this.state.markers} />
+                                    </div>
+
+                                </Col>
+                            </Row>
+
+
+
+                            
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
 
 
                     <Content
                         //style={{ padding: '0 50px'}}
                         className='page-content'>
 
-                        
-
-                     
 
 
 
-                        <div className="page-intro">
-                            <h3>Vet Finder</h3>
-                            <div className="page-intro">
-                                You will need to book a checkup within 2 days of bringing home Russell
-                            </div>
-                        </div>
 
-                        <div className="find_vet_input">
-                            <h5>Enter your postal code to find reputable vets near you</h5>
-                            <input
-                                type="text"
-                                onChange={e => this.handleInput(e.target.value)}
-                            />
-                            <Button
-                                onClick={this.handleSubmit}>
-                                Find vets
-                                </Button>
-                        </div>
 
-                        <div className="vet-map">
-                            <Map
-                                center={this.state.userLocation}
-                                markers={this.state.markers} />
-                        </div>
+
+                      
+
+
+                       
 
                         {markers.length > 0 &&
                             <div className="vet-list">
@@ -150,20 +186,20 @@ class Vet extends React.Component {
                             </div>
                         }
 
-                        
+
 
 
 
 
                     </Content>
                     <div className="next-section-button">
-                            <Link to='/vet'>
-                                <Button>
-                                    Up Next: Puppy Classes
+                        <Link to='/vet'>
+                            <Button>
+                                Up Next: Puppy Classes
                                     </Button>
-                            </Link>
+                        </Link>
 
-                        </div>
+                    </div>
                 </Layout>
 
             </div>

@@ -261,8 +261,21 @@ h6 {
 
 /* Vet Page */
 
+.vet-finder {
+  display: flex;
+}
+
+.vet-finder-input {
+  margin-top: 3rem;
+}
+
 .vet-map {
   margin-top: 2rem;
+}
+
+.vet-grid {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .vet-card {
