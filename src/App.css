@@ -472,6 +472,7 @@ h6 {
 
 /* Nutrition Page Styling */
 
+
 .food-type-image-box {
   background-color: grey;
   width: 150px;
@@ -480,13 +481,18 @@ h6 {
 }
 
 .what-to-look-for-icon {
+  margin: auto;
   background-color: grey;
   width: 100px;
   height: 100px;
 }
 
+.nutrition-section-intro {
+  margin-bottom: 4rem;
+}
+
 .nutrition {
-  
+  padding: 2rem;
   text-align: center;
 }
 
@@ -857,18 +863,20 @@ h6 {
 
   
   .what-to-look-for {
-    display: flex;
+    /*display: flex;*/
     align-items: center;
     justify-content: flex-start;
-    width: 70%;
+    /*width: 70%;*/
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    text-align: center;
     
   }
 
   .what-to-look-for-content {
     text-align: left;
     margin-left: 2rem;
+    text-align: center;
   }
   
   .format-detail {

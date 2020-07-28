@@ -4,7 +4,7 @@ import FoodData from '../../BackupData/FoodData'
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
-import { Layout, Content, Carousel, Card, Button, Avatar, Row, Col } from 'antd';
+import { Layout, Content, Button, Row, Col, Alert } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 class Nutrition extends React.Component {
@@ -62,8 +62,10 @@ class Nutrition extends React.Component {
 
 
                         <div className="nutrition content">
-                            <h3>There's more than one way to buy dog food</h3>
-                            <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
+                            <div className="nutrition-section-intro">
+                                <h3>There's more than one way to buy dog food</h3>
+                                <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
+                            </div>
                             <div className="nutrition-types-container">
                                 <Row
                                     gutter={[40, 24]}
@@ -119,51 +121,79 @@ class Nutrition extends React.Component {
 
                     <div className="content-section green">
                         <div className="nutrition content">
-                            <h3>What to look for in dog food</h3>
+                            <div className="nutrition-section-intro">
+                                <h3>What to look for in dog food</h3>
+                            </div>
+
                             <div className="what-to-look-for-container">
-                                <div className="what-to-look-for">
-                                    <div className="what-to-look-for-icon">
+                                <Row gutter={[40, 24]}>
+                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="what-to-look-for">
+                                            <div className="what-to-look-for-icon">
 
-                                    </div>
-                                    <div className="what-to-look-for-content">
-                                        <h4>Fresher is better</h4>
-                                        <h5>The more food is cooked (processed), the less nutrients are preserved </h5>
-                                    </div>
+                                            </div>
+                                            <div className="what-to-look-for-content">
+                                                <h4>Fresher is better</h4>
+                                                <h5>The more food is cooked (processed), the less nutrients are preserved </h5>
+                                            </div>
 
-                                </div>
-                                <div className="what-to-look-for">
-                                    <div className="what-to-look-for-icon">
+                                        </div>
+                                    </Col>
 
-                                    </div>
-                                    <div className="what-to-look-for-content">
-                                        <h4>We prefer "gently cooked" to "raw"</h4>
-                                        <h5>While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
-                                    </div>
+                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="what-to-look-for">
+                                            <div className="what-to-look-for-icon">
 
-                                </div>
-                                <div className="what-to-look-for">
-                                    <div className="what-to-look-for-icon">
+                                            </div>
+                                            <div className="what-to-look-for-content">
+                                                <h4>We prefer "gently cooked" to "raw"</h4>
+                                                <h5>While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
+                                            </div>
 
-                                    </div>
-                                    <div className="what-to-look-for-content">
-                                        <h4>No artificial flavors or preservatives</h4>
-                                        <h5>Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
-                                    </div>
+                                        </div>
 
-                                </div>
-                                <div className="what-to-look-for">
-                                    <div className="what-to-look-for-icon">
+                                    </Col>
 
-                                    </div>
-                                    <div className="what-to-look-for-content">
-                                        <h4>Animal protein is first or second on the ingredient list</h4>
-                                        <h5>Look for whole ingredients and words you recognize!</h5>
-                                    </div>
+                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="what-to-look-for">
+                                            <div className="what-to-look-for-icon">
 
-                                </div>
+                                            </div>
+                                            <div className="what-to-look-for-content">
+                                                <h4>No artificial flavors or preservatives</h4>
+                                                <h5>Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </Col>
+
+                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
+                                        <div className="what-to-look-for">
+                                            <div className="what-to-look-for-icon">
+
+                                            </div>
+                                            <div className="what-to-look-for-content">
+                                                <h4>Animal protein is first or second on the ingredient list</h4>
+                                                <h5>Look for whole ingredients and words you recognize!</h5>
+                                            </div>
+
+                                        </div>
+
+                                    </Col>
+
+                                </Row>
+
+
+
+
 
                             </div>
-                            <h5>Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their "compound names" Don't fear if you see items like "dicalcium phosphate" or "zinc glutonate" on the ingredient list </h5>
+                            <div className="nutrition-section-outro">
+                                <Alert message="Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their compound names. Don't fear if you see items like dicalcium phosphate or zinc glutonate on the ingredient list" type="info" showIcon />
+                                
+                            </div>
+
                         </div>
                     </div>
 
