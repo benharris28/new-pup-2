@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
 import { Layout, Content, Button, Alert, Card, List, Avatar } from 'antd';
-
+import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 class Vet extends React.Component {
 
@@ -56,32 +56,63 @@ class Vet extends React.Component {
         return (
             <div>
                 <Layout>
-                    <Content
-                        //style={{ padding: '0 50px'}}
-                        className='page-content'>
+                    <div className="guide-banner">
 
-                        <div className="back-to-checklist-button">
+                        <div className="guide-banner-image" />
+
+                        <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
                                 <Button
                                     type="primary">
-                                    Back to checklist
+                                    Back to Checklist
                                 </Button>
                             </Link>
 
                         </div>
 
-                        <div className="alert-box">
-                            <Alert
-                                message="Heads Up!"
-                                description="Book your first checkup within 2 days of bringing home Russell (July 10th)"
-                                type="warning"
-                                showIcon
-                                closable
-                            />
+                        <div className="guide-banner-title">
+                            <h5>Russell's Checklist</h5>
+                            <h3>Vet</h3>
+
                         </div>
 
+                    </div>
+
+                    <div className="content-section white">
+                        <div className="checklist-page content center">
+
+                        
+                        <div className="checklist-page-section-intro">
+                            <h1>Let's find Russell a great vet!</h1>
+                            <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div className="content-section green">
+                        <div className="checklist-page content center">
+                            <div className="checklist-page-alert">
+                            <ExclamationCircleOutlined className="checklist-icon" />
+                            <h3>Heads up!</h3>
+                            <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+
+                    <Content
+                        //style={{ padding: '0 50px'}}
+                        className='page-content'>
+
+                        
+
+                     
+
+
+
                         <div className="page-intro">
-                            <h1>Let's find the best vet near you</h1>
+                            <h3>Vet Finder</h3>
                             <div className="page-intro">
                                 You will need to book a checkup within 2 days of bringing home Russell
                             </div>
@@ -108,7 +139,7 @@ class Vet extends React.Component {
                         {markers.length > 0 &&
                             <div className="vet-list">
                                 <h4>List View</h4>
-                              
+
                                 {markers.map(marker =>
                                     <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
                                         <p>{marker.address}</p>
@@ -119,7 +150,13 @@ class Vet extends React.Component {
                             </div>
                         }
 
-                        <div className="next-section-button">
+                        
+
+
+
+
+                    </Content>
+                    <div className="next-section-button">
                             <Link to='/vet'>
                                 <Button>
                                     Up Next: Puppy Classes
@@ -127,11 +164,6 @@ class Vet extends React.Component {
                             </Link>
 
                         </div>
-
-
-
-
-                    </Content>
                 </Layout>
 
             </div>

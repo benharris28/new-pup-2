@@ -133,6 +133,8 @@ h6 {
   align-items: center; 
 }
 
+/* Checklist Page Elements */
+
 .next-section-button button {
   height: 50px;
   font-size: 1rem;
@@ -198,6 +200,14 @@ h6 {
  
 }
 
+.checklist-page-alert {
+  max-width: 500px;
+  margin: auto;
+}
+
+.checklist-icon {
+  font-size: 3rem;
+}
 
 /* Cards (In Checklist and Gear Pages) */
 .gear-row {
@@ -503,13 +513,13 @@ h6 {
   height: 100px;
 }
 
-.nutrition-section-intro {
+.checklist-page-section-intro {
   margin-bottom: 4rem;
 }
 
-.nutrition {
+.checklist-page {
   padding: 2rem;
-  text-align: center;
+  
 }
 
 .nutrition-type-item {
@@ -518,9 +528,9 @@ h6 {
   margin-top: 3rem;
 }
 
-.nutrition-formats {
-  padding: 2rem;
- 
+
+.center {
+  text-align: center;
 }
 
 .blue {

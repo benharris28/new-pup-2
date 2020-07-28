@@ -61,8 +61,8 @@ class Nutrition extends React.Component {
                     <div className="content-section white">
 
 
-                        <div className="nutrition content">
-                            <div className="nutrition-section-intro">
+                        <div className="checklist-page content center">
+                            <div className="checklist-page-section-intro">
                                 <h3>There's more than one way to buy dog food</h3>
                                 <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
                             </div>
@@ -120,8 +120,8 @@ class Nutrition extends React.Component {
 
 
                     <div className="content-section green">
-                        <div className="nutrition content">
-                            <div className="nutrition-section-intro">
+                        <div className="checklist-page content center">
+                            <div className="checklist-page-section-intro">
                                 <h3>What to look for in dog food</h3>
                             </div>
 
@@ -198,14 +198,14 @@ class Nutrition extends React.Component {
                     </div>
 
                     <div className="content-section blue">
-                        <div className="nutrition-formats content">
+                        <div className="checklist-page content">
                             <h4>What's the deal with grain free?</h4>
                             <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
                         </div>
                     </div>
 
                     <div className="content-section yellow">
-                        <div className="nutrition-formats content">
+                        <div className="checklist-page content">
                             <h4>Should I get a food subscription?</h4>
                             <div className="picker">
                                 <Row justify="space-between">
