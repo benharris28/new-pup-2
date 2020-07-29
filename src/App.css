@@ -261,18 +261,21 @@ h6 {
 
 /* Vet Page */
 
-.vet-finder {
-  display: flex;
-}
+
 
 .vet-finder-input {
   margin-top: 3rem;
 }
 
+.vet-finder-button {
+  margin-left: 2rem;
+}
+
 .vet-map {
+  margin: auto;
   margin-top: 2rem;
   width: 100%;
-  min-height: 300px;
+  
 }
 
 .vet-grid {
@@ -934,5 +937,18 @@ h6 {
     max-height: 500px;
     
     border: 0px;
+  }
+
+  /* Vet Page */
+
+  .vet-find-container {
+    display: flex;
+  }
+
+  .vet-map {
+    margin: auto;
+    padding: 2rem;
+    max-width: 700px;
+    
   }
 }

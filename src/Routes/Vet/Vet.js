@@ -102,63 +102,73 @@ class Vet extends React.Component {
 
                     <div className="content-section white">
                         <div className="checklist-page content">
-                            <Row>
-                                <Col className="gutter-row vet-grid" sm={24} md={12} lg={12}>
-                                    <div className="vet-finder-input">
+                        <div className="vet-find-container">
 
-                                        <div className="checklist-page-section-intro">
+                        
+                            <div className="vet-finder-input">
 
-                                            <h3>Vets near you</h3>
-                                            <h5>We have a list of the most trusted vets in your area</h5>
-                                        </div>
+                                <div className="checklist-page-section-intro">
 
-                                        <div className="find_vet_input">
-                                            <h5>Enter your postal code to find reputable vets near you</h5>
-                                            <input
-                                                type="text"
-                                                onChange={e => this.handleInput(e.target.value)}
-                                            />
-                                            <Button
-                                                onClick={this.handleSubmit}>
-                                                Find vets
+                                    <h3>Vets near you</h3>
+                                    <h5>We have a list of the most trusted vets in your area</h5>
+                                </div>
+
+                                <div className="find_vet_input">
+                                    <h5>Enter your postal code to find reputable vets near you</h5>
+                                    <input
+                                        type="text"
+                                        onChange={e => this.handleInput(e.target.value)}
+                                    />
+                                    <Button
+                                        className="vet-finder-button"
+                                        onClick={this.handleSubmit}>
+                                        Find vets
                                             </Button>
-                                        </div>
+                                </div>
 
-                                        
-                                    </div>
-                                </Col>
 
-                                <Col className="gutter-row" sm={24} md={24} lg={12}>
-                                    <div className="vet-map">
-                                        <Map
-                                            center={this.state.userLocation}
-                                            markers={this.state.markers} />
-                                    </div>
+                            </div>
 
-                                </Col>
-                            </Row>
-
+                            <div className="vet-map">
+                                <Map
+                                    center={this.state.userLocation}
+                                    markers={this.state.markers} />
+                            </div>
+                            </div>
 
                             {markers.length > 0 &&
-                                            <div className="checklist-page vet-list">
-                                                <h4>List View</h4>
+                            <div className="vet-list">
+                                <h4>List View</h4>
 
-                                                {markers.map(marker =>
-                                                    <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
-                                                        <p>{marker.address}</p>
+                                {markers.map(marker =>
+                                    <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
+                                        <p>{marker.address}</p>
 
-                                                    </Card>
-                                                )}
+                                    </Card>
+                                )}
 
-                                            </div>
-                                        }
+                            </div>
+                        }
+                        
+                        
+                        
+                        </div>
+                        <div>
+
+
+                            
+
+
+
+
+
 
 
 
 
                         </div>
 
-
+                       
 
 
 
@@ -171,7 +181,6 @@ class Vet extends React.Component {
 
 
 
-                   
 
 
 
@@ -182,7 +191,8 @@ class Vet extends React.Component {
 
 
 
-                      
+
+
 
 
 

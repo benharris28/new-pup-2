@@ -39,7 +39,8 @@ class Map extends React.Component {
         return (
             <>
                 <LoadScript googleMapsApiKey={config.API_KEY}>
-                    <GoogleMap center={this.props.center} mapContainerStyle={containerStyle} zoom={10} >
+                    <GoogleMap center={this.props.center}  mapContainerStyle={containerStyle} 
+                    zoom={10} >
                         {markers.map((marker, index) => 
                            
                             <Marker 
