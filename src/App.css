@@ -271,6 +271,8 @@ h6 {
 
 .vet-map {
   margin-top: 2rem;
+  width: 100%;
+  min-height: 300px;
 }
 
 .vet-grid {
@@ -278,6 +280,9 @@ h6 {
   padding-right: 2rem;
 }
 
+.vet-list {
+  margin-top: 2rem;
+}
 .vet-card {
   margin-top: 1rem;
 }

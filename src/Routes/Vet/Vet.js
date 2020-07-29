@@ -109,7 +109,7 @@ class Vet extends React.Component {
                                         <div className="checklist-page-section-intro">
 
                                             <h3>Vets near you</h3>
-                                            <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                                            <h5>We have a list of the most trusted vets in your area</h5>
                                         </div>
 
                                         <div className="find_vet_input">
@@ -124,22 +124,36 @@ class Vet extends React.Component {
                                             </Button>
                                         </div>
 
+                                        
                                     </div>
                                 </Col>
-                                
-                                <Col className="gutter-row" sm={24} md={12} lg={12}>
-                                <div className="vet-map">
-                                <Map
-                                    center={this.state.userLocation}
-                                    markers={this.state.markers} />
+
+                                <Col className="gutter-row" sm={24} md={24} lg={12}>
+                                    <div className="vet-map">
+                                        <Map
+                                            center={this.state.userLocation}
+                                            markers={this.state.markers} />
                                     </div>
 
                                 </Col>
                             </Row>
 
 
+                            {markers.length > 0 &&
+                                            <div className="checklist-page vet-list">
+                                                <h4>List View</h4>
 
-                            
+                                                {markers.map(marker =>
+                                                    <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
+                                                        <p>{marker.address}</p>
+
+                                                    </Card>
+                                                )}
+
+                                            </div>
+                                        }
+
+
 
 
                         </div>
@@ -157,9 +171,10 @@ class Vet extends React.Component {
 
 
 
-                    <Content
-                        //style={{ padding: '0 50px'}}
-                        className='page-content'>
+                   
+
+
+
 
 
 
@@ -170,28 +185,9 @@ class Vet extends React.Component {
                       
 
 
-                       
-
-                        {markers.length > 0 &&
-                            <div className="vet-list">
-                                <h4>List View</h4>
-
-                                {markers.map(marker =>
-                                    <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
-                                        <p>{marker.address}</p>
-
-                                    </Card>
-                                )}
-
-                            </div>
-                        }
 
 
 
-
-
-
-                    </Content>
                     <div className="next-section-button">
                         <Link to='/vet'>
                             <Button>
