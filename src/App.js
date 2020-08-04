@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 import { Layout, Menu, Button } from 'antd'
+import LandingPage from './Routes/LandingPage/LandingPage'
 import Checklist from './Routes/Checklist/Checklist';
 import Gear from './Routes/Gear/Gear';
 import Food from './Routes/Food/Food';
@@ -42,6 +43,11 @@ class App extends React.Component {
             
             <Content>
                 <Switch>
+                <Route
+                      exact
+                      path={'/'}
+                      component={LandingPage}
+                  />
                   <Route
                       exact
                       path={'/checklist'}

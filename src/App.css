@@ -16,7 +16,7 @@ h1 {
 h2 {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #35b8be;
+  color: #191b22;
   font-size: 35px;
   line-height: 1;
   font-weight: 700;
@@ -47,7 +47,7 @@ h5 {
   color: #08090a;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: -0.03em;
 }
 
@@ -96,6 +96,52 @@ h6 {
   margin-top: 4rem;
 }
 
+/* Landing Page */
+
+.landing-page-banner {
+  min-height: 100px;
+  padding: 2rem;
+  vertical-align: middle;
+}
+
+.landing-page-call-to-action {
+  vertical-align: middle;
+  padding-top: 8rem;
+  align-items: center;
+}
+.call-to-action-block-content {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.call-to-action-primary {
+  width: 33%;
+  text-align: left;
+}
+
+.call-to-action-image-container {
+  width: 44%;
+  text-align: center;
+}
+
+.call-to-action-image {
+  width: 84%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+/* Call to Action Block */
+
+.call-to-action-primary-mobile {
+  text-align: center;
+}
+
+.call-to-action-image-container-mobile {
+  text-align: center;
+  
+}
 /* Card based pages */
 
 
@@ -177,7 +223,7 @@ h6 {
 
 .guide-banner-title h5 {
   color:white;
-  font-weight: 900;
+  font-weight: 300;
   font-size: 2rem;
 }
 
