@@ -102,19 +102,21 @@ class Checklist extends React.Component {
 
                                 {cardList.map(card =>
                                     <Col
-                                        className="gutter-row" sm={24} md={8}
+                                        className="gutter-row" sm={24} md={12} lg={8}
                                         key={card.link}>
 
                                         <Link to={card.link}>
                                             <Badge count={`${card.badge_count} items todo`} offset={[-30, 0]}>
+                                            <div className="gear-card-box">
                                                 <Card
-                                                    className="card"
+                                                    className="checklist-card"
                                                     hoverable
                                                     cover={<img className="card-image" alt={card.alt_text} src={card.image} />}
 
                                                 >
-                                                    <Meta className="card-text" title={card.title} description={card.description} />
+                                                    <Meta className="card-content" title={card.title} description={card.description} />
                                                 </Card>
+                                            </div>
                                             </Badge>
                                         </Link>
                                     </Col>

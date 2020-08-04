@@ -199,7 +199,7 @@ class Vet extends React.Component {
 
 
                     <div className="next-section-button">
-                        <Link to='/vet'>
+                        <Link to='/training'>
                             <Button>
                                 Up Next: Puppy Classes
                                     </Button>

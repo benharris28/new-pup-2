@@ -273,6 +273,15 @@ h6 {
   
 }
 
+.checklist-card {
+    width: 100%;
+    max-width: 300px;
+    max-height: 400px;
+
+    margin: auto;
+    
+}
+
 .gear-card {
   width: 100%;
   max-width: 300px;
@@ -282,8 +291,9 @@ h6 {
 
 .card-image {
   width: 100%;
-  
+  max-width: 300px;
   object-fit: cover;
+  height: 250px;
   max-height: 250px;
   
   
@@ -301,6 +311,8 @@ h6 {
 
 .card-content {
   display: flex;
+  height: 150px;
+  
   
 }
 
