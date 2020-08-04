@@ -311,9 +311,13 @@ h6 {
 
 .card-content {
   display: flex;
+
+  
+  
+}
+
+.ant-card-body {
   height: 150px;
-  
-  
 }
 
 

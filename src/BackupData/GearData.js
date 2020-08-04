@@ -153,25 +153,25 @@ export default {
                     "category_id": 4,
                     "category": "Collar",
                     "category_image": collar_illustration,
-                    "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
-                    "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                    "category_description": "You'll need a size small collar to hold dog tags and vaccination tags",
+                    "choice_description": "Here are two styles of dog collars. One is economic and one is fancy. Both will do the trick!",
                     "products": [
                         {
                             "id": 7,
                             "tag": "dog_collar",
                             "type": "basic",
                             "active": true,
-                            "image": "https://images-na.ssl-images-amazon.com/images/I/71ULk5IiTaL._AC_SL1500_.jpg",
-                            "product": "Nylon Leash, 1-Inch X 6-Feet",
-                            "brand": "PetSafe",
-                            "category": "Dog Leash",
-                            "category_id": 3,
-                            "cost_canada": 12,
-                            "cost_us": 8,
-                            "purchase_text": "Buy this leash",
+                            "image": "https://images-na.ssl-images-amazon.com/images/I/81zIQn4r02L._AC_SL1500_.jpg",
+                            "product": "Regular Collar",
+                            "brand": "Blueberry Pet Essentials",
+                            "category": "Dog Collar",
+                            "category_id": 4,
+                            "cost_canada": 16,
+                            "cost_us": 9,
+                            "purchase_text": "Buy this collar",
                             "description_text": "Highly rated - will do the trick!",
-                            "canada_link": "https://www.amazon.ca/PetSafe-Nylon-Leash-1-Inch-6-Feet/dp/B000H594RS/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGxlYXNo-ac_d_rm&crid=Q3LNA3JY67WZ&cv_ct_cx=dog+leash&dchild=1&keywords=dog+leash&pd_rd_i=B000H594RS&pd_rd_r=d367e81c-5515-4d2b-bd84-095d003dcd8a&pd_rd_w=W1ujB&pd_rd_wg=Xq97b&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=ERJNZXHX86N7676D225M&psc=1&qid=1595441683&sprefix=dog+leash%2Caps%2C171&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
-                            "us_link": "https://www.amazon.com/PetSafe-Nylon-Leash-Royal-Blue/dp/B000OGP9WE/ref=sr_1_4?crid=1BIW6PQJRQD15&dchild=1&keywords=petsafe+leash&qid=1595441841&sprefix=petsafe+lesh%2Caps%2C170&sr=8-4"
+                            "canada_link": "https://www.amazon.ca/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sr_1_1?crid=M59870TDD7GB&dchild=1&keywords=dog%2Bcollar&qid=1596569827&sprefix=dog%2Bcollar%2Caps%2C172&sr=8-1&th=1",
+                            "us_link": "https://www.amazon.com/Blueberry-Pet-Classic-Turquoise-Collars/dp/B00HRQAUN2/ref=sr_1_3?crid=2W396ZTQJ9WUD&dchild=1&keywords=dog+collar&qid=1596569934&sprefix=dog+collar%2Caps%2C170&sr=8-3"
                             
                         },
                         {

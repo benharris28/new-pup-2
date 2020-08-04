@@ -14,8 +14,6 @@ class Gear extends React.Component {
 
     state = {
         gear: GearData.categories,
-        gear_dog_crate: false,
-        gear_dog_bowls: true,
         visible: false,
         placement: 'right',
         category: 1,
@@ -167,6 +165,7 @@ class Gear extends React.Component {
                             </Row>
                             </div>                           
                             
+                            {this.state.category !== null && 
                             <Drawer
                                 title="Gear Options"
                                 placement={placement}
@@ -185,7 +184,7 @@ class Gear extends React.Component {
                                 </div>
                                 {gearFilter[0].products.map(product => 
                                 <Card 
-                                    key={product.category_id}
+                                    key={product.product_id}
                                     className="gear-info-card" 
                                     cover={<img
                                         className="drawer-image"
@@ -212,6 +211,7 @@ class Gear extends React.Component {
                                 </Card>
                                )}
                             </Drawer>
+                            }
 
 
                         
