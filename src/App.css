@@ -320,6 +320,10 @@ h6 {
   height: 150px;
 }
 
+.gear-info-card .ant-card-body {
+  height: 200px;
+}
+
 
 /* Vet Page */
 

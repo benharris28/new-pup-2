@@ -175,21 +175,21 @@ export default {
                             
                         },
                         {
-                            "id": 6,
-                            "tag": "dog_leash",
+                            "id": 8,
+                            "tag": "dog_collar",
                             "type": "premium",
                             "active": true,
-                            "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
-                            "product": "6 Feet Slip Lead Dog Leash",
-                            "brand": "BAAPET",
-                            "category": "Dog Leash",
-                            "category_id": 3,
-                            "cost_canada": 16,
-                            "cost_us": 10,
+                            "image": "https://images-na.ssl-images-amazon.com/images/I/71h3Pk3%2Bj%2BL._AC_SL1500_.jpg",
+                            "product": "Hoopie Collar",
+                            "brand": "RUFFWEAR",
+                            "category": "Dog Collar",
+                            "category_id": 4,
+                            "cost_canada": 34,
+                            "cost_us": 20,
                             "purchase_text": "Buy this leash",
                             "description_text": "Strong nylon leash with padded handle",
-                            "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
-                            "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
+                            "canada_link": "https://www.amazon.ca/RUFFWEAR-Hoopie-Collar-Lotus-Medium/dp/B073WNNWJS/ref=sr_1_3?crid=235QI3LYXU110&dchild=1&keywords=ruffwear&qid=1596569784&sprefix=ruffwear%2Caps%2C180&sr=8-3&th=1",
+                            "us_link": "https://www.amazon.com/RUFFWEAR-Hoopie-Collar-Lotus-Large/dp/B073WNGFXC/ref=sxin_10?ascsubtag=amzn1.osa.d50a6f6a-bcba-4f23-830c-33e73aaa3c84.ATVPDKIKX0DER.en_US&creativeASIN=B073WNHF38&cv_ct_cx=dog%2Bcollar&cv_ct_id=amzn1.osa.d50a6f6a-bcba-4f23-830c-33e73aaa3c84.ATVPDKIKX0DER.en_US&cv_ct_pg=search&cv_ct_wn=osp-single-source&dchild=1&keywords=dog%2Bcollar&linkCode=oas&pd_rd_i=B073WNHF38&pd_rd_r=16d0327a-5702-465a-8ae6-7696db578af0&pd_rd_w=bkIG9&pd_rd_wg=Uq5tv&pf_rd_p=08a788f8-ae54-4b96-9e48-f1e694ec6c4f&pf_rd_r=JG2J8T6M42W3QVREV04B&qid=1596569736&sr=1-1-72d6bf18-a4db-4490-a794-9cd9552ac58d&tag=tgl0a3-20&th=1"
                             
                         },
                         

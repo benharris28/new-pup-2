@@ -191,21 +191,22 @@ class Gear extends React.Component {
                                         alt="example"
                                         src={product.image} />}
                                    >
-                                        <Meta
-                                                className="card-content"
-                                                title={product.product}
-                                                description={product.description_text}>
+                                      <div className="gear-card-drawer-content">
+                                        <div className="gear-card-drawer-description">
+                                            <h5>{product.brand}</h5>
+                                            <h6>{product.product}</h6>
+                                            <p>{product.description_text}</p>
+                                        </div>
 
-                                        </Meta>
-
-                                        <div className="card_purchase_button">
+                                        <div className="drawer-button">
                                                 <a target='_blank' rel="noopener noreferrer" href={`${product.canada_link}`}>
                                                     <Button
                                                         type="primary">
-                                                        Buy it!
+                                                        {product.purchase_text}
                                                 </Button>
                                                 </a>
                                                
+                                            </div>
                                             </div>
                                   
                                 </Card>
