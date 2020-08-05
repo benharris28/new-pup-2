@@ -248,7 +248,7 @@ export default {
                             "category": "Poo Bags",
                             "category_image": poo_bag_illustration,
                             "category_description": "Get ready to pickup a lot of poop. Don't leave home without bags!",
-                            "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                            "choice_description": "We recommend getting a few toys to add some variety",
                             "products": [
                                 {
                                     "id": 11,
@@ -265,30 +265,78 @@ export default {
                                     "purchase_text": "Buy these bags",
                                     "description_text": "300 bags that will hold poop",
                                     "canada_link": "https://www.amazon.ca/AmazonBasics-Waste-Bags-Dispenser-Leash/dp/B00NABTC8M/ref=sr_1_1_sspa?crid=FWI4G2WGREJ4&dchild=1&keywords=poo+bags&qid=1596573862&sprefix=poo+bags%2Caps%2C174&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUkJEQkg0TUxGU0VCJmVuY3J5cHRlZElkPUEwMzEyMzQxMjU4RVBBVVZOSTRYMyZlbmNyeXB0ZWRBZElkPUEwMjY1NjgyMUpFMjlPTEFIU0pZRyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=",
-                                    "us_link": "https://www.amazon.com/PetSafe-Nylon-Leash-Royal-Blue/dp/B000OGP9WE/ref=sr_1_4?crid=1BIW6PQJRQD15&dchild=1&keywords=petsafe+leash&qid=1595441841&sprefix=petsafe+lesh%2Caps%2C170&sr=8-4"
+                                    "us_link": "https://www.amazon.com/AmazonBasics-Waste-Bags-Dispenser-Leash/dp/B00NABTC8M/ref=sr_1_1?dchild=1&keywords=poop+bags+amazon+basics+300&qid=1596640756&sr=8-1"
                                     
                                 },
                                 {
-                                    "id": 10,
-                                    "tag": "dog_leash",
+                                    "id": 12,
+                                    "tag": "poo_bags",
                                     "type": "premium",
                                     "active": true,
-                                    "image": "https://images-na.ssl-images-amazon.com/images/I/71zWxJdrzbL._AC_SL1500_.jpg",
-                                    "product": "6 Feet Slip Lead Dog Leash",
-                                    "brand": "BAAPET",
-                                    "category": "Dog Leash",
-                                    "category_id": 3,
+                                    "image": "https://images-na.ssl-images-amazon.com/images/I/71wxT26Cz7L._AC_SL1500_.jpg",
+                                    "product": "Eco-friendly Dog Poop Bags",
+                                    "brand": "Earth Rated",
+                                    "category": "Poo Bags",
+                                    "category_id": 6,
                                     "cost_canada": 16,
-                                    "cost_us": 10,
-                                    "purchase_text": "Buy this leash",
-                                    "description_text": "Strong nylon leash with padded handle",
-                                    "canada_link": "https://www.amazon.ca/Strong-Comfortable-Padded-Handle-Training/dp/B07C3XCTTP/ref=sr_1_1?dchild=1&keywords=BAAPET&qid=1595445801&sr=8-1",
-                                    "us_link": "https://www.amazon.com/BAAPET-Training-Leash-Large-Medium/dp/B07WTLHK8K/ref=pb_allspark_session_sims_desktop_199_2/134-9510391-9934211?_encoding=UTF8&pd_rd_i=B07WTLHK8K&pd_rd_r=23ef9389-5030-48ab-bc0d-26a4a81c17b0&pd_rd_w=l1J9c&pd_rd_wg=1f1q2&pf_rd_p=e500004d-dce5-4973-9afd-bba519c83f08&pf_rd_r=91XQ17RHH6R30FD467V9&psc=1&refRID=91XQ17RHH6R30FD467V9"
+                                    "cost_us": 12,
+                                    "purchase_text": "Buy these bags",
+                                    "description_text": "Pack of 270. Guaranteed leak-proof",
+                                    "canada_link": "https://www.amazon.ca/Earth-Rated-Lavender-Scented-Completely/dp/B00BSYR7K8/ref=sr_1_5?dchild=1&keywords=poo+bags&qid=1596640797&sr=8-5",
+                                    "us_link": "https://www.amazon.com/Earth-Rated-Lavender-Scented-Completely/dp/B00BSYR7K8/ref=sr_1_5?dchild=1&keywords=poo+bags&qid=1596640897&sr=8-5"
                                     
                                 },
                                 
                                 
                             ]
                             },
+                            {
+                                "category_id": 7,
+                                "category": "Toys",
+                                "category_image": treats_illustration,
+                                "category_description": "Toys are a fun way to occupy your pup and keep them engaged",
+                                "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                "products": [
+                                    
+                                    {
+                                        "id": 13,
+                                        "tag": "dog_toy",
+                                        "type": "basic",
+                                        "active": true,
+                                        "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                        "product": "Durable Dog Toys - pack of 8",
+                                        "brand": "Youngever",
+                                        "category": "Dog Toys",
+                                        "category_id": 7,
+                                        "cost_canada": 21,
+                                        "cost_us": 8,
+                                        "purchase_text": "Buy these toys",
+                                        "description_text": "Chew toys to help with fun and teething",
+                                        "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                        "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                        
+                                    },
+                                    {
+                                        "id": 14,
+                                        "tag": "dog_toy",
+                                        "type": "basic",
+                                        "active": true,
+                                        "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                        "product": "Puppy Toy - Natural Teething Rubber",
+                                        "brand": "KONG",
+                                        "category": "Dog Toys",
+                                        "category_id": 7,
+                                        "cost_canada": 25,
+                                        "cost_us": 10,
+                                        "purchase_text": "Buy this",
+                                        "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                        "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                        "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                        
+                                    },
+                                    
+                                    
+                                ]
+                                },
     ]
 }

@@ -74,9 +74,9 @@ class Training extends React.Component {
                     </div>
                     </div>
 
-                    <div className="content-section green">
+                    <div className="content-section pink font-white">
                         <div className="checklist-page content center">
-                            <div className="checklist-page-alert">
+                            <div className="checklist-page-alert font-white">
                                 <ExclamationCircleOutlined className="checklist-icon" />
                                 <h3>Heads up!</h3>
                                 <h5>Experts recommend completing socialization before Russell is 12 weeks old (July 12th)</h5>
@@ -115,7 +115,7 @@ class Training extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section green">
+                    <div className="content-section">
                         <div className="checklist-page content center">
                         <div>
                             <h3>Here are some recommended puppy classes near you</h3>

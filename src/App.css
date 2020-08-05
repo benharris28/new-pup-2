@@ -177,6 +177,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center; 
+  margin-top: 2rem;
 }
 
 /* Checklist Page Elements */
@@ -522,6 +523,10 @@ h6 {
 }
 
 /* Food Page */
+
+.content {
+  height: auto;
+}
 .food-expert {
   text-align: center;
   background-color: white;
@@ -534,8 +539,10 @@ h6 {
 }
 
 .food-card {
+  box-sizing: border-box;
   padding: 0px;
   border: 0px;
+  height: 100%;
 }
 
 .food-card .ant-card-body {
@@ -639,6 +646,25 @@ h6 {
   background-color: white;
 }
 
+.pink {
+  background-color: #CE2158;
+}
+
+.orange {
+  background-color: #EB8643;
+}
+
+.font-white {
+  color: white;
+}
+
+.font-white h3 {
+  color: white;
+}
+
+.font-white h5 {
+  color: white;
+}
 
 
 .format-picker {
@@ -677,6 +703,7 @@ h6 {
   position: relative;
   background-color: white;
   padding: 2rem;
+  height: auto;
   
 }
 
@@ -900,8 +927,8 @@ h6 {
 
   .content {
     width: 90%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     margin: auto;
   }
   .card-box {

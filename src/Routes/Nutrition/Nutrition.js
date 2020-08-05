@@ -242,12 +242,7 @@ class Nutrition extends React.Component {
                         </Link>
 
                     </div>
-                    <Content
-                        className="page-content">
-
-
-
-                    </Content>
+                    
 
                 </Layout>
             </div>

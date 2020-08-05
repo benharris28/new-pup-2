@@ -72,7 +72,7 @@ class NutritionDesktop extends React.Component {
                                         src={foodCard.image} />
                                 </div>
 
-                                <Card
+                                <div
                                     key={foodCard.id}
 
 
@@ -114,14 +114,12 @@ class NutritionDesktop extends React.Component {
                                         </a>
                                     </div>
 
-                                </Card>
+                                </div>
                             </div>
                         </div>
                     
 
-                    <div className="right-arrow">
-                        
-                    </div>
+                 
 
                 </div>
 

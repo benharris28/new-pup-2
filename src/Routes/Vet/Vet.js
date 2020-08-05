@@ -89,7 +89,7 @@ class Vet extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section green">
+                    <div className="content-section orange">
                         <div className="checklist-page content center">
                             <div className="checklist-page-alert">
                                 <ExclamationCircleOutlined className="checklist-icon" />
