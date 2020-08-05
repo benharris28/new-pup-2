@@ -88,7 +88,7 @@ class Gear extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <div className="guide-banner-image"  />
+                        <div className="guide-banner-image coral"  />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>

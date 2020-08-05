@@ -51,8 +51,8 @@ class Checklist extends React.Component {
             {
                 link: '/guide',
                 image: "https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg",
-                title: "Read Doggo's 24 hour survival guide",
-                description: "Everything you needt to know, including how to get ready, give your first meal, housetrain, and more!",
+                title: "Read Doggo's Survival Guide",
+                description: "Your guide to the first 24 hours of puppyhood",
                 alt_text: "24 hour guide",
                 badge_count: 5
             },
@@ -62,16 +62,16 @@ class Checklist extends React.Component {
 
         return (
             <div>
-                <Layout>
+                <Layout className="dark-yellow">
                     <div className="guide-banner">
 
-                    <div className="guide-banner-image" />
+                    <div className="guide-banner-image purple" />
 
                         
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>Advice from the pros to get 100% ready for Russell</h3>
+                            <h2>Advice from the pros to get 100% ready for Russell</h2>
 
                         </div>
 

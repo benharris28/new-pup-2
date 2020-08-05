@@ -58,7 +58,7 @@ class Vet extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <div className="guide-banner-image" />
+                        <div className="guide-banner-image dark-green" />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
@@ -72,7 +72,7 @@ class Vet extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>Vet</h3>
+                            <h1>Let's find Russell a great vet!</h1>
 
                         </div>
 
@@ -83,13 +83,13 @@ class Vet extends React.Component {
 
 
                             <div className="checklist-page-section-intro">
-                                <h1>Let's find Russell a great vet!</h1>
+                                <h2>We found some great vets for Russell</h2>
                                 <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
                             </div>
                         </div>
                     </div>
 
-                    <div className="content-section orange">
+                    <div className="content-section coral">
                         <div className="checklist-page content center">
                             <div className="checklist-page-alert">
                                 <ExclamationCircleOutlined className="checklist-icon" />

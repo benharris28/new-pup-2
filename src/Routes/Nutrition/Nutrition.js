@@ -39,7 +39,7 @@ class Nutrition extends React.Component {
                 <Layout>
                     <div className="guide-banner">
 
-                        <div className="guide-banner-image" />
+                        <div className="guide-banner-image dark-yellow" />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
@@ -174,7 +174,7 @@ class Nutrition extends React.Component {
 
                                             </div>
                                             <div className="what-to-look-for-content">
-                                                <h4>Animal protein is first or second on the ingredient list</h4>
+                                                <h4>Animal protein is first or second ingredient</h4>
                                                 <h5>Look for whole ingredients and words you recognize!</h5>
                                             </div>
 

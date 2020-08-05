@@ -46,7 +46,7 @@ class Training extends React.Component {
 
                     <div className="guide-banner">
 
-                        <div className="guide-banner-image" />
+                        <div className="guide-banner-image dark-purple" />
 
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
@@ -60,7 +60,7 @@ class Training extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>Puppy Socialization</h3>
+                            <h1>Puppy Classes</h1>
 
                         </div>
 
@@ -117,7 +117,7 @@ class Training extends React.Component {
 
                     <div className="content-section">
                         <div className="checklist-page content center">
-                        <div>
+                        <div className="trainer-container">
                             <h3>Here are some recommended puppy classes near you</h3>
                             {trainers.map(trainer =>
                                 <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
@@ -131,6 +131,9 @@ class Training extends React.Component {
                         </div>
                     </div>
                     <div className="next-section-button">
+                        <div>
+                            <h5>Picked your puppy class? Let's keep this momentum going!</h5>
+                        </div>
                         <Link to='/guide'>
                             <Button>
                                 Up Next: 24 Hour Guide
