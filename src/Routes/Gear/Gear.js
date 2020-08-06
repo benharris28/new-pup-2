@@ -102,10 +102,20 @@ class Gear extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>The Gear You Need</h3>
+                            <h1>The Gear You Need</h1>
 
                         </div>
 
+                    </div>
+                    <div className="secondary-banner white center">
+                        <div className="secondary-banner-content space">
+                        
+                        <div className="expert-image">
+
+                        </div>
+                        <h5 className="font-purple">Our resident dog trainer, XX Trainer, has made a list of the must-have gear to welcome home your pup.</h5>
+                        <h6>For each category, we offer two different options: basic and premium. Both will do the trick, but if you feel like getting fancy, you have the option!</h6>
+                    </div>
                     </div>
                     <Content
                         //style={{ padding: '0 50px' }}
@@ -114,8 +124,8 @@ class Gear extends React.Component {
 
 
                         <div className="page-intro">
-                            <h1>All the gear you need</h1>
-                            <h5>Here are the absolute essentials for bringing a puppy home. Top trainer, XX trainer, recommends these products</h5>
+                            <h2>Gear List</h2>
+                            <h5>This list is designed to be all-encompasing. As long as you have an item from each category, you'll be ready. </h5>
                         </div>
 
                         <div className="card-box">

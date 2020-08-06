@@ -56,7 +56,7 @@ h6 {
   margin-bottom: 10px;
   color: #08090a;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 300;
   letter-spacing: -0.03em;
 }
@@ -123,11 +123,25 @@ h6 {
   
 }
 
+.black {
+  background-color: black;
+  
+}
+
 .coral {
   background-color: rgb(255, 133, 119);
 }
+
 .font-white {
   color: white;
+}
+
+.font-coral {
+  color:  rgb(255, 133, 119);
+}
+
+.font-purple {
+  color: #5551FF;
 }
 
 .font-white h3 {
@@ -138,6 +152,14 @@ h6 {
   color: white;
 }
 
+.black-font {
+  color: black;
+}
+
+.space {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 /* Page Styles */
 /* All Pages */
@@ -245,6 +267,16 @@ h6 {
 
 /* Checklist Page Elements */
 
+.show-checklist button {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color:black;
+  height: 3rem;
+  width: 200px;
+  margin-top: 3rem;
+}
+
 .next-section-button button {
   height: 50px;
   font-size: 1rem;
@@ -300,17 +332,27 @@ h6 {
 }
 
 .secondary-banner {
-  background-color: white;
   color: white;
   padding: 2rem;
+  
 }
 
-.secondary-banner h5{
-  color: black;
-  text-align: center;
+.secondary-banner-content {
+  width: 60%;
+  margin: auto;
+  
+}
+
+.secondary-banner h5 {
+  
   font-weight: 500;
  
 }
+
+.secondary-banner-content .icon {
+  font-size: 3rem;
+}
+
 
 .checklist-page-alert {
   max-width: 500px;
@@ -320,6 +362,14 @@ h6 {
 .checklist-icon {
   font-size: 3rem;
 }
+
+.center {
+  text-align: center;
+}
+
+
+
+
 
 /* Cards (In Checklist and Gear Pages) */
 .gear-row {
@@ -370,6 +420,9 @@ h6 {
   width: 100%;
   max-width: 300px;
   margin: auto;
+  border: 3px solid black;
+    border-radius: 10px;
+    overflow: hidden;
   
 }
 
@@ -834,7 +887,13 @@ h6 {
 }
 /* Gear Page Styling */
 
-
+.expert-image {
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: auto;
+}
 .card_purchase_button {
  
   margin-top: 2rem;

@@ -53,7 +53,7 @@ class Nutrition extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h3>Everything you need to know about dog food</h3>
+                            <h1>Everything you need to know about dog food</h1>
 
                         </div>
 

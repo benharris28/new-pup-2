@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ProgressBar from '../../Components/ProgressBar/ProgressBar'
 import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
 import Russ_banner from '../../Assets/Russ_banner.JPG'
-import { ClockCircleOutlined } from '@ant-design/icons';
+import { ClockCircleOutlined, CalendarOutlined } from '@ant-design/icons';
 
 class Checklist extends React.Component {
 
@@ -72,16 +72,31 @@ class Checklist extends React.Component {
                         <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
                             <h2>Advice from the pros to get 100% ready for Russell</h2>
-
+                            <div className="show-checklist">
+                                <button>Show Russell's Checklist</button>
+                            </div>
+                            
                         </div>
+                     
+                       
 
                     </div>
-                    <div className="secondary-banner">
+                    <div className="secondary-banner white center">
+                        <div className="secondary-banner-content space">
                         <div className="checklist-icon-box">
-                            <ClockCircleOutlined className="clock-icon" />
+                            <CalendarOutlined className="icon black-font" />
                         </div>
                         
                         <h5>Russell comes home in 21 days. Let's get started!</h5>
+                    </div>
+                    </div>
+                    <div className="secondary-banner black">
+                        <div className="secondary-banner-content">
+                        <h2 className="font-white">How does this work?</h2>
+                        <h5 className="font-white">There are 5 sections to complete to be ready for your pup</h5>
+                        <h5 className="font-white">Go through each section in order</h5>
+                        <h5 className="font-white">We recommend completing each section by a certain date to make sure you're ready</h5>
+                    </div>
                     </div>
                     <Content
 

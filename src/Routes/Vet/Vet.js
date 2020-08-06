@@ -55,7 +55,7 @@ class Vet extends React.Component {
 
         return (
             <div>
-                <Layout>
+                <Layout className="white">
                     <div className="guide-banner">
 
                         <div className="guide-banner-image dark-green" />
@@ -89,12 +89,12 @@ class Vet extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section coral">
+                    <div className="content-section dark-purple">
                         <div className="checklist-page content center">
                             <div className="checklist-page-alert">
                                 <ExclamationCircleOutlined className="checklist-icon" />
-                                <h3>Heads up!</h3>
-                                <h5>Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                                <h2 className="font-coral">Heads up!</h2>
+                                <h5 className="font-white">Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
                             </div>
 
                         </div>
