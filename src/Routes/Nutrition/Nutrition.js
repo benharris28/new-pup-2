@@ -4,6 +4,7 @@ import FoodData from '../../BackupData/FoodData'
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
+import food_image from '../../Assets/food_image.png'
 import { Layout, Content, Button, Row, Col, Alert } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
@@ -72,42 +73,38 @@ class Nutrition extends React.Component {
                                 >
 
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <div className="food-type-image-box">
-
-                                            </div>
+                                     
+                                                <img className="food-image" src={food_image} alt="food stock" />
+                                           
                                             <h4>Gently Cooked</h4>
                                             <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
                                         </div>
                                     </Col>
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <div className="food-type-image-box">
-
-                                            </div>
+                                            <img className="food-image" src={food_image} alt="food stock" />
+                                            
                                             <h4>Raw</h4>
                                             <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
                                         </div>
+                    
                                     </Col>
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <div className="food-type-image-box">
-
-                                            </div>
+                                            <img className="food-image" src={food_image} alt="food stock" />    
                                             <h4>Canned</h4>
                                             <h5>Food is cooked until 70% of the moisture (water) is removed to maintain shelf stability</h5>
                                         </div>
                                     </Col>
 
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <div className="food-type-image-box">
-
-                                            </div>
+                                            <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Kibble</h4>
                                             <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
                                         </div>
@@ -197,10 +194,20 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section blue">
-                        <div className="checklist-page content">
-                            <h4>What's the deal with grain free?</h4>
-                            <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
+                    <div className="content-section white">
+                        <div className="checklist-page content space grain-free">
+                            <Row gutter={[40, 24]} className="grain">
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                    <div className="grain-content">
+                                        <h4>What's the deal with grain free?</h4>
+                                        <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                    <img className="food-image" src={food_image} alt="food stock" />
+                                </Col>
+                            </Row>
+                            
                         </div>
                     </div>
 

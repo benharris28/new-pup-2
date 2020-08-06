@@ -338,7 +338,7 @@ h6 {
 }
 
 .secondary-banner-content {
-  width: 60%;
+  width: 80%;
   margin: auto;
   
 }
@@ -387,6 +387,10 @@ h6 {
   margin: auto;
   text-align: center;
   
+}
+
+.card-box .ant-row {
+  text-align: center;
 }
 
 .checklist-card {
@@ -740,6 +744,50 @@ h6 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.nutrition-types-container {
+  display: flex;
+  justify-content: space-around
+}
+
+
+
+.nutrition-type-item {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.food-image {
+  width: 100%;
+ 
+}
+
+.nutrition-image-box {
+  width: 100%;
+  max-height: 500px;
+}
+
+.grain {
+  vertical-align: middle;
+  align-items: center;
+  max-width: 100%;
+  
+  
+}
+
+
+.grain-content {
+  max-width: 456px;
+  margin: auto;
+}
+
+.grain image {
+  max-width: 400px;
+  text-align: center;
+}
+
 /* Food Carousel Styling */
 .ant-carousel .slick-slide {
   text-align: center;
@@ -801,6 +849,10 @@ h6 {
   
   margin: auto;
   margin-top: 3rem;
+}
+
+.nutrition-type-content {
+  text-align: left;
 }
 
 
@@ -1153,15 +1205,25 @@ h6 {
     justify-content: space-around
   }
 
+ 
+
   .nutrition-type-item {
-    width: 250px;
+    width: 100%;
+    max-width: 500px;
     padding: 1rem;
+    text-align: left;
+  }
+
+  .food-image {
+    width: 100%;
+   
   }
 
   .nutrition-image-box {
-    max-width: 500px;
+    width: 100%;
     max-height: 500px;
   }
+
 
   
   .what-to-look-for {
@@ -1191,6 +1253,13 @@ h6 {
     max-height: 500px;
     
     border: 0px;
+  }
+
+  .grain {
+    vertical-align: middle;
+    align-items: center;
+    max-width: 100%;
+
   }
 
   /* Vet Page */

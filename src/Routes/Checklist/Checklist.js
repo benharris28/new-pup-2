@@ -117,7 +117,7 @@ class Checklist extends React.Component {
 
                                 {cardList.map(card =>
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={8}
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={8}
                                         key={card.link}>
 
                                         <Link to={card.link}>
