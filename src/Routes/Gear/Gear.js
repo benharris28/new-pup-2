@@ -21,6 +21,10 @@ class Gear extends React.Component {
 
     }
 
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
+
     showDrawer = (id) => {
         this.setState({
             visible: true,

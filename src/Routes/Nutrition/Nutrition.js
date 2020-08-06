@@ -15,6 +15,10 @@ class Nutrition extends React.Component {
         food: NutritionData.categories[0].products
     }
 
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
+     
     setFormat = (format) => {
         this.setState({
             format: format

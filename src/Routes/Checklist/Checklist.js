@@ -8,7 +8,7 @@ import { ClockCircleOutlined, CalendarOutlined } from '@ant-design/icons';
 class Checklist extends React.Component {
 
     componentDidMount = () => {
-        // Get data from context
+       window.scrollTo(0, 0);
     }
 
     render() {
