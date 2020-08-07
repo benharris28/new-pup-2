@@ -114,6 +114,10 @@ h6 {
   background-color: #DDEFEF
 }
 
+.light-purple {
+  background-color: rgb(199, 185, 255);
+}
+
 .purple {
   background-color: #A259FF;
 }
@@ -229,7 +233,8 @@ h6 {
 }
 
 .stock-image {
-  width: 100%
+  width: 100%;
+  border: 5px solid black;
 }
 
 
@@ -259,12 +264,12 @@ h6 {
 
 .next-section-button {
   width: 100%;
-  background-color: #FFC700;
+  /*background-color: #FFC700;*/
   text-align: center;
   /*display: flex;*/
   justify-content: center;
   align-items: center; 
-  margin-top: 2rem;
+  
   padding: 2rem;
 }
 
@@ -723,6 +728,21 @@ h6 {
 
 .guide-content-outro {
   padding: 2rem;
+}
+
+.row-content-intro {
+  margin-bottom: 2rem;
+}
+
+.stock-box {
+  margin: auto;
+  text-align: center;
+}
+.stock-icon {
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: auto;
 }
 /* PrepareHome Page */
 
