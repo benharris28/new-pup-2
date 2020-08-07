@@ -46,6 +46,17 @@ class PrepareHome extends React.Component {
                     </div>
 
                 </div>
+
+                <div className="content-section dark-yellow">
+                        <div className="checklist-page content">
+                            <div className="checklist-page-alert font-black">
+                               
+                                <h3>What you need to know</h3>
+                                <h5>It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep</h5>
+                            </div>
+
+                        </div>
+                    </div>
                 
                
                 <Content
