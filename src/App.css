@@ -358,8 +358,8 @@ h6 {
 
 
 .checklist-page-alert {
-  max-width: 500px;
-  margin: auto;
+  max-width: 80%;
+
 }
 
 .checklist-icon {
@@ -593,10 +593,69 @@ h6 {
 
 /* Survival Guide Styling */
 
+.survival-guide-banner {
+  width: 100%;
+  height: 600px;
+  
+  z-index: 2;
+  text-align: center;
+  position: relative;
+  
+} 
+
+.survival-guide-banner-image {
+  
+  width: 100%;
+  min-height: 600px;
+  object-fit: cover;
+  opacity: 1.2;
+  
+  
+}
+
+.survival-guide-banner-title {
+  position: absolute;
+ 
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.survival-guide-banner-title h5 {
+  color: #A259FF;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.survival-guide-banner-title h3 {
+
+  font-size: 2.25rem;
+  margin-top: 0.5rem;
+}
+
+.step-counter {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #FFC700;
+  width: 30%;
+  margin: auto;
+  font-weight: 500;
+}
+
+.survival-guide-title {
+  color: #A259FF;
+}
 
 .title-box h5 {
   color: coral;
   font-weight: 500;
+}
+
+.survival-guide-step {
+  color: coral;
+  font-weight: 700;
 }
 
 .page-image {

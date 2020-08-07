@@ -24,35 +24,35 @@ class PrepareHome extends React.Component {
 
         return (
             <Layout>
-                <div className="guide-banner">
+                <div className="survival-guide-banner">
 
-                    <img className="guide-banner-image" src="https://www.kimballstock.com/images/dog-stock-photos.jpg" alt="puppy" />
+                    <div className="survival-guide-banner-image white" />
 
                     <div className="back-to-checklist-button-test">
                         <Link to='/guide'>
                             <Button
                                 type="primary">
-                                Back to Guide Menu
-            </Button>
+                                Back to guide menu
+                            </Button>
                         </Link>
 
                     </div>
 
-                    <div className="guide-banner-title">
-                        <h5>Survival Guide</h5>
-                        <h3>Get your home ready for pup</h3>
+                    <div className="survival-guide-banner-title">
+                        <h5 className="survival-guide-title">Doggo Survival Guide</h5>
+                        <div className="step-counter"><h6>Step 1 of 5</h6></div>
+                        <h1>Prepare your home for pup</h1>
 
                     </div>
 
                 </div>
-                <div>
-
-                </div>
+                
+               
                 <Content
                     //style={{ padding: '0 40px' }}
                     className="page-content">
 
-                    
+
 
 
                     <div>
