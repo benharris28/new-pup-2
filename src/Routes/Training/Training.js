@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Trainers from '../../BackupData/Trainers'
 import ApiContext from '../../ApiContext';
 import MarkCompleteStandAlone from '../../Components/MarkCompleteStandAlone/MarkCompleteStandAlone'
+import stock_image from '../../Assets/stock_image.png';
 import { Layout, Content, Button, Alert, Card, Avatar, Row, Col } from 'antd';
 import { UserOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 
@@ -65,14 +66,24 @@ class Training extends React.Component {
                         </div>
 
                     </div>
+
                     <div className="content-section white">
-                    <div className="checklist-page content center">
-                        <div className="checklist-page-section-intro">
-                                <h3>Let's socialize your pup!</h3>
-                                <h5>It's a scary world for new puppies - loud noises, lots of humans, vet visits, and other dogs! Puppy classes are extremely important to prepare your dog for this crazy world!</h5>
-                            </div>
+                        <div className="checklist-page content space grain-free">
+                            <Row gutter={[40, 24]} className="grain">
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                    <div className="grain-content">
+                                        <h2>Let's socialize your pup!</h2>
+                                        <h5>It's a scary world for new puppies - loud noises, lots of humans, vet visits, and other dogs! Puppy classes are extremely important to prepare your dog for this crazy world!</h5>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                    <img className="food-image" src={stock_image} alt="stock" />
+                                </Col>
+                            </Row>
+                            
+                        </div>
                     </div>
-                    </div>
+                  
 
                     <div className="content-section pink font-white">
                         <div className="checklist-page content center">
@@ -85,13 +96,15 @@ class Training extends React.Component {
                         </div>
                     </div>
 
+                    
+
                     <div className="content-section white">
 
 
                         <div className="checklist-page content center">
                             <div className="checklist-page-section-intro">
-                                <h3>Why should I sign up for puppy class?</h3>
-                                <h5>Puppy classes teach new pups vital skills to help them adapt and develop</h5>
+                                <h2>Do I really need puppy classes?</h2>
+                                <h5>Yes! Puppy classes teach new pups vital skills to help them adapt and develop</h5>
                             </div>
                             <div className="nutrition-types-container">
                                 <Row
@@ -100,11 +113,11 @@ class Training extends React.Component {
                                     {points.map(point =>
 
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={6}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <div className="food-type-image-box">
-
-                                            </div>
+                                            
+                                                <img className="stock-image" src={stock_image} alt="stock" />
+                                         
                                             <h4>{point.title}</h4>
                                             
                                         </div>
@@ -118,7 +131,7 @@ class Training extends React.Component {
                     <div className="content-section">
                         <div className="checklist-page content center">
                         <div className="trainer-container">
-                            <h3>Here are some recommended puppy classes near you</h3>
+                            <h2>Here are some recommended puppy classes near you</h2>
                             {trainers.map(trainer =>
                                 <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
                                     <p>{trainer.blurb}</p>
