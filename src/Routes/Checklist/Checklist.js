@@ -62,7 +62,7 @@ class Checklist extends React.Component {
 
         return (
             <div>
-                <Layout className="dark-yellow">
+                <Layout className="white">
                     <div className="guide-banner">
 
                     <div className="guide-banner-image purple" />

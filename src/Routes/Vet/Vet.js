@@ -14,7 +14,11 @@ class Vet extends React.Component {
         markers: []
     }
 
+   
     componentDidMount = () => {
+
+        window.scrollTo(0, 0);
+
         window.navigator.geolocation.getCurrentPosition((latlng) => {
             this.setState({
                 userLocation: {
@@ -106,7 +110,7 @@ class Vet extends React.Component {
                         <div className="vet-find-container">
 
                         
-                            <div className="vet-finder-input">
+                            <div className="vet-finder">
 
                                 <div className="checklist-page-section-intro">
 
@@ -114,8 +118,9 @@ class Vet extends React.Component {
                                     <h5>We have a list of the most trusted vets in your area</h5>
                                 </div>
 
-                                <div className="find_vet_input">
+                                <div className="vet-finder-input">
                                     <h5>Enter your postal code to find reputable vets near you</h5>
+                                    <div className="vet-finder-input-box">
                                     <input
                                         type="text"
                                         onChange={e => this.handleInput(e.target.value)}
@@ -125,6 +130,7 @@ class Vet extends React.Component {
                                         onClick={this.handleSubmit}>
                                         Find vets
                                             </Button>
+                                </div>
                                 </div>
 
 
