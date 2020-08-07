@@ -132,6 +132,7 @@ class Training extends React.Component {
                     </div>
                     <div className="next-section-button">
                         <div>
+                            <h4>You're doing awesome!</h4>
                             <h5>Picked your puppy class? Let's keep this momentum going!</h5>
                         </div>
                         <Link to='/guide'>

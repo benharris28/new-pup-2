@@ -18,7 +18,7 @@ class Nutrition extends React.Component {
     componentDidMount = () => {
         window.scrollTo(0, 0);
      }
-     
+
     setFormat = (format) => {
         this.setState({
             format: format
@@ -41,7 +41,7 @@ class Nutrition extends React.Component {
         console.log(this.state.windowSize)
         return (
             <div>
-                <Layout>
+                <Layout className="white">
                     <div className="guide-banner">
 
                         <div className="guide-banner-image dark-yellow" />

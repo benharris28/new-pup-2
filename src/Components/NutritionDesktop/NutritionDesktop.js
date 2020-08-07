@@ -42,7 +42,7 @@ class NutritionDesktop extends React.Component {
             <div className="carousel-container">
                 <div className="carousel-intro">
                     <h4>Let's pick a food for Russell</h4>
-                    <h5>We've narrowed it down to three options! All are great choices for Russell and appropriate for his age and health status</h5>
+                    <h5>We've narrowed it down to two options! All are great choices for Russell and appropriate for his age and health status</h5>
                 </div>
 
 
@@ -83,7 +83,7 @@ class NutritionDesktop extends React.Component {
 
                                     <div className="food-card-content">
                                         <h5>{foodCard.brand}</h5>
-                                        <p>{foodCard.product}</p>
+                                        <h6>{foodCard.product}</h6>
                                         <p>{foodCard.description_text}</p>
 
                                         <h5>What we like</h5>

@@ -740,6 +740,30 @@ h6 {
   padding: 0px;
 }
 
+.food-card h5 {
+  font-weight: 700;
+  color: rgb(85, 81, 255);
+}
+
+.food-card h6 {
+  font-weight: 600;
+  color: rgb(255, 133, 119);
+}
+
+.food-card .ant-collapse-header {
+  border: 3px solid rgb(85, 81, 255);
+  color: rgb(255, 133, 119);
+}
+
+.food-card .card_purchase_button button{
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: rgb(85, 81, 255);
+  color: white;
+  height: 50px;
+  
+}
+
 .more-info {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -905,8 +929,15 @@ h6 {
   width: 70%;
   margin: auto;
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
+  color:  rgb(255, 133, 119);
+  border: 3px solid black;
+  background-color: rgb(85, 81, 255);
 
+}
+
+.food-card-title h4 {
+  color:  rgb(255, 133, 119);
 }
 
 .left-arrow {
@@ -936,6 +967,22 @@ h6 {
 
 .nutrition-desktop {
   display: flex;
+}
+
+.picker {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.picker-button {
+  border: 3px solid black;
+  border-radius: 10px;
+  
+}
+
+.nutrition-desktop {
+  margin-top: 2rem;
 }
 /* Gear Page Styling */
 
@@ -1195,9 +1242,13 @@ h6 {
   /* Nutrition Page */
 
   .picker {
-    width: 60%;
+    width: 80%;
     margin: auto;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .nutrition-desktop {
+    margin-top: 2rem;
   }
 
   .nutrition-types-container {

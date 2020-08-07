@@ -79,11 +79,12 @@ class Vet extends React.Component {
                     </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content center">
+                        <div className="checklist-page content">
 
 
                             <div className="checklist-page-section-intro">
                                 <h2>We found some great vets for Russell</h2>
+                                <h5>We consider the vet a necessary evil. It pays to have one that you trust not too far from your home for wellness checkups or if your pup isn't feeling well</h5>
                                 <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
                             </div>
                         </div>
@@ -199,6 +200,10 @@ class Vet extends React.Component {
 
 
                     <div className="next-section-button">
+                    <div>
+                            <h4>Got your vet? That wasn't so scary!</h4>
+                            <h5>Time to teach your pup some manners at puppy class! Click below to go to the next section</h5>
+                        </div>
                         <Link to='/training'>
                             <Button>
                                 Up Next: Puppy Classes

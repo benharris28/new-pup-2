@@ -90,7 +90,7 @@ class NutritionMobile extends React.Component {
 
                                     <div className="food-card-content">
                                         <h5>{foodCard.brand}</h5>
-                                        <p>{foodCard.product}</p>
+                                        <h6>{foodCard.product}</h6>
                                         <p>{foodCard.description_text}</p>
                                         
                                         <h5>What we like</h5>
