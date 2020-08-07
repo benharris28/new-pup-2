@@ -15,6 +15,11 @@ class Training extends React.Component {
     state = {
         trainers: Trainers.trainers
     }
+
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
+     
     render() {
         const { Content } = Layout;
         const { trainers } = this.state;
