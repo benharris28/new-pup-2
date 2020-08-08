@@ -26,7 +26,7 @@ class LandingPage extends React.Component {
             <div>
                 <div className="guide-banner">
 
-                    <div className="guide-banner-image" />
+                    <div className="guide-banner-image dark-yellow" />
 
 
 
