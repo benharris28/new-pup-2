@@ -19,7 +19,7 @@ class Training extends React.Component {
     componentDidMount = () => {
         window.scrollTo(0, 0);
      }
-     
+
     render() {
         const { Content } = Layout;
         const { trainers } = this.state;
@@ -148,10 +148,10 @@ class Training extends React.Component {
 
                         </div>
                     </div>
-                    <div className="next-section-button">
+                    <div className="next-section-button dark-purple">
                         <div>
-                            <h4>You're doing awesome!</h4>
-                            <h5>Picked your puppy class? Let's keep this momentum going!</h5>
+                            <h4 className="font-white">You're doing awesome!</h4>
+                            <h5 className="font-white">Picked your puppy class? Let's keep this momentum going!</h5>
                         </div>
                         <Link to='/guide'>
                             <Button>

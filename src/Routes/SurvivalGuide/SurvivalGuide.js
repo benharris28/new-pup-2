@@ -123,7 +123,7 @@ class SurvivalGuide extends React.Component {
                             </div>
                         </div>
                     
-                        <div className="next-section-button">
+                        <div className="next-section-button coral">
                     <div>
                             <h4>Are you ready?</h4>
                             <h5>Let's jump right in and get your home ready for pup!</h5>

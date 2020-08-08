@@ -136,11 +136,12 @@ class Gear extends React.Component {
                             <Row
                                 className="gear-row"
                                 gutter={[16,24]}
+                                style={{ margin: 0 }}
                             >
 
                                 {gear.map(gearCard =>
                                     <Col
-                                        className="gutter-row" sm={24} md={12} lg={8}
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={8}
                                         key={gearCard.category_id}>
                                         <div className="gear-card-box">
                                         <Card
@@ -233,7 +234,7 @@ class Gear extends React.Component {
 
 
                     </Content>
-                    <div className="next-section-button">
+                    <div className="next-section-button dark-yellow">
                         <Link to='/food'>
                             <Button>
                                 Up Next: Find the best food

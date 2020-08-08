@@ -90,9 +90,9 @@ class Checklist extends React.Component {
                         <h5>Russell comes home in 21 days. Let's get started!</h5>
                     </div>
                     </div>
-                    <div className="secondary-banner black">
+                    <div className="secondary-banner coral">
                         <div className="secondary-banner-content">
-                        <h2 className="font-white">How does this work?</h2>
+                        <h2 className="font-purple">How does this work?</h2>
                         <h5 className="font-white">There are 5 sections to complete to be ready for your pup</h5>
                         <h5 className="font-white">Go through each section in order</h5>
                         <h5 className="font-white">We recommend completing each section by a certain date to make sure you're ready</h5>

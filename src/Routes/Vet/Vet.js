@@ -205,7 +205,7 @@ class Vet extends React.Component {
 
 
 
-                    <div className="next-section-button">
+                    <div className="next-section-button dark-green">
                     <div>
                             <h4>Got your vet? That wasn't so scary!</h4>
                             <h5>Time to teach your pup some manners at puppy class! Click below to go to the next section</h5>

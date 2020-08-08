@@ -245,7 +245,7 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
 
-                    <div className="next-section-button">
+                    <div className="next-section-button dark-yellow">
                     <div>
                             <h4>Your pup has great food to eat!</h4>
                             <h5>Let's move on and find your pup a great vet in your area. Click below to go to the next section</h5>
