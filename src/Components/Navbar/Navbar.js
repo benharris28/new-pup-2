@@ -28,10 +28,10 @@ render() {
                     <a className="logo" href=" ">Doggo</a>
                   </div>
                 </Col>
-                <Col xs={0} sm={6} justify="end">
+                <Col xs={0} sm={0} md={6} justify="end">
                     <RightMenu />
                 </Col>
-                <Col xs={6} sm={0}>
+                <Col xs={6} sm={6} md={0}>
                     <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
                         <span className="barsBtn"></span>
                     </Button>
@@ -42,13 +42,13 @@ render() {
           
             
             <Drawer
-              title="Menu"
+              
               placement="right"
               closable={false}
               onClose={this.onClose}
               visible={this.state.visible}
             >
-                <RightMenu />
+                <RightMenu mobile={"true"}/>
             </Drawer>
 
         </nav>

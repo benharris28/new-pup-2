@@ -5,14 +5,24 @@ import { Menu, Icon } from 'antd';
 const { SubMenu } = Menu;
 
 class RightMenu extends Component {
+  
   render() {
+    const { mobile } = this.props;
+    const navClass = mobile? "menu-drawer mobile" : "menu-drawer"
+
     return (
-        <div className="menu-drawer">
+        <div className={navClass}>
             <Link to='/checklist'>
+                <div className="menu-button">
                 Checklist
+                </div>
+                
             </Link>
+
             <Link to='/'>
+            <div className="menu-button">
                 Homepage
+                </div>
             </Link>
         </div> 
 

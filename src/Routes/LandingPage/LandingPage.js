@@ -30,10 +30,10 @@ class LandingPage extends React.Component {
 
 
 
-                    <div className="guide-banner-title">
+                    <div className="guide-banner-title left">
 
-                        <h3>Welcome to Doggo</h3>
-                        <h5>Support text for headline</h5>
+                        <h1>Bringing home a doggo?</h1>
+                        <h5 className="font-black">From a step-by-step guide of what you need, to expert picks of food, to a customized surivival guide, we've got your back.</h5>
 
                         <Button className="banner-button">
                             Start now
