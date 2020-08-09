@@ -110,13 +110,13 @@ class PrepareHome extends React.Component {
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                             <div className="grain-content">
                                 <div className="row-content-intro">
-                                    <h4>Set up your crate</h4>
-                                    <h5>Watch this video for instructions on how to set up your crate</h5>
+                                    <h2>Set up your crate</h2>
+                                    <h4>Watch this video for instructions on how to set up your crate</h4>
                                 </div>
                                    
-                                    <h5>Wait! This crate looks like a jail cell!</h5>
+                                    <h4>Wait! This crate looks like a jail cell!</h4>
                                     <p>Force-free dog trainers agree that crates are important for puppies. While they make look like a jail, they actually provide a safe, enclosed space mimicking a den which they are used to</p>
-                                    <h5>Ever notice how dogs tend to find small, enclosed spaces to nap or sleep?</h5>
+                                    <h4>Ever notice how dogs tend to find small, enclosed spaces to nap or sleep?</h4>
                                     <p>Dogs need small spaces to feel safe. During a stressful time like moving to a forever home, a crate becomes a safe haven for your dog</p>
                                  
 
@@ -155,6 +155,11 @@ class PrepareHome extends React.Component {
                             </Col>
                         </Row>
 
+                    </div>
+                </div>
+                <div className="content-section white">
+                    <div className="checklist-page content space grain-free">
+                        <h2>FAQ</h2>
                     </div>
                 </div>
                 <div className="next-section-button dark-yellow">
