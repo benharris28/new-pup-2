@@ -54,6 +54,9 @@ class Training extends React.Component {
 
                         <div className="guide-banner-image dark-purple" />
 
+                       
+
+                        <div className="guide-banner-title">
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
                                 <Button
@@ -63,8 +66,6 @@ class Training extends React.Component {
                             </Link>
 
                         </div>
-
-                        <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
                             <h1>Puppy Classes</h1>
 

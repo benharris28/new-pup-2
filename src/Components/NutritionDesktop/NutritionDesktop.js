@@ -41,7 +41,7 @@ class NutritionDesktop extends React.Component {
         return (
             <div className="carousel-container">
                 <div className="carousel-intro">
-                    <h4>Let's pick a food for Russell</h4>
+                    <h2>Let's pick a food for Russell</h2>
                     <h5>We've narrowed it down to two options! All are great choices for Russell and appropriate for his age and health status</h5>
                 </div>
 
@@ -55,10 +55,10 @@ class NutritionDesktop extends React.Component {
                    
 
                         <div className="food-card">
-                                <div className="picker">
+                                <div className="picker" style={{ marginTop: 0 }}>
                                     <Row justify="space-between">
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("0")} className={this.state.tab == 0 ? "picker-button checked" : "picker-button"} type="primary">{this.state.food[0].type}</Button></Col>
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("1")} className="picker-button" type="primary">{this.state.food[1].type}</Button></Col>
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("0")} className={this.state.tab == 0 ? "picker-button checked" : "picker-button"} type="primary">Option 1: <h5>{this.state.food[0].type}</h5></Button></Col>
+                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("1")} className="picker-button" type="primary">Option 2: <h5>{this.state.food[1].type}</h5></Button></Col>
                                     </Row>
                             
                                 </div>

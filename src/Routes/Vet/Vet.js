@@ -14,7 +14,7 @@ class Vet extends React.Component {
         markers: []
     }
 
-   
+
     componentDidMount = () => {
 
         window.scrollTo(0, 0);
@@ -64,17 +64,18 @@ class Vet extends React.Component {
 
                         <div className="guide-banner-image dark-green" />
 
-                        <div className="back-to-checklist-button-test">
-                            <Link to='/checklist'>
-                                <Button
-                                    type="primary">
-                                    Back to Checklist
-                                </Button>
-                            </Link>
 
-                        </div>
 
                         <div className="guide-banner-title">
+                            <div className="back-to-checklist-button-test">
+                                <Link to='/checklist'>
+                                    <Button
+                                        type="primary">
+                                        Back to Checklist
+                                </Button>
+                                </Link>
+
+                            </div>
                             <h5>Russell's Checklist</h5>
                             <h1>Let's find Russell a great vet!</h1>
 
@@ -107,63 +108,63 @@ class Vet extends React.Component {
 
                     <div className="content-section white">
                         <div className="checklist-page content">
-                        <div className="vet-find-container">
+                            <div className="vet-find-container">
 
-                        
-                            <div className="vet-finder">
 
-                                <div className="checklist-page-section-intro">
+                                <div className="vet-finder">
 
-                                    <h3>Vets near you</h3>
-                                    <h5>We have a list of the most trusted vets in your area</h5>
-                                </div>
+                                    <div className="checklist-page-section-intro">
 
-                                <div className="vet-finder-input">
-                                    <h5>Enter your postal code to find reputable vets near you</h5>
-                                    <div className="vet-finder-input-box">
-                                    <input
-                                        type="text"
-                                        onChange={e => this.handleInput(e.target.value)}
-                                    />
-                                    <Button
-                                        className="vet-finder-button"
-                                        onClick={this.handleSubmit}>
-                                        Find vets
+                                        <h3>Vets near you</h3>
+                                        <h5>We have a list of the most trusted vets in your area</h5>
+                                    </div>
+
+                                    <div className="vet-finder-input">
+                                        <h5>Enter your postal code to find reputable vets near you</h5>
+                                        <div className="vet-finder-input-box">
+                                            <input
+                                                type="text"
+                                                onChange={e => this.handleInput(e.target.value)}
+                                            />
+                                            <Button
+                                                className="vet-finder-button"
+                                                onClick={this.handleSubmit}>
+                                                Find vets
                                             </Button>
+                                        </div>
+                                    </div>
+
+
                                 </div>
+
+                                <div className="vet-map">
+                                    <Map
+                                        center={this.state.userLocation}
+                                        markers={this.state.markers} />
                                 </div>
-
-
-                            </div>
-
-                            <div className="vet-map">
-                                <Map
-                                    center={this.state.userLocation}
-                                    markers={this.state.markers} />
-                            </div>
                             </div>
 
                             {markers.length > 0 &&
-                            <div className="vet-list">
-                                <h4>List View</h4>
+                                <div className="vet-list">
+                                    <h4>List View</h4>
 
-                                {markers.map(marker =>
-                                    <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
-                                        <p>{marker.address}</p>
+                                    {markers.map(marker =>
+                                        <Card className="vet-card" key={marker.id} title={marker.name} extra={<a href="#">Site</a>}>
+                                            <p>{marker.address}</p>
 
-                                    </Card>
-                                )}
+                                        </Card>
+                                    )}
 
-                            </div>
-                        }
-                        
-                        
-                        
+                                </div>
+                            }
+
+
+
                         </div>
                         <div>
 
 
-                            
+
 
 
 
@@ -175,7 +176,7 @@ class Vet extends React.Component {
 
                         </div>
 
-                       
+
 
 
 
@@ -206,7 +207,7 @@ class Vet extends React.Component {
 
 
                     <div className="next-section-button dark-green">
-                    <div>
+                        <div>
                             <h4>Got your vet? That wasn't so scary!</h4>
                             <h5>Time to teach your pup some manners at puppy class! Click below to go to the next section</h5>
                         </div>

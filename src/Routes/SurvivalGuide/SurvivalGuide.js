@@ -67,6 +67,9 @@ class SurvivalGuide extends React.Component {
 
             <div className="survival-guide-banner-image white" />
 
+         
+
+            <div className="survival-guide-banner-title">
             <div className="back-to-checklist-button-test">
               <Link to='/checklist'>
                 <Button
@@ -76,8 +79,6 @@ class SurvivalGuide extends React.Component {
               </Link>
 
             </div>
-
-            <div className="survival-guide-banner-title">
               <h5 className="survival-guide-title">Doggo Survival Guide</h5>
               <h1>Your guide to the first 24 hours with pup</h1>
 

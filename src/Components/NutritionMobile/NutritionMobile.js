@@ -57,7 +57,7 @@ class NutritionMobile extends React.Component {
         return (
             <div className="carousel-container">
                 <div className="carousel-intro">
-                    <h4>Let's pick a food for Russell</h4>
+                    <h2>Let's pick a food for Russell</h2>
                     <h5>We've narrowed it down to three options! All are great choices for Russell and appropriate for his age and health status</h5>
                 </div>
 

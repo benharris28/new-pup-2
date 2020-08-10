@@ -46,6 +46,9 @@ class Nutrition extends React.Component {
 
                         <div className="guide-banner-image dark-yellow" />
 
+                        
+
+                        <div className="guide-banner-title">
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
                                 <Button
@@ -56,7 +59,6 @@ class Nutrition extends React.Component {
 
                         </div>
 
-                        <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
                             <h1>Everything you need to know about dog food</h1>
 
@@ -66,9 +68,9 @@ class Nutrition extends React.Component {
                     <div className="content-section white">
 
 
-                        <div className="checklist-page content center">
+                        <div className="checklist-page content">
                             <div className="checklist-page-section-intro">
-                                <h3>There's more than one way to buy dog food</h3>
+                                <h2>There's more than one way to buy dog food</h2>
                                 <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
                             </div>
                             <div className="nutrition-types-container">
@@ -123,7 +125,7 @@ class Nutrition extends React.Component {
                     <div className="content-section green">
                         <div className="checklist-page content center">
                             <div className="checklist-page-section-intro">
-                                <h3>What to look for in dog food</h3>
+                                <h2>What to look for in dog food</h2>
                             </div>
 
                             <div className="what-to-look-for-container">
@@ -200,10 +202,10 @@ class Nutrition extends React.Component {
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
-                            <Row gutter={[40, 24]} className="grain">
+                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                     <div className="grain-content">
-                                        <h4>What's the deal with grain free?</h4>
+                                        <h2>What's the deal with grain free?</h2>
                                         <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
                                     </div>
                                 </Col>
@@ -217,9 +219,9 @@ class Nutrition extends React.Component {
 
                     <div className="content-section yellow">
                         <div className="checklist-page content">
-                            <h4>Should I get a food subscription?</h4>
+                            <h2>Should I get a food subscription?</h2>
                             <div className="picker">
-                                <Row justify="space-between">
+                                <Row style={{ margin: 0 }} justify="space-between">
                                     <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">Subscription</Button></Col>
                                     <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")} className="picker-button" type="primary">Pick Up</Button></Col>
                                 </Row>
@@ -234,10 +236,12 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
 
+                    
+
                     <div className="content-section white">
                         <div className="content">
 
-                            {fullWidth < 700
+                            {fullWidth < 900
                                 ? <NutritionMobile food={this.state.food} />
                                 : <NutritionDesktop food={this.state.food} />
                             }
