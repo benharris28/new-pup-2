@@ -46,40 +46,8 @@ class LandingPage extends React.Component {
                     </div>
                 </div>
 
+                
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free row-reverse">
-                        <Row style={{ margin: 0 }}gutter={[40, 24]} className="grain">
-                            
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                            <div className="grain-content">
-                                <div className="row-content-intro">
-                                    <h4>Expert recommended products</h4>
-                                    <h5>We'll tell you only what you need and exactly where to find it</h5>
-                                    <Link to='/checklist'>
-                                    <Button className="banner-button">
-                                        Start now
-                                    </Button>
-                                    </Link>
-                                </div>
-                                   
-                    
-
-
-            
-                                </div>
-                                
-                            </Col>
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                               
-                                <img src={russ_headshot} alt="gear list" />
-                            </Col>
-                        </Row>
-
-                    </div>
-                </div>
-
-
-                <div className="content-section light-purple">
                     <div className="checklist-page content space grain-free row-reverse">
                         <Row style={{ margin: 0 }}gutter={[40, 24]} className="grain">
                             
@@ -116,7 +84,7 @@ class LandingPage extends React.Component {
                         <Row style={{ margin: 0 }}gutter={[40, 24]} className="grain">
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                
-                               <video className="stock-image" src={food_scroll} alt="gear list"  preload="auto" muted loop playsinline autoplay></video>
+                               <img className="stock-image" src={food_screenshot} alt="gear list"  />
                             </Col>
 
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
