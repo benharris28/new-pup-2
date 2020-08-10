@@ -78,7 +78,7 @@ h6 {
 
 
 .blue {
-  background-color: #EBF5FB;
+  background-color: rgb(105, 155, 247);
 }
 
 .green {
@@ -133,6 +133,10 @@ h6 {
 }
 
 .coral {
+  background-color: rgb(255, 133, 119);
+}
+
+.grey {
   background-color: rgb(255, 133, 119);
 }
 
@@ -619,20 +623,70 @@ h6 {
 
 /* Survival Guide Styling */
 
+.survival-guide-header {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.survival-guide-header-button {
+  width: 120px;
+  border: 3px solid black;
+   border-radius: 10px;
+   background-color: white;
+   color: black;
+   font-size: 0.75rem;
+   height: 50px;
+   
+}
+
+.selected {
+  background-color: coral;
+  color: white;
+  border: 3px solid rgb(85, 81, 255);
+}
+
+.grid-container {
+  text-align: center;
+  margin: auto;
+}
+.survival-guide-banner .ant-row {
+  text-align: center;
+  
+}
+
+.survival-guide-banner-col {
+  text-align: center;
+  max-width: 130px;
+  margin-bottom: 2rem;
+}
+
+.survival-guide-header-image {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.survival-guide-headshot {
+  max-height: 150px;
+}
+
 .survival-guide-banner {
   width: 100%;
-  height: 600px;
-  text-align: left;
+  height: 500px;
+  text-align: center;
   z-index: 2;
 
   position: relative;
   
 } 
 
+
 .survival-guide-banner-image {
   
   width: 100%;
-  min-height: 600px;
+  min-height: 500px;
   object-fit: cover;
   opacity: 1.2;
   
@@ -650,7 +704,7 @@ h6 {
 }
 
 .survival-guide-banner-title h5 {
-  color: #A259FF;
+  color:rgb(85, 81, 255);
   font-weight: 500;
   font-size: 2rem;
 }
@@ -661,13 +715,32 @@ h6 {
   margin-top: 0.5rem;
 }
 
-.step-counter {
+.back-to-guide-button {
+   position: absolute;
+   width: 70%;
+   top: 15%;
+   left: 175px;
+   transform: translate(-50%, -50%);
+   color: white;
+   margin-bottom: 4rem;
+}
+
+.back-to-guide-button button {
+  border: 2px solid black;
+  background-color: rgb(85, 81, 255);
+  color: white;
+  
+}
+
+.section-count {
   border: 3px solid black;
   border-radius: 10px;
-  background-color: #FFC700;
+  background-color: black;
   width: 30%;
-  margin: auto;
+  max-width: 250px;
+  color: white;
   font-weight: 500;
+  text-align: center;
 }
 
 .survival-guide-title {
@@ -684,8 +757,14 @@ h6 {
   font-weight: 700;
 }
 
+.video-link {
+  max-width: 700px;
+  text-align: center;
+}
+
 .page-image {
-  width: 100%
+  width: 100%;
+  
 }
 
 .guide-detail {

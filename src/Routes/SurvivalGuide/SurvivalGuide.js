@@ -4,6 +4,7 @@ import PrepareHome from '../GuidePages/PrepareHome'
 import { Layout, Content, Steps, Button, Avatar, Row, Col} from 'antd';
 import { CaretRightOutlined, UserOutlined, HomeOutlined, CarOutlined } from '@ant-design/icons';
 import food_image from '../../Assets/food_image.png'
+import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 
 
 
@@ -63,39 +64,86 @@ class SurvivalGuide extends React.Component {
 
       <div>
         <Layout className="white">
-          <div className="survival-guide-banner">
+          <div className="survival-guide-header">
+          <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 },16]}>
+                                
+                                  
 
-            <div className="survival-guide-banner-image white" />
+          <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
+               <div className="survival-guide-header-image">
+               <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
+               
+               <div>
+                <h5 className="survival-guide-title">Doggo Survival Guide</h5>
+                <h4>Your guide to the first 24 hours with pup</h4>
 
+               </div>
+               
+              </div>   
+          </Col>
+          </Row>
          
+        <div className="grid-container">
 
-            <div className="survival-guide-banner-title">
-            <div className="back-to-checklist-button-test">
-              <Link to='/checklist'>
-                <Button
-                  type="primary">
-                  Back to Checklist
-                </Button>
+       
+        <Row justify="space-around" >
+        <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+               <Link to='/guide'>
+                <Button className="survival-guide-header-button selected">Guide Home</Button>
+               </Link>
+            
+         </Col>
+              <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                <Link to='/guide/prepare-home'>
+                    <Button className="survival-guide-header-button">Getting Ready</Button>
+                </Link>  
+                 
+              </Col>
+               <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+               <Link to='/guide/pickup-pup'>
+                    <Button className="survival-guide-header-button">Pick Up Pup</Button>
+                </Link>
+                 
+              </Col>
+              <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+              <Link to='/guide/pup-home'>
+               <Button className="survival-guide-header-button">Pup is home!</Button>
               </Link>
-
-            </div>
-              <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-              <h1>Your guide to the first 24 hours with pup</h1>
-
+            
+         </Col>
+         <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+         <Link to='/guide/first-meal'>
+               <Button className="survival-guide-header-button">First meal</Button>
+          </Link>
+            
+         </Col>
+         <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+         <Link to='/guide/house-train'>
+               <Button className="survival-guide-header-button">House training</Button>
+             </Link>
+            
+         </Col>
+       
+          
+         
+                                                       
+                                                    
+            </Row>
             </div>
 
           </div>
-
-          <div className="content-section purple">
+                   <div className="content-section purple">
                         <div className="checklist-page content">
                             <div className="checklist-page-alert font-white">
                                
-                                <h3>It's going to be ok!</h3>
+                                <h3>Surival Guide Home</h3>
                                 <h5>We're going to walk you through everything you'll need to do during your first 24 hours. We'll go step by step and give you only the info you absolutely need</h5>
                             </div>
 
                         </div>
                     </div>
+
+   
           
                     <div className="checklist-page content">
                             <div className="checklist-page-section-intro">
