@@ -627,7 +627,7 @@ h6 {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .survival-guide-header-button {
@@ -669,7 +669,7 @@ h6 {
 }
 
 .survival-guide-headshot {
-  max-height: 150px;
+  max-height: 120px;
 }
 
 .survival-guide-banner {
@@ -715,6 +715,52 @@ h6 {
   margin-top: 0.5rem;
 }
 
+.survival-guide-faq {
+  border: 3px solid black;
+}
+
+.survival-guide-faq .ant-collapse-header {
+
+  color: white;
+}
+
+.ant-collapse-header {
+  border: 1px solid black;
+  color: white;
+}
+
+.survival-guide-steps {
+  width: 100%;
+}
+
+.survival-guide-steps-row .ant-col {
+  padding: 2rem;
+}
+
+.survival-guide-step-col {
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.survival-guide-steps_num {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: black;
+    line-height: 50px;
+    margin: auto;
+    background: #fff;
+}
+
+.survival-guide-image {
+  max-width: 700px;
+}
+
+.pro-tip-icon {
+  border: 3px solid #FFC700;
+  border-radius: 10px;
+  width: 100px;
+}
 .back-to-guide-button {
    position: absolute;
    width: 70%;

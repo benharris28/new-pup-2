@@ -1,48 +1,99 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Russ_car from '../../Assets/Russ_car.JPG'
-import { Layout, Content, Button, Row, Col } from 'antd';
+import { Layout, Content, Button, Row, Col, Collapse } from 'antd';
 import stock_image from '../../Assets/stock_image.png'
+import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 
 class PickUpPup extends React.Component {
     render() {
         const { Content } = Layout;
+        const { Panel } = Collapse;
+
         return (
             <div>
-                <Layout>
-                    <div className="survival-guide-banner">
+                <Layout className="white">
+                <div className="survival-guide-header">
+                    <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 16]}>
 
-                        <div className="survival-guide-banner-image white" />
 
-                        <div className="back-to-checklist-button-test">
-                            <Link to='/guide'>
-                                <Button
-                                    type="primary">
-                                    Back to guide menu
-                                </Button>
-                            </Link>
 
-                        </div>
+                        <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
+                            <div className="survival-guide-header-image">
+                                <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
 
-                        <div className="survival-guide-banner-title">
-                            <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                            <div className="step-counter"><h6>Step 2 of 5</h6></div>
-                            <h1>Pickup Pup</h1>
+                                <div>
+                                    <h5 className="survival-guide-title">Doggo Survival Guide</h5>
+                                    <h4>Your guide to the first 24 hours with pup</h4>
 
-                        </div>
+                                </div>
 
+                            </div>
+                        </Col>
+                    </Row>
+
+                    <div className="grid-container">
+
+
+                        <Row justify="space-around" >
+                        <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide'>
+                                    <Button className="survival-guide-header-button">Guide Home</Button>
+                                </Link>
+
+                            </Col>
+                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide/prepare-home'>
+                                    <Button className="survival-guide-header-button">Getting Ready</Button>
+                                </Link>
+
+                            </Col>
+                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide/pickup-pup'>
+                                    <Button className="survival-guide-header-button selected">Pick Up Pup</Button>
+                                </Link>
+
+                            </Col>
+                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide/pup-home'>
+                                    <Button className="survival-guide-header-button">Pup is home!</Button>
+                                </Link>
+
+                            </Col>
+                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide/meal-time'>
+                                    <Button className="survival-guide-header-button">First meal</Button>
+                                </Link>
+
+                            </Col>
+                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
+                                <Link to='/guide/crate-train'>
+                                    <Button className="survival-guide-header-button">House training</Button>
+                                </Link>
+
+                            </Col>
+
+
+
+
+
+                        </Row>
                     </div>
+                </div>
+
+                
+
 
                     <div className="content-section dark-green">
                     <div className="checklist-page content">
-                        <div className="checklist-page-alert font-black">
-
+                       
+                        <div className="section-count">Section 2</div>
                             <h3>The big day is here!</h3>
                             <h5>Get ready! Your life will change forever today in the best way possible! Get excited and don't forget a few handy tips</h5>
                         </div>
 
                     </div>
-                </div>
+        
 
                 <div className="content-section white">
                 <div className="checklist-page content">
@@ -90,6 +141,24 @@ class PickUpPup extends React.Component {
                             </div>
                         </div>
                     </div>
+
+                    <div className="content-section white">
+                    <div className="checklist-page content space grain-free">
+                        <h2>FAQ - Picking up pup</h2>
+                        <Collapse accordion className="survival-guide-faq">
+                            <Panel header="Question 1 question" key="1">
+                                <p>Question 1</p>
+                            </Panel>
+                            <Panel header="Question 2 question" key="2">
+                                <p>Question 2</p>
+                            </Panel>
+                            <Panel header="Question 3 question" key="3">
+                                <p>Question 3</p>
+                            </Panel>
+
+                        </Collapse>
+                    </div>
+                </div>
 
                     <div className="next-section-button dark-yellow">
                     <div>
