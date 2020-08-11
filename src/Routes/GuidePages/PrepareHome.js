@@ -119,7 +119,7 @@ class PrepareHome extends React.Component {
                         <Row gutter={[40, 24]} className="grain">
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                 <div className="grain-content">
-                                    <h4>How to puppy proof</h4>
+                                    <h2>How to puppy proof</h2>
                                     <div className="content-group">
                                         <h6>Hide any items that can be chewed or swallowed</h6>
 
