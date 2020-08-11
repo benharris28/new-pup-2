@@ -83,7 +83,7 @@ class PupHome extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section purple">
+                    <div className="content-section grey">
                         <div className="checklist-page content">
 
                             <div className="section-count">Section 3</div>
@@ -94,9 +94,11 @@ class PupHome extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section purple">
+                    <div className="content-section purple font-white">
                         <div className="checklist-page content">
+                            <h2 className="font-white">What to expect</h2>
                             <div className="grid-container">
+
                                 <Row className="survival-guide-steps-row font-white" justify="space-around">
                                     <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
                                         <div className="survival-guide-steps font-white">
@@ -104,7 +106,7 @@ class PupHome extends React.Component {
                                                 1
                                     </div>
                                             <h3>Stop!</h3>
-                                            <h6>Your pup can't go anywhere until they are vaccinated</h6>
+                                            <h6 className="font-white">Your pup can't go anywhere until they are vaccinated</h6>
                                         </div>
 
                                     </Col>
@@ -114,7 +116,7 @@ class PupHome extends React.Component {
                                                 2
                                     </div>
                                             <h3>Pee breaks</h3>
-                                            <h6>Take your pup out to pee every 45 mins (or immediately after eating/drinking or waking up from a nap)</h6>
+                                            <h6 className="font-white">Take your pup out to pee every 45 mins (or immediately after eating/drinking or waking up from a nap)</h6>
                                         </div>
 
                                     </Col>
@@ -124,7 +126,7 @@ class PupHome extends React.Component {
                                                 3
                                     </div>
                                             <h3>ZZZ's</h3>
-                                            <h6>Your pup is going to nap - a lot!</h6>
+                                            <h6 className="font-white">Your pup is going to nap - a lot!</h6>
                                         </div>
 
                                     </Col>
@@ -151,12 +153,12 @@ class PupHome extends React.Component {
                         </div>
                     </div>
 
-                   
+
 
                     <div className="content-section blue">
                         <div className="checklist-page content space grain-free">
-                            <Row gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={12} lg={12}>
                                     <div className="grain-content">
                                         <h2>Potty Time</h2>
                                         <h5>House training begins the moment you get home</h5>
@@ -185,27 +187,28 @@ class PupHome extends React.Component {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={12} lg={12}>
                                     <img className="food-image" src={dog_pee} alt="dog peeing on fire hydrant" />
                                 </Col>
                             </Row>
 
-                            </div>
-
                         </div>
 
-                        <div className="content-section black">
+                    </div>
+
+                    <div className="content-section black">
                         <div className="checklist-page content">
                             <div>
                                 <img className="pro-tip-icon" src={light_bulb} alt="light bulb icon" />
                             </div>
                             <h2 className="font-white">Pro Tip</h2>
+                            <h3 className="font-white">Keep your pup tethered to you </h3>
                             <h5 className="font-white">Don't let pup out of your sight. If you see them sniffing around or sneaking off, take them out to relieve themselves</h5>
                             <h5 className="font-white">When pup is awake, keep them tethered to you as you move about your house. Wherever you go, pup goes. </h5>
                         </div>
-                        </div>
+                    </div>
 
-                        <div className="content-section white">
+                    <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <Row gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
@@ -213,7 +216,7 @@ class PupHome extends React.Component {
                                         <h2>Napping</h2>
                                         <h5>Your pup will be napping constantly - that's normal!</h5>
 
-                                       
+
                                     </div>
                                 </Col>
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
@@ -221,66 +224,88 @@ class PupHome extends React.Component {
                                 </Col>
                             </Row>
 
-                            </div>
-
                         </div>
-                       
-                        <div className="content-section white">
+
+                    </div>
+
+                    <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <Row gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <img className="food-image" src={pup_sleep} alt="puppy sleeping" />
-                                </Col>
+
+
+
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                     <div className="grain-content">
                                         <h2>Teach pup to sit</h2>
                                         <h5>Use pup's food as a treat reward</h5>
                                         <h5>Hold the treat up to their nose and lift your hand slightly upward. The pup will naturally lower their bum to the ground. When they do, give them the treat and praise!</h5>
-                                        <h5>As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</h5> 
+                                        <h5>As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</h5>
 
-                                       
+
                                     </div>
-                                    
+
+                                </Col>
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                    <img className="food-image" src={pup_sleep} alt="puppy sleeping" />
                                 </Col>
                             </Row>
 
-                            </div>
-
                         </div>
 
-                      
-
-                           
-
-                        
-
-
-                           
-
-                            
+                    </div>
 
 
 
 
-                            <div className="guide-content-outro">
-                                <div className="next-section-button">
-                                    <Link to='/food'>
-                                        <Button>
-                                            Up Next: Meal time!
+
+
+
+
+
+
+
+
+
+
+
+                    <div className="content-section white">
+                        <div className="checklist-page content space grain-free">
+                            <h2>FAQ - first few hours</h2>
+                            <Collapse accordion className="survival-guide-faq">
+                                <Panel header="Question 1 question" key="1">
+                                    <p>Question 1</p>
+                                </Panel>
+                                <Panel header="Question 2 question" key="2">
+                                    <p>Question 2</p>
+                                </Panel>
+                                <Panel header="Question 3 question" key="3">
+                                    <p>Question 3</p>
+                                </Panel>
+
+                            </Collapse>
+                        </div>
+                    </div>
+
+                    <div className="next-section-button dark-yellow">
+                        <div>
+                            <h4>Getting the hang of it?</h4>
+                            <h5>In the next section we talk about pup's first meal in your home</h5>
+                        </div>
+                        <Link to='/guide/meal-time'>
+                            <Button>
+                                Step 4: Meal Time!
                                     </Button>
-                                    </Link>
+                        </Link>
+
+                    </div>
 
 
-                                </div>
-                            </div>
 
-
-                     
                 </Layout>
 
             </div>
-                )
-            }
-        }
-        
+        )
+    }
+}
+
 export default PupHome;
