@@ -88,7 +88,7 @@ class PupHome extends React.Component {
 
                             <div className="section-count">Section 3</div>
                             <h3>Your first hours with pup</h3>
-                            <h5>Chaos - but fun! Here's what to expect</h5>
+                            <h5>Chaos - but fun! Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
 
 
                         </div>
@@ -106,7 +106,7 @@ class PupHome extends React.Component {
                                                 1
                                     </div>
                                             <h3>Stop!</h3>
-                                            <h6 className="font-white">Your pup can't go anywhere until they are vaccinated</h6>
+                                            <h5 className="font-white">Your pup can't go anywhere until they are vaccinated</h5>
                                         </div>
 
                                     </Col>
@@ -116,7 +116,7 @@ class PupHome extends React.Component {
                                                 2
                                     </div>
                                             <h3>Pee breaks</h3>
-                                            <h6 className="font-white">Take your pup out to pee every 45 mins (or immediately after eating/drinking or waking up from a nap)</h6>
+                                            <h5 className="font-white">Take your pup out to pee every 45 mins (or immediately after eating/drinking or waking up from a nap)</h5>
                                         </div>
 
                                     </Col>
@@ -126,7 +126,7 @@ class PupHome extends React.Component {
                                                 3
                                     </div>
                                             <h3>ZZZ's</h3>
-                                            <h6 className="font-white">Your pup is going to nap - a lot!</h6>
+                                            <h5 className="font-white">Your pup is going to nap - a lot!</h5>
                                         </div>
 
                                     </Col>
@@ -139,16 +139,23 @@ class PupHome extends React.Component {
                         <div className="checklist-page content">
 
                             <div>
-                                <h2>Hold your horses! (err...puppies)</h2>
-                                <h5>Your pup isn't vaccinated yet! What can you do?</h5>
-                                <h4>No walks!</h4>
-                                <p>Your pup will get their first set of vaccinations on ...</p>
+                                <div className="survival-content-group">
+                                    <h2>Hold your horses! (err...puppies)</h2>
+                                    <h5>Puppies are vulnerable to canine distemper and parvovirus. It takes two sets of vaccinations to immunize your pup againt these and other diseases which are found in the outside world.</h5>
+                                </div>
+                                <div className="survival-content-group">
+                                    <h4>No walks!</h4>
+                                    <p>Your pup will get their first set of vaccinations at your first wellness visit and will get a second 2 - 4 weeks after that</p>
 
-                                <p>Keep your pup confined to your yard or in a contained area away from other pets and pet urine / feces. These could make your pet very sick!</p>
+                                    <p>Keep your pup confined to your yard or in a contained area away from other pets and pet urine / feces. These could make your pet very sick!</p>
 
-                                <h4>No dog parks!</h4>
-                                <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
+                                </div>
 
+                                <div className="survival-content-group">
+
+                                    <h4>No dog parks!</h4>
+                                    <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -158,7 +165,7 @@ class PupHome extends React.Component {
                     <div className="content-section blue">
                         <div className="checklist-page content space grain-free">
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={12} lg={12}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={12}>
                                     <div className="grain-content">
                                         <h2>Potty Time</h2>
                                         <h5>House training begins the moment you get home</h5>
@@ -187,7 +194,7 @@ class PupHome extends React.Component {
                                         </div>
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={12} lg={12}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={12}>
                                     <img className="food-image" src={dog_pee} alt="dog peeing on fire hydrant" />
                                 </Col>
                             </Row>
@@ -237,10 +244,17 @@ class PupHome extends React.Component {
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                     <div className="grain-content">
                                         <h2>Teach pup to sit</h2>
-                                        <h5>Use pup's food as a treat reward</h5>
-                                        <h5>Hold the treat up to their nose and lift your hand slightly upward. The pup will naturally lower their bum to the ground. When they do, give them the treat and praise!</h5>
-                                        <h5>As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</h5>
+                                        <div className="trick-list">
+                                            <ul>
+                                                <li><h5>Use pup's food as a treat reward</h5></li>
+                                                <li><h5>Hold the treat up to their nose and lift your hand slightly upward. The pup will naturally lower their bum to the ground. When they do, give them the treat and praise!</h5></li>
+                                                <li><h5>As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</h5></li>
+                                            </ul>
+                                            
+                                        
 
+                                      
+                                        </div>
 
                                     </div>
 
@@ -270,8 +284,9 @@ class PupHome extends React.Component {
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
-                            <h2>FAQ - first few hours</h2>
-                            <Collapse accordion className="survival-guide-faq">
+                            <h2 style={{marginBottom: 0}}>FAQ</h2>
+                            <h4 className="font-purple">Pup's first few hours</h4>
+                            <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
                                 <Panel header="Question 1 question" key="1">
                                     <p>Question 1</p>
                                 </Panel>

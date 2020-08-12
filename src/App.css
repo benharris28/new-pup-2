@@ -716,16 +716,20 @@ h6 {
 }
 
 .survival-guide-faq {
-  border: 3px solid black;
+  border: 0px solid white;
+  margin-top: 2rem;
 }
 
-.survival-guide-faq .ant-collapse-header {
-
-  color: white;
+.survival-guide-faq .ant-collapse-item .ant-collapse-header {
+  background-color: white;
+  color: rgb(85, 81, 255);
+  font-size: 1.5rem;
+  border: 0px solid white;
 }
 
 .ant-collapse-header {
-  border: 1px solid black;
+  border: 0px solid white;
+
   color: white;
 }
 
@@ -761,6 +765,34 @@ h6 {
   border-radius: 10px;
   width: 100px;
 }
+
+.survival-content-group {
+  margin-top: 2rem;
+}
+
+.trick-list {
+  display: flex;
+  align-items: center;
+ 
+}
+
+.trick-list-num {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    line-height: 50px;
+    margin-right: 2rem;
+    background: black;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700
+}
+
+.trick-list-content {
+  width: 400px;
+}
+
 .back-to-guide-button {
    position: absolute;
    width: 70%;
