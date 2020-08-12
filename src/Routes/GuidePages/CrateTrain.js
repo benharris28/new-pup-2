@@ -161,27 +161,31 @@ class CrateTrain extends React.Component {
                     </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
-                                    <div className="grain-content">
-                                        <h2>Familiarize your doggo with their crate</h2>
-                                        <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
-                                        
+                        <div className="checklist-page content">
 
+                            <div>
+                                <div className="survival-content-group">
+                                    <h2>Familiarize your doggo with their crate</h2>
+                                    <h5>By using positive reinforcement, you can build a positive association with the crate</h5>
+                                </div>
+                                <div className="survival-content-group">
+                                    <h4>Start slow, build up</h4>
+                                    <p>Start with your doggo in their crate for a few seconds with the door open. Make sure your pup can see you. Give them treats and praise just for being in their crate</p>
 
+                                    <p>Build up to a few minutes in the crate, and then progressing to closing the door. Continue to praise your pup and offer treats. Eventually, you can build up to moving out of site for a brief moment</p>
 
+                                </div>
 
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
-                                    <img className="food-image" src={schedule_image} alt="daily shedule" />
-                                </Col>
-                            </Row>
+                                <div className="survival-content-group">
 
+                                    <h4>No dog parks!</h4>
+                                    <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
+
+                   
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
