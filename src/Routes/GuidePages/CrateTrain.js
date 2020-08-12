@@ -136,14 +136,22 @@ class CrateTrain extends React.Component {
 
 
 
+                    <div className="content-section white">
+                        <div className="checklist-page content space grain-free">
+                            <h2>Is crate training cruel?</h2>
+                            <h5>If used properly, positive-reinforcement trainers agree that crates are positive for puppies. Crates provide a safe space for doggos</h5>
+                        </div>
+
+                    </div>
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
-                                    <div className="grain-content">
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }} style={{ paddingLeft: 0}}>
+                                    <div className="grid-content">
                                         <h2>What is crate training?</h2>
                                         <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
+                                        <h5>Crate training also helps with house training. Your doggo will not want to pee or poo in their crate. Crates also help your dog avoid destructive behaviours such as chewing or eating unwanted items when left to their own devices</h5>
                                         
 
 
@@ -151,7 +159,7 @@ class CrateTrain extends React.Component {
 
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0}}>
                                     <img className="food-image" src={schedule_image} alt="daily shedule" />
                                 </Col>
                             </Row>
@@ -159,6 +167,8 @@ class CrateTrain extends React.Component {
                         </div>
 
                     </div>
+
+                
 
                     <div className="content-section white">
                         <div className="checklist-page content">
@@ -168,6 +178,15 @@ class CrateTrain extends React.Component {
                                     <h2>Familiarize your doggo with their crate</h2>
                                     <h5>By using positive reinforcement, you can build a positive association with the crate</h5>
                                 </div>
+
+                                <div className="survival-content-group">
+                                    <h4>Introduce the crate with treats</h4>
+                                    <p>Try placing toys, a treat, or a KONG filled with peanut butter in the crate to convince your doggo to hang out in the crate</p>
+
+                                    <p>Build up to a few minutes in the crate, and then progressing to closing the door. Continue to praise your pup and offer treats. Eventually, you can build up to moving out of site for a brief moment</p>
+
+                                </div>
+
                                 <div className="survival-content-group">
                                     <h4>Start slow, build up</h4>
                                     <p>Start with your doggo in their crate for a few seconds with the door open. Make sure your pup can see you. Give them treats and praise just for being in their crate</p>
@@ -176,35 +195,85 @@ class CrateTrain extends React.Component {
 
                                 </div>
 
-                                <div className="survival-content-group">
-
-                                    <h4>No dog parks!</h4>
-                                    <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
-                                </div>
+                
                             </div>
                         </div>
                     </div>
 
-                   
-
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
-                                    <div className="grain-content">
-                                        <h2>The first night</h2>
-                                        <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }} style={{ paddingLeft: 0}}>
+                                    <div className="survival-content">
+                                        <h2>How long is too long?</h2>
+                                        <h6>Puppies do not want to pee or poo in their crate, and will go great lengths to avoid it. Altough, puppies can't control their bladders very well, and should be let out for potty breaks often </h6>
+                                        <h4>Daytime</h4>
+                                        <p>As a general rule, a puppy should only be left in a crate for 1 hour for every month of age. Therefore, if your puppy is 4 months old, you can leave the pup for 4 hours maximum</p>
                                         
+                                        <h4>Nightime</h4>
+                                        <p>You can break the 1 hours per month rule at night while your puppy is sleeping. Make sure you monitor your puppy closely. If they awake and its been longer than 2 hours, take them out for a potty break.</p>
 
 
 
 
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }} style={{ paddingLeft: 0}}>
                                     <img className="food-image" src={schedule_image} alt="daily shedule" />
                                 </Col>
                             </Row>
+
+                        </div>
+
+                    </div>
+
+                
+                   
+
+                    <div className="content-section white">
+                        <div className="checklist-page content space grain-free">
+                            
+                                    <div>
+                                        <h2>The first night</h2>
+                            
+                                    
+                               
+                                 
+
+                                    <div className="survival-content-group">
+                                        <h4>Your doggo is going to cry</h4>
+                                        <p>Your pup's world has been turned upside down. They will be in a brand new place with strangers they don't recognize. Your pup will cry and whine, and it will be heart-wrenching. </p>
+                                        
+
+                                       
+
+                                    </div>
+
+                                    <div className="survival-content-group">
+                                        <h4>Be Strong</h4>
+                                        <p>It's important that you don't let them out of the crate when they cry. That reinforces that crying leads to exiting the crate. Instead, wait until they are calm before letting them out of the crate</p>
+                                        
+
+                                       
+
+                                    </div>
+
+                                    <div className="survival-content-group">
+                                        <h4>Wait for calm</h4>
+                                        <p>Even if its just a second or two, wait for your pup to calm down before taking them out of the crate to prevent the association between crying and being let out</p>
+                                        
+
+                                       
+
+                                    </div>
+                                        
+                                        
+
+
+
+
+                                    </div>
+                               
 
                         </div>
 
@@ -220,8 +289,8 @@ class CrateTrain extends React.Component {
                                 <img className="pro-tip-icon black-border" src={light_bulb} alt="light bulb icon" />
                             </div>
                             <h2 className="font-black">Pro Tip</h2>
-                            <h3 className="font-black">Take doggo out for a bathroom break immediately after they finish eating or drinking</h3>
-                            <h5 className="font-black">Prevent accidents by being proactive. Most puppies will be or poo immediately after eating and drinking</h5>
+                            <h3 className="font-black">Place a KONG filled with peanut butter in your doggo's crate (during the day)</h3>
+                            <h5 className="font-black">This will keep your pup occupied as they try and get the peanut butter and will also reinforce a positive association with the crate</h5>
                             
                         </div>
                     </div>
@@ -246,7 +315,7 @@ class CrateTrain extends React.Component {
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <h2 style={{ marginBottom: 0 }}>FAQ</h2>
-                            <h4 className="font-purple">Feeding Doggo</h4>
+                            <h4 className="font-purple">Crate training</h4>
                             <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
                                 <Panel header="Question 1 question" key="1">
                                     <p>Question 1</p>
