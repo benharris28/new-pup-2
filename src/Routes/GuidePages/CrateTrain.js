@@ -82,12 +82,12 @@ class CrateTrain extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section dark-yellow">
+                    <div className="content-section blue">
                         <div className="checklist-page content">
 
-                            <div className="section-count">Section 4</div>
-                            <h3>Doggo's first meal at home</h3>
-                            <h5>We're going to walk you through feeding. Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
+                            <div className="section-count">Section 5</div>
+                            <h3>Housetraining Doggo</h3>
+                            <h5>Let's talk about teaching doggo to love his crate. Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
 
 
                         </div>
@@ -104,8 +104,8 @@ class CrateTrain extends React.Component {
                                             <div className="survival-guide-steps_num">
                                                 1
                                     </div>
-                                            <h3>Use the same food</h3>
-                                            <h5 className="font-white">Start by feeding the same food they have been eating at the breeder or shelter</h5>
+                                            <h3>It's going to be an adjustment</h3>
+                                            <h5 className="font-white">Your doggo may not warm to his crate right away and will likely cry a lot his few first nights</h5>
                                         </div>
 
                                     </Col>
@@ -114,8 +114,8 @@ class CrateTrain extends React.Component {
                                             <div className="survival-guide-steps_num">
                                                 2
                                     </div>
-                                            <h3>Expect picky eating</h3>
-                                            <h5 className="font-white">Your doggo's world has been flipped upside down. It may impact their appetite</h5>
+                                            <h3>Stay focused!</h3>
+                                            <h5 className="font-white">Letting your dogggo out of the crate when they cry will disrupt your progress</h5>
                                         </div>
 
                                     </Col>
@@ -124,8 +124,8 @@ class CrateTrain extends React.Component {
                                             <div className="survival-guide-steps_num">
                                                 3
                                     </div>
-                                            <h3>Use your crate</h3>
-                                            <h5 className="font-white">Your crate is a safe space. Try feeding them in or near it</h5>
+                                            <h3>Trust us</h3>
+                                            <h5 className="font-white">This short term struggle will be very beneficial in the long run to raising a secure doggo</h5>
                                         </div>
 
                                     </Col>
@@ -142,9 +142,9 @@ class CrateTrain extends React.Component {
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
                                     <div className="grain-content">
-                                        <h2>When should I feed my doggo?</h2>
-                                        <h5>Puppies who are 8 - 12 weeks old need 3 - 4 meals per day. All puppies are different, but start by feeding 3 meals per day. Breakfast should be after the first morning bathroom break when you have started your day (not 4 am). Lunch can be around noon, and dinner around 6 pm.</h5>
-                                        <h4>Check out this handy schedule</h4>
+                                        <h2>What is crate training?</h2>
+                                        <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
+                                        
 
 
 
@@ -163,17 +163,18 @@ class CrateTrain extends React.Component {
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 2 }}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
                                     <div className="grain-content">
-                                        <h2>How much should I feed?</h2>
-                                        <h6>Start by checking the label, which will give guidance for either cups per day or calories per day.</h6>
-                                        <h4>Monitor your doggo</h4>
-                                        <h6>Every doggo is different, and activity level, metabolism, and other factors will influence weight. If your doggo's belly starts to sag, try feeding less food per day </h6>
+                                        <h2>Familiarize your doggo with their crate</h2>
+                                        <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
+                                        
+
+
 
 
                                     </div>
                                 </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
                                     <img className="food-image" src={schedule_image} alt="daily shedule" />
                                 </Col>
                             </Row>
@@ -183,35 +184,31 @@ class CrateTrain extends React.Component {
                     </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content">
+                        <div className="checklist-page content space grain-free">
+                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
+                                    <div className="grain-content">
+                                        <h2>The first night</h2>
+                                        <h5>Your doggo's crate is a safe and secure environment. The "training" part is teaching them to make it their home</h5>
+                                        
 
-                            <div>
-                                <div className="survival-content-group">
-                                    <h2>How to feed</h2>
-                                    <h5>Most puppies transition from wet food to solids at around 8 weeks. When you first get your doggo, they will likely have just started the transition</h5>
-                                </div>
-                                <div className="survival-content-group">
-                                    <h4>Mix kibble with water</h4>
-                                    <p>If your pup is starting on kibble, add water to their food bowl and let it soak into the kibble until its soft. Keep this up for a few weeks until your pup gets the hang of it</p>
 
-                                    <p>After a few weeks, start to reduce the amount of water mixed into each meal until you are serving dry food</p>
 
-                                </div>
 
-                                <div className="survival-content-group">
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
+                                    <img className="food-image" src={schedule_image} alt="daily shedule" />
+                                </Col>
+                            </Row>
 
-                                    <h4>Stick to a schedule</h4>
-                                    <p>As your doggo gets used to their food, feed at the same times each day. Leave the food out only for 10 - 15 minutes. While it may be tempting, don't offer your doggo their food at other times (including some of your own food)</p>
-                                </div>
-
-                                <div className="survival-content-group">
-
-                                    <h4>Try using the crate</h4>
-                                    <p>Eating new food in a new environment will be intimidating for your doggo. Try putting the food bowl in or next to the crate to help create a safe environment for doggo.</p>
-                                </div>
-                            </div>
                         </div>
+
                     </div>
+
+                   
+
+                    
 
                     <div className="content-section dark-yellow">
                         <div className="checklist-page content">
