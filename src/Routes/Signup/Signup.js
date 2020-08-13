@@ -1,4 +1,5 @@
 import React from 'react';
+import ApiContext from '../../ApiContext';
 import SignupFormHuman from '../../Components/SignupFormHuman/SignupFormHuman'
 import {
     Layout,
@@ -12,15 +13,42 @@ import {
 import { QuestionCircleOutlined } from '@ant-design/icons';
 
 class Signup extends React.Component {
+    static contextType = ApiContext;
+    
     state = {
         first_name: '',
         last_name: '',
         email: '',
+        city: '',
         dog_name: '',
         dog_years: '',
         dog_breed: '',
-        page: 2,
+        page: 1,
         openPage: '',
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault();
+
+        const { 
+            first_name,
+            last_name,
+            email,
+            city,
+            dogs: [
+                {
+                    name: dog_name,
+                    year: dog_years,
+                    month: dog_breed 
+                }
+            ]
+            
+        } = this.state;
+        
+        const user = {
+            
+        }
+
     }
 
     handleFirstName = (name) => {
@@ -147,6 +175,23 @@ class Signup extends React.Component {
 
                                                         </input>
                                                     </div>
+                                                </Col>
+                                                <Col className="doggo-input-container" xs={24} sm={24} md={24} lg={24} xl={24}>
+
+                                                    <div className="doggo-input">
+                                                        <input
+                                                            type="text"
+                                                            aria-label="City"
+                                                            className="doggo-input-text-field"
+                                                            placeholder="Your City"
+                                                            name="city"
+                                                            onChange={e => this.handleCity(e.target.value)}
+                                                            value={this.state.city}>
+
+
+                                                        </input>
+                                                    </div>
+
                                                 </Col>
                                                 <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                                                     <div className="signup-form-next-button">

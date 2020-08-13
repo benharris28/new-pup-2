@@ -24,13 +24,21 @@ import './App.css';
 class App extends React.Component {
 
   state = {
-    activeUser: UserData.users[0]
+    activeUser: ''
+
+  }
+
+  updateActiveUser = (user) => {
+    this.setState({
+      activeUser: user
+    })
   }
 
   render() {
     console.log(this.state.activeUser)
     const value = {
-      activeUser: this.state.activeUser
+      activeUser: this.state.activeUser,
+      updateActiveUser: this.updateActiveUser
     }
 
     const { Content, Footer } = Layout;
