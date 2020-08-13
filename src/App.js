@@ -14,6 +14,7 @@ import PickUpPup from './Routes/GuidePages/PickUpPup'
 import PupHome from './Routes/GuidePages/PupHome'
 import MealTime from './Routes/GuidePages/MealTime'
 import CrateTrain from './Routes/GuidePages/CrateTrain'
+import Signup from './Routes/Signup/Signup'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
@@ -102,6 +103,11 @@ class App extends React.Component {
                       exact
                       path={'/guide/crate-train'}
                       component={CrateTrain}
+                  />
+                  <Route
+                      exact
+                      path={'/signup'}
+                      component={Signup}
                   />
                 
               </Switch>

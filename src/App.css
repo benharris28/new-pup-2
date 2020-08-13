@@ -208,6 +208,44 @@ h6 {
   margin-top: 4rem;
 }
 
+/* Signup Page */
+
+.signup-header {
+  text-align: center;
+  margin: auto;
+}
+.signup-form-fields-container {
+  margin: auto;
+}
+
+.signup-form-grid .ant-col {
+  margin: auto;
+  text-align: center;
+}
+
+.doggo-input-container {
+  margin: auto;
+}
+
+.doggo-input {
+  height: 80px;
+  margin: auto;
+}
+
+.doggo-input-text-field {
+  height: 52px;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 0 0 hsla(0,8%,61%,.5);
+    border: 1px solid #acacbc;
+    background-color: #fff;
+    outline: none;
+}
+
+
+
+
 /* Landing Page */
 
 .landing-page-banner {
