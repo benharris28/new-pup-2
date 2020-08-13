@@ -4,6 +4,11 @@ import ProgressBar from '../../Components/ProgressBar/ProgressBar'
 import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
 import Russ_banner from '../../Assets/Russ_banner.JPG'
 import { ClockCircleOutlined, CalendarOutlined } from '@ant-design/icons';
+import dog_crate_checklist from '../../Assets/dog_crate_checklist.png'
+import dog_food_checklist from '../../Assets/dog_food_checklist.png'
+import vet_checklist from '../../Assets/vet_checklist.png'
+import guide_checklist from '../../Assets/guide_checklist.png'
+import training_checklist from '../../Assets/training_checklist.png'
 
 class Checklist extends React.Component {
 
@@ -18,7 +23,7 @@ class Checklist extends React.Component {
         const cardList = [
             {
                 link: '/gear',
-                image: "https://www.rover.com/blog/wp-content/uploads/2020/01/Screen-Shot-2020-01-21-at-1.41.21-PM.png",
+                image: <img src={dog_crate_checklist} alt="dog crate" />,
                 title: 'Get the gear',
                 description: "Complete by June 25th",
                 alt_text: "gear to buy",
@@ -26,7 +31,7 @@ class Checklist extends React.Component {
             },
             {
                 link: '/food',
-                image: "https://i.insider.com/5b1fc0281ae6621a008b4fb2?width=1100&format=jpeg&auto=webp",
+                image: <img src={dog_food_checklist} alt="dog food" />,
                 title: 'Find the best food',
                 description: "Complete by June 25th",
                 alt_text: "food to buy",
@@ -34,23 +39,23 @@ class Checklist extends React.Component {
             },
             {
                 link: '/vet',
-                image: "https://trupanion.com/blog/wp-content/uploads/2019/04/ThankYourVeterinarian-1024x682.jpg",
-                title: 'Find a local veterinarian',
+                image: <img src={vet_checklist} alt="veterinarian" />,
+                title: 'Find a local vet',
                 description: "Complete by June 25th",
                 alt_text: "find a vet",
                 badge_count: 5
             },
             {
                 link: '/training',
-                image: "https://tailblazerspets.com/blog/wp-content/uploads/2015/02/golden-pups.png",
-                title: 'Sign up for puppy socialization',
+                image: <img src={training_checklist} alt="woman and dog" />,
+                title: 'Sign up for puppy classes',
                 description: "Complete by June 25th",
                 alt_text: "puppy socialization",
                 badge_count: 1
             },
             {
                 link: '/guide',
-                image: "https://dogtime.com/assets/uploads/2011/03/puppy-development-1280x720.jpg",
+                image: <img src={guide_checklist} alt="compass" />,
                 title: "Read Doggo's Survival Guide",
                 description: "Your guide to the first 24 hours of puppyhood",
                 alt_text: "24 hour guide",
@@ -90,14 +95,50 @@ class Checklist extends React.Component {
                         <h5>Russell comes home in 21 days. Let's get started!</h5>
                     </div>
                     </div>
-                    <div className="secondary-banner coral">
-                        <div className="secondary-banner-content">
-                        <h2 className="font-purple">How does this work?</h2>
-                        <h5 className="font-white">There are 5 sections to complete to be ready for your pup</h5>
-                        <h5 className="font-white">Go through each section in order</h5>
-                        <h5 className="font-white">We recommend completing each section by a certain date to make sure you're ready</h5>
+                
+
+                    <div className="content-section blue font-white center">
+                        <div className="checklist-page content">
+                            <h2 className="font-white">How this works</h2>
+                            <div className="grid-container">
+
+                                <Row className="survival-guide-steps-row font-white" justify="space-around">
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
+                                        <div className="survival-guide-steps font-white">
+                                            <div className="survival-guide-steps_num">
+                                                1
+                                    </div>
+                                            <h3>Go through each section</h3>
+                                            <h5 className="font-white">We break down puppyhood into 5 easy sections</h5>
+                                        </div>
+
+                                    </Col>
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
+                                        <div className="survival-guide-steps">
+                                            <div className="survival-guide-steps_num">
+                                                2
+                                    </div>
+                                            <h3>Pay attention to dates</h3>
+                                            <h5 className="font-white">We'll tell you when to complete each section by to make sure you're ready</h5>
+                                        </div>
+
+                                    </Col>
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
+                                        <div className="survival-guide-steps">
+                                            <div className="survival-guide-steps_num">
+                                                3
+                                    </div>
+                                            <h3>Don't forget the guide</h3>
+                                            <h5 className="font-white">The last step is a complete guide to your first 24 hours with pup</h5>
+                                        </div>
+
+                                    </Col>
+                                </Row>
+                            </div>
+                        </div>
                     </div>
-                    </div>
+
+
                     <Content
 
                         //style={{ padding: '0 50px' }}
@@ -126,7 +167,7 @@ class Checklist extends React.Component {
                                                 <Card
                                                     className="checklist-card"
                                                     hoverable
-                                                    cover={<img className="card-image" alt={card.alt_text} src={card.image} />}
+                                                    cover={card.image}
 
                                                 >
                                                     <Meta className="card-content" title={card.title} description={card.description} />

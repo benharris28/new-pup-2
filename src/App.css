@@ -434,7 +434,7 @@ h6 {
 .checklist-card {
     width: 100%;
     max-width: 300px;
-    max-height: 400px;
+    max-height: 450px;
 
     margin: auto;
    
@@ -1412,6 +1412,7 @@ h6 {
   margin-top: 8px;
   display: none;
   background: none;
+  border: 0px;
 }
 .barsBtn{
   display: block;
