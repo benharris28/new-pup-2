@@ -21,7 +21,7 @@ class Checklist extends React.Component {
     render() {
         const { Content } = Layout;
         const { Meta } = Card;
-        const { activeUser } = this.context;
+        const { activeUser, completeByDates } = this.context;
         const activeDoggo = activeUser.dogs[0].dog_name
 
         
@@ -82,7 +82,7 @@ class Checklist extends React.Component {
 
                         <div className="guide-banner-title">
                             <h5>{activeDoggo}'s Checklist</h5>
-                            <h2>Advice from the pros to get 100% ready for Russell</h2>
+                            <h2>Advice from the pros to get 100% ready for {activeDoggo}</h2>
                             <div className="show-checklist">
                                 <button>Show {activeDoggo}'s Checklist</button>
                             </div>
@@ -98,7 +98,7 @@ class Checklist extends React.Component {
                             <CalendarOutlined className="icon black-font" />
                         </div>
                         
-                        <h5>{activeDoggo} comes home in 21 days. Let's get started!</h5>
+                        <h5>{activeDoggo} comes home in {completeByDates.daysLeft} days. Let's get started!</h5>
                     </div>
                     </div>
                 

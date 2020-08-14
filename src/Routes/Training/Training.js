@@ -24,6 +24,9 @@ class Training extends React.Component {
         const { Content } = Layout;
         const { trainers } = this.state;
 
+        const { activeUser, completeByDates } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
+
         const points = [
             {
                 image: null,
@@ -66,7 +69,7 @@ class Training extends React.Component {
                             </Link>
 
                         </div>
-                            <h5>Russell's Checklist</h5>
+                            <h5>{activeDoggo}'s Checklist</h5>
                             <h1>Puppy Classes</h1>
 
                         </div>
@@ -78,7 +81,7 @@ class Training extends React.Component {
                             <Row gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                     <div className="grain-content">
-                                        <h2>Let's socialize your pup!</h2>
+                                        <h2>Let's socialize your doggo!</h2>
                                         <h5>It's a scary world for new puppies - loud noises, lots of humans, vet visits, and other dogs! Puppy classes are extremely important to prepare your dog for this crazy world!</h5>
                                     </div>
                                 </Col>
@@ -96,7 +99,7 @@ class Training extends React.Component {
                             <div className="checklist-page-alert font-white">
                                 <ExclamationCircleOutlined className="checklist-icon" />
                                 <h3>Heads up!</h3>
-                                <h5>Experts recommend completing socialization before Russell is 12 weeks old (July 12th)</h5>
+                                <h5>Experts recommend completing socialization before {activeDoggo} is 12 weeks old <span className="complete-by-date">({completeByDates.training})</span></h5>
                             </div>
 
                         </div>

@@ -5,9 +5,11 @@ import ProductData from '../../BackupData/ProductData'
 import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
 import { Layout, Content, Space, Card, Col, Row, Button, Drawer } from 'antd';
+import { ExclamationCircleOutlined } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
 import gear_banner from '../../Assets/gear_banner.png'
+
 
 class Gear extends React.Component {
     static contextType = ApiContext;
@@ -79,6 +81,9 @@ class Gear extends React.Component {
         const drawerZIndex = visible? 1000 : -1
         const width = window.addEventListener('resize', this.handleResize);
         const drawerSize = this.handleDrawerSize()
+
+        const { activeUser, completeByDates } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
        
         console.log(drawerSize)
         console.log(gearFilter)
@@ -109,7 +114,7 @@ class Gear extends React.Component {
 
                         </div>
 
-                            <h5>Russell's Checklist</h5>
+                            <h5>{activeDoggo}'s Checklist</h5>
                             <h1>All the gear you need in one place</h1>
 
                         </div>
@@ -121,10 +126,22 @@ class Gear extends React.Component {
                         <div className="expert-image">
 
                         </div>
-                        <h5 className="font-purple">Our resident dog trainer, XX Trainer, has made a list of the must-have gear to welcome home your pup.</h5>
+                        <h5 className="font-purple">Our resident dog trainer, XX Trainer, has made a list of the must-have gear to welcome home your doggo.</h5>
                         <h6>For each category, we offer two different options: basic and premium. Both will do the trick, but if you feel like getting fancy, you have the option!</h6>
                     </div>
                     </div>
+
+                    <div className="content-section dark-purple">
+                        <div className="checklist-page content center">
+                            <div className="checklist-page-alert">
+                                <ExclamationCircleOutlined className="checklist-icon" />
+                                <h2 className="font-coral">Heads up!</h2>
+                                <h5 className="font-white">We recommend ordering all your gear by <span className="complete-by-date">{completeByDates.gear}</span>  to make sure everything arrives in time!</h5>
+                            </div>
+
+                        </div>
+                    </div>
+
                     <Content
                         //style={{ padding: '0 50px' }}
                         className="page-content">
@@ -133,7 +150,7 @@ class Gear extends React.Component {
 
                         <div className="page-intro">
                             <h2>Gear List</h2>
-                            <h5>This list is designed to be all-encompasing. As long as you have an item from each category, you'll be ready. </h5>
+                            <h4>This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. </h4>
                         </div>
 
                         <div className="card-box">
@@ -203,7 +220,7 @@ class Gear extends React.Component {
                                 </div>
                                 {gearFilter[0].products.map(product => 
                                 <Card 
-                                    key={product.product_id}
+                                    key={product.product}
                                     className="gear-info-card" 
                                     cover={<img
                                         className="drawer-image"

@@ -33,16 +33,21 @@ class App extends React.Component {
   componentDidMount = () => {
     const { activeUser } = this.state;
     const homeDate = activeUser.dogs[0].home_date
+    const birthday = activeUser.dogs[0].birthday
     const today = dayjs();
     const daysUntilHome = dayjs(homeDate).diff(today, 'days')
-    const gearCompleteBy = dayjs(homeDate).subtract(2, "weeks")
-    const vetCompleteBy = dayjs(homeDate).subtract(1, "weeks")
+    const gearCompleteBy = dayjs(homeDate).subtract(2, "weeks").format('MMMM D')
+    const vetCompleteBy = dayjs(homeDate).subtract(1, "weeks").format('MMMM D')
+    const vetCheckUpCompleteBy = dayjs(homeDate).add(3, "days").format('MMMM D')
+    const trainingCompleteBy = dayjs(birthday).add(12, "weeks").format('MMMM D')
     const guideCompleteBy = dayjs(homeDate).subtract(1, "day")
     
     this.setState({
       completeByDates: {
         gear: gearCompleteBy,
         vet: vetCompleteBy,
+        vetCheckUp: vetCheckUpCompleteBy,
+        training: trainingCompleteBy,
         guide: guideCompleteBy,
         daysLeft: daysUntilHome
       }
@@ -61,7 +66,8 @@ class App extends React.Component {
     console.log(this.state)
     const value = {
       activeUser: this.state.activeUser,
-      updateActiveUser: this.updateActiveUser
+      updateActiveUser: this.updateActiveUser,
+      completeByDates: this.state.completeByDates
     }
 
     const { Content, Footer } = Layout;

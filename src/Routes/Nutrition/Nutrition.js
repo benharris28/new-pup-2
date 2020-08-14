@@ -1,14 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import FoodData from '../../BackupData/FoodData'
+import ApiContext from '../../ApiContext';
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
 import food_image from '../../Assets/food_image.png'
-import { Layout, Content, Button, Row, Col, Alert } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { Layout, Button, Row, Col, Alert } from 'antd';
 
 class Nutrition extends React.Component {
+    static contextType = ApiContext;
+    
     state = {
         format: '',
         windowSize: '',
@@ -33,12 +34,16 @@ class Nutrition extends React.Component {
     }
 
     render() {
-        const { Content } = Layout;
+        
         console.log(this.state.food)
         const width = window.addEventListener('resize', this.handleResize);
         const fullWidth = global.window.innerWidth;
         console.log(fullWidth)
         console.log(this.state.windowSize)
+
+        const { activeUser, completeByDates } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
+
         return (
             <div>
                 <Layout className="white">
@@ -59,7 +64,7 @@ class Nutrition extends React.Component {
 
                         </div>
 
-                            <h5>Russell's Checklist</h5>
+                            <h5>{activeDoggo}'s Checklist</h5>
                             <h1>Everything you need to know about dog food</h1>
 
                         </div>

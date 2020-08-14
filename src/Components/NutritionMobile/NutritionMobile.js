@@ -1,11 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 import FoodData from '../../BackupData/FoodData'
-import { Layout, Content, Carousel, Row, Col, Card, Button, Collapse } from 'antd';
+import ApiContext from '../../ApiContext';
+import { Layout, Carousel, Card, Button, Collapse } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 class NutritionMobile extends React.Component {
 
+    static contextType = ApiContext;
 
 
     constructor(props) {
@@ -34,6 +35,8 @@ class NutritionMobile extends React.Component {
 
 
     render() {
+        const { activeUser } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
         const { Panel } = Collapse;
         const { food } = this.props;
         console.log(this.state.title)
@@ -57,8 +60,8 @@ class NutritionMobile extends React.Component {
         return (
             <div className="carousel-container">
                 <div className="carousel-intro">
-                    <h2>Let's pick a food for Russell</h2>
-                    <h5>We've narrowed it down to three options! All are great choices for Russell and appropriate for his age and health status</h5>
+                    <h2>Let's pick a food for {activeDoggo}</h2>
+                    <h5>We've narrowed it down to three options! All are great choices for {activeDoggo} and appropriate for his age and health status</h5>
                 </div>
 
 
@@ -104,7 +107,7 @@ class NutritionMobile extends React.Component {
                                     <Collapse defaultActiveKey={['1']} ghost className="nutrition-collapse">
                                     <Panel header="Cost Estimator" key="1">
                                         <p>Estimated cost per month - Puppy: ${foodCard.cost_per_lb * 10}</p>
-                                        <p>Russell's estimated cost per month: ${foodCard.cost_per_lb * 70}</p>
+                                        <p>{activeDoggo}'s estimated cost per month: ${foodCard.cost_per_lb * 70}</p>
                                         </Panel>
                                         <Panel header="Nutrition Detail" key="2">
                                             <p>{foodCard.full_ingredients}</p>

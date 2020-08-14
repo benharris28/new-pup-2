@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
-import { Layout, Content, Button, Alert, Card, Row, Col } from 'antd';
+import ApiContext from '../../ApiContext';
+import { Layout, Button, Card, Row, Col } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 
 class Vet extends React.Component {
+    static contextType = ApiContext;
 
     state = {
         // change to default location for that city
@@ -53,6 +55,9 @@ class Vet extends React.Component {
         })
     }
     render() {
+        const { activeUser, completeByDates } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
+
         const { Content } = Layout;
         const { markers } = this.state;
         console.log(this.state.markers)
@@ -76,8 +81,8 @@ class Vet extends React.Component {
                                 </Link>
 
                             </div>
-                            <h5>Russell's Checklist</h5>
-                            <h1>Let's find Russell a great vet!</h1>
+                            <h5>{activeDoggo}'s Checklist</h5>
+                            <h1>Let's find {activeDoggo} a great vet!</h1>
 
                         </div>
 
@@ -88,7 +93,7 @@ class Vet extends React.Component {
 
 
                             <div className="checklist-page-section-intro">
-                                <h2>We found some great vets for Russell</h2>
+                                <h2>We found some great vets for {activeDoggo}</h2>
                                 <h5>We consider the vet a necessary evil. It pays to have one that you trust not too far from your home for wellness checkups or if your pup isn't feeling well</h5>
                                 <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
                             </div>
@@ -100,7 +105,7 @@ class Vet extends React.Component {
                             <div className="checklist-page-alert">
                                 <ExclamationCircleOutlined className="checklist-icon" />
                                 <h2 className="font-coral">Heads up!</h2>
-                                <h5 className="font-white">Russell will need a wellness checkup with a vet within 2 days of him coming home! (August 5th)</h5>
+                                <h5 className="font-white">{activeDoggo} will need a wellness checkup with a vet within 3 days of coming home! <span className="complete-by-date">({completeByDates.vetCheckUp})</span></h5>
                             </div>
 
                         </div>
