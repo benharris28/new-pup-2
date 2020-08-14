@@ -18,14 +18,35 @@ import Signup from './Routes/Signup/Signup'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
+import * as dayjs from 'dayjs'
 
 import './App.css';
 
 class App extends React.Component {
 
   state = {
-    activeUser: ''
+    activeUser: UserData.users[0],
+    completeByDates: ''
 
+  }
+
+  componentDidMount = () => {
+    const { activeUser } = this.state;
+    const homeDate = activeUser.dogs[0].home_date
+    const today = dayjs();
+    const daysUntilHome = dayjs(homeDate).diff(today, 'days')
+    const gearCompleteBy = dayjs(homeDate).subtract(2, "weeks")
+    const vetCompleteBy = dayjs(homeDate).subtract(1, "weeks")
+    const guideCompleteBy = dayjs(homeDate).subtract(1, "day")
+    
+    this.setState({
+      completeByDates: {
+        gear: gearCompleteBy,
+        vet: vetCompleteBy,
+        guide: guideCompleteBy,
+        daysLeft: daysUntilHome
+      }
+    })
   }
 
   updateActiveUser = (user) => {
@@ -34,14 +55,18 @@ class App extends React.Component {
     })
   }
 
+  
+
   render() {
-    console.log(this.state.activeUser)
+    console.log(this.state)
     const value = {
       activeUser: this.state.activeUser,
       updateActiveUser: this.updateActiveUser
     }
 
     const { Content, Footer } = Layout;
+
+    
 
     return (
       <ApiContext.Provider value={value}>

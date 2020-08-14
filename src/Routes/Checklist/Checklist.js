@@ -9,8 +9,10 @@ import dog_food_checklist from '../../Assets/dog_food_checklist.png'
 import vet_checklist from '../../Assets/vet_checklist.png'
 import guide_checklist from '../../Assets/guide_checklist.png'
 import training_checklist from '../../Assets/training_checklist.png'
+import ApiContext from '../../ApiContext';
 
 class Checklist extends React.Component {
+    static contextType = ApiContext;
 
     componentDidMount = () => {
        window.scrollTo(0, 0);
@@ -19,6 +21,10 @@ class Checklist extends React.Component {
     render() {
         const { Content } = Layout;
         const { Meta } = Card;
+        const { activeUser } = this.context;
+        const activeDoggo = activeUser.dogs[0].dog_name
+
+        
 
         const cardList = [
             {
@@ -75,10 +81,10 @@ class Checklist extends React.Component {
                         
 
                         <div className="guide-banner-title">
-                            <h5>Russell's Checklist</h5>
+                            <h5>{activeDoggo}'s Checklist</h5>
                             <h2>Advice from the pros to get 100% ready for Russell</h2>
                             <div className="show-checklist">
-                                <button>Show Russell's Checklist</button>
+                                <button>Show {activeDoggo}'s Checklist</button>
                             </div>
                             
                         </div>
@@ -92,7 +98,7 @@ class Checklist extends React.Component {
                             <CalendarOutlined className="icon black-font" />
                         </div>
                         
-                        <h5>Russell comes home in 21 days. Let's get started!</h5>
+                        <h5>{activeDoggo} comes home in 21 days. Let's get started!</h5>
                     </div>
                     </div>
                 
