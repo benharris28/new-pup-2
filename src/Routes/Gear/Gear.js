@@ -92,23 +92,25 @@ class Gear extends React.Component {
         return (
             <div>
                 <Layout>
-                    <div className="guide-banner">
+                <div className="guide-banner">
 
-                        <div className="guide-banner-image coral"  />
+                        <div className="guide-banner-image blue" />
 
+                        
+
+                        <div className="guide-banner-title">
                         <div className="back-to-checklist-button-test">
                             <Link to='/checklist'>
                                 <Button
                                     type="primary">
                                     Back to Checklist
-            </Button>
+                                </Button>
                             </Link>
 
                         </div>
 
-                        <div className="guide-banner-title">
                             <h5>Russell's Checklist</h5>
-                            <h1>The Gear You Need</h1>
+                            <h1>All the gear you need in one place</h1>
 
                         </div>
 
