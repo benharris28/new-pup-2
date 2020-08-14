@@ -7,6 +7,10 @@ import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
 
 class MealTime extends React.Component {
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
+    
     render() {
         const { Content } = Layout;
         const { Panel } = Collapse;

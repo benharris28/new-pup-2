@@ -25,7 +25,7 @@ render() {
                 <Col flex="auto">
                   <div className="logo-box">
                     <img className="logo-photo" src={dog} alt="dog logo" />
-                    <a className="logo" href=" ">Doggo</a>
+                    <a className="logo" href="/">Doggo</a>
                   </div>
                 </Col>
                 <Col xs={0} sm={0} md={6} justify="end">

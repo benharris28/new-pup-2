@@ -8,13 +8,20 @@ import food_screenshot from '../../Assets/food_screenshot.png'
 import food_scroll from '../../Assets/food_scroll.MOV'
 import russ_headshot from '../../Assets/russ_headshot.png'
 import gear_collection from '../../Assets/gear_collection.png'
-import russ_snow from '../../Assets/russ_snow.jpg'
+import vet_checklist from '../../Assets/vet_checklist.png'
+import dog_food_checklist from '../../Assets/dog_food_checklist.png'
+import crate_landing_page from '../../Assets/crate_landing_page.png'
+import guide_checklist from '../../Assets/guide_checklist.png'
 
 class LandingPage extends React.Component {
     state = {
         windowSize: '',
 
     }
+
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
 
     handleResize = () => {
         this.setState({
@@ -53,7 +60,7 @@ class LandingPage extends React.Component {
                     <div className="checklist-page content space grain-free row-reverse">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }}>
                                 <div className="grain-content">
                                     <div className="row-content-intro">
                                         <h2>Expert recommended products</h2>
@@ -72,21 +79,21 @@ class LandingPage extends React.Component {
                                 </div>
 
                             </Col>
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 12}} lg={{ span: 12, order: 2 }}>
 
-                                <img className="stock-image" src={gear_collection} alt="gear list" />
+                                <img className="stock-image" src={crate_landing_page} alt="dog crate" />
                             </Col>
                         </Row>
 
                     </div>
                 </div>
 
-                <div className="content-section dark-green">
+                <div className="content-section blue">
                     <div className="checklist-page content space grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
 
-                                <img className="stock-image" src={food_screenshot} alt="gear list" />
+                                <img className="stock-image" src={dog_food_checklist} alt="dog food" />
                             </Col>
 
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
@@ -121,7 +128,7 @@ class LandingPage extends React.Component {
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
                                 <div className="grain-content">
                                     <div className="row-content-intro">
                                         <h2>We'll show the you closest vets to you</h2>
@@ -141,8 +148,8 @@ class LandingPage extends React.Component {
 
                             </Col>
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-
+                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
+                                <img className="stock-image" src={vet_checklist} alt="vet tools" />
 
                             </Col>
 
@@ -151,16 +158,16 @@ class LandingPage extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-section dark-yellow">
+                <div className="content-section purple">
                     <div className="checklist-page content space grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
                                 <div className="grain-content">
                                     <div className="row-content-intro">
-                                        <h2>We'll walk you through the first 24 hours with pup</h2>
-                                        <h4>House training, pup's first meal, training. We've got you covered.</h4>
+                                        <h2>We'll help you navigate the first 24 hours with doggo</h2>
+                                        <h5>House training, pup's first meal, training. We've got you covered.</h5>
                                         <Link to='/checklist'>
                                             <Button className="banner-button">
                                                 Start now
@@ -176,9 +183,9 @@ class LandingPage extends React.Component {
 
                             </Col>
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }}>
 
-
+                                <img className="stock-image" src={guide_checklist} alt="compass" />
                             </Col>
 
                         </Row>

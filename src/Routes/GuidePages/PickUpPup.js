@@ -6,6 +6,10 @@ import stock_image from '../../Assets/stock_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 
 class PickUpPup extends React.Component {
+    componentDidMount = () => {
+        window.scrollTo(0, 0);
+     }
+    
     render() {
         const { Content } = Layout;
         const { Panel } = Collapse;
