@@ -4,7 +4,6 @@ import { Layout, Menu, Button } from 'antd'
 import LandingPage from './Routes/LandingPage/LandingPage'
 import Checklist from './Routes/Checklist/Checklist';
 import Gear from './Routes/Gear/Gear';
-import Food from './Routes/Food/Food';
 import Nutrition from './Routes/Nutrition/Nutrition';
 import Vet from './Routes/Vet/Vet';
 import Training from './Routes/Training/Training';
@@ -15,6 +14,7 @@ import PupHome from './Routes/GuidePages/PupHome'
 import MealTime from './Routes/GuidePages/MealTime'
 import CrateTrain from './Routes/GuidePages/CrateTrain'
 import Signup from './Routes/Signup/Signup'
+import Login from './Routes/Login/Login'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
@@ -147,6 +147,11 @@ class App extends React.Component {
                       exact
                       path={'/signup'}
                       component={Signup}
+                  />
+                  <Route
+                      exact
+                      path={'/login'}
+                      component={Login}
                   />
                 
               </Switch>
