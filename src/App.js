@@ -26,7 +26,7 @@ class App extends React.Component {
 
   state = {
     loggedIn: '',
-    activeUser: '',
+    activeUser: UserData.users[0],
     completeByDates: ''
 
   }
@@ -65,6 +65,12 @@ class App extends React.Component {
     
   }
 
+  handleLogout = () => {
+    this.setState({
+      activeUser: ''
+    })
+  }
+
   
 
   render() {
@@ -72,7 +78,8 @@ class App extends React.Component {
     const value = {
       activeUser: this.state.activeUser,
       updateActiveUser: this.updateActiveUser,
-      completeByDates: this.state.completeByDates
+      completeByDates: this.state.completeByDates,
+      handleLogout: this.handleLogout
     }
 
     const { Content, Footer } = Layout;

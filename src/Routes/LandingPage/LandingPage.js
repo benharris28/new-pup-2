@@ -46,7 +46,7 @@ class LandingPage extends React.Component {
                         <h1>Bringing home a doggo?</h1>
                         <h5 className="font-black">From a step-by-step guide of what you need, to expert picks of food, to a customized surivival guide, we've got your back.</h5>
 
-                        <Link to='/checklist'>
+                        <Link to='/login'>
                             <Button className="banner-button">
                                 Start now
                             </Button>
@@ -60,8 +60,8 @@ class LandingPage extends React.Component {
                     <div className="checklist-page content space grain-free row-reverse">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
-                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }}>
-                                <div className="grain-content">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ paddingLeft: 0}}>
+                                <div className="grid-content">
                                     <div className="row-content-intro">
                                         <h2>Expert recommended products</h2>
                                         <h5>We'll tell you only what you need and exactly where to find it</h5>
@@ -79,7 +79,7 @@ class LandingPage extends React.Component {
                                 </div>
 
                             </Col>
-                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 12}} lg={{ span: 12, order: 2 }}>
+                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 12}} lg={{ span: 12, order: 2 }} style={{ padding: 0}}>
 
                                 <img className="stock-image" src={crate_landing_page} alt="dog crate" />
                             </Col>
@@ -91,13 +91,13 @@ class LandingPage extends React.Component {
                 <div className="content-section blue">
                     <div className="checklist-page content space grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                            <Col className="gutter-row" xs={24} sm={24} md={{span: 12, paddingRight: 20}} lg={{span: 12, paddingRight: 20}}>
 
-                                <img className="stock-image" src={dog_food_checklist} alt="dog food" />
+                                <img className="grid-image" src={dog_food_checklist} alt="dog food" />
                             </Col>
 
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                <div className="grain-content">
+                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={{span: 12, paddingLeft: 20}}>
+                                <div className="grid-content">
                                     <div className="row-content-intro">
                                         <h2>There are thousands of dog foods </h2>
                                         <h4 className="font-white">We'll narrow it down to 2</h4>
@@ -129,7 +129,7 @@ class LandingPage extends React.Component {
 
 
                         <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
-                                <div className="grain-content">
+                                <div className="grid-content">
                                     <div className="row-content-intro">
                                         <h2>We'll show the you closest vets to you</h2>
                                         <h5>All "vetted" by our team of experts</h5>
@@ -164,7 +164,7 @@ class LandingPage extends React.Component {
 
 
                         <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
-                                <div className="grain-content">
+                                <div className="grid-content">
                                     <div className="row-content-intro">
                                         <h2>We'll help you navigate the first 24 hours with doggo</h2>
                                         <h5>House training, pup's first meal, training. We've got you covered.</h5>

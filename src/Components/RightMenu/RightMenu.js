@@ -7,6 +7,10 @@ const { SubMenu } = Menu;
 
 class RightMenu extends Component {
   static contextType = ApiContext;
+
+  handleLogout = () => {
+    this.context.handleLogout()
+  }
   
   render() {
     const { mobile } = this.props;
@@ -14,9 +18,10 @@ class RightMenu extends Component {
     const navClass = mobile? "menu-drawer mobile" : "menu-drawer"
 
     return (
-      <div className={navClass}>
+      <div>
       {activeUser ? 
-        <div>
+        <div className={navClass}>
+      
           
             <Link to='/checklist'>
                 <div className="menu-button">
@@ -27,7 +32,9 @@ class RightMenu extends Component {
 
 
             <Link to='/'>
-            <div className="menu-button">
+            <div 
+              className="menu-button"
+              onClick={this.handleLogout}>
             Logout
             </div>
             
@@ -36,7 +43,7 @@ class RightMenu extends Component {
 
           :
 
-          <div>
+          <div className={navClass}>
           
            
 
@@ -47,13 +54,21 @@ class RightMenu extends Component {
             </div>
             
           </Link>
-          </div> 
+
+          <Link to='/signup'>
+            <div className="menu-button">
+            Sign Up
+            </div>
+            
+          </Link>
+          
 
 
-          }
+          
           </div>
 
-        
+        }
+        </div>
 
       /*<Menu mode="horizontal">
         <Menu.Item key="mail">
