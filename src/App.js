@@ -25,12 +25,13 @@ import './App.css';
 class App extends React.Component {
 
   state = {
-    activeUser: UserData.users[0],
+    loggedIn: '',
+    activeUser: '',
     completeByDates: ''
 
   }
 
-  componentDidMount = () => {
+  handleDates = () => {
     const { activeUser } = this.state;
     const homeDate = activeUser.dogs[0].home_date
     const birthday = activeUser.dogs[0].birthday
@@ -55,9 +56,13 @@ class App extends React.Component {
   }
 
   updateActiveUser = (user) => {
-    this.setState({
-      activeUser: user
+    this.setState({ activeUser: user}, () => {
+      this.handleDates()
     })
+
+    
+    
+    
   }
 
   

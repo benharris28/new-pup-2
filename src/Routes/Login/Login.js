@@ -24,7 +24,7 @@ class Login extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-       
+       const { history } = this.props
 
         const { 
             email,
@@ -34,6 +34,8 @@ class Login extends React.Component {
         const loggedInUser = users.filter(user => user.email === email)
 
         this.context.updateActiveUser(loggedInUser[0])
+
+        history.push('/checklist')
 
     }
 
