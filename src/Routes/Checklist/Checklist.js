@@ -28,42 +28,48 @@ class Checklist extends React.Component {
 
         const cardList = [
             {
+                step: 'Step 1',
                 link: '/gear',
                 image: <img src={dog_crate_checklist} alt="dog crate" />,
                 title: 'Get the gear',
-                description: "Complete by June 25th",
+                description: `Complete by ${completeByDates.gear}`,
                 alt_text: "gear to buy",
                 badge_count: 5
             },
             {
+                step: 'Step 2',
                 link: '/food',
                 image: <img src={dog_food_checklist} alt="dog food" />,
                 title: 'Find the best food',
-                description: "Complete by June 25th",
+                description: `Complete by ${completeByDates.food}`,
                 alt_text: "food to buy",
                 badge_count: 5
             },
             {
+                step: 'Step 3',
                 link: '/vet',
                 image: <img src={vet_checklist} alt="veterinarian" />,
                 title: 'Find a local vet',
-                description: "Complete by June 25th",
+                description: `Complete by ${completeByDates.vet}`,
                 alt_text: "find a vet",
                 badge_count: 5
             },
             {
+                
+                step: 'Step 4',
                 link: '/training',
                 image: <img src={training_checklist} alt="woman and dog" />,
-                title: 'Sign up for puppy classes',
-                description: "Complete by June 25th",
+                title: 'Sign up for puppy class',
+                description: `Complete by ${completeByDates.training}`,
                 alt_text: "puppy socialization",
                 badge_count: 1
             },
             {
+                step: 'Step 5',
                 link: '/guide',
                 image: <img src={guide_checklist} alt="compass" />,
                 title: "Read Doggo's Survival Guide",
-                description: "Your guide to the first 24 hours of puppyhood",
+                description: `Complete by ${completeByDates.guide}`,
                 alt_text: "24 hour guide",
                 badge_count: 5
             },
@@ -94,6 +100,7 @@ class Checklist extends React.Component {
                     </div>
                     <div className="secondary-banner white center">
                         <div className="secondary-banner-content space">
+                            <h2>No time to waste!</h2>
                         <div className="checklist-icon-box">
                             <CalendarOutlined className="icon black-font" />
                         </div>
@@ -176,7 +183,12 @@ class Checklist extends React.Component {
                                                     cover={card.image}
 
                                                 >
-                                                    <Meta className="card-content" title={card.title} description={card.description} />
+                                                    <div className="checklist-card-step-count">
+                                                            {card.step}
+                                                    </div>
+                                                    <Meta className="card-content" title={card.title} description={card.description} >
+                                                        
+                                                    </Meta>
                                                 </Card>
                                             </div>
                                             </Badge>

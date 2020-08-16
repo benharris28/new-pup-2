@@ -31,6 +31,11 @@ class App extends React.Component {
 
   }
 
+  
+  componentDidMount = () => {
+    /* Temporary Setup to set completion dates in context */
+    this.handleDates()
+  }
   handleDates = () => {
     const { activeUser } = this.state;
     const homeDate = activeUser.dogs[0].home_date
@@ -38,14 +43,16 @@ class App extends React.Component {
     const today = dayjs();
     const daysUntilHome = dayjs(homeDate).diff(today, 'days')
     const gearCompleteBy = dayjs(homeDate).subtract(2, "weeks").format('MMMM D')
+    const foodCompleteBy = dayjs(homeDate).subtract(2, "days").format('MMMM D')
     const vetCompleteBy = dayjs(homeDate).subtract(1, "weeks").format('MMMM D')
     const vetCheckUpCompleteBy = dayjs(homeDate).add(3, "days").format('MMMM D')
     const trainingCompleteBy = dayjs(birthday).add(12, "weeks").format('MMMM D')
-    const guideCompleteBy = dayjs(homeDate).subtract(1, "day")
+    const guideCompleteBy = dayjs(homeDate).subtract(1, "day").format('MMMM D')
     
     this.setState({
       completeByDates: {
         gear: gearCompleteBy,
+        food: foodCompleteBy,
         vet: vetCompleteBy,
         vetCheckUp: vetCheckUpCompleteBy,
         training: trainingCompleteBy,
