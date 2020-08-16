@@ -21,6 +21,7 @@ export default {
         "category_image": crate_landing_page,
         "category_description": "Dog crates are essential for house training your pet. It seems counter-intuitive, but they are strongly recommended by stress-free dog-trainers. Read more about crates in our training section",
         "choice_description": "Check out two dog crates for your pup. One is economic and one is fancy. Both will do the trick!",
+        "theme": "home-good",
         "products": [
             {
                 "id": 1,
@@ -67,6 +68,7 @@ export default {
             "category_image": dog_bowl,
             "category_description": "Start out with small sized bowls for food and water",
             "choice_description": "Here are two styles of dog bowls. One is economic and one is fancy. Both will do the trick!",
+            "theme": "home-good",
             "products": [
                 {
                     "id": 3,
