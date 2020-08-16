@@ -1,5 +1,10 @@
 import crate_illustration from '../Assets/crate_illustration.png'
+import crate_landing_page from '../Assets/crate_landing_page.png'
+import dog_toy from '../Assets/dog_toy.png'
+import dog_leash from '../Assets/dog_leash.png'
+import dog_collar from '../Assets/dog_collar.png'
 import bowl_illustration from '../Assets/bowl_illustration.png'
+import dog_bowl from '../Assets/dog_bowl.png'
 import collar_illustration from '../Assets/collar_illustration.png'
 import leash_illustration from '../Assets/leash_illustration.png'
 import brush_illustration from '../Assets/brush_illustration.png'
@@ -13,7 +18,7 @@ export default {
         {
         "category_id": 1,
         "category": "Dog Crate",
-        "category_image": crate_illustration,
+        "category_image": crate_landing_page,
         "category_description": "Dog crates are essential for house training your pet. It seems counter-intuitive, but they are strongly recommended by stress-free dog-trainers. Read more about crates in our training section",
         "choice_description": "Check out two dog crates for your pup. One is economic and one is fancy. Both will do the trick!",
         "products": [
@@ -59,7 +64,7 @@ export default {
         {
             "category_id": 2,
             "category": "Dog Bowls",
-            "category_image": bowl_illustration,
+            "category_image": dog_bowl,
             "category_description": "Start out with small sized bowls for food and water",
             "choice_description": "Here are two styles of dog bowls. One is economic and one is fancy. Both will do the trick!",
             "products": [
@@ -105,7 +110,7 @@ export default {
             {
                 "category_id": 3,
                 "category": "Leash",
-                "category_image": leash_illustration,
+                "category_image": dog_leash,
                 "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
                 "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
                 "products": [
@@ -152,7 +157,7 @@ export default {
                 {
                     "category_id": 4,
                     "category": "Collar",
-                    "category_image": collar_illustration,
+                    "category_image": dog_collar,
                     "category_description": "You'll need a size small collar to hold dog tags and vaccination tags",
                     "choice_description": "Here are two styles of dog collars. One is economic and one is fancy. Both will do the trick!",
                     "products": [
@@ -293,7 +298,7 @@ export default {
                             {
                                 "category_id": 7,
                                 "category": "Toys",
-                                "category_image": treats_illustration,
+                                "category_image": dog_toy,
                                 "category_description": "Toys are a fun way to occupy your pup and keep them engaged",
                                 "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
                                 "products": [

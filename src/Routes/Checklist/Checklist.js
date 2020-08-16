@@ -175,7 +175,7 @@ class Checklist extends React.Component {
 
                                         <Link to={card.link}>
                                             <Badge count={`${card.badge_count} items todo`} offset={[-30, 0]}>
-                                            <div className="gear-card-box">
+                                            <div className="checklist-card-box">
                                                 <Card
                                                     className="checklist-card"
                                                     hoverable

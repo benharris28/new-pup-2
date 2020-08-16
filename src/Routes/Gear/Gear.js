@@ -161,7 +161,7 @@ class Gear extends React.Component {
 
                                 {gear.map(gearCard =>
                                     <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={8}
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={6}
                                         key={gearCard.category_id}>
                                         <div className="gear-card-box">
                                         <Card
@@ -188,7 +188,7 @@ class Gear extends React.Component {
                                                         See products
                                                 </Button>
                                                 
-                                                <MarkComplete tag={gearCard.tag} />
+                                              
                                             </div>
 
                                         </Card>
