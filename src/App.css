@@ -170,8 +170,8 @@ h6 {
 }
 
 .space {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 /* Global Components */
@@ -477,8 +477,9 @@ h6 {
 }
 
 .secondary-banner-content {
-  width: 80%;
+  width: 100%;
   margin: auto;
+  text-align: left;
   
 }
 
@@ -1394,8 +1395,7 @@ h6 {
 
 }
 .expert-image {
-  border: 3px solid black;
-  border-radius: 50%;
+  
   height: 75px;
   width: 75px;
   margin: auto;
@@ -1649,6 +1649,14 @@ h6 {
     letter-spacing: -0.03em;
   }
   
+  /* Content Prebuilds */
+
+  .secondary-banner-content {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    
+  }
   .guide-banner-title h5 {
     color:white;
     font-weight: 300;
@@ -1868,5 +1876,12 @@ h6 {
     font-weight: 300;
     font-size: 34px;
   }
-  
+
+  /* Content prebuilds */ 
+  .secondary-banner-content {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    
+  }
 }

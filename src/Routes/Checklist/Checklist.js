@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ProgressBar from '../../Components/ProgressBar/ProgressBar'
-import { Layout, Content, Badge, Space, Card, Col, Row, Progress, Button } from 'antd';
-import Russ_banner from '../../Assets/Russ_banner.JPG'
-import { ClockCircleOutlined, CalendarOutlined } from '@ant-design/icons';
+import { Layout, Badge, Card, Col, Row, Button, Avatar } from 'antd';
+import { CalendarOutlined } from '@ant-design/icons';
 import dog_crate_checklist from '../../Assets/dog_crate_checklist.png'
 import dog_food_checklist from '../../Assets/dog_food_checklist.png'
 import vet_checklist from '../../Assets/vet_checklist.png'

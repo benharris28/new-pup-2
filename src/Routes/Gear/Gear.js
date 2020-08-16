@@ -1,11 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import MarkComplete from '../../Components/MarkComplete/MarkComplete'
-import ProductData from '../../BackupData/ProductData'
 import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
-import { Layout, Content, Space, Card, Col, Row, Button, Drawer } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
+import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
+import { UserOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
 import gear_banner from '../../Assets/gear_banner.png'
@@ -96,7 +95,7 @@ class Gear extends React.Component {
 
         return (
             <div>
-                <Layout>
+                <Layout className="white">
                 <div className="guide-banner">
 
                         <div className="guide-banner-image blue" />
@@ -120,14 +119,14 @@ class Gear extends React.Component {
                         </div>
 
                     </div>
-                    <div className="secondary-banner white center">
-                        <div className="secondary-banner-content space">
+                    <div className="secondary-banner white center space">
+                        <div className="secondary-banner-content">
                         
                         <div className="expert-image">
-
+                            <Avatar size={64} icon={<UserOutlined />} />
                         </div>
                         <h5 className="font-purple">Our resident dog trainer, XX Trainer, has made a list of the must-have gear to welcome home your doggo.</h5>
-                        <h6>For each category, we offer two different options: basic and premium. Both will do the trick, but if you feel like getting fancy, you have the option!</h6>
+                        <h5>For each category, we offer two different options: basic and premium. Both will do the trick, but if you feel like getting fancy, you have the option!</h5>
                     </div>
                     </div>
 
