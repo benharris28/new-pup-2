@@ -127,97 +127,71 @@ class Nutrition extends React.Component {
                     </div>
 
 
-                    <div className="content-section green">
-                        <div className="checklist-page content center">
-                            <div className="checklist-page-section-intro">
-                                <h2>What to look for in dog food</h2>
-                            </div>
+                  
 
-                            <div className="what-to-look-for-container">
-                                <Row gutter={[40, 24]}>
-                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
-                                        <div className="what-to-look-for">
-                                            <div className="what-to-look-for-icon">
+                    <div className="content-section purple font-white">
+                        <div className="checklist-page content">
+                            <h2 className="font-white">What to look for in dog food</h2>
+                            <div className="grid-container">
 
-                                            </div>
-                                            <div className="what-to-look-for-content">
-                                                <h4>Fresher is better</h4>
-                                                <h5>The more food is cooked (processed), the less nutrients are preserved </h5>
-                                            </div>
-
-                                        </div>
-                                    </Col>
-
-                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
-                                        <div className="what-to-look-for">
-                                            <div className="what-to-look-for-icon">
-
-                                            </div>
-                                            <div className="what-to-look-for-content">
-                                                <h4>We prefer "gently cooked" to "raw"</h4>
-                                                <h5>While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
-                                            </div>
-
+                                <Row className="survival-guide-steps-row font-white" justify="space-around">
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
+                                        <div className="survival-guide-steps font-white">
+                                            <div className="survival-guide-steps_num">
+                                                1
+                                    </div>
+                                            <h3>Fresher is better</h3>
+                                            <h5 className="font-white">The more food is cooked (processed), the less nutrients are preserved</h5>
                                         </div>
 
                                     </Col>
-
-                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
-                                        <div className="what-to-look-for">
-                                            <div className="what-to-look-for-icon">
-
-                                            </div>
-                                            <div className="what-to-look-for-content">
-                                                <h4>No artificial flavors or preservatives</h4>
-                                                <h5>Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
-                                            </div>
-
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
+                                        <div className="survival-guide-steps">
+                                            <div className="survival-guide-steps_num">
+                                                2
+                                    </div>
+                                            <h3>We prefer "gently cooked" to "raw"</h3>
+                                            <h5 className="font-white">While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
                                         </div>
 
                                     </Col>
-
-                                    <Col className="gutter-row" sm={24} md={12} lg={6}>
-                                        <div className="what-to-look-for">
-                                            <div className="what-to-look-for-icon">
-
-                                            </div>
-                                            <div className="what-to-look-for-content">
-                                                <h4>Animal protein is first or second ingredient</h4>
-                                                <h5>Look for whole ingredients and words you recognize!</h5>
-                                            </div>
-
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
+                                        <div className="survival-guide-steps">
+                                            <div className="survival-guide-steps_num">
+                                                3
+                                    </div>
+                                            <h3>No artificial flavors or preservatives</h3>
+                                            <h5 className="font-white">Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
                                         </div>
 
                                     </Col>
+                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
+                                        <div className="survival-guide-steps">
+                                            <div className="survival-guide-steps_num">
+                                                4
+                                    </div>
+                                            <h3>Animal protein is first or second ingredient</h3>
+                                            <h5 className="font-white">Look for whole ingredients and words you recognize!</h5>
+                                        </div>
 
+                                    </Col>
                                 </Row>
-
-
-
-
-
                             </div>
                             <div className="nutrition-section-outro">
                                 <Alert message="Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their compound names. Don't fear if you see items like dicalcium phosphate or zinc glutonate on the ingredient list" type="info" showIcon />
                                 
                             </div>
-
                         </div>
                     </div>
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
-                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <div className="grain-content">
+                           
+                                    <div>
                                         <h2>What's the deal with grain free?</h2>
                                         <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
                                     </div>
-                                </Col>
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <img className="food-image" src={food_image} alt="food stock" />
-                                </Col>
-                            </Row>
+                             
                             
                         </div>
                     </div>
@@ -255,15 +229,16 @@ class Nutrition extends React.Component {
                     </div>
 
                     <div className="next-section-button dark-yellow">
-                    <div>
+                    <div className="next-section-button-content">
                             <h4>Your pup has great food to eat!</h4>
                             <h5>Let's move on and find your pup a great vet in your area. Click below to go to the next section</h5>
-                        </div>
-                        <Link to='/vet'>
+                            <Link to='/vet'>
                             <Button>
                                 Up Next: Find a local vet
                                     </Button>
                         </Link>
+                        </div>
+                        
 
                     </div>
                     

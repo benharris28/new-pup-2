@@ -115,6 +115,7 @@ export default {
                 "category_image": dog_leash,
                 "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
                 "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                "theme": "apparel",
                 "products": [
                     {
                         "id": 5,
@@ -162,6 +163,7 @@ export default {
                     "category_image": dog_collar,
                     "category_description": "You'll need a size small collar to hold dog tags and vaccination tags",
                     "choice_description": "Here are two styles of dog collars. One is economic and one is fancy. Both will do the trick!",
+                    "theme": "apparel",
                     "products": [
                         {
                             "id": 7,
@@ -209,6 +211,7 @@ export default {
                         "category_image": dog_tag_illustration,
                         "category_description": "You'll need a 6ft standard flat lead - no bungees or retractables please! ",
                         "choice_description": "Here are two styles of dog leashes. One is economic and one is fancy. Both will do the trick!",
+                        "theme": "apparel",
                         "products": [
                             {
                                 "id": 9,
@@ -256,6 +259,7 @@ export default {
                             "category_image": poo_bag_illustration,
                             "category_description": "Get ready to pickup a lot of poop. Don't leave home without bags!",
                             "choice_description": "We recommend getting a few toys to add some variety",
+                            "theme": "monthly-good",
                             "products": [
                                 {
                                     "id": 11,
@@ -303,6 +307,7 @@ export default {
                                 "category_image": dog_toy,
                                 "category_description": "Toys are a fun way to occupy your pup and keep them engaged",
                                 "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                "theme": "monthly-good",
                                 "products": [
                                     
                                     {

@@ -153,13 +153,112 @@ class Gear extends React.Component {
                         </div>
 
                         <div className="card-box">
+                        
+                        <h3>Gear you'll need every month</h3>
+                        <Row
+                                className="gear-row"
+                                gutter={[16,24]}
+                                style={{ margin: 0 }}
+                            >
+                                 {gear.filter(item => item.theme == "monthly-good").map(gearCard =>
+                                    <Col
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={6}
+                                        key={gearCard.category_id}>
+                                        <div className="gear-card-box">
+                                        <Card
+                                            onClick={() => this.showDrawer(gearCard.category_id)}
+                                            hoverable
+                                            className="gear-card"
+                                            cover={<img
+                                                className="card-image"
+                                                alt="example"
+                                                src={gearCard.category_image} />}
+                                        >
+                                            <Meta
+                                                className="card-content"
+                                                title={gearCard.category}
+                                                description={gearCard.description_text}>
+
+                                            </Meta>
+
+                                            <div className="card_purchase_button">
+                                                
+                                                <Button
+                                                        type="primary"
+                                                        onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                        See products
+                                                </Button>
+                                                
+                                              
+                                            </div>
+
+                                        </Card>
+                                        </div>
+                                    </Col>
+
+                                )}
+                            </Row>
+                            </div>
+
+                            <div className="card-box">
+
+                            <h3>Gear for your home</h3>
                             <Row
                                 className="gear-row"
                                 gutter={[16,24]}
                                 style={{ margin: 0 }}
                             >
 
-                                {gear.map(gearCard =>
+                                {gear.filter(item => item.theme == "home-good").map(gearCard =>
+                                    <Col
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={6}
+                                        key={gearCard.category_id}>
+                                        <div className="gear-card-box">
+                                        <Card
+                                            onClick={() => this.showDrawer(gearCard.category_id)}
+                                            hoverable
+                                            className="gear-card"
+                                            cover={<img
+                                                className="card-image"
+                                                alt="example"
+                                                src={gearCard.category_image} />}
+                                        >
+                                            <Meta
+                                                className="card-content"
+                                                title={gearCard.category}
+                                                description={gearCard.description_text}>
+
+                                            </Meta>
+
+                                            <div className="card_purchase_button">
+                                                
+                                                <Button
+                                                        type="primary"
+                                                        onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                        See products
+                                                </Button>
+                                                
+                                              
+                                            </div>
+
+                                        </Card>
+                                        </div>
+                                    </Col>
+
+                                )}
+
+                            </Row>
+                            </div>
+
+                            <div className="card-box">
+                            <h3>Apparel for your doggo</h3>
+                            <Row
+                                className="gear-row"
+                                gutter={[16,24]}
+                                style={{ margin: 0 }}
+                            >
+
+                                {gear.filter(item => item.theme == "apparel").map(gearCard =>
                                     <Col
                                         className="gutter-row" xs={12} sm={12} md={12} lg={6}
                                         key={gearCard.category_id}>
@@ -254,12 +353,17 @@ class Gear extends React.Component {
 
 
                     </Content>
-                    <div className="next-section-button dark-yellow">
-                        <Link to='/food'>
+                    <div className="next-section-button blue">
+                    <div className="next-section-button-content">
+                            <h4>Your doggo has all the right gear!</h4>
+                            <h5>Let's move on and find your pup some nutritious food. Click below to go to the next section</h5>
+                            <Link to='/food'>
                             <Button>
                                 Up Next: Find the best food
                                     </Button>
                         </Link>
+                        </div>
+                        
 
                     </div>
                 </Layout>
