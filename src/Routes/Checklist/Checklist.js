@@ -78,7 +78,7 @@ class Checklist extends React.Component {
 
         return (
             <div>
-                <Layout className="white">
+                <Layout className="grey">
                     <div className="guide-banner">
 
                     <div className="guide-banner-image purple" />
@@ -154,7 +154,9 @@ class Checklist extends React.Component {
                     <Content
 
                         //style={{ padding: '0 50px' }}
-                        className="page-content">
+                        className="page-content"
+                        >
+
 
                        <div className="page-intro">
                             <h1>Checklist Todo's</h1>

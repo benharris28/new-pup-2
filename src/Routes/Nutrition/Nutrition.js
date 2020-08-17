@@ -5,7 +5,7 @@ import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
 import food_image from '../../Assets/food_image.png'
-import { Layout, Button, Row, Col, Alert } from 'antd';
+import { Layout, Button, Row, Col, Alert, Collapse } from 'antd';
 
 class Nutrition extends React.Component {
     static contextType = ApiContext;
@@ -40,6 +40,7 @@ class Nutrition extends React.Component {
         const fullWidth = global.window.innerWidth;
         console.log(fullWidth)
         console.log(this.state.windowSize)
+        const { Panel } = Collapse;
 
         const { activeUser, completeByDates } = this.context;
         const activeDoggo = activeUser.dogs[0].dog_name
@@ -184,36 +185,7 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                           
-                                    <div>
-                                        <h2>What's the deal with grain free?</h2>
-                                        <h5>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</h5>
-                                    </div>
-                             
-                            
-                        </div>
-                    </div>
-
-                    <div className="content-section yellow">
-                        <div className="checklist-page content">
-                            <h2>Should I get a food subscription?</h2>
-                            <div className="picker">
-                                <Row style={{ margin: 0 }} justify="space-between">
-                                    <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("subscription")} className="picker-button" type="primary">Subscription</Button></Col>
-                                    <Col className="format-picker" span={11}><Button onClick={() => this.setFormat("pickup")} className="picker-button" type="primary">Pick Up</Button></Col>
-                                </Row>
-
-                            </div>
-                            <div className="format-detail">
-                                {this.state.format === "subscription"
-                                    ? <h5>Pay a monthly fee and have the food you need delivered to your home</h5>
-                                    : <h5>Pickup your pup's food from your local store when you need it</h5>
-                                }
-                            </div>
-                        </div>
-                    </div>
+                  
 
                     
 
@@ -225,6 +197,25 @@ class Nutrition extends React.Component {
                                 : <NutritionDesktop food={this.state.food} />
                             }
 
+                        </div>
+                    </div>
+
+                    <div className="content-section white">
+                        <div className="checklist-page content space grain-free">
+                            <h2 style={{ marginBottom: 0 }}>Have more questions about food?</h2>
+                            <h4 className="font-purple">We've got your answers</h4>
+                            <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
+                                <Panel header="Should I get a food subscription?" key="1">
+                                    <p>Subscriptions are great if you have chosen a food and want the same quantity delivered to your home regularly. If you're not sold, you can purchaes as needed</p>
+                                </Panel>
+                                <Panel header="What's the deal with grain free foods?" key="2">
+                                    <p>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</p>
+                                </Panel>
+                                <Panel header="Question 3 question" key="3">
+                                    <p>Question 3</p>
+                                </Panel>
+
+                            </Collapse>
                         </div>
                     </div>
 

@@ -95,7 +95,7 @@ class Gear extends React.Component {
 
         return (
             <div>
-                <Layout className="white">
+                <Layout className="grey">
                 <div className="guide-banner">
 
                         <div className="guide-banner-image blue" />
@@ -119,8 +119,8 @@ class Gear extends React.Component {
                         </div>
 
                     </div>
-                    <div className="secondary-banner white center space">
-                        <div className="secondary-banner-content">
+                    <div className="secondary-banner white center">
+                        <div className="secondary-banner-content space">
                         
                         <div className="expert-image">
                             <Avatar size={64} icon={<UserOutlined />} />
@@ -143,7 +143,8 @@ class Gear extends React.Component {
 
                     <Content
                         //style={{ padding: '0 50px' }}
-                        className="page-content">
+                        className="page-content grey"
+                        >
 
 
 
@@ -154,7 +155,7 @@ class Gear extends React.Component {
 
                         <div className="card-box">
                         
-                        <h3>Gear you'll need every month</h3>
+                        <h3 className="card-box-subtitle font-purple">Gear you'll need every month</h3>
                         <Row
                                 className="gear-row"
                                 gutter={[16,24]}
@@ -202,7 +203,7 @@ class Gear extends React.Component {
 
                             <div className="card-box">
 
-                            <h3>Gear for your home</h3>
+                            <h3 className="card-box-subtitle font-purple">Gear for your home</h3>
                             <Row
                                 className="gear-row"
                                 gutter={[16,24]}
@@ -251,7 +252,7 @@ class Gear extends React.Component {
                             </div>
 
                             <div className="card-box">
-                            <h3>Apparel for your doggo</h3>
+                            <h3 className="card-box-subtitle font-purple">Apparel for your doggo</h3>
                             <Row
                                 className="gear-row"
                                 gutter={[16,24]}
@@ -327,8 +328,8 @@ class Gear extends React.Component {
                                    >
                                       <div className="gear-card-drawer-content">
                                         <div className="gear-card-drawer-description">
-                                            <h5>{product.brand}</h5>
-                                            <h6>{product.product}</h6>
+                                            <h5 className="font-purple">{product.brand}</h5>
+                                            <h6 className="font-coral">{product.product}</h6>
                                             <p>{product.description_text}</p>
                                         </div>
 
