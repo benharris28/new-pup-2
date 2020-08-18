@@ -29,19 +29,19 @@ class Training extends React.Component {
 
         const points = [
             {
-                image: null,
+                number: 1,
                 title: 'Accept handling from humans, groomers, and vets'
             },
             {
-                image: null,
+                number: 2,
                 title: 'Prevent fear, anxiety, and depression'
             },
             {
-                image: null,
+                number: 3,
                 title: 'Practice being left alone / housetrained'
             },
             {
-                image: null,
+                number: 4,
                 title: 'Learn how to play appropriately with other dogs'
             },
 
@@ -77,16 +77,16 @@ class Training extends React.Component {
                     </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <Row gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <div className="grain-content">
+                        <div className="checklist-page content">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
+                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12} style={{ padding: 0 }}>
+                                    <div className="grid-content">
                                         <h2>Let's socialize your doggo!</h2>
                                         <h5>It's a scary world for new puppies - loud noises, lots of humans, vet visits, and other dogs! Puppy classes are extremely important to prepare your dog for this crazy world!</h5>
                                     </div>
                                 </Col>
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <img className="food-image" src={stock_image} alt="stock" />
+                                    <img className="stock-image" src={stock_image} alt="stock" />
                                 </Col>
                             </Row>
                             
@@ -105,12 +105,11 @@ class Training extends React.Component {
                         </div>
                     </div>
 
-                    
+                   
+                    <div className="content-section blue">
 
-                    <div className="content-section white">
 
-
-                        <div className="checklist-page content center">
+                        <div className="checklist-page content">
                             <div className="checklist-page-section-intro">
                                 <h2>Do I really need puppy classes?</h2>
                                 <h5>Yes! Puppy classes teach new pups vital skills to help them adapt and develop</h5>
@@ -123,13 +122,25 @@ class Training extends React.Component {
 
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                        <div className="nutrition-type-item">
+                                        
+                                            <Row>
+                                                <Col style={{ maxWidth: 30 }} className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                                <div className="survival-guide-steps">
+                                                    {point.number}
+                                                </div>
+                                                </Col>
+                                                <Col style={{ width: 200}}className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                                <div>
+                                                    <h5>{point.title}</h5>
+                                                </div>
+                                                </Col>
+                                            </Row>
                                             
-                                                <img className="stock-image" src={stock_image} alt="stock" />
+                                        
                                          
-                                            <h4>{point.title}</h4>
                                             
-                                        </div>
+                                            
+                                       
                                     </Col>
                                     )}
                                 </Row>

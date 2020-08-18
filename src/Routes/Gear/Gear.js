@@ -164,6 +164,7 @@ class Gear extends React.Component {
                                  {gear.filter(item => item.theme == "monthly-good").map(gearCard =>
                                     <Col
                                         className="gutter-row" xs={12} sm={12} md={12} lg={6}
+                                        style={{margin: 0}}
                                         key={gearCard.category_id}>
                                         <div className="gear-card-box">
                                         <Card
@@ -213,6 +214,7 @@ class Gear extends React.Component {
                                 {gear.filter(item => item.theme == "home-good").map(gearCard =>
                                     <Col
                                         className="gutter-row" xs={12} sm={12} md={12} lg={6}
+                                        style={{margin: 0}}
                                         key={gearCard.category_id}>
                                         <div className="gear-card-box">
                                         <Card
@@ -262,6 +264,7 @@ class Gear extends React.Component {
                                 {gear.filter(item => item.theme == "apparel").map(gearCard =>
                                     <Col
                                         className="gutter-row" xs={12} sm={12} md={12} lg={6}
+                                        style={{margin: 0}}
                                         key={gearCard.category_id}>
                                         <div className="gear-card-box">
                                         <Card

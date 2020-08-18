@@ -194,6 +194,24 @@ h6 {
    text-align: center;
  }
 
+ .ant-col {
+   max-width: 500px;
+   margin: auto;
+   
+ }
+
+
+
+ .grid-content {
+  vertical-align: middle;
+  align-items: center;
+  max-width: 500px;
+  
+  
+}
+
+
+
 /* Page Styles */
 /* All Pages */
 
@@ -716,6 +734,9 @@ h6 {
 
 /* Puppy Socialization */
 
+.puppy-class-counter {
+  display: flex;
+}
 .alert-box {
   margin-top: 2rem;
 }
@@ -803,6 +824,7 @@ h6 {
   text-align: center;
   margin: auto;
 }
+
 .survival-guide-banner .ant-row {
   text-align: center;
   
