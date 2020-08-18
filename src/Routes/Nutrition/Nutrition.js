@@ -5,6 +5,9 @@ import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
 import food_image from '../../Assets/food_image.png'
+import raw_food1 from '../../Assets/raw_food1.jpg'
+import tom_sawyer from '../../Assets/tom_sawyer.png'
+
 import { Layout, Button, Row, Col, Alert, Collapse } from 'antd';
 
 class Nutrition extends React.Component {
@@ -97,8 +100,8 @@ class Nutrition extends React.Component {
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <img className="food-image" src={food_image} alt="food stock" />
                                             
+                                        <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Raw</h4>
                                             <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
                                         </div>

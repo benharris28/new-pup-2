@@ -669,6 +669,7 @@ h6 {
   margin-top: 2rem;
   border: 3px solid rgb(85, 81, 255);
   padding: 1rem;
+  
 }
 
 .vet-finder-input-box {
@@ -685,6 +686,7 @@ h6 {
 .vet-finder input {
   background-color: rgb(255, 133, 119);
   border: 3px solid black;
+  max-width: 175px;
 }
 
 .vet-finder-input h5 {
@@ -1210,6 +1212,15 @@ h6 {
   justify-content: space-around
 }
 
+.nutrition-type-item-image-container {
+  width: 300px;
+  height: 300px;
+  
+ 
+  padding: 1rem;
+  text-align: left;
+
+}
 
 
 .nutrition-type-item {
@@ -1220,8 +1231,9 @@ h6 {
 }
 
 .food-image {
-  width: 100%;
- 
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .nutrition-image-box {
@@ -1800,11 +1812,6 @@ h6 {
     max-width: 500px;
     padding: 1rem;
     text-align: left;
-  }
-
-  .food-image {
-    width: 100%;
-   
   }
 
   .nutrition-image-box {

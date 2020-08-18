@@ -134,7 +134,7 @@ class Vet extends React.Component {
                                             <Button
                                                 className="vet-finder-button"
                                                 onClick={this.handleSubmit}>
-                                                Find vets
+                                                Go
                                             </Button>
                                         </div>
                                     </div>
