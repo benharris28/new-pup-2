@@ -21,8 +21,8 @@ onClose = () => {
 render() {
     return (
         <nav className="menu-bar">
-            <Row className="navbar-row" gutter={8} align="middle">
-                <Col flex="auto">
+            <Row style={{ "height": "5rem" }} className="navbar-row" gutter={8} align="middle">
+                <Col style={{ margin: 0}} flex="auto">
                   <div className="logo-box">
                     <img className="logo-photo" src={dog} alt="dog logo" />
                     <a className="logo" href="/">Doggo</a>
