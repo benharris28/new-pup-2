@@ -18,7 +18,7 @@ class Training extends React.Component {
 
     componentDidMount = () => {
         window.scrollTo(0, 0);
-     }
+    }
 
     render() {
         const { Content } = Layout;
@@ -57,18 +57,18 @@ class Training extends React.Component {
 
                         <div className="guide-banner-image dark-purple" />
 
-                       
+
 
                         <div className="guide-banner-title">
-                        <div className="back-to-checklist-button-test">
-                            <Link to='/checklist'>
-                                <Button
-                                    type="primary">
-                                    Back to Checklist
+                            <div className="back-to-checklist-button-test">
+                                <Link to='/checklist'>
+                                    <Button
+                                        type="primary">
+                                        Back to Checklist
                                 </Button>
-                            </Link>
+                                </Link>
 
-                        </div>
+                            </div>
                             <h5>{activeDoggo}'s Checklist</h5>
                             <h1>Puppy Classes</h1>
 
@@ -78,7 +78,7 @@ class Training extends React.Component {
 
                     <div className="content-section white">
                         <div className="checklist-page content">
-                        <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
+                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12} style={{ padding: 0 }}>
                                     <div className="grid-content">
                                         <h2>Let's socialize your doggo!</h2>
@@ -89,10 +89,10 @@ class Training extends React.Component {
                                     <img className="stock-image" src={stock_image} alt="stock" />
                                 </Col>
                             </Row>
-                            
+
                         </div>
                     </div>
-                  
+
 
                     <div className="content-section pink font-white">
                         <div className="checklist-page content center">
@@ -105,8 +105,8 @@ class Training extends React.Component {
                         </div>
                     </div>
 
-                   
-                    <div className="content-section blue">
+
+                    <div className="content-section white">
 
 
                         <div className="checklist-page content">
@@ -120,28 +120,28 @@ class Training extends React.Component {
                                 >
                                     {points.map(point =>
 
-                                    <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                        
+                                        <Col
+                                            className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+
                                             <Row>
                                                 <Col style={{ maxWidth: 30 }} className="gutter-row" xs={12} sm={12} md={12} lg={12}>
-                                                <div className="survival-guide-steps">
-                                                    {point.number}
-                                                </div>
+                                                    <div className="survival-guide-steps">
+                                                        {point.number}
+                                                    </div>
                                                 </Col>
-                                                <Col style={{ width: 200}}className="gutter-row" xs={12} sm={12} md={12} lg={12}>
-                                                <div>
-                                                    <h5>{point.title}</h5>
-                                                </div>
+                                                <Col style={{ width: 200 }} className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                                    <div>
+                                                        <h5>{point.title}</h5>
+                                                    </div>
                                                 </Col>
                                             </Row>
-                                            
-                                        
-                                         
-                                            
-                                            
-                                       
-                                    </Col>
+
+
+
+
+
+
+                                        </Col>
                                     )}
                                 </Row>
                             </div>
@@ -150,34 +150,61 @@ class Training extends React.Component {
 
                     <div className="content-section">
                         <div className="checklist-page content center">
-                        <div className="trainer-container">
-                            <h2>Here are some recommended puppy classes near you</h2>
-                            {trainers.map(trainer =>
-                                <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} extra={<a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>Site</a>}>
-                                    <p>{trainer.blurb}</p>
-                                    <p>{trainer.address}</p>
-                                </Card>
-                            )}
+                            <div className="trainer-container">
+                                <h2>Here are some recommended puppy classes near you</h2>
+                                <Row className="gear-row"
+                                    style={{ margin: 0 }}
+                                    gutter={[16, 24]}
+                                    justify="space-around"
+                                >
 
-                        </div>
+
+
+
+
+                                    {trainers.map(trainer =>
+                                        <Col
+                                            className="gutter-row" xs={24} sm={24} md={12} lg={12}
+                                            style={{ margin: 0 }}>
+                                            <Card className="trainer-card" key={trainer.trainer_id} type="inner" title={trainer.name} >
+                                                <div className="trainer-card-content">
+                                                    <p>{trainer.blurb}</p>
+                                                    <p>{trainer.address}</p>
+                                                </div>
+                                                <div className="trainer-card-button-container">
+                                                    <a target='_blank' rel="noopener noreferrer" href={`${trainer.link}`}>
+                                                        <Button>
+                                                            Go to site
+                                                </Button>
+                                                    </a>
+                                                </div>
+
+                                            </Card>
+                                        </Col>
+                                    )}
+                                </Row>
+                            </div>
+
+
 
                         </div>
                     </div>
                     <div className="next-section-button dark-purple">
-                        <div>
+                        <div className="next-section-button-content">
                             <h4 className="font-white">You're doing awesome!</h4>
                             <h5 className="font-white">Picked your puppy class? Let's keep this momentum going!</h5>
-                        </div>
-                        <Link to='/guide'>
-                            <Button>
-                                Up Next: 24 Hour Guide
+                            <Link to='/guide'>
+                                <Button>
+                                    Up Next: 24 Hour Guide
                                     </Button>
-                        </Link>
+                            </Link>
+                        </div>
+
 
                     </div>
 
 
-                   
+
                 </Layout>
 
 
