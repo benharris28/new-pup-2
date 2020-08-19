@@ -46,7 +46,7 @@ class LandingPage extends React.Component {
                         <h1>Bringing home a doggo?</h1>
                         <h5 className="font-black">From a step-by-step guide of what you need, to expert picks of food, to a customized surivival guide, we've got your back.</h5>
 
-                        <Link to='/login'>
+                        <Link to='/checklist'>
                             <Button className="banner-button">
                                 Start now
                             </Button>
@@ -57,7 +57,7 @@ class LandingPage extends React.Component {
 
 
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free row-reverse">
+                    <div className="checklist-page content grain-free row-reverse">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
                         <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ paddingLeft: 0}}>
@@ -81,7 +81,7 @@ class LandingPage extends React.Component {
                             </Col>
                             <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 12}} lg={{ span: 12, order: 2 }} style={{ padding: 0}}>
 
-                                <img className="stock-image" src={crate_landing_page} alt="dog crate" />
+                                <img className="grid-image" src={crate_landing_page} alt="dog crate" />
                             </Col>
                         </Row>
 
@@ -89,7 +89,7 @@ class LandingPage extends React.Component {
                 </div>
 
                 <div className="content-section blue">
-                    <div className="checklist-page content space grain-free">
+                    <div className="checklist-page content grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                             <Col className="gutter-row" xs={24} sm={24} md={{span: 12, paddingRight: 20}} lg={{span: 12, paddingRight: 20}}>
 
@@ -124,7 +124,7 @@ class LandingPage extends React.Component {
 
 
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free">
+                    <div className="checklist-page content grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
 
@@ -149,7 +149,7 @@ class LandingPage extends React.Component {
                             </Col>
 
                             <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }}>
-                                <img className="stock-image" src={vet_checklist} alt="vet tools" />
+                                <img className="grid-image" src={vet_checklist} alt="vet tools" />
 
                             </Col>
 
@@ -159,7 +159,7 @@ class LandingPage extends React.Component {
                 </div>
 
                 <div className="content-section purple">
-                    <div className="checklist-page content space grain-free">
+                    <div className="checklist-page content grain-free">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
 

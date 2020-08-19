@@ -150,7 +150,7 @@ class Gear extends React.Component {
 
                         <div className="page-intro">
                             <h2>Gear List</h2>
-                            <h4>This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. </h4>
+                            <h5>This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. </h5>
                         </div>
 
                         <div className="card-box">
