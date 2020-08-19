@@ -1562,8 +1562,17 @@ h6 {
 .menu-button {
   width: 100%;
   padding: 0.3rem;
-  border: 3px solid black;
+  /*border: 3px solid black;*/
   margin: auto;
+}
+
+.signup {
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  height: 40px;
+  width: 100px;
+  font-weight: 600;
 }
 .logo{
   width: 150px;
@@ -1573,8 +1582,14 @@ h6 {
 .logo a{
   display: inline-block;
   font-size: 30px;
+  font-weight: 500;
   padding: 19px 20px;
   text-transform: capitalize;
+}
+
+.logo h3 {
+  font-weight: 500;
+  margin: 0px;
 }
 .menuCon{
   width: calc(100% - 150px);
@@ -1642,9 +1657,7 @@ h6 {
   border-bottom-color: transparent;
 }
 
-.menu-drawer {
 
-}
 
 .menu-drawer a {
   color: black;

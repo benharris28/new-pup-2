@@ -22,16 +22,16 @@ render() {
     return (
         <nav className="menu-bar">
             <Row style={{ "height": "5rem" }} className="navbar-row" gutter={8} align="middle">
-                <Col style={{ margin: 0}} flex="auto">
+                <Col style={{ margin: 0, maxWidth: 2000}} flex="auto">
                   <div className="logo-box">
                     <img className="logo-photo" src={dog} alt="dog logo" />
-                    <a className="logo" href="/">Doggo</a>
+                      <a className="logo" href="/"><h3>Doggo</h3></a>
                   </div>
                 </Col>
-                <Col xs={0} sm={0} md={6} justify="end">
+                <Col style={{ "maxWidth": "200px" }} xs={0} sm={0} md={12} lg={12}  justify="space-around">
                     <RightMenu />
                 </Col>
-                <Col xs={6} sm={6} md={0}>
+                <Col style={{ paddingBottom: 10}} xs={6} sm={6} md={0}>
                     <Button className="barsMenu" type="primary" onClick={this.showDrawer}>
                         <span className="barsBtn"></span>
                     </Button>

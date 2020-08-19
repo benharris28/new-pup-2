@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
 import { Link } from 'react-router-dom'
-import { Menu, Icon } from 'antd';
+import { Menu, Icon, Button } from 'antd';
 
 const { SubMenu } = Menu;
 
@@ -56,9 +56,9 @@ class RightMenu extends Component {
           </Link>
 
           <Link to='/signup'>
-            <div className="menu-button">
+            <Button className="menu-button signup">
             Sign Up
-            </div>
+            </Button>
             
           </Link>
           
