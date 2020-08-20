@@ -4,10 +4,10 @@ import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
 import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
-import { UserOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
+import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
-import gear_banner from '../../Assets/gear_banner.png'
+import stock_image from '../../Assets/stock_image.png'
 
 
 class Gear extends React.Component {
@@ -95,31 +95,35 @@ class Gear extends React.Component {
 
         return (
             <div>
-                <Layout className="grey">
-                <div className="guide-banner">
+                   <div className="hero light-pink">
+                    <div className="container">
+                        <div className="title-centre">
+                            <h1 className="display-heading">
+                                Welcome to {activeDoggo}'s Gear Page!
+                            </h1>
+                            <div className="hero-details">
+                            Expert recommended gear. Everything you need - nothing you don't. All the gear you need in one place
+                        </div>
+                       
 
-                        <div className="guide-banner-image blue" />
-
+                        </div>
                         
-
-                        <div className="guide-banner-title">
-                        <div className="back-to-checklist-button-test">
-                            <Link to='/checklist'>
-                                <Button
-                                    type="primary">
-                                    Back to Checklist
-                                </Button>
-                            </Link>
-
-                        </div>
-
-                            <h5>{activeDoggo}'s Checklist</h5>
-                            <h1>All the gear you need in one place</h1>
-
-                        </div>
-
                     </div>
-                    <div className="secondary-banner white center">
+                    <div className="time-tracker-container">
+                        <div className="checklist-icon-box">
+                            <CalendarOutlined className="checklist-icon font-white" />
+                        </div>
+                        <div className="time-tracker">
+                        <h5 className="font-black">We recommend ordering all your gear by <span className="complete-by-date">{completeByDates.gear}</span>  to make sure everything arrives in time!</h5>
+                        </div>
+                    </div>
+                    
+                </div>
+
+               
+                <Layout className="grey">
+               
+                    <div className="content-section white">
                         <div className="secondary-banner-content space">
                         
                         <div className="expert-image">
@@ -130,25 +134,17 @@ class Gear extends React.Component {
                     </div>
                     </div>
 
-                    <div className="content-section dark-purple">
-                        <div className="checklist-page content center">
-                            <div className="checklist-page-alert">
-                                <ExclamationCircleOutlined className="checklist-icon" />
-                                <h2 className="font-coral">Heads up!</h2>
-                                <h5 className="font-white">We recommend ordering all your gear by <span className="complete-by-date">{completeByDates.gear}</span>  to make sure everything arrives in time!</h5>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <Content
-                        //style={{ padding: '0 50px' }}
-                        className="page-content grey"
-                        >
+                   
 
 
 
-                        <div className="page-intro">
+                        <div className="content-section white">
+                            <div className="content-container">
+
+                            
+
+                        
+                        <div className="gear-title-wrap">
                             <h2>Gear List</h2>
                             <h5>This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. </h5>
                         </div>
@@ -301,7 +297,8 @@ class Gear extends React.Component {
                                 )}
 
                             </Row>
-                            </div>                           
+                            </div>    
+                            </div>                       
                             
                             {this.state.category !== null && 
                             <Drawer
@@ -355,8 +352,8 @@ class Gear extends React.Component {
 
                         
 
-
-                    </Content>
+                    </div>      
+                  
                     <div className="next-section-button blue">
                     <div className="next-section-button-content">
                             <h4>Your doggo has all the right gear!</h4>

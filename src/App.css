@@ -80,8 +80,8 @@ h6 {
 
 .hero {
 
-    min-height: 900px;
-    padding-top: 80px;
+    min-height: 600px;
+    padding-top: 120px;
     padding-right: 3%;
     padding-left: 3%;
     background-color: #f8faff;
@@ -140,13 +140,27 @@ h6 {
   margin-left: auto;
 }
 
+.content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .section {
 
     position: relative;
     padding-top: 56px;
     padding-bottom: 56px;
     direction: ltr;
+    z-index: 2
 
+}
+
+.content-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding: 100px 3%;
 }
 
 .main-container {
@@ -256,6 +270,10 @@ h6 {
   background-color: rgb(105, 155, 247);
 }
 
+.light-blue {
+  background-color:#ebfbff;
+}
+
 .green {
   background-color: #D1F2EB;
 }
@@ -275,6 +293,10 @@ h6 {
 
 .white {
   background-color: white;
+}
+
+.light-pink {
+  background-color: #fff7f2;
 }
 
 .pink {
@@ -562,6 +584,31 @@ h6 {
 }
 
 
+
+.bg-element {
+  position: absolute;
+  
+  z-index: -1;
+  width: 85%;
+  max-width: 470px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 32px;
+  background-color: #f8faff;
+}
+
+.bg-element.bg-yellow {
+    height: 100%;
+    max-height: none;
+    min-height: 500px;
+    left: 0%;
+    top: 0%;
+    right: -25%;
+    bottom: auto;
+    max-width: 470px;
+    background-color: #fff7f2;
+} 
+
 .display-heading-1 {
   margin-bottom: 14px;
   font-size: 40px;
@@ -714,6 +761,25 @@ img {
 
 /* Checklist Page Elements */
 
+.time-tracker-container {
+  top: 60px;
+  position: relative;
+  display: flex;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    height: 120px;
+    padding: 20px;
+
+}
+
 .checklist-card-step-count {
   display: flex;
   background-color: black;
@@ -812,7 +878,7 @@ img {
 }
 
 .checklist-icon {
-  font-size: 3rem;
+  font-size: 24px;
 }
 
 .center {
@@ -1759,6 +1825,18 @@ img {
 }
 /* Gear Page Styling */
 
+.gear-title-wrap {
+    display: flex;
+    width: 100%;
+    margin: 40px auto 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+}
+
 .complete-by-date {
   font-weight: 600;
   text-decoration: underline;
@@ -1810,7 +1888,15 @@ img {
 /* Checklist Styles */
 
 .checklist-icon-box {
+  display: flex;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  height: 80px;
+  width: 100px;
+  background-color: lightsalmon;
+  border-radius: 25px;
+  margin-right: 20px;
 }
 
 .clock-icon {
@@ -2070,6 +2156,7 @@ img {
   .section {
     padding-top: 84px;
     padding-bottom: 84px;
+    z-index: 2
   }
 
   .main-container {
@@ -2429,6 +2516,30 @@ img {
     
   }
   /* Landing Page */
+
+  .bg-element {
+    position: absolute;
+    
+    z-index: -1;
+    width: 85%;
+    max-width: 470px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 32px;
+    background-color: #f8faff;
+  }
+  
+  .bg-element.bg-yellow {
+      height: 100%;
+      max-height: 520px;
+      min-height: 500px;
+      left: 0%;
+      top: 0%;
+      right: -40%;
+      bottom: auto;
+      max-width: 470px;
+      background-color: #fff7f2;
+  } 
 
   .grid-halves-section {
     display: -ms-grid;

@@ -56,25 +56,7 @@ class LandingPage extends React.Component {
                     
                 </div>
                 
-                <div className="guide-banner">
-
-                    <div className="guide-banner-image dark-yellow" />
-
-
-
-                    <div className="guide-banner-title left">
-
-                        <h1>Bringing home a doggo?</h1>
-                        <h5 className="font-black">From a step-by-step guide of what you need, to expert picks of food, to a customized surivival guide, we've got your back.</h5>
-
-                        <Link to='/checklist'>
-                            <Button className="banner-button">
-                                Start now
-                            </Button>
-                        </Link>
-
-                    </div>
-                </div>
+               
 
                 <div className="section white">
                     <div className="main-container">
@@ -90,6 +72,7 @@ class LandingPage extends React.Component {
                                                 Start now
             </Button>
                                         </Link>
+                                     
                                     </div>
 
 
@@ -97,11 +80,14 @@ class LandingPage extends React.Component {
 
 
                                 </div>
-
+                                
                             </Col>
                             <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 12 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
                                 <div className="portrait-image-container align-center">
                                     <img className="grid-image" src={crate_landing_page} alt="dog crate" />
+                                    <div className="bg-element bg-yellow">
+                                        
+                                        </div>
                                 </div>
 
                             </Col>

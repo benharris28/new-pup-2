@@ -78,35 +78,35 @@ class Checklist extends React.Component {
 
         return (
             <div>
-                <Layout className="grey">
-                    <div className="guide-banner">
-
-                    <div className="guide-banner-image purple" />
-
-                        
-
-                        <div className="guide-banner-title">
-                            <h5>{activeDoggo}'s Checklist</h5>
-                            <h2>Advice from the pros to get 100% ready for {activeDoggo}</h2>
-                            <div className="show-checklist">
-                                <button>Show {activeDoggo}'s Checklist</button>
-                            </div>
-                            
+                 <div className="hero light-blue">
+                    <div className="container">
+                        <div className="title-centre">
+                            <h1 className="display-heading">
+                                Welcome to {activeDoggo}'s Checklist!
+                            </h1>
+                            <div className="hero-details">
+                            From a step-by-step guide of what you need, to expert picks of food, to a customized surivival guide, we've got your back.
                         </div>
-                     
                        
 
-                    </div>
-                    <div className="secondary-banner white center">
-                        <div className="secondary-banner-content space">
-                            <h2>No time to waste!</h2>
-                        <div className="checklist-icon-box">
-                            <CalendarOutlined className="icon black-font" />
                         </div>
                         
-                        <h5>{activeDoggo} comes home in {completeByDates.daysLeft} days. Let's get started!</h5>
                     </div>
+                    <div className="time-tracker-container">
+                        <div className="checklist-icon-box">
+                            <CalendarOutlined className="checklist-icon font-white" />
+                        </div>
+                        <div className="time-tracker">
+                            <h5>{activeDoggo} comes home in {completeByDates.daysLeft} days. Let's get started!</h5>
+                        </div>
                     </div>
+                    
+                </div>
+                <Layout className="grey">
+                   
+                       
+
+             
                 
 
                     <div className="content-section blue font-white center">
