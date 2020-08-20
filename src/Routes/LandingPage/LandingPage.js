@@ -35,6 +35,24 @@ class LandingPage extends React.Component {
 
         return (
             <div>
+                <div className="grid-halves-section">
+                    <div className="grid-section-half bg-primary-4">
+                        <div className="container">
+                            <div className="grid-text-content">
+                                <h1 className="display-heading-1">Bringing home a doggo?</h1>
+                                <p className="text-large">Test content test content test content</p>
+                                <Button className="menu-button signup">
+                                    Test
+                                </Button>
+                            </div>
+                        </div>
+                        </div>
+                        <div className="grid-section-half pg-primary-3">
+                            <img src={russ_headshot} alt="vet" className="top-layer" />
+                            <div class="interface-screenshot-decoration bg-primary-5 round-bottom-right"></div>
+                        </div>
+                        
+                        </div>
                 <div className="guide-banner">
 
                     <div className="guide-banner-image dark-yellow" />

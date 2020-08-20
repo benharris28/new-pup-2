@@ -317,6 +317,86 @@ h6 {
 
 /* Landing Page */
 
+.grid-halves-section {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.grid-section-half {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 672px;
+  padding: 30px 35px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: auto;
+}
+
+.bg-primary-4 {
+  background-color: #eff9fb;
+}
+
+.container {
+  width: 100%;
+  max-width: 497px;
+  direction: ltr;
+  text-align: left;
+}
+
+
+
+.display-heading-1 {
+  margin-bottom: 14px;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  color: #29335c;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.interface-screenshot-decoration {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 35%;
+  height: 75%;
+}
+
+.round-bottom-right {
+  border-bottom-right-radius: 1200px;
+}
+
+.bg-primary-5 {
+  background-color: #f3663f;
+}
+
+.top-layer {
+  position: relative;
+  z-index: 2;
+}
+
+
 .landing-page-banner {
   min-height: 100px;
   padding: 2rem;
@@ -1562,14 +1642,16 @@ h6 {
 
 
 
-/* Navbar styling */
+/* navvbar styling */
 .menu-bar{
+  position: sticky;
   padding: 0 20px;
-  border-bottom: solid 1px #e8e8e8;
+  top: 0px;
   overflow: auto;
-  box-shadow: 0 0 30px #f3f1f1;
+  
   background-color: white;
   height: 5rem;
+  z-index: 10;
 }
 
 .menu-button {
@@ -1696,6 +1778,27 @@ h6 {
   }
   .logo a{
     padding: 10px 20px;
+  }
+
+  .grid-text-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-large {
+    font-size: 20px;
   }
 }
 
@@ -1986,6 +2089,37 @@ h6 {
     font-weight: 300;
     font-size: 34px;
   }
+
+  /* Landing Page */
+
+  .grid-halves-section {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  
+  }
+
+  
+
+  .display-heading-1 {
+    margin-bottom: 28px;
+    color: #29335c;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.text-large {
+  font-size: 24px;
+  line-height: 30px;
+}
 
   /* Content prebuilds */ 
   .secondary-banner-content {
