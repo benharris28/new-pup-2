@@ -180,7 +180,52 @@ h6 {
 
 .cta-section {
   padding-top: 0;
+  padding: 100px 3%;
 }
+
+.cta-banner-dark {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 260px;
+  padding-right: 40px;
+  padding-left: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #6a35ff;
+  background-image: url(https://assets.website-files.com/5e7adff…/5e7adff…_Pattern%20Shape.svg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.next-section-content {
+
+  color: white;
+  text-align: center;
+}
+
+.cta-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+ 
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 
 .cta {
   position: relative;
@@ -231,21 +276,34 @@ h6 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+  margin-top: 40px;
+  
 }
 
-.cta-button {
-  padding: 14px 24px;
-  border-radius: 200px;
-  background-color: white;
-  box-shadow: inset 0 10px 3px 100px transparent;
-  -webkit-transition: box-shadow 200ms ease;
-  transition: box-shadow 200ms ease;
-  color: #29335c;
+.button-cta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 60px;
+  margin-left: 20px;
+  padding-right: 40px;
+  padding-left: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  color: #6a35ff;
+  font-size: 16px;
   font-weight: 600;
   text-align: center;
-  height: 70px;
-  width: 250px;
-  margin: 0;
 }
 
 .large {
@@ -555,6 +613,15 @@ h6 {
   max-width: 497px;
   direction: ltr;
   text-align: left;
+}
+
+.container-2 {
+
+    width: 100%;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  
 }
 
 .row-content-intro h2 {
@@ -1824,18 +1891,77 @@ img {
   margin-top: 2rem;
 }
 /* Gear Page Styling */
-
+.gear-title-box {
+  background-color: lightslategrey;
+  width: 100%;
+  border-radius: 25px;
+}
 .gear-title-wrap {
     display: flex;
     width: 100%;
-    margin: 40px auto 24px;
+    max-width: 670px;
+    margin: 20px auto 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
 }
+
+.gear-title-wrap h2 {
+  font-size: 48px;
+}
+
+.bg-container {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  background-color: #f0fbf7;
+  
+  margin: auto;
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.bg-container.bg-top {
+  min-height: 540px;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.gear-grid {
+  width: 100%;
+max-width: 670px;
+margin-right: auto;
+margin-left: auto;
+}
+
 
 .complete-by-date {
   font-weight: 600;
@@ -2170,6 +2296,43 @@ img {
 
   }
 
+  .cta-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .next-section-content {
+    width: 50%;
+    color: white;
+  }
+
+  .cta-button-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
   .cta {
     position: relative;
     max-width: 1270px;
@@ -2447,7 +2610,7 @@ img {
   }
 
   .cta-section {
-    padding-top: 0px;
+    padding: 100px 3%;
   }
 
   .cta-content {
@@ -2468,6 +2631,24 @@ img {
   align-items: center;
 
   }
+
+  .cta-banner-dark {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 260px;
+    padding: 60px 70px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 24px;
+    background-color: #6a35ff;
+    background-image: url(https://assets.website-files.com/5e7adff…/5e7adff…_Pattern%20Shape.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
 
   .cta-button-container {
     
@@ -2527,6 +2708,25 @@ img {
     margin-left: auto;
     border-radius: 32px;
     background-color: #f8faff;
+  }
+
+  .bg-gear {
+    position: absolute;
+    left: 0%;
+    top: auto;
+    right: 0%;
+    bottom: auto;
+    z-index: -1;
+    width: 100%;
+    max-width: 850px;
+    min-height: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 36px;
+    background-color: #f8faff;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .bg-element.bg-yellow {
