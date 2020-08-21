@@ -286,7 +286,6 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   min-height: 60px;
-  margin-left: 20px;
   padding-right: 40px;
   padding-left: 40px;
   -webkit-box-pack: center;
@@ -301,7 +300,6 @@ h6 {
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #6a35ff;
-  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -1940,7 +1938,7 @@ img {
   
   margin: auto;
   border-radius: 25px;
-  padding: 20px;
+  
 }
 
 .bg-container.bg-top {
@@ -1962,6 +1960,21 @@ margin-right: auto;
 margin-left: auto;
 }
 
+.gear-grid-subtitle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80px;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 24px;
+  background-color: #6a35ff;
+  color: white;
+}
 
 .complete-by-date {
   font-weight: 600;
@@ -2315,6 +2328,7 @@ margin-left: auto;
   .next-section-content {
     width: 50%;
     color: white;
+    text-align: left;
   }
 
   .cta-button-container {
@@ -2331,6 +2345,10 @@ margin-left: auto;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.button-cta {
+  font-size: 16px;
 }
 
   .cta {
@@ -2645,7 +2663,7 @@ margin-left: auto;
     align-items: center;
     border-radius: 24px;
     background-color: #6a35ff;
-    background-image: url(https://assets.website-files.com/5e7adff…/5e7adff…_Pattern%20Shape.svg);
+  
     background-position: 50% 50%;
     background-size: cover;
 }

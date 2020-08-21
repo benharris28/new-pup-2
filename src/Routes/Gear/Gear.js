@@ -153,8 +153,11 @@ class Gear extends React.Component {
                                 </div>
                            
 
+                              
 
+                                
                                 <h3 className="card-box-subtitle font-black">Gear you'll need every month</h3>
+                          
                                 <Row
                                     className="gear-grid"
                                     gutter={[16, 24]}
