@@ -136,27 +136,32 @@ class Gear extends React.Component {
 
 
 
+                    <div className="hero light-pink gear-hero">
+                    <div className="container">
+                        <div className="title-centre">
+                            <h1 className="display-heading">
+                                {activeDoggo}'s Gear List
+                            </h1>
+                            <div className="hero-details">
+                            This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. 
+                        </div>
 
 
-                    <div className="content-section white">
-                        <div className="content-container">
-                            <div className="bg-container bg-top">
+                        </div>
 
+                    </div>
+                    </div>
 
-
-
-
-                              
-                                <div className="gear-title-wrap">
-                                    <h2>Gear List</h2>
-                                    <h5>This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. </h5>
-                                </div>
-                           
-
-                              
-
-                                
-                                <h3 className="card-box-subtitle font-black">Gear you'll need every month</h3>
+                    <div className="gear-list-container">
+                    <div className="content-container gear-list">
+                    <div className="bg-container bg-top">
+                    <div className="tab-menu">
+                                <Button className="banner-button">Essentials</Button>
+                                <Button className="banner-button">Apparel</Button>
+                                <Button className="banner-button">Home Goods</Button>
+                            </div>
+                            
+                            <h3 className="card-box-subtitle font-black">Gear you'll need every month</h3>
                           
                                 <Row
                                     className="gear-grid"
@@ -202,9 +207,6 @@ class Gear extends React.Component {
 
                                     )}
                                 </Row>
-
-
-
 
                                 <h3 className="card-box-subtitle font-black">Gear for your home</h3>
                                 <Row
@@ -303,12 +305,8 @@ class Gear extends React.Component {
                                     )}
 
                                 </Row>
-                                <div className="bg-element bg-gear"></div>
-                            </div>
 
-                        </div>
-
-                        {this.state.category !== null &&
+                                {this.state.category !== null &&
                             <Drawer
                                 title="Gear Options"
                                 placement={placement}
@@ -359,9 +357,16 @@ class Gear extends React.Component {
 
 
 
+                            
+                            </div>
+                            </div>
+                            </div>
 
-                    </div>
 
+
+                
+
+                   
                     <div className="cta-section white">
                         <div className="container-2">
                             <div className="cta-banner-dark">

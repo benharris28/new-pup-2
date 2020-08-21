@@ -1889,6 +1889,13 @@ img {
   margin-top: 2rem;
 }
 /* Gear Page Styling */
+
+.gear-list-container {
+  display: block;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
 .gear-title-box {
   background-color: lightslategrey;
   width: 100%;
@@ -1934,7 +1941,7 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: #f0fbf7;
+  background-color: white;
   
   margin: auto;
   border-radius: 25px;
@@ -1952,6 +1959,62 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
+
+.gear-list {
+  position: relative;
+  top: -280px;
+  padding-top: 0;
+
+}
+
+.tab-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #6a35ff;
+  background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+}
+
+.tab-link {
+margin-right: 10px;
+margin-left: 10px;
+margin-bottom: 10px;
+padding: 18px 40px;
+border-radius: 50px;
+}
+
+.w-tab-link {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+   
+    text-align: left;
+    cursor: pointer;
+}
+
 
 .gear-grid {
   width: 100%;
@@ -2549,6 +2612,40 @@ margin-left: auto;
     max-width: 700px;
     
   }
+
+  /* Gear Page */
+
+  .tab-menu {
+   
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #6a35ff;
+    background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .tab-menu .banner-button {
+    margin-top: 0px;
+  }
 }
 
 @media(min-width: 1000px) {
@@ -2615,6 +2712,52 @@ margin-left: auto;
     font-weight: 300;
     font-size: 34px;
   }
+
+  /* Gear Page */ 
+
+  .tab-menu {
+   
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 16px;
+    background-color: #6a35ff;
+    background-position: 50% 50%;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+
+  .tab-menu .banner-button {
+    margin-top: 0px;
+  }
+
+  .gear-hero {
+    height: 200px;
+  }
+
+  .gear-list-container {
+    position: relative;
+    top: -20px;
+    padding-top: 0;
+
+  }
+  
 
   /* Content Prebuilds */
 
