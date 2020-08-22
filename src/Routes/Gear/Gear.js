@@ -94,7 +94,7 @@ class Gear extends React.Component {
 
 
         return (
-            <div>
+            <div className="white">
                 <div className="hero light-pink">
                     <div className="container">
                         <div className="title-centre">
@@ -121,7 +121,7 @@ class Gear extends React.Component {
                 </div>
 
 
-                <Layout className="grey">
+               
 
                     <div className="content-section white">
                         <div className="secondary-banner-content space">
@@ -136,7 +136,7 @@ class Gear extends React.Component {
 
 
 
-                    <div className="hero light-pink gear-hero">
+                    <div className="gear-hero coral">
                     <div className="container">
                         <div className="title-centre">
                             <h1 className="display-heading">
@@ -388,7 +388,7 @@ class Gear extends React.Component {
                     </div>
 
                   
-                </Layout>
+            
 
 
             </div>

@@ -85,7 +85,6 @@ h6 {
     padding-right: 3%;
     padding-left: 3%;
     background-color: #f8faff;
-    background-image: url(https://assets.website-files.com/5e7adff…/5e7adff…_Pattern.svg);
     background-position: 50% 130%;
     background-size: 1810px;
     background-repeat: no-repeat;
@@ -181,6 +180,7 @@ h6 {
 .cta-section {
   padding-top: 0;
   padding: 100px 3%;
+  padding-top: 0;
 }
 
 .cta-banner-dark {
@@ -1889,8 +1889,23 @@ img {
   margin-top: 2rem;
 }
 /* Gear Page Styling */
+.gear-hero {
+
+  min-height: 600px;
+  padding-top: 120px;
+  padding-right: 3%;
+  padding-left: 3%;
+  
+  background-position: 50% 130%;
+  background-size: 1810px;
+  background-repeat: no-repeat;
+
+}
 
 .gear-list-container {
+    position: relative;
+    top: -160px;
+    padding-top: 0;
   display: block;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -1961,13 +1976,15 @@ img {
 }
 
 .gear-list {
-  position: relative;
-  top: -280px;
-  padding-top: 0;
+  /*position: relative;
+  top: -200px;
+  padding-top: 0;*/
 
 }
 
 .tab-menu {
+  position: relative;
+  top: -40px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1995,6 +2012,12 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+}
+
+.tab-menu .banner-button {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 0px;
 }
 
 .tab-link {
@@ -2291,6 +2314,11 @@ margin-left: auto;
   }
 }
 
+@media(min-width: 500px) {
+  /*.gear-list {
+    top: -250px;
+  }*/
+}
 @media(min-width: 767px) {
  
   /* Global Styles */
@@ -2621,7 +2649,7 @@ margin-left: auto;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2716,12 +2744,12 @@ margin-left: auto;
   /* Gear Page */ 
 
   .tab-menu {
-   
+    top: -20px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
+    width: 90%;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2748,12 +2776,21 @@ margin-left: auto;
   }
 
   .gear-hero {
-    height: 200px;
-  }
+
+    min-height: 600px;
+    padding-top: 120px;
+    padding-right: 3%;
+    padding-left: 3%;
+    background-color: #f8faff;
+    background-position: 50% 130%;
+    background-size: 1810px;
+    background-repeat: no-repeat;
+
+}
 
   .gear-list-container {
     position: relative;
-    top: -20px;
+    top: -200px;
     padding-top: 0;
 
   }
