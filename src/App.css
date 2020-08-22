@@ -964,6 +964,17 @@ img {
   margin: auto;
 }
 
+.gear-card-button {
+  border: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.gear-card-icon {
+  margin-left: 10px;
+}
+
 .checklist-card-box {
   margin: auto;
 }
@@ -1024,7 +1035,7 @@ img {
   margin: auto;
  
   box-shadow: rgba(64, 62, 61, 0.05) 0px 5px 15px 0px;
-  border-radius: 5px;
+  border-radius: 25px;
   overflow: hidden;
  
   
@@ -2075,7 +2086,7 @@ margin-left: auto;
 }
 
 .card_purchase_button {
- 
+  color: #6a35ff;
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: left;
@@ -2083,7 +2094,7 @@ margin-left: auto;
 
 .card_purchase_button button{
  
-  border: 2px solid black;
+  color: #6a35ff;
   background-color: white;
   color: black;
   height: 40px;
@@ -2396,7 +2407,7 @@ margin-left: auto;
   }
 
   .cta-section{
-    padding-top: 112px;
+    padding-top: 0px;
 
   }
 
@@ -2808,7 +2819,7 @@ margin-left: auto;
   }
 
   .cta-section {
-    padding: 100px 3%;
+    padding: 0px 3%;
   }
 
   .cta-content {

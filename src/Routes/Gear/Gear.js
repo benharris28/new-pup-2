@@ -4,7 +4,7 @@ import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
 import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
-import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined } from '@ant-design/icons';
+import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
 import stock_image from '../../Assets/stock_image.png'
@@ -191,12 +191,14 @@ class Gear extends React.Component {
                                                     </Meta>
 
                                                     <div className="card_purchase_button">
-
-                                                        <Button
+                                                        
+                                                        <div
+                                                            className="gear-card-button"
                                                             type="primary"
                                                             onClick={() => this.showDrawer(gearCard.category_id)}>
                                                             See products
-                                                </Button>
+                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
+                                                        </div>
 
 
                                                     </div>
