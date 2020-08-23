@@ -8,7 +8,7 @@ class NutritionDesktop extends React.Component {
 
     state = {
         food: this.props.food,
-        tab: 0,
+        tab: this.props.choice,
         
 
     }
@@ -27,7 +27,8 @@ class NutritionDesktop extends React.Component {
         const activeDoggo = activeUser.dogs[0].dog_name
         const { Panel } = Collapse;
         const foodCard = this.state.food[this.state.tab]
-        console.log(this.state.title)
+   
+        console.log(this.state.tab)
 
 
 
@@ -36,32 +37,22 @@ class NutritionDesktop extends React.Component {
         const { Meta } = Card;
 
         
-        console.log(this.state.title)
+     
 
         return (
-            <div className="carousel-container">
-                <div className="carousel-intro">
-                    <h2>Let's pick a food for {activeDoggo}</h2>
-                    <h5>We've narrowed it down to two options! All are great choices for {activeDoggo} and appropriate for his age and health status</h5>
-                </div>
-
-
-                <div className="carousel-test">
-                    
-
-
+            
 
 
                    
 
                         <div className="food-card">
-                                <div className="picker" style={{ marginTop: 0 }}>
-                                    <Row justify="space-between">
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("0")} className={this.state.tab == 0 ? "picker-button checked" : "picker-button"} type="primary">Option 1: <h5>{this.state.food[0].type}</h5></Button></Col>
-                                        <Col className="format-picker" span={11}><Button onClick={() => this.setTab("1")} className="picker-button" type="primary">Option 2: <h5>{this.state.food[1].type}</h5></Button></Col>
-                                    </Row>
-                            
-                                </div>
+                        <div className="tab-menu">
+                                <Button className="banner-button" onClick={() => this.setTab("0")}>Gently Cooked</Button>
+                                <Button className="banner-button" onClick={() => this.setTab("1")}>Kibble</Button>
+                                
+                                
+                            </div>
+                             
 
                             <div className="nutrition-desktop">
 
@@ -121,11 +112,7 @@ class NutritionDesktop extends React.Component {
 
                  
 
-                </div>
-
-
-
-            </div>
+                
         );
     }
 

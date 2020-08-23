@@ -144,7 +144,7 @@ class Gear extends React.Component {
 
 
 
-                    <div className="gear-hero light-purple">
+                    <div className="section-hero light-purple">
                       
                     <div className="container">
                         <div className="selections">
@@ -179,7 +179,7 @@ class Gear extends React.Component {
                                 <Row
                                     className="gear-grid"
                                     gutter={[16, 24]}
-                                    style={{ margin: 0, "margin-top": "20px" }}
+                                    style={{ margin: 0, "margin-top": "40px" }}
                                 >
                                     {gear.filter(item => item.theme == this.state.gearTab ).map(gearCard =>
                                         <Col

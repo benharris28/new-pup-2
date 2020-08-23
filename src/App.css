@@ -126,7 +126,7 @@ h6 {
 
 .hero-details {
   max-width: 690px;
-  color: #7b88a8;
+  color: #29335c;
   font-size: 18px;
   line-height: 1.45;
   font-weight: 400;
@@ -178,11 +178,11 @@ h6 {
 }
 
 .cta-section {
-  padding-top: 0;
+ 
   padding: 100px 3%;
-  padding-top: 0;
+  padding-top: 0px;
   position: relative;
-  top: -100px;
+  
 }
 
 .cta-banner-dark {
@@ -1745,6 +1745,15 @@ img {
 
 /* Nutrition Page Styling */
 
+.nutrition-list-container {
+  position: relative;
+  top: -140px;
+  padding-top: 0;
+display: block;
+padding-right: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+}
 
 .food-type-image-box {
   background-color: white;
@@ -1902,7 +1911,7 @@ img {
   margin-top: 2rem;
 }
 /* Gear Page Styling */
-.gear-hero {
+.section-hero {
 
   min-height: 600px;
   padding-top: 120px;
@@ -1931,6 +1940,9 @@ img {
   padding: 20px;
   color: white;
   font-size: 20px;
+  font-weight: 500;
+    font-size: 24px;
+    width: 90%;
 }
 
 .gear-icon {
@@ -1941,13 +1953,14 @@ img {
 
 .gear-list-container {
     position: relative;
-    top: -160px;
+    top: -140px;
     padding-top: 0;
   display: block;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
 }
+
 .gear-title-box {
   background-color: #6a35ff;
   width: 100%;
@@ -1993,10 +2006,10 @@ img {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  background-color: white;
+  
   
   margin: auto;
-  border-radius: 25px;
+ 
   
 }
 
@@ -2055,6 +2068,8 @@ img {
   margin-bottom: 10px;
   margin-top: 10px;
   border: 0px;
+  color: #6a35ff;
+  font-size: 20px;
 }
 
 .tab-menu .banner-button ::selection {
@@ -2438,9 +2453,9 @@ margin-left: auto;
   }
 
   .cta-section{
-    padding-top: 0px;
+   
     position: relative;
-    top: -100px;
+  
 
   }
 
@@ -2601,6 +2616,10 @@ margin-left: auto;
 
   /* Nutrition Page */
 
+  .nutrition-list-container {
+    top: -20px;
+  }
+
   .picker {
     width: 80%;
     margin: auto;
@@ -2687,13 +2706,15 @@ margin-left: auto;
 
   /* Gear Page */
 
-  .gear-hero {
-    min-height: 900px;
+  .section-hero {
+    min-height: 500px;
   }
 
   .gear-list-container {
-    top: -440px;
+    top: -20px;
   }
+  
+
   .tab-menu {
     top: -40px;
     display: -webkit-box;
@@ -2720,6 +2741,7 @@ margin-left: auto;
     background-position: 50% 50%;
       background-size: cover;
       background-repeat: no-repeat;
+      margin: auto;
   }
 
   .tab-menu .banner-button {
@@ -2842,7 +2864,7 @@ margin-left: auto;
 
   .gear-list-container {
     position: relative;
-    top: -200px;
+    top: -30px;
     padding-top: 0;
 
   }

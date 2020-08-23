@@ -12,16 +12,17 @@ import { Layout, Button, Row, Col, Alert, Collapse } from 'antd';
 
 class Nutrition extends React.Component {
     static contextType = ApiContext;
-    
+
     state = {
         format: '',
         windowSize: '',
-        food: NutritionData.categories[0].products
+        food: NutritionData.categories[0].products,
+        choice: 0
     }
 
     componentDidMount = () => {
         window.scrollTo(0, 0);
-     }
+    }
 
     setFormat = (format) => {
         this.setState({
@@ -36,8 +37,14 @@ class Nutrition extends React.Component {
         })
     }
 
+    handleChoice = (choice) => {
+        this.setState({
+            choice: choice
+        })
+    }
+
     render() {
-        
+
         console.log(this.state.food)
         const width = window.addEventListener('resize', this.handleResize);
         const fullWidth = global.window.innerWidth;
@@ -55,18 +62,18 @@ class Nutrition extends React.Component {
 
                         <div className="guide-banner-image dark-yellow" />
 
-                        
+
 
                         <div className="guide-banner-title">
-                        <div className="back-to-checklist-button-test">
-                            <Link to='/checklist'>
-                                <Button
-                                    type="primary">
-                                    Back to Checklist
+                            <div className="back-to-checklist-button-test">
+                                <Link to='/checklist'>
+                                    <Button
+                                        type="primary">
+                                        Back to Checklist
                                 </Button>
-                            </Link>
+                                </Link>
 
-                        </div>
+                            </div>
 
                             <h5>{activeDoggo}'s Checklist</h5>
                             <h1>Everything you need to know about dog food</h1>
@@ -90,9 +97,9 @@ class Nutrition extends React.Component {
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                     
-                                                <img className="food-image" src={food_image} alt="food stock" />
-                                           
+
+                                            <img className="food-image" src={food_image} alt="food stock" />
+
                                             <h4>Gently Cooked</h4>
                                             <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
                                         </div>
@@ -100,17 +107,17 @@ class Nutrition extends React.Component {
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            
-                                        <img className="food-image" src={food_image} alt="food stock" />
+
+                                            <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Raw</h4>
                                             <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
                                         </div>
-                    
+
                                     </Col>
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <img className="food-image" src={food_image} alt="food stock" />    
+                                            <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Canned</h4>
                                             <h5>Food is cooked until 70% of the moisture (water) is removed to maintain shelf stability</h5>
                                         </div>
@@ -131,7 +138,7 @@ class Nutrition extends React.Component {
                     </div>
 
 
-                  
+
 
                     <div className="content-section purple font-white">
                         <div className="checklist-page content">
@@ -183,25 +190,53 @@ class Nutrition extends React.Component {
                             </div>
                             <div className="nutrition-section-outro">
                                 <Alert message="Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their compound names. Don't fear if you see items like dicalcium phosphate or zinc glutonate on the ingredient list" type="info" showIcon />
-                                
+
                             </div>
                         </div>
                     </div>
 
-                  
+                    <div className="section-hero light-blue">
 
-                    
+                        <div className="container">
+                            <div className="selections blue">
+                                Selections Required
+                          </div>
+                            <div className="title-centre">
+                                <h1 className="display-heading">
+                                    {activeDoggo}'s Food Options
+                              </h1>
+                                <div className="hero-details">
+                                    This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready.
+                          </div>
 
-                    <div className="content-section white">
-                        <div className="content">
 
-                            {fullWidth < 900
-                                ? <NutritionMobile food={this.state.food} />
-                                : <NutritionDesktop food={this.state.food} />
-                            }
+                            </div>
 
                         </div>
                     </div>
+
+                    <div className="nutrition-list-container">
+                        <div className="content-container gear-list">
+                            <div className="bg-container bg-top">
+
+
+
+
+                                {fullWidth < 900
+                                    ? <NutritionMobile food={this.state.food} />
+                                    : <NutritionDesktop food={this.state.food} choice={this.state.choice} />
+                                }
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
@@ -223,19 +258,19 @@ class Nutrition extends React.Component {
                     </div>
 
                     <div className="next-section-button dark-yellow">
-                    <div className="next-section-button-content">
+                        <div className="next-section-button-content">
                             <h4>Your pup has great food to eat!</h4>
                             <h5>Let's move on and find your pup a great vet in your area. Click below to go to the next section</h5>
                             <Link to='/vet'>
-                            <Button>
-                                Up Next: Find a local vet
+                                <Button>
+                                    Up Next: Find a local vet
                                     </Button>
-                        </Link>
+                            </Link>
                         </div>
-                        
+
 
                     </div>
-                    
+
 
                 </Layout>
             </div>

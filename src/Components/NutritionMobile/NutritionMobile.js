@@ -58,7 +58,10 @@ class NutritionMobile extends React.Component {
         console.log(this.state.title)
 
         return (
+            <div>
+                      
             <div className="carousel-container">
+                
                 <div className="carousel-intro">
                     <h2>Let's pick a food for {activeDoggo}</h2>
                     <h5>We've narrowed it down to three options! All are great choices for {activeDoggo} and appropriate for his age and health status</h5>
@@ -136,6 +139,7 @@ class NutritionMobile extends React.Component {
 
 
 
+            </div>
             </div>
         );
     }
