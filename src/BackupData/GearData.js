@@ -12,6 +12,9 @@ import poo_bag_illustration from '../Assets/poo_bag_illustration.png'
 import dog_tag_illustration from '../Assets/dog_tag_illustration.png'
 import treats_illustration from '../Assets/treats_illustration.png'
 import shampoo_illustration from '../Assets/shampoo_illustration.png'
+import dog_treat from '../Assets/dog_treat.png'
+import dog_harness from '../Assets/dog_harness.png'
+
 
 export default {
     "categories": [
@@ -350,5 +353,299 @@ export default {
                                     
                                 ]
                                 },
+                                {
+                                    "category_id": 8,
+                                    "category": "Treats",
+                                    "category_image": dog_treat,
+                                    "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                    "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                    "theme": "monthly-good",
+                                    "products": [
+                                        
+                                        {
+                                            "id": 15,
+                                            "tag": "dog_treat",
+                                            "type": "basic",
+                                            "active": true,
+                                            "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                            "product": "Durable Dog Toys - pack of 8",
+                                            "brand": "Youngever",
+                                            "category": "Dog Toys",
+                                            "category_id": 7,
+                                            "cost_canada": 21,
+                                            "cost_us": 8,
+                                            "purchase_text": "Buy these toys",
+                                            "description_text": "Chew toys to help with fun and teething",
+                                            "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                            "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                            
+                                        },
+                                        {
+                                            "id": 16,
+                                            "tag": "dog_toy",
+                                            "type": "basic",
+                                            "active": true,
+                                            "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                            "product": "Puppy Toy - Natural Teething Rubber",
+                                            "brand": "KONG",
+                                            "category": "Dog Toys",
+                                            "category_id": 7,
+                                            "cost_canada": 25,
+                                            "cost_us": 10,
+                                            "purchase_text": "Buy this",
+                                            "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                            "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                            "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                            
+                                        },
+                                        
+                                        
+                                    ]
+                                    },
+                                    {
+                                        "category_id": 9,
+                                        "category": "Shampoo",
+                                        "category_image": shampoo_illustration,
+                                        "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                        "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                        "theme": "home-good",
+                                        "products": [
+                                            
+                                            {
+                                                "id": 17,
+                                                "tag": "dog_treat",
+                                                "type": "basic",
+                                                "active": true,
+                                                "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                                "product": "Durable Dog Toys - pack of 8",
+                                                "brand": "Youngever",
+                                                "category": "Dog Toys",
+                                                "category_id": 7,
+                                                "cost_canada": 21,
+                                                "cost_us": 8,
+                                                "purchase_text": "Buy these toys",
+                                                "description_text": "Chew toys to help with fun and teething",
+                                                "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                                "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                                
+                                            },
+                                            {
+                                                "id": 18,
+                                                "tag": "dog_toy",
+                                                "type": "basic",
+                                                "active": true,
+                                                "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                                "product": "Puppy Toy - Natural Teething Rubber",
+                                                "brand": "KONG",
+                                                "category": "Dog Toys",
+                                                "category_id": 7,
+                                                "cost_canada": 25,
+                                                "cost_us": 10,
+                                                "purchase_text": "Buy this",
+                                                "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                                "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                                "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                                
+                                            },
+                                            
+                                            
+                                        ]
+                                        },
+                                        {
+                                            "category_id": 10,
+                                            "category": "Cleanup Spray",
+                                            "category_image": shampoo_illustration,
+                                            "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                            "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                            "theme": "home-good",
+                                            "products": [
+                                                
+                                                {
+                                                    "id": 19,
+                                                    "tag": "dog_treat",
+                                                    "type": "basic",
+                                                    "active": true,
+                                                    "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                                    "product": "Durable Dog Toys - pack of 8",
+                                                    "brand": "Youngever",
+                                                    "category": "Dog Toys",
+                                                    "category_id": 7,
+                                                    "cost_canada": 21,
+                                                    "cost_us": 8,
+                                                    "purchase_text": "Buy these toys",
+                                                    "description_text": "Chew toys to help with fun and teething",
+                                                    "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                                    "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                                    
+                                                },
+                                                {
+                                                    "id": 20,
+                                                    "tag": "dog_toy",
+                                                    "type": "basic",
+                                                    "active": true,
+                                                    "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                                    "product": "Puppy Toy - Natural Teething Rubber",
+                                                    "brand": "KONG",
+                                                    "category": "Dog Toys",
+                                                    "category_id": 7,
+                                                    "cost_canada": 25,
+                                                    "cost_us": 10,
+                                                    "purchase_text": "Buy this",
+                                                    "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                                    "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                                    "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                                    
+                                                },
+                                                
+                                                
+                                            ]
+                                            },
+                                            {
+                                                "category_id": 11,
+                                                "category": "Anti-Chew Spray",
+                                                "category_image": shampoo_illustration,
+                                                "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                                "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                                "theme": "home-good",
+                                                "products": [
+                                                    
+                                                    {
+                                                        "id": 21,
+                                                        "tag": "dog_treat",
+                                                        "type": "basic",
+                                                        "active": true,
+                                                        "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                                        "product": "Durable Dog Toys - pack of 8",
+                                                        "brand": "Youngever",
+                                                        "category": "Dog Toys",
+                                                        "category_id": 7,
+                                                        "cost_canada": 21,
+                                                        "cost_us": 8,
+                                                        "purchase_text": "Buy these toys",
+                                                        "description_text": "Chew toys to help with fun and teething",
+                                                        "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                                        "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                                        
+                                                    },
+                                                    {
+                                                        "id": 22,
+                                                        "tag": "dog_toy",
+                                                        "type": "basic",
+                                                        "active": true,
+                                                        "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                                        "product": "Puppy Toy - Natural Teething Rubber",
+                                                        "brand": "KONG",
+                                                        "category": "Dog Toys",
+                                                        "category_id": 7,
+                                                        "cost_canada": 25,
+                                                        "cost_us": 10,
+                                                        "purchase_text": "Buy this",
+                                                        "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                                        "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                                        "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                                        
+                                                    },
+                                                    
+                                                    
+                                                ]
+                                                },
+                                                {
+                                                    "category_id": 12,
+                                                    "category": "Harness",
+                                                    "category_image": dog_harness,
+                                                    "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                                    "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                                    "theme": "apparel",
+                                                    "products": [
+                                                        
+                                                        {
+                                                            "id": 23,
+                                                            "tag": "dog_treat",
+                                                            "type": "basic",
+                                                            "active": true,
+                                                            "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                                            "product": "Durable Dog Toys - pack of 8",
+                                                            "brand": "Youngever",
+                                                            "category": "Dog Toys",
+                                                            "category_id": 7,
+                                                            "cost_canada": 21,
+                                                            "cost_us": 8,
+                                                            "purchase_text": "Buy these toys",
+                                                            "description_text": "Chew toys to help with fun and teething",
+                                                            "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                                            "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                                            
+                                                        },
+                                                        {
+                                                            "id": 24,
+                                                            "tag": "dog_toy",
+                                                            "type": "basic",
+                                                            "active": true,
+                                                            "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                                            "product": "Puppy Toy - Natural Teething Rubber",
+                                                            "brand": "KONG",
+                                                            "category": "Dog Toys",
+                                                            "category_id": 7,
+                                                            "cost_canada": 25,
+                                                            "cost_us": 10,
+                                                            "purchase_text": "Buy this",
+                                                            "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                                            "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                                            "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                                            
+                                                        },
+                                                        
+                                                        
+                                                    ]
+                                                    },
+                                                    {
+                                                        "category_id": 13,
+                                                        "category": "Harness",
+                                                        "category_image": dog_harness,
+                                                        "category_description": "Treats are essential for keeping your doggo motivated during training",
+                                                        "choice_description": "Here's one area where you really don't need to get fancy. Its a bag that will hold poop.",
+                                                        "theme": "apparel",
+                                                        "products": [
+                                                            
+                                                            {
+                                                                "id": 25,
+                                                                "tag": "dog_treat",
+                                                                "type": "basic",
+                                                                "active": true,
+                                                                "image": "https://images-na.ssl-images-amazon.com/images/I/91aBICBO2QL._AC_SL1500_.jpg",
+                                                                "product": "Durable Dog Toys - pack of 8",
+                                                                "brand": "Youngever",
+                                                                "category": "Dog Toys",
+                                                                "category_id": 7,
+                                                                "cost_canada": 21,
+                                                                "cost_us": 8,
+                                                                "purchase_text": "Buy these toys",
+                                                                "description_text": "Chew toys to help with fun and teething",
+                                                                "canada_link": "https://www.amazon.ca/Durable-Medium-Teething-Natural-Youngever/dp/B074W6NZ21/ref=sxin_7_ac_d_rm?ac_md=0-0-ZG9nIGNoZXcgdG95cw%3D%3D-ac_d_rm&cv_ct_cx=dog+chew+toys&dchild=1&keywords=dog+chew+toys&pd_rd_i=B074W6NZ21&pd_rd_r=cf2ca338-9243-439d-beeb-c0a6e0094acf&pd_rd_w=WGH2U&pd_rd_wg=NxT3Y&pf_rd_p=fa7bc446-ba88-4175-9852-5ba9a259caaf&pf_rd_r=G953T1BPYJSSX5RC3YDD&psc=1&qid=1596641665&sr=1-1-12d4272d-8adb-4121-8624-135149aa9081",
+                                                                "us_link": "https://www.amazon.com/Youngever-Durable-Dog-Chew-Toys/dp/B074W6NZ21/ref=sr_1_13?dchild=1&keywords=dog+chew+toys&qid=1596641681&sr=8-13"
+                                                                
+                                                            },
+                                                            {
+                                                                "id": 26,
+                                                                "tag": "dog_toy",
+                                                                "type": "basic",
+                                                                "active": true,
+                                                                "image": "https://images-na.ssl-images-amazon.com/images/I/61MxM6DGNCL._AC_SL1500_.jpg",
+                                                                "product": "Puppy Toy - Natural Teething Rubber",
+                                                                "brand": "KONG",
+                                                                "category": "Dog Toys",
+                                                                "category_id": 7,
+                                                                "cost_canada": 25,
+                                                                "cost_us": 10,
+                                                                "purchase_text": "Buy this",
+                                                                "description_text": "A staple of puppy teething and training. Kongs are great for so many reasons! Try putting peanut butter inside and watch your pup have a ball!",
+                                                                "canada_link": "https://www.amazon.ca/Kong-Puppy-jouet-chiot-Taille/dp/B0002AR17S/ref=sr_1_8?dchild=1&keywords=kong&qid=1596642039&s=pet-supplies&sr=1-8",
+                                                                "us_link": "https://www.amazon.com/KONG-Natural-Teething-Rubber-Puppies/dp/B0002AR182/ref=sr_1_5?crid=20J7CQSUZJ4L4&dchild=1&keywords=kong&qid=1596641848&sprefix=kong%2Caps%2C172&sr=8-5"
+                                                                
+                                                            },
+                                                            
+                                                            
+                                                        ]
+                                                        },
     ]
 }

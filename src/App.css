@@ -181,6 +181,8 @@ h6 {
   padding-top: 0;
   padding: 100px 3%;
   padding-top: 0;
+  position: relative;
+  top: -100px;
 }
 
 .cta-banner-dark {
@@ -1913,6 +1915,30 @@ img {
 
 }
 
+.selections {
+  top: -50px;
+  position: relative;
+  display: flex;
+  max-width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-box-orient: vertical;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #6a35ff;
+  border-radius: 50px;
+  height: 70px;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.gear-icon {
+  height: 120px;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
 .gear-list-container {
     position: relative;
     top: -160px;
@@ -1923,7 +1949,7 @@ img {
   padding-left: 20px;
 }
 .gear-title-box {
-  background-color: lightslategrey;
+  background-color: #6a35ff;
   width: 100%;
   border-radius: 25px;
 }
@@ -1995,7 +2021,7 @@ img {
 
 .tab-menu {
   position: relative;
-  top: -40px;
+  top: 0px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2029,6 +2055,11 @@ img {
   margin-bottom: 10px;
   margin-top: 10px;
   border: 0px;
+}
+
+.tab-menu .banner-button ::selection {
+  background-color: white;
+  color: purple;
 }
 
 .tab-link {
@@ -2408,6 +2439,8 @@ margin-left: auto;
 
   .cta-section{
     padding-top: 0px;
+    position: relative;
+    top: -100px;
 
   }
 
@@ -2654,8 +2687,15 @@ margin-left: auto;
 
   /* Gear Page */
 
+  .gear-hero {
+    min-height: 900px;
+  }
+
+  .gear-list-container {
+    top: -440px;
+  }
   .tab-menu {
-   
+    top: -40px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -2684,6 +2724,7 @@ margin-left: auto;
 
   .tab-menu .banner-button {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -2792,7 +2833,7 @@ margin-left: auto;
     padding-top: 120px;
     padding-right: 3%;
     padding-left: 3%;
-    background-color: #f8faff;
+  
     background-position: 50% 130%;
     background-size: 1810px;
     background-repeat: no-repeat;

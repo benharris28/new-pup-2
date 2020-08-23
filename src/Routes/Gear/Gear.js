@@ -6,6 +6,7 @@ import ApiContext from '../../ApiContext';
 import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
 import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined, ArrowRightOutlined } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
+import dog_collar from '../../Assets/dog_collar.png'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
 import stock_image from '../../Assets/stock_image.png'
 
@@ -18,7 +19,8 @@ class Gear extends React.Component {
         visible: false,
         placement: 'right',
         category: 1,
-        windowSize: ''
+        windowSize: '',
+        gearTab: 'monthly-good'
 
     }
 
@@ -67,6 +69,12 @@ class Gear extends React.Component {
         else {
             return 300
         }
+    }
+
+    filterGear = (name) => {
+        this.setState({
+            gearTab: name
+        })
     }
 
 
@@ -136,8 +144,12 @@ class Gear extends React.Component {
 
 
 
-                    <div className="gear-hero coral">
+                    <div className="gear-hero light-purple">
+                      
                     <div className="container">
+                        <div className="selections">
+                            Selections Required
+                        </div>
                         <div className="title-centre">
                             <h1 className="display-heading">
                                 {activeDoggo}'s Gear List
@@ -156,19 +168,20 @@ class Gear extends React.Component {
                     <div className="content-container gear-list">
                     <div className="bg-container bg-top">
                     <div className="tab-menu">
-                                <Button className="banner-button">Essentials</Button>
-                                <Button className="banner-button">Apparel</Button>
-                                <Button className="banner-button">Home Goods</Button>
+                                <Button className="banner-button" onClick={(e) => this.filterGear("monthly-good")}>Essentials</Button>
+                                <Button className="banner-button" onClick={(e) => this.filterGear("apparel")}>Apparel</Button>
+                                <Button className="banner-button" onClick={(e) => this.filterGear("home-good")}>Home Goods</Button>
+                                
                             </div>
                             
-                            <h3 className="card-box-subtitle font-black">Gear you'll need every month</h3>
+                            
                           
                                 <Row
                                     className="gear-grid"
                                     gutter={[16, 24]}
-                                    style={{ margin: 0 }}
+                                    style={{ margin: 0, "margin-top": "20px" }}
                                 >
-                                    {gear.filter(item => item.theme == "monthly-good").map(gearCard =>
+                                    {gear.filter(item => item.theme == this.state.gearTab ).map(gearCard =>
                                         <Col
                                             className="gutter-row" xs={12} sm={12} md={12} lg={8}
                                             style={{ margin: 0 }}
@@ -210,103 +223,7 @@ class Gear extends React.Component {
                                     )}
                                 </Row>
 
-                                <h3 className="card-box-subtitle font-black">Gear for your home</h3>
-                                <Row
-                                    className="gear-grid"
-                                    gutter={[16, 24]}
-                                    style={{ margin: 0 }}
-                                >
-
-                                    {gear.filter(item => item.theme == "home-good").map(gearCard =>
-                                        <Col
-                                            className="gutter-row" xs={12} sm={12} md={12} lg={8}
-                                            style={{ margin: 0 }}
-                                            key={gearCard.category_id}>
-                                            <div className="gear-card-box">
-                                                <Card
-                                                    onClick={() => this.showDrawer(gearCard.category_id)}
-                                                    hoverable
-                                                    className="gear-card"
-                                                    cover={<img
-                                                        className="card-image"
-                                                        alt="example"
-                                                        src={gearCard.category_image} />}
-                                                >
-                                                    <Meta
-                                                        className="card-content"
-                                                        title={gearCard.category}
-                                                        description={gearCard.description_text}>
-
-                                                    </Meta>
-
-                                                    <div className="card_purchase_button">
-
-                                                        <Button
-                                                            type="primary"
-                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
-                                                            See products
-                                                </Button>
-
-
-                                                    </div>
-
-                                                </Card>
-                                            </div>
-                                        </Col>
-
-                                    )}
-
-                                </Row>
-
-
-
-                                <h3 className="card-box-subtitle font-black">Apparel for your doggo</h3>
-                                <Row
-                                    className="gear-grid"
-                                    gutter={[16, 24]}
-                                    style={{ margin: 0 }}
-                                >
-
-                                    {gear.filter(item => item.theme == "apparel").map(gearCard =>
-                                        <Col
-                                            className="gutter-row" xs={12} sm={12} md={12} lg={8}
-                                            style={{ margin: 0 }}
-                                            key={gearCard.category_id}>
-                                            <div className="gear-card-box">
-                                                <Card
-                                                    onClick={() => this.showDrawer(gearCard.category_id)}
-                                                    hoverable
-                                                    className="gear-card"
-                                                    cover={<img
-                                                        className="card-image"
-                                                        alt="example"
-                                                        src={gearCard.category_image} />}
-                                                >
-                                                    <Meta
-                                                        className="card-content"
-                                                        title={gearCard.category}
-                                                        description={gearCard.description_text}>
-
-                                                    </Meta>
-
-                                                    <div className="card_purchase_button">
-
-                                                        <Button
-                                                            type="primary"
-                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
-                                                            See products
-                                                </Button>
-
-
-                                                    </div>
-
-                                                </Card>
-                                            </div>
-                                        </Col>
-
-                                    )}
-
-                                </Row>
+                              
 
                                 {this.state.category !== null &&
                             <Drawer
@@ -389,6 +306,7 @@ class Gear extends React.Component {
                         </div>
                     </div>
 
+                   
                   
             
 
