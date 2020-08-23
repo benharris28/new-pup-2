@@ -95,7 +95,7 @@ class Nutrition extends React.Component {
                                 >
 
                                     <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
                                         <div className="nutrition-type-item">
 
                                             <img className="food-image" src={food_image} alt="food stock" />
@@ -105,7 +105,7 @@ class Nutrition extends React.Component {
                                         </div>
                                     </Col>
                                     <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
                                         <div className="nutrition-type-item">
 
                                             <img className="food-image" src={food_image} alt="food stock" />
@@ -115,7 +115,7 @@ class Nutrition extends React.Component {
 
                                     </Col>
                                     <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
                                         <div className="nutrition-type-item">
                                             <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Canned</h4>
@@ -124,7 +124,7 @@ class Nutrition extends React.Component {
                                     </Col>
 
                                     <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
+                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
                                         <div className="nutrition-type-item">
                                             <img className="food-image" src={food_image} alt="food stock" />
                                             <h4>Kibble</h4>
@@ -223,7 +223,7 @@ class Nutrition extends React.Component {
 
 
                                 {fullWidth < 900
-                                    ? <NutritionMobile food={this.state.food} />
+                                    ? <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
                                     : <NutritionDesktop food={this.state.food} choice={this.state.choice} />
                                 }
 
@@ -256,7 +256,25 @@ class Nutrition extends React.Component {
                             </Collapse>
                         </div>
                     </div>
-
+                    <div className="cta-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">Your doggo has all the right gear!</h2>
+                                        <h5 className="font-white">Let's move on and find your pup some nutritious food. Click below to go to the next section</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/food'>
+                                            <Button className="button-cta">
+                                                Up Next: Find the best food
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="next-section-button dark-yellow">
                         <div className="next-section-button-content">
                             <h4>Your pup has great food to eat!</h4>
