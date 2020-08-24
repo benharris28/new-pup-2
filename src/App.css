@@ -904,16 +904,56 @@ img {
     justify-content: space-around;
     -webkit-box-align: center;
     align-items: center;
-    background-color: white;
+    background-color: #f0fbf7;
     border-radius: 25px;
     height: 120px;
     padding: 20px;
 
 }
 
+.checklist-step-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fbf3ff;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  justify-content: center;
+  height: 300px;
+}
+
+.checklist-step-count {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 81, 255);
+  margin-bottom: 20px;
+}
+
+.checklist-step-content {
+  text-align: center;
+  color: black;
+
+}
+
+
 .checklist-card-step-count {
   display: flex;
-  background-color: black;
+  background-color: #6a35ff;
   width: 100px;
   height: 25px;
   color: white;
@@ -1051,6 +1091,7 @@ img {
   margin: auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 20px;
 
   
   
@@ -1074,14 +1115,15 @@ img {
     /*border: 1px solid rgb(85, 81, 255);*/
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: rgba(64, 62, 61, 0.05) 0px 5px 15px 0px;
    
     
 }
 
 
 .ant-card-meta-title {
-  color: black;
-  font-size: 1rem;
+  color: #001a49;
+  font-size: 24px;
   font-weight: 600;
   /*text-transform: uppercase;*/
   white-space: normal;
@@ -2477,6 +2519,47 @@ margin-left: auto;
   }
 }
 
+@media(max-width: 1000px) {
+.checklist-step-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fbf3ff;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  justify-content: center;
+  height: 300px;
+}
+
+.checklist-step-count {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 81, 255);
+  margin-bottom: 20px;
+}
+
+.checklist-step-content {
+  text-align: center;
+  color: black;
+
+}
+}
+
 @media(min-width: 500px) {
   /*.gear-list {
     top: -250px;
@@ -2720,6 +2803,7 @@ margin-left: auto;
     margin-bottom: 2rem;
   }
 
+  
   /* Nutrition Page */
 
   .nutrition-step-content {
@@ -3030,7 +3114,7 @@ margin-left: auto;
   }
 
   .cta-section {
-    padding: 0px 3%;
+    padding: 100px 3%;
   }
 
   .cta-content {
@@ -3213,5 +3297,45 @@ margin-left: auto;
 
   .row-content-intro {
     padding: 20px;
+  }
+
+  /* Checklist Page */
+
+  .checklist-step-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fbf3ff;
+    padding: 20px;
+    border-radius: 25px;
+    max-width: 300px;
+    height: 300px;
+  }
+  
+  .checklist-step-count {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(85, 81, 255);
+    margin-bottom: 20px;
+  }
+  
+  .checklist-step-content {
+    text-align: center;
+    color: black;
+  
   }
 }

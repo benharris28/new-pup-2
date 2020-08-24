@@ -8,6 +8,7 @@ import dog_food_checklist from '../../Assets/dog_food_checklist.png'
 import vet_checklist from '../../Assets/vet_checklist.png'
 import guide_checklist from '../../Assets/guide_checklist.png'
 import training_checklist from '../../Assets/training_checklist.png'
+import dog_hero_2 from '../../Assets/dog_hero_2.png'
 import ApiContext from '../../ApiContext';
 
 class Checklist extends React.Component {
@@ -78,9 +79,13 @@ class Checklist extends React.Component {
 
         return (
             <div>
-                 <div className="hero light-blue">
+                 <div className="hero light-purple">
                     <div className="container">
-                        <div className="title-centre">
+                    <div className="selections">
+                            Checklist
+                        </div>
+                        <img className="hero-image" alt="dog panting" src={dog_hero_2} />
+                        <div className="title-centre image-title">
                             <h1 className="display-heading">
                                 Welcome to {activeDoggo}'s Checklist!
                             </h1>
@@ -102,66 +107,86 @@ class Checklist extends React.Component {
                     </div>
                     
                 </div>
-                <Layout className="grey">
+             
                    
                        
 
              
                 
 
-                    <div className="content-section blue font-white center">
-                        <div className="checklist-page content">
-                            <h2 className="font-white">How this works</h2>
-                            <div className="grid-container">
+                    <div className="content-section white font-white center">
+                        <div className="content-container">
 
-                                <Row className="survival-guide-steps-row font-white" justify="space-around">
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps font-white">
-                                            <div className="survival-guide-steps_num">
-                                                1
-                                    </div>
-                                            <h3>Go through each section</h3>
-                                            <h5 className="font-white">We break down puppyhood into 5 easy sections</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                2
-                                    </div>
-                                            <h3>Pay attention to dates</h3>
-                                            <h5 className="font-white">We'll tell you when to complete each section by to make sure you're ready</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                3
-                                    </div>
-                                            <h3>Don't forget the guide</h3>
-                                            <h5 className="font-white">The last step is a complete guide to your first 24 hours with pup</h5>
-                                        </div>
-
-                                    </Col>
-                                </Row>
+                    <div className="title-centre">
+                                <h1 className="display-heading">How this works</h1>
+                               
                             </div>
+                        
+                
+                            <div className="grid-container">
+                         
+                            <Row style={{ marginBottom: 20}}>
+                                
+                                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    1
+                                </div>
+                                <div className="checklist-step-content">
+                                    <h4>Go through each section</h4>
+                                    <p>We break down puppyhood into 5 easy sections</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                         
+                                
+                                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    2
+                                </div>
+                                <div className="checklist-step-content">
+                                <h4>Pay attention to dates</h4>
+                                <p>We'll tell you when to complete each section by to make sure you're ready</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                       
+                        
+                                
+                                <Col xs={24} sm={24} md={24} lg={8} xl={8}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    3
+                                </div>
+                                <div className="checklist-step-content">
+                                    <h4>Don't forget the guide</h4>
+                                    <p>The last step is a complete guide to your first 24 hours with pup</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            
+                            
+                        </div>
                         </div>
                     </div>
 
 
-                    <Content
+                    <div className="content-section light-grey">
+                        <div className="content-container">
 
-                        //style={{ padding: '0 50px' }}
-                        className="page-content"
-                        >
+                        <div className="title-centre">
+                                <h1 className="display-heading">The Checklist</h1>
+                                <div className="hero-details">
+                                Go through each item and mark them complete as you go!
+                                </div>
+                            </div>
 
-
-                       <div className="page-intro">
-                            <h1>Checklist Todo's</h1>
-                            <h5>Go through each item and mark them complete as you go!</h5>
-                        </div>
+                    
 
                         
 
@@ -210,12 +235,14 @@ class Checklist extends React.Component {
 
 
                         </div>
-                    </Content>
+                        </div>
+                        </div>
+                
 
 
 
 
-                </Layout>
+              
 
 
             </div>
