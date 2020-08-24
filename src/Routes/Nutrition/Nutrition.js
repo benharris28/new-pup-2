@@ -8,6 +8,12 @@ import NutritionTest from '../../Components/NutritionTest/NutritionTest'
 import food_image from '../../Assets/food_image.png'
 import raw_food1 from '../../Assets/raw_food1.jpg'
 import tom_sawyer from '../../Assets/tom_sawyer.png'
+import tom_sawyer_square from '../../Assets/tom_sawyer_square.png'
+import salmon_patties_square from '../../Assets/salmon_patties_square.png'
+import kibble_square from '../../Assets/kibble_square.png'
+import canned_food_square from '../../Assets/canned_food_square.png'
+import dog_hero_nutrition from '../../Assets/dog_hero_nutrition.png'
+
 
 import { Layout, Button, Row, Col, Alert, Collapse } from 'antd';
 
@@ -59,75 +65,79 @@ class Nutrition extends React.Component {
         return (
             <div>
                 <Layout className="white">
-                    <div className="guide-banner">
+                    
 
-                        <div className="guide-banner-image dark-yellow" />
+                    <div className="hero light-blue">
+                    <div className="container">
+                        <div className="selections">
+                            Step 2
+                        </div>
+                        <img className="hero-image" alt="dog panting" src={dog_hero_nutrition} />
+                        <div className="title-centre image-title">
+                            
+                            <h1 className="display-heading">
+                                Welcome to {activeDoggo}'s Food Guide!
+                            </h1>
+                            <div className="hero-details">
+                                Expert recommended gear. Everything you need - nothing you don't. All the gear you need in one place
+                        </div>
 
-
-
-                        <div className="guide-banner-title">
-                            <div className="back-to-checklist-button-test">
-                                <Link to='/checklist'>
-                                    <Button
-                                        type="primary">
-                                        Back to Checklist
-                                </Button>
-                                </Link>
-
-                            </div>
-
-                            <h5>{activeDoggo}'s Checklist</h5>
-                            <h1>Everything you need to know about dog food</h1>
 
                         </div>
 
                     </div>
+                    
+
+                </div>
                     <div className="content-section white">
 
 
-                        <div className="checklist-page content">
-                            <div className="checklist-page-section-intro">
-                                <h2>There's more than one way to buy dog food</h2>
-                                <h5>Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...</h5>
+                        <div className="content-container">
+                            <div className="title-centre">
+                                <h1 className="display-heading">There's more than one way to buy dog food</h1>
+                                <div className="hero-details">
+                                Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...
+                                </div>
                             </div>
+                           
                             <div className="nutrition-types-container">
                                 <Row
                                     gutter={[40, 24]}
                                 >
 
                                     <Col
-                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
 
-                                            <img className="food-image" src={food_image} alt="food stock" />
+                                            <img className="food-image" src={tom_sawyer_square} alt="food stock" />
 
                                             <h4>Gently Cooked</h4>
                                             <h5>Human grade ingredients that are cooked, portioned, and flash frozen to stay fresh</h5>
                                         </div>
                                     </Col>
                                     <Col
-                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
 
-                                            <img className="food-image" src={food_image} alt="food stock" />
+                                            <img className="food-image" src={salmon_patties_square} alt="food stock" />
                                             <h4>Raw</h4>
                                             <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
                                         </div>
 
                                     </Col>
                                     <Col
-                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <img className="food-image" src={food_image} alt="food stock" />
+                                            <img className="food-image" src={canned_food_square} alt="food stock" />
                                             <h4>Canned</h4>
                                             <h5>Food is cooked until 70% of the moisture (water) is removed to maintain shelf stability</h5>
                                         </div>
                                     </Col>
 
                                     <Col
-                                        className="gutter-row" xs={12} sm={12} md={12} lg={12}>
+                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                         <div className="nutrition-type-item">
-                                            <img className="food-image" src={food_image} alt="food stock" />
+                                            <img className="food-image" src={kibble_square} alt="food stock" />
                                             <h4>Kibble</h4>
                                             <h5>Food is is cooked until most moisture is removed to maintain shelf-stability</h5>
                                         </div>
@@ -141,9 +151,55 @@ class Nutrition extends React.Component {
 
 
 
-                    <div className="content-section purple font-white">
-                        <div className="checklist-page content">
-                            <h2 className="font-white">What to look for in dog food</h2>
+                    
+
+                    <div className="section-hero light-blue">
+
+                        <div className="container">
+                            <div className="selections blue">
+                                Selections Required
+                          </div>
+                            <div className="title-centre">
+                                <h1 className="display-heading">
+                                    {activeDoggo}'s Food Options
+                              </h1>
+                                <div className="hero-details">
+                                    This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready.
+                          </div>
+
+
+                            </div>
+                           
+
+                        </div>
+                     
+                    </div>
+
+                    <div className="nutrition-list-container">
+                        <div className="content-container gear-list">
+                            <div className="bg-container bg-top">
+
+
+
+
+                                {fullWidth < 900
+                                    ? <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
+                                    : <NutritionDesktop food={this.state.food} choice={this.state.choice} />
+                                }
+
+
+                            </div>
+
+                            
+                        </div>
+                    </div>
+
+                    <div className="content-section light-blue">
+                        <div className="content-container">
+                            <div className="title-centre">
+                                <h1 className="display-heading">What to look for in dog food</h1>
+                            </div>
+                            
                             <div className="grid-container">
 
                                 <Row className="survival-guide-steps-row font-white" justify="space-around">
@@ -196,54 +252,13 @@ class Nutrition extends React.Component {
                         </div>
                     </div>
 
-                    <div className="section-hero light-blue">
-
-                        <div className="container">
-                            <div className="selections blue">
-                                Selections Required
-                          </div>
-                            <div className="title-centre">
-                                <h1 className="display-heading">
-                                    {activeDoggo}'s Food Options
-                              </h1>
-                                <div className="hero-details">
-                                    This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready.
-                          </div>
-
-
-                            </div>
-                           
-
-                        </div>
-                     
-                    </div>
-
-                    <div className="nutrition-list-container">
-                        <div className="content-container gear-list">
-                            <div className="bg-container bg-top">
-
-
-
-
-                                {fullWidth < 900
-                                    ? <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
-                                    : <NutritionDesktop food={this.state.food} choice={this.state.choice} />
-                                }
-
-
-                            </div>
-
-                            
-                        </div>
-                    </div>
 
 
 
 
 
 
-
-                    <div className="faq-section" style={{ paddingTop: 0}}>
+                    <div className="faq-section">
                         <div className="content-container">
                             <div className="title-wrap">
                                 <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about food?</h2>

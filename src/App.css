@@ -80,7 +80,7 @@ h6 {
 
 .hero {
 
-    min-height: 600px;
+    min-height: 650px;
     padding-top: 120px;
     padding-right: 3%;
     padding-left: 3%;
@@ -112,6 +112,10 @@ h6 {
   text-align: center;
 }
 
+.image-title {
+  position: relative;
+  top: -20px;
+}
 .display-heading {
   font-size: 52px;
   max-width: 560px;
@@ -1746,9 +1750,10 @@ img {
 }
 
 .food-image {
-  width: 300px;
-  height: 300px;
+  width: 100%;
   object-fit: cover;
+  background-color: #ebfbff;
+
 }
 
 .nutrition-image-box {
@@ -1757,6 +1762,7 @@ img {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 40px;
+ 
 }
 
 .grain {

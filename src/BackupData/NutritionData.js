@@ -1,5 +1,6 @@
 import farmers_dog from '../Assets/farmers_dog.png'
 import tom_sawyer from '../Assets/tom_sawyer.png'
+import test_tom_sawyer from '../Assets/test_tom_sawyer.png'
 
 export default {
     "categories": [
@@ -15,7 +16,7 @@ export default {
                 "tag": "food",
                 "type": "Gently Cooked Fresh Food",
                 "active": true,
-                "image": tom_sawyer,
+                "image": test_tom_sawyer,
                 "product": "Fresh Food Subscription",
                 "brand": "Tom&Sawyer",
                 "category": "Dog Food",
