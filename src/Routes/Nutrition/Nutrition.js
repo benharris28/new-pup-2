@@ -4,6 +4,7 @@ import ApiContext from '../../ApiContext';
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
+import NutritionTest from '../../Components/NutritionTest/NutritionTest'
 import food_image from '../../Assets/food_image.png'
 import raw_food1 from '../../Assets/raw_food1.jpg'
 import tom_sawyer from '../../Assets/tom_sawyer.png'
@@ -37,7 +38,7 @@ class Nutrition extends React.Component {
         })
     }
 
-    handleChoice = (choice) => {
+    setTab = (choice) => {
         this.setState({
             choice: choice
         })
@@ -211,8 +212,10 @@ class Nutrition extends React.Component {
 
 
                             </div>
+                           
 
                         </div>
+                     
                     </div>
 
                     <div className="nutrition-list-container">
@@ -229,6 +232,8 @@ class Nutrition extends React.Component {
 
 
                             </div>
+
+                            
                         </div>
                     </div>
 
@@ -238,10 +243,13 @@ class Nutrition extends React.Component {
 
 
 
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <h2 style={{ marginBottom: 0 }}>Have more questions about food?</h2>
-                            <h4 className="font-purple">We've got your answers</h4>
+                    <div className="faq-section" style={{ paddingTop: 0}}>
+                        <div className="content-container">
+                            <div className="title-wrap">
+                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about food?</h2>
+                                <h4 className="font-purple">We've got your answers</h4>
+                            </div>
+                           
                             <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
                                 <Panel header="Should I get a food subscription?" key="1">
                                     <p>Subscriptions are great if you have chosen a food and want the same quantity delivered to your home regularly. If you're not sold, you can purchaes as needed</p>
@@ -261,11 +269,11 @@ class Nutrition extends React.Component {
                             <div className="cta-banner-dark">
                                 <div className="cta-container">
                                     <div className="next-section-content">
-                                        <h2 className="font-white">Your doggo has all the right gear!</h2>
-                                        <h5 className="font-white">Let's move on and find your pup some nutritious food. Click below to go to the next section</h5>
+                                        <h2 className="font-white">Your doggo has some nutritious food!</h2>
+                                        <h5 className="font-white">Let's move on and find your pup a great vet in your area. Click below to go to the next section</h5>
                                     </div>
                                     <div className="cta-button-container">
-                                        <Link to='/food'>
+                                        <Link to='/vet'>
                                             <Button className="button-cta">
                                                 Up Next: Find the best food
                                             </Button>
@@ -275,19 +283,7 @@ class Nutrition extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="next-section-button dark-yellow">
-                        <div className="next-section-button-content">
-                            <h4>Your pup has great food to eat!</h4>
-                            <h5>Let's move on and find your pup a great vet in your area. Click below to go to the next section</h5>
-                            <Link to='/vet'>
-                                <Button>
-                                    Up Next: Find a local vet
-                                    </Button>
-                            </Link>
-                        </div>
-
-
-                    </div>
+                   
 
 
                 </Layout>

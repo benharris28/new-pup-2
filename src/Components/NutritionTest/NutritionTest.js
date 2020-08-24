@@ -2,7 +2,7 @@ import React from 'react';
 import ApiContext from '../../ApiContext';
 import { Layout, Row, Col, Card, Button, Collapse } from 'antd';
 
-class NutritionDesktop extends React.Component {
+class NutritionTest extends React.Component {
     static contextType = ApiContext;
 
 
@@ -13,12 +13,11 @@ class NutritionDesktop extends React.Component {
 
     }
    
-    setTab = (choice) => {
+    setTab = (selectedTab) => {
         this.setState({
-            tab: choice
+            tab: selectedTab
         })
     }
-   
 
 
 
@@ -30,7 +29,6 @@ class NutritionDesktop extends React.Component {
         const foodCard = this.state.food[this.state.tab]
    
         console.log(this.state.tab)
-        console.log(this.props.choice)
 
 
 
@@ -48,15 +46,16 @@ class NutritionDesktop extends React.Component {
                    
 
                         <div className="food-card">
-                            <div className="tab-menu">
-                                <Button className="banner-button" onClick={() => this.setTab(0)}>Gently Cooked</Button>
-                                <Button className="banner-button" onClick={() => this.setTab(1)}>Kibble</Button>
-                                
-                                
-                            </div>
+                       
                              
 
                             <div className="nutrition-desktop">
+                            <div className="tab-menu">
+                                <Button className="banner-button" onClick={() => this.setTab("0")}>Gently Cooked</Button>
+                                <Button className="banner-button" onClick={() => this.setTab("1")}>Kibble</Button>
+                                
+                                
+                            </div>
 
                                 <div className="nutrition-image-box">
                                     <img
@@ -121,4 +120,4 @@ class NutritionDesktop extends React.Component {
 
 }
 
-export default NutritionDesktop;
+export default NutritionTest;
