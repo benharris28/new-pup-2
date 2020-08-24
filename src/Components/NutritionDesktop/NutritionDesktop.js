@@ -47,7 +47,7 @@ class NutritionDesktop extends React.Component {
 
                    
 
-                        <div className="food-card">
+                        <div className="food-card light-grey">
                             <div className="tab-menu">
                                 <Button className="banner-button" onClick={() => this.setTab(0)}>Gently Cooked</Button>
                                 <Button className="banner-button" onClick={() => this.setTab(1)}>Kibble</Button>

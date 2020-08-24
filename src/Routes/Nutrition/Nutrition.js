@@ -175,7 +175,7 @@ class Nutrition extends React.Component {
                      
                     </div>
 
-                    <div className="nutrition-list-container">
+                    <div className="nutrition-list-container light-grey">
                         <div className="content-container gear-list">
                             <div className="bg-container bg-top">
 
@@ -193,64 +193,80 @@ class Nutrition extends React.Component {
                             
                         </div>
                     </div>
-
-                    <div className="content-section light-blue">
+                    
+                    <div className="content-section">
                         <div className="content-container">
-                            <div className="title-centre">
+                        <div className="title-centre">
                                 <h1 className="display-heading">What to look for in dog food</h1>
                             </div>
+                        
+                        <div className="grid-container">
+                            <Row style={{ marginBottom: 20}}>
+                                
+                                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                                <div className="nutrition-step-content">
+                                <div className="step-count">
+                                    1
+                                </div>
+                                <div className="step-content">
+                                    <h4>Fresher is better</h4>
+                                    <p>The more food is cooked (processed), the less nutrients are preserved</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            <Row style={{ marginBottom: 20}}>
+                                
+                                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                                <div className="nutrition-step-content">
+                                <div className="step-count">
+                                    2
+                                </div>
+                                <div className="step-content">
+                                <h4>We prefer "gently cooked" to "raw"</h4>
+                                <p>While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            <Row style={{ marginBottom: 20}}>
+                                
+                                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                                <div className="nutrition-step-content">
+                                <div className="step-count">
+                                    3
+                                </div>
+                                <div className="step-content">
+                                    <h4>No artificial flavors or preservatives</h4>
+                                    <p>Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            <Row>
+                                
+                                <Col xs={24} sm={24} md={24} lg={24} xl={24}>
+                                <div className="nutrition-step-content">
+                                <div className="step-count">
+                                    4
+                                </div>
+                                <div className="step-content">
+                                <h4>Animal protein is first or second ingredient</h4>
+                                <p>Look for whole ingredients and words you recognize!</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            </div>
                             
-                            <div className="grid-container">
-
-                                <Row className="survival-guide-steps-row font-white" justify="space-around">
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
-                                        <div className="survival-guide-steps font-white">
-                                            <div className="survival-guide-steps_num">
-                                                1
-                                    </div>
-                                            <h3>Fresher is better</h3>
-                                            <h5 className="font-white">The more food is cooked (processed), the less nutrients are preserved</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                2
-                                    </div>
-                                            <h3>We prefer "gently cooked" to "raw"</h3>
-                                            <h5 className="font-white">While cooking does remove some of the nutrients, our experts prefer gentle cooking to raw where these is some risk of contamination</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                3
-                                    </div>
-                                            <h3>No artificial flavors or preservatives</h3>
-                                            <h5 className="font-white">Chemicals such as Butylated hydroxyanisole and ethoxyquin are no-no's</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={12} lg={12} xl={12}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                4
-                                    </div>
-                                            <h3>Animal protein is first or second ingredient</h3>
-                                            <h5 className="font-white">Look for whole ingredients and words you recognize!</h5>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </div>
-                            <div className="nutrition-section-outro">
-                                <Alert message="Important: some added vitamins and minerals are not only ok, they are essential! Calcium and other essential minerals will usually appear as their compound names. Don't fear if you see items like dicalcium phosphate or zinc glutonate on the ingredient list" type="info" showIcon />
-
-                            </div>
                         </div>
                     </div>
+                                  
+                    
 
 
 

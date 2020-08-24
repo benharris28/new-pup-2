@@ -389,6 +389,10 @@ h6 {
   background-color:#ebfbff;
 }
 
+.light-grey {
+  background-color: #f8f8f8;
+}
+
 .green {
   background-color: #D1F2EB;
 }
@@ -500,6 +504,9 @@ h6 {
 
  /* Grids */ 
 
+ .grid-container {
+   margin-top: 40px;
+ }
  .grid-image {
    width: 100%;
    margin: auto;
@@ -1318,6 +1325,7 @@ img {
 .grid-container {
   text-align: center;
   margin: auto;
+  margin-top: 40px;
 }
 
 .survival-guide-banner .ant-row {
@@ -1657,6 +1665,40 @@ img {
 
 /* Food Page */
 
+.nutrition-step-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fbf3ff;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 800px;
+}
+
+.step-count {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 81, 255);
+}
+
+.step-content {
+  text-align: center;
+}
+
 .content {
   height: auto;
 }
@@ -1685,10 +1727,10 @@ img {
 }
 
 .food-card-image {
-  max-width: 300px;
   margin: auto;
   /*object-fit: cover;*/
   border: 0px;
+  width: 90%;
 }
 
 .food-card-content {
@@ -2680,6 +2722,42 @@ margin-left: auto;
 
   /* Nutrition Page */
 
+  .nutrition-step-content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fbf3ff;
+    border-radius: 25px;
+    height: 150px;
+    padding: 20px;
+  }
+
+  .step-count {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: rgb(85, 81, 255);
+    margin-right: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-content {
+    text-align: left;
+    color: #001a49;
+    max-width: 500px;
+  }
+
   .nutrition-list-container {
     top: -20px;
   }
@@ -2718,6 +2796,7 @@ margin-left: auto;
     width: 100%;
     max-height: 500px;
     text-align: center;
+    margin-top: 0px;
   }
 
 
@@ -2745,7 +2824,7 @@ margin-left: auto;
   }
 
   .food-card-image {
-    max-width: 300px;
+    width: 90%;
     margin: auto;
     
     border: 0px;
