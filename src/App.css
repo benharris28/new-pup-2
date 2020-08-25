@@ -2070,6 +2070,7 @@ padding-left: 20px;
   background-position: 50% 130%;
   background-size: 1810px;
   background-repeat: no-repeat;
+  z-index: 2;
 
 }
 
@@ -2210,6 +2211,7 @@ padding-left: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+    z-index: 3;
 }
 
 .tab-menu .banner-button {
