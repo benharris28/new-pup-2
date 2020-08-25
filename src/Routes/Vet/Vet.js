@@ -5,6 +5,8 @@ import MapApiService from '../../services/map-api-service'
 import ApiContext from '../../ApiContext';
 import { Layout, Button, Card, Row, Col } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
+import dog_hero_nutrition from '../../Assets/dog_hero_nutrition.png'
+
 
 class Vet extends React.Component {
     static contextType = ApiContext;
@@ -65,40 +67,44 @@ class Vet extends React.Component {
         return (
             <div>
                 <Layout className="white">
-                    <div className="guide-banner">
 
-                        <div className="guide-banner-image dark-green" />
+                    <div className="hero yellow">
+                        <div className="container">
+                            <div className="selections">
+                                Step 3
+                        </div>
+                            <img className="hero-image" alt="dog panting" src={dog_hero_nutrition} />
+                            <div className="title-centre image-title">
 
-
-
-                        <div className="guide-banner-title">
-                            <div className="back-to-checklist-button-test">
-                                <Link to='/checklist'>
-                                    <Button
-                                        type="primary">
-                                        Back to Checklist
-                                </Button>
-                                </Link>
-
-                            </div>
-                            <h5>{activeDoggo}'s Checklist</h5>
-                            <h1>Let's find {activeDoggo} a great vet!</h1>
-
+                                <h1 className="display-heading">
+                                    Let's find {activeDoggo} a vet!
+                            </h1>
+                                <div className="hero-details">
+                                    We've got a list of great ones in your area!
                         </div>
 
+
+                            </div>
+
+                        </div>
                     </div>
+
 
                     <div className="content-section white">
-                        <div className="checklist-page content">
-
-
-                            <div className="checklist-page-section-intro">
-                                <h2>We found some great vets for {activeDoggo}</h2>
-                                <h5>We consider the vet a necessary evil. It pays to have one that you trust not too far from your home for wellness checkups or if your pup isn't feeling well</h5>
-                                <h5>We did the hard work of finding the best vets in your neighborhood. All you have to is pick one!</h5>
+                        <div className="content-container">
+                            <div className="title-centre">
+                                <h1 className="display-heading">We found some great vets for {activeDoggo}</h1>
+                                <div className="hero-details">
+                                    Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
+
+
+
 
                     <div className="content-section dark-purple">
                         <div className="checklist-page content center">

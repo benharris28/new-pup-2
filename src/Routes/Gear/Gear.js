@@ -110,7 +110,7 @@ class Gear extends React.Component {
                                 Welcome to {activeDoggo}'s Gear Page!
                             </h1>
                             <div className="hero-details">
-                                Expert recommended gear. Everything you need - nothing you don't. All the gear you need in one place
+                            Expert recommended gear. Everything you need - nothing you don't. All the gear you need in one place
                         </div>
 
 

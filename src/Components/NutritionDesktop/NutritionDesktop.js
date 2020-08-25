@@ -9,6 +9,8 @@ class NutritionDesktop extends React.Component {
     state = {
         food: this.props.food,
         tab: this.props.choice,
+        kibbleClass: "banner-button unselected-button",
+        cookedClass: "banner-button"
         
 
     }
@@ -16,7 +18,24 @@ class NutritionDesktop extends React.Component {
     setTab = (choice) => {
         this.setState({
             tab: choice
-        })
+        }, () => this.setButtons())
+
+    }
+
+    setButtons = () => {
+        if (this.state.tab === 0) {
+            this.setState({
+                kibbleClass: "banner-button unselected-button",
+                cookedClass: "banner-button"
+            })
+        }
+
+        if (this.state.tab === 1) {
+            this.setState({
+                kibbleClass: "banner-button",
+                cookedClass: "banner-button unselected-button"
+            })
+        }
     }
    
 
@@ -49,8 +68,8 @@ class NutritionDesktop extends React.Component {
 
                         <div className="food-card light-grey">
                             <div className="tab-menu">
-                                <Button className="banner-button" onClick={() => this.setTab(0)}>Gently Cooked</Button>
-                                <Button className="banner-button" onClick={() => this.setTab(1)}>Kibble</Button>
+                                <Button className={this.state.cookedClass} onClick={() => this.setTab(0)} type={this.state.cookedType}>Gently Cooked</Button>
+                                <Button className={this.state.kibbleClass} onClick={() => this.setTab(1)} type={this.state.kibbleType}>Kibble</Button>
                                 
                                 
                             </div>

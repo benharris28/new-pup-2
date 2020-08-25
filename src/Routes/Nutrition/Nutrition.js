@@ -79,7 +79,7 @@ class Nutrition extends React.Component {
                                 Welcome to {activeDoggo}'s Food Guide!
                             </h1>
                             <div className="hero-details">
-                                Expert recommended gear. Everything you need - nothing you don't. All the gear you need in one place
+                                We'll walk you through the basics of dog food and help you pick the best one!
                         </div>
 
 
@@ -274,7 +274,7 @@ class Nutrition extends React.Component {
 
 
 
-                    <div className="faq-section">
+                    <div className="faq-section light-blue">
                         <div className="content-container">
                             <div className="title-wrap">
                                 <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about food?</h2>
@@ -306,7 +306,7 @@ class Nutrition extends React.Component {
                                     <div className="cta-button-container">
                                         <Link to='/vet'>
                                             <Button className="button-cta">
-                                                Up Next: Find the best food
+                                                Up Next: Find a vet
                                             </Button>
                                         </Link>
                                     </div>
