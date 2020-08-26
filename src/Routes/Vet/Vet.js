@@ -138,29 +138,41 @@ class Vet extends React.Component {
                                   
                                 <div className="cta-section white">
                                     <div className="container-2">
-                                    <div className="input-banner-dark">
-                                        <div className="cta-container">
+                                    <div className="input-banner-dark light-purple">
+                                        <div className="input-container">
                                         <div className="input-label-box">
-                                        <h5 className="font-white">Enter your postal code to find reputable vets near you</h5>
+                                        <h4>Enter your postal code to find reputable vets near you</h4>
                                         </div>
                                         <div className="vet-finder-input-box">
                                          
                                         
-                                                <Row>
-                                                    <Col xs={12} sm={12} md={12} lg={12}>
+                                                
+                                                    <Row>
+                                                        <Col xs={24} sm={24} md={12} lg={12}>
+                                                        <div>
                                                             <input
                                                         type="text"
                                                         onChange={e => this.handleInput(e.target.value)}
                                                         />
-                                                    </Col>
-                                                    <Col xs={12} sm={12} md={12} lg={12}>
-                                                            <Button
-                                                        className="button-cta"
+                                                        </div>
+                                                        </Col>
+                                                        
+                                                        <Col style={{margin: 0}} xs={24} sm={24} md={12} lg={12}>
+                                                        <div className="input-button-container">
+                                                        <Button
+                                                        className="button-cta vet-finder-button"
                                                         onClick={this.handleSubmit}>
                                                         Go
-                                                    </Button>
-                                                </Col>
-                                                </Row>
+                                                        </Button>
+                                                        </div>
+                                                    
+                                                        </Col>
+                                                    </Row>
+                                                        
+                                               
+
+                                                   
+                                                        
 
                                           
                                            
@@ -244,22 +256,27 @@ class Vet extends React.Component {
 
 
 
-
-
-                    <div className="next-section-button dark-green">
-
-                        <div className="next-section-button-content">
-                            <h4>Got your vet? That wasn't so scary!</h4>
-                            <h5>Time to teach your pup some manners at puppy class! Click below to go to the next section</h5>
-                            <Link to='/training'>
-                                <Button>
-                                    Up Next: Puppy Classes
-                                    </Button>
-                            </Link>
+                    <div className="cta-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">Got your vet? That wasn't so scary!</h2>
+                                        <h5 className="font-white">Time to teach your pup some manners at puppy class! Click below to go to the next section</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/training'>
+                                            <Button className="button-cta">
+                                            Up Next: Puppy Classes
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-
                     </div>
+
+                    
                 </Layout>
 
             </div>
