@@ -118,34 +118,63 @@ class Vet extends React.Component {
                     </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content">
+                        <div className="content-container">
+                        <div className="selections">
+                            Selection Required
+                        </div>
+                        <div className="title-centre">
+                                <h1 className="display-heading">Vets near you</h1>
+                                <div className="hero-details">
+                                Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...
+                                </div>
+                            </div>
+
+
                             <div className="vet-find-container">
 
 
                                 <div className="vet-finder">
 
-                                    <div className="checklist-page-section-intro">
-
-                                        <h3>Vets near you</h3>
-                                        <h5>We have a list of the most trusted vets in your area</h5>
-                                    </div>
-
-                                    <div className="vet-finder-input">
-                                        <h5>Enter your postal code to find reputable vets near you</h5>
-                                        <div className="vet-finder-input-box">
-                                            <input
-                                                type="text"
-                                                onChange={e => this.handleInput(e.target.value)}
-                                            />
-                                            <Button
-                                                className="vet-finder-button"
-                                                onClick={this.handleSubmit}>
-                                                Go
-                                            </Button>
+                                  
+                                <div className="cta-section white">
+                                    <div className="container-2">
+                                    <div className="input-banner-dark">
+                                        <div className="cta-container">
+                                        <div className="input-label-box">
+                                        <h5 className="font-white">Enter your postal code to find reputable vets near you</h5>
                                         </div>
-                                    </div>
+                                        <div className="vet-finder-input-box">
+                                         
+                                        
+                                                <Row>
+                                                    <Col xs={12} sm={12} md={12} lg={12}>
+                                                            <input
+                                                        type="text"
+                                                        onChange={e => this.handleInput(e.target.value)}
+                                                        />
+                                                    </Col>
+                                                    <Col xs={12} sm={12} md={12} lg={12}>
+                                                            <Button
+                                                        className="button-cta"
+                                                        onClick={this.handleSubmit}>
+                                                        Go
+                                                    </Button>
+                                                </Col>
+                                                </Row>
+
+                                          
+                                           
+                                         
+                                     
+                                        
+                                
 
 
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
                                 </div>
 
                                 <div className="vet-map">
