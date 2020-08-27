@@ -15,6 +15,7 @@ import MealTime from './Routes/GuidePages/MealTime'
 import CrateTrain from './Routes/GuidePages/CrateTrain'
 import Signup from './Routes/Signup/Signup'
 import Login from './Routes/Login/Login'
+import Dashboard from './Routes/Dashboard/Dashboard'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
@@ -171,6 +172,11 @@ class App extends React.Component {
                       exact
                       path={'/login'}
                       component={Login}
+                  />
+                   <Route
+                      exact
+                      path={'/dashboard'}
+                      component={Dashboard}
                   />
                 
               </Switch>

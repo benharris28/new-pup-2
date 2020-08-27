@@ -601,6 +601,23 @@ h6 {
   margin-top: 4rem;
 }
 
+/* Dashboard */ 
+.dog-info-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fbf3ff;
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 500px;
+}
 /* Signup Page */
 
 .signup-form-page {
