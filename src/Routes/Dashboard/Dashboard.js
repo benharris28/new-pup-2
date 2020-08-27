@@ -110,15 +110,13 @@ class Dashboard extends React.Component {
                                             </div>
                                         </div>
                                     </Col>
-                                    <Col
-                                        className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                        <div className="nutrition-type-item">
+                                    <Col>
+                                    <div className="newsfeed-list">
+                                        
+                                    </div>
 
-                                            <img className="food-image" src={salmon_patties_square} alt="food stock" />
-                                            <h4>Raw</h4>
-                                            <h5>Meat, bone, fruits, and veggies that are ground down and left raw to preserve all nutrient values</h5>
-                                        </div>
-
+                                      
+                                        
                                     </Col>
                                     <Col
                                         className="gutter-row" xs={24} sm={24} md={12} lg={12}>
