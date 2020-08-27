@@ -745,8 +745,27 @@ color: #5d3eff;
   margin-top: 20px;
 }
 
+.dog-info-item {
+  text-align: center;
+}
 
+.dog-info-image-box {
+position: relative;
+top: -50px;
+}
 
+.dog-info {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.cta-section .no-bottom-padding {
+  padding-bottom: 0px;
+}
+
+.mid-page-banner {
+  
+}
 /* Signup Page */
 
 .signup-form-page {

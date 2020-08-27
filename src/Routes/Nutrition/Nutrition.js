@@ -87,7 +87,7 @@ class Nutrition extends React.Component {
 
                     </div>
                     
-
+                
                 </div>
                     <div className="content-section white">
 

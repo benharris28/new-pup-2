@@ -3,17 +3,14 @@ import { Link } from 'react-router-dom'
 import ApiContext from '../../ApiContext';
 import canned_food_square from '../../Assets/canned_food_square.png'
 import dog_hero_nutrition from '../../Assets/dog_hero_nutrition.png'
-import dog_crate_checklist from '../../Assets/dog_crate_checklist.png'
-import dog_food_checklist from '../../Assets/dog_food_checklist.png'
-import vet_checklist from '../../Assets/vet_checklist.png'
-import guide_checklist from '../../Assets/guide_checklist.png'
-import training_checklist from '../../Assets/training_checklist.png'
 import dog_gear_dash from '../../Assets/dog_gear_dash.png'
 import tom_sawyer_square from '../../Assets/tom_sawyer_square.png'
 import dog_vet_dash from '../../Assets/dog_vet_dash.png'
 import dog_train_dash_background from '../../Assets/dog_train_dash_background.png'
 import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
 import dog_supplement_newsfeed from '../../Assets/dog_supplement_newsfeed.png'
+import { Avatar } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 
 import { Layout, Button, Row, Col, Collapse, Card, Badge } from 'antd';
@@ -114,11 +111,10 @@ class Dashboard extends React.Component {
             <div>
                 <Layout className="white">
                     
-
-                    <div className="hero light-blue">
+                <div className="hero light-blue">
                     <div className="container">
                         <div className="selections">
-                           Dashboard
+                            Dashboard
                         </div>
                         <img className="hero-image" alt="dog panting" src={dog_hero_nutrition} />
                         <div className="title-centre image-title">
@@ -126,15 +122,39 @@ class Dashboard extends React.Component {
                             <h1 className="display-heading">
                                 Welcome to {activeDoggo}'s Doggo Hub!
                             </h1>
-                       
+                            <div className="hero-details">
+                                Russell's doggo universe all in one place
+                        </div>
 
 
                         </div>
 
                     </div>
-                    
+                    </div>
 
-                </div>
+                    <div style={{ paddingBottom: 0}} className="cta-section white no-bottom-padding">
+                        <div className="container-2">
+                            <div className="cta-banner-dark mid-page-banner">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">Russell's New Puppy Checklist</h2>
+                                        <h5 className="font-white">Your guided tour to everything puppy. We'll help you choose gear, food, a vet, and fill you in on the best tips </h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/vet'>
+                                            <Button className="button-cta">
+                                                Start Russell's Checklist
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+
+              
                     <div className="content-section white">
 
 

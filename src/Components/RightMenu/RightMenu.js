@@ -23,9 +23,9 @@ class RightMenu extends Component {
         <div className={navClass}>
       
           
-            <Link to='/checklist'>
+            <Link to='/dashboard'>
                 <div className="menu-button">
-                Checklist
+                Dashboard
                 </div>
                 
             </Link>
