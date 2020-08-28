@@ -81,9 +81,8 @@ class DoggoStore extends React.Component {
                                 <h2>Subscriptions</h2>
                                 <h5>Russell is subscribed to the following products</h5>
                             </div>
-                                <Row gutter={[40, 24]}>
-                                <Col
-                                    className="gutter-row" xs={12} sm={12} md={8} lg={8}>
+                            <div className="product-loop">
+                                
                                     <div className="shop-product">
                                         <div role="listitem" className="shop-product-item-container">
                                             <Link to='/checklist'>
@@ -100,9 +99,9 @@ class DoggoStore extends React.Component {
                                             </Link>
                                         </div>
                                     </div>
-                                </Col>
-                                <Col
-                                    className="gutter-row" xs={12} sm={12} md={8} lg={8}>
+                           
+                            
+                                 
                                     <div className="shop-product">
                                         <div role="listitem" className="shop-product-item-container">
                                             <Link to='/checklist'>
@@ -119,9 +118,7 @@ class DoggoStore extends React.Component {
                                             </Link>
                                         </div>
                                     </div>
-                                </Col>
-                                <Col
-                                    className="gutter-row" xs={12} sm={12} md={8} lg={8}>
+                             
                                     <div className="shop-product">
                                         <div role="listitem" className="shop-product-item-container">
                                             <Link to='/checklist'>
@@ -138,10 +135,76 @@ class DoggoStore extends React.Component {
                                             </Link>
                                         </div>
                                     </div>
-                                </Col>
-                                </Row>
+                            
 
                             </div>
+                            </div>
+
+                            <div className="category-section">
+                            <div className="title-wrapper">
+                                <h2>Gear</h2>
+                                <h5>Here are our recommended products for a medium-size goldendoodle like Russell</h5>
+                            </div>
+                            <div className="product-loop">
+                                
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                           
+                            
+                                 
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                             
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                            
+
+                            </div>
+                            </div>
+
+
 
                           
                         </div>

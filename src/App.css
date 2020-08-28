@@ -770,7 +770,7 @@ top: -50px;
 /* Doggo Shop */ 
 
 .shop-product-image-box {
-  
+  width: 100%;
 }
 
 .shop-product-image {
@@ -778,7 +778,16 @@ top: -50px;
   object-fit: cover;
 }
 
-.
+.product-loop {
+    min-height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shop-product {
+  width: calc(50% - 3px);
+  padding: 0px 10px;
+}
 /* Signup Page */
 
 .signup-form-page {
@@ -3079,6 +3088,14 @@ margin-left: auto;
     margin-bottom: 2rem;
   }
 
+  /* Doggo Shop */ 
+
+  .shop-product {
+  width: calc(33% - 0px);
+  display: inline-block;
+  float: none;
+  padding: 0px 20px;
+  }
   
   /* Nutrition Page */
 
