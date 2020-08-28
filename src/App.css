@@ -766,6 +766,19 @@ top: -50px;
 .mid-page-banner {
   
 }
+
+/* Doggo Shop */ 
+
+.shop-product-image-box {
+  
+}
+
+.shop-product-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.
 /* Signup Page */
 
 .signup-form-page {
