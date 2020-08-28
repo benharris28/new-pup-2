@@ -787,6 +787,8 @@ top: -50px;
 .shop-product {
   width: calc(50% - 3px);
   padding: 0px 10px;
+  margin-bottom: 20px;
+  position: relative;
 }
 /* Signup Page */
 
@@ -3095,6 +3097,10 @@ margin-left: auto;
   display: inline-block;
   float: none;
   padding: 0px 20px;
+  
+    margin-bottom: 20px;
+    position: relative;
+
   }
   
   /* Nutrition Page */

@@ -145,6 +145,7 @@ class DoggoStore extends React.Component {
                                 <h2>Gear</h2>
                                 <h5>Here are our recommended products for a medium-size goldendoodle like Russell</h5>
                             </div>
+                            <h4>Apparel</h4>
                             <div className="product-loop">
                                 
                                     <div className="shop-product">
