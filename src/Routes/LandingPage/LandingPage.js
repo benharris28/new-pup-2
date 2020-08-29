@@ -8,6 +8,7 @@ import food_screenshot from '../../Assets/food_screenshot.png'
 import food_scroll from '../../Assets/food_scroll.MOV'
 import russ_headshot from '../../Assets/russ_headshot.png'
 import gear_collection from '../../Assets/gear_collection.png'
+import dog_landing_hero_test_copy from '../../Assets/dog_landing_hero_test_copy.png'
 import vet_checklist from '../../Assets/vet_checklist.png'
 import dog_food_checklist from '../../Assets/dog_food_checklist.png'
 import crate_landing_page from '../../Assets/crate_landing_page.png'
@@ -35,8 +36,9 @@ class LandingPage extends React.Component {
 
         return (
             <div>
-                <div className="hero">
+                <div className="hero light-blue">
                     <div className="container">
+                        
                         <div className="title-centre">
                             <h1 className="display-heading">
                                 Bringing home a doggo?
