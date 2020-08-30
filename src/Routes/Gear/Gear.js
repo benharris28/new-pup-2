@@ -167,26 +167,12 @@ class Gear extends React.Component {
                     <div className="gear-list-container">
                     <div className="content-container gear-list">
                     <div className="bg-container bg-top">
-                    <div className="tab-menu">
-                                <Button className="banner-button" onClick={(e) => this.filterGear("monthly-good")}>Essentials</Button>
-                                <Button className="banner-button" onClick={(e) => this.filterGear("apparel")}>Apparel</Button>
-                                <Button className="banner-button" onClick={(e) => this.filterGear("home-good")}>Home Goods</Button>
-                                
-                            </div>
+   
                             
-                            
-                          
-                                <Row
-                                    className="gear-grid"
-                                    gutter={[16, 24]}
-                                    style={{ margin: 0, "margin-top": "40px" }}
-                                >
-                                    {gear.filter(item => item.theme == this.state.gearTab ).map(gearCard =>
-                                        <Col
-                                            className="gutter-row" xs={12} sm={12} md={12} lg={8}
-                                            style={{ margin: 0 }}
-                                            key={gearCard.category_id}>
-                                            <div className="gear-card-box">
+                        <h4>Essentials</h4>
+                        <div className="product-loop">
+                        {gear.filter(item => item.theme == "monthly-good" ).map(gearCard =>
+                                        
                                                 <Card
                                                     onClick={() => this.showDrawer(gearCard.category_id)}
                                                     hoverable
@@ -216,14 +202,85 @@ class Gear extends React.Component {
 
                                                     </div>
 
-                                                </Card>
-                                            </div>
-                                        </Col>
+                                          </Card>
+                        )}
+                        </div>
 
-                                    )}
-                                </Row>
+                        <h4>Essentials</h4>
+                        <div className="product-loop">
+                        {gear.filter(item => item.theme == "apparel" ).map(gearCard =>
+                                        
+                                                <Card
+                                                    onClick={() => this.showDrawer(gearCard.category_id)}
+                                                    hoverable
+                                                    className="gear-card"
+                                                    cover={<img
+                                                        className="card-image"
+                                                        alt="example"
+                                                        src={gearCard.category_image} />}
+                                                >
+                                                    <Meta
+                                                        className="card-content"
+                                                        title={gearCard.category}
+                                                        description={gearCard.description_text}>
 
-                              
+                                                    </Meta>
+
+                                                    <div className="card_purchase_button">
+                                                        
+                                                        <div
+                                                            className="gear-card-button"
+                                                            type="primary"
+                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                            See products
+                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
+                                                        </div>
+
+
+                                                    </div>
+
+                                          </Card>
+                        )}
+                        </div>
+
+                        <h4>Equipment</h4>
+                        <div className="product-loop">
+                        {gear.filter(item => item.theme == "home-good" ).map(gearCard =>
+                                        
+                                                <Card
+                                                    onClick={() => this.showDrawer(gearCard.category_id)}
+                                                    hoverable
+                                                    className="gear-card"
+                                                    cover={<img
+                                                        className="card-image"
+                                                        alt="example"
+                                                        src={gearCard.category_image} />}
+                                                >
+                                                    <Meta
+                                                        className="card-content"
+                                                        title={gearCard.category}
+                                                        description={gearCard.description_text}>
+
+                                                    </Meta>
+
+                                                    <div className="card_purchase_button">
+                                                        
+                                                        <div
+                                                            className="gear-card-button"
+                                                            type="primary"
+                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                            See products
+                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
+                                                        </div>
+
+
+                                                    </div>
+
+                                          </Card>
+                        )}
+                        </div>
+                            
+                         
 
                                 {this.state.category !== null &&
                             <Drawer

@@ -24,7 +24,7 @@ render() {
             <Row style={{ "height": "5rem" }} className="navbar-row" gutter={8} align="middle">
                 <Col style={{ margin: 0, maxWidth: 2000}} flex="auto">
                   <div className="logo-box">
-                    <img className="logo-photo" src={dog} alt="dog logo" />
+                
                       <a className="logo" href="/"><h3>Doggo</h3></a>
                   </div>
                 </Col>

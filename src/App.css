@@ -1,4 +1,5 @@
 @import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
 /* Global Styles */ 
@@ -711,7 +712,7 @@ h6 {
 .dashboard-card {
   width: 100%;
   max-width: 350px;
-  max-height: 550px;
+  height: 500px;
 
   margin: auto;
  
@@ -725,7 +726,7 @@ h6 {
 
 
 .dashboard-card .ant-card-meta-title {
-color: #001a49;
+color: rgb(85, 81, 255);
 font-size: 24px;
 font-weight: 600;
 /*text-transform: uppercase;*/
@@ -738,11 +739,14 @@ color: #5d3eff;
 
 .ant-card-cover img {
   background-color: rgb(199, 185, 255);
+  height: 270px;
+  object-fit: cover;
 }
 
 .dashboard-card-content {
   text-align: left;
   margin-top: 20px;
+  height: 50px;
 }
 
 .dog-info-item {
@@ -763,8 +767,34 @@ top: -50px;
   padding-bottom: 0px;
 }
 
-.mid-page-banner {
-  
+.dashboard-card-button-box {
+  margin-top: 15px;
+ 
+}
+
+.dashboard-card-button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #fff;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  color: white;
+  background-color: #6a35ff;
+  font-weight: 600;
+  text-align: center;
 }
 
 /* Doggo Shop */ 
@@ -785,10 +815,22 @@ top: -50px;
 }
 
 .shop-product {
-  width: calc(50% - 3px);
-  padding: 0px 10px;
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
   margin-bottom: 20px;
   position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  max-width: 800px;
+  background-color: rgb(247, 244, 244);
+}
+
+.shop-product-button-box {
+  margin-top: 20px;
 }
 /* Signup Page */
 
@@ -1085,6 +1127,7 @@ img {
 }
 
 .logo {
+  font-family: 'Bungee';
   padding-top: 5px;
   color: black;
 }
@@ -1381,10 +1424,25 @@ img {
   margin: auto;
  
   box-shadow: rgba(64, 62, 61, 0.05) 0px 5px 15px 0px;
-  border-radius: 25px;
+  border-radius: 10px;
   overflow: hidden;
  
   
+}
+
+.gear-card {
+  width: 100%;
+  max-width: 600px;
+  max-height: 550px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  max-width: 800px;
+  background-color: rgb(247, 244, 244);
 }
 
 .gear-card .ant-card-body {
@@ -2338,8 +2396,8 @@ padding-left: 20px;
 
 .gear-list-container {
     position: relative;
-    top: -140px;
-    padding-top: 0;
+   
+    padding-top: 80px;
   display: block;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -3093,13 +3151,36 @@ margin-left: auto;
   /* Doggo Shop */ 
 
   .shop-product {
-  width: calc(33% - 0px);
+    width: calc(50% - 30px);
+    max-width: 100%;
   display: inline-block;
   float: none;
-  padding: 0px 20px;
+  padding: 15px;
   
-    margin-bottom: 20px;
+    margin: 15px;
     position: relative;
+    -webkit-transition: box-shadow .7s;
+    transition: box-shadow .7s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+
+  }
+
+  .gear-card {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+ 
+  
+    margin: 15px;
+    position: relative;
+    -webkit-transition: box-shadow .7s;
+    transition: box-shadow .7s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
 
   }
   
@@ -3243,9 +3324,7 @@ margin-left: auto;
     min-height: 500px;
   }
 
-  .gear-list-container {
-    top: -20px;
-  }
+ 
   
 
   .tab-menu {
@@ -3372,8 +3451,43 @@ margin-left: auto;
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+/* Shop */ 
+
+.shop-product {
+  width: calc(33% - 30px);
+  max-width: 100%;
+display: inline-block;
+float: none;
+padding: 15px;
+
+  margin: 15px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+
+}
   /* Gear Page */ 
 
+  .gear-card {
+    width: calc(33% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+ 
+  
+    margin: 15px;
+    position: relative;
+    -webkit-transition: box-shadow .7s;
+    transition: box-shadow .7s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+  
+  }
   .tab-menu {
     top: -20px;
     display: -webkit-box;
@@ -3421,8 +3535,8 @@ margin-left: auto;
 
   .gear-list-container {
     position: relative;
-    top: -30px;
-    padding-top: 0;
+
+    padding-top: 80px;
 
   }
 

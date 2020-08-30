@@ -95,6 +95,11 @@ class DoggoStore extends React.Component {
                                                         <h4 className="feature-heading">Product 1</h4>
                                                         <p className="newsfeed-item-detail">Details about this product</p>
                                                     </div>
+                                                    <div className="shop-product-button-box">
+                                                        <Button className="button-cta">
+                                                            Product Details
+                                                        </Button>
+                                                    </div>
                                                 </div>
                                             </Link>
                                         </div>

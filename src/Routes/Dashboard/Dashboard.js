@@ -84,6 +84,7 @@ class Dashboard extends React.Component {
                 link: '/vet',
                 image: <img src={dog_vet_dash} alt="veterinarian" />,
                 title: 'Vet Listing',
+                description: "A listing of the best vets in your area",
                 alt_text: "find a vet",
                 badge_count: 5
             },
@@ -141,7 +142,7 @@ class Dashboard extends React.Component {
                                         <h5 className="font-white">Your guided tour to everything puppy. We'll help you choose gear, food, a vet, and fill you in on the best tips </h5>
                                     </div>
                                     <div className="cta-button-container">
-                                        <Link to='/vet'>
+                                        <Link to='/checklist'>
                                             <Button className="button-cta">
                                                 Start Russell's Checklist
                                             </Button>
@@ -272,11 +273,16 @@ class Dashboard extends React.Component {
 
                                                 >
                                                    
-                                                    <Meta className="card-content" title={card.title} >
+                                                    <Meta className="card-content" title={card.title} style={{ color: "rgb(85, 81, 255)"}}>
                                                     
                                                     </Meta>
                                                     <div className="dashboard-card-content">
                                                         {card.description}
+                                                    </div>
+                                                    <div className="dashboard-card-button-box">
+                                                        <Button className="dashboard-card-button">
+                                                            Go
+                                                        </Button>
                                                     </div>
                                                     
                                                 </Card>
