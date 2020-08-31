@@ -5,6 +5,8 @@ import { Layout, Content, Steps, Button, Avatar, Row, Col} from 'antd';
 import { CaretRightOutlined, UserOutlined, HomeOutlined, CarOutlined } from '@ant-design/icons';
 import food_image from '../../Assets/food_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
+import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
+
 
 
 
@@ -142,6 +144,82 @@ class SurvivalGuide extends React.Component {
 
                         </div>
                     </div>
+
+                    <div className="content-section white">
+                    <div className="content-container">
+                            <div className="title-wrapper">
+                                <h2>Russell's Doggo Shop</h2>
+                            </div>
+                            <div className="category-section">
+                            <div className="title-wrapper">
+                                <h2>Subscriptions</h2>
+                                <h5>Russell is subscribed to the following products</h5>
+                            </div>
+                            <div className="product-loop">
+                                
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                    <div className="shop-product-button-box">
+                                                        <Button className="button-cta">
+                                                            Product Details
+                                                        </Button>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                           
+                            
+                                 
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                             
+                                    <div className="shop-product">
+                                        <div role="listitem" className="shop-product-item-container">
+                                            <Link to='/checklist'>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={dog_wellness_dash} alt="dog running" />
+                                                    </div>
+                                                    <div className="shop-product-content">
+                                                      
+                                                        <h4 className="feature-heading">Product 1</h4>
+                                                        <p className="newsfeed-item-detail">Details about this product</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    </div>
+                            
+
+                            </div>
+                            </div>
+                            </div>
+                            </div>
 
    
           

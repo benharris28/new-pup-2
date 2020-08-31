@@ -825,9 +825,9 @@ top: -50px;
   transition: box-shadow .7s;
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+ 
   max-width: 800px;
-  background-color: rgb(247, 244, 244);
+ 
 }
 
 .shop-product-button-box {
@@ -3163,7 +3163,7 @@ margin-left: auto;
     transition: box-shadow .7s;
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+   
 
   }
 
