@@ -81,8 +81,9 @@ h6 {
 
 .hero {
 
-    min-height: 650px;
+    
     padding-top: 120px;
+    padding-bottom: 120px;
     padding-right: 3%;
     padding-left: 3%;
     background-color: #f8faff;
@@ -738,7 +739,7 @@ color: #5d3eff;
 }
 
 .ant-card-cover img {
-  background-color: rgb(199, 185, 255);
+  background-color:  #5d3eff;
   height: 270px;
   object-fit: cover;
 }
@@ -1174,10 +1175,11 @@ img {
 /* Checklist Page Elements */
 
 .time-tracker-container {
-  top: 60px;
+  
   position: relative;
   display: flex;
     max-width: 800px;
+    margin-top: 30px;
     margin-right: auto;
     margin-left: auto;
     -webkit-box-orient: vertical;
@@ -1420,7 +1422,7 @@ img {
 .gear-card {
   width: 100%;
   max-width: 500px;
-  height: 500px;
+  height: 420px;
 
   margin: auto;
  

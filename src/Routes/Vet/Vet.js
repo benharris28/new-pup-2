@@ -4,7 +4,7 @@ import Map from '../../Components/Map/Map'
 import MapApiService from '../../services/map-api-service'
 import ApiContext from '../../ApiContext';
 import { Layout, Button, Card, Row, Col } from 'antd';
-import { ExclamationCircleOutlined } from '@ant-design/icons';
+import { ExclamationCircleOutlined, CalendarOutlined } from '@ant-design/icons';
 import dog_hero_nutrition from '../../Assets/dog_hero_nutrition.png'
 
 
@@ -87,35 +87,21 @@ class Vet extends React.Component {
                             </div>
 
                         </div>
-                    </div>
-
-
-                    <div className="content-section white">
-                        <div className="content-container">
-                            <div className="title-centre">
-                                <h1 className="display-heading">We found some great vets for {activeDoggo}</h1>
-                                <div className="hero-details">
-                                    Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...
-                                </div>
-                            </div>
-
-
+                        <div className="time-tracker-container">
+                        <div className="checklist-icon-box">
+                            <CalendarOutlined className="checklist-icon font-white" />
+                        </div>
+                        <div className="time-tracker">
+                            <h5 className="font-black">{activeDoggo} will need a wellness checkup with a vet within 3 days of coming home! <span className="complete-by-date">({completeByDates.vetCheckUp})</span></h5>
                         </div>
                     </div>
-
-
-
-
-                    <div className="content-section dark-purple">
-                        <div className="checklist-page content center">
-                            <div className="checklist-page-alert">
-                                <ExclamationCircleOutlined className="checklist-icon" />
-                                <h2 className="font-coral">Heads up!</h2>
-                                <h5 className="font-white">{activeDoggo} will need a wellness checkup with a vet within 3 days of coming home! <span className="complete-by-date">({completeByDates.vetCheckUp})</span></h5>
-                            </div>
-
-                        </div>
                     </div>
+
+
+                
+
+
+
 
                     <div className="content-section white">
                         <div className="content-container">
@@ -123,9 +109,9 @@ class Vet extends React.Component {
                             Selection Required
                         </div>
                         <div className="title-centre">
-                                <h1 className="display-heading">Vets near you</h1>
+                                <h1 className="display-heading">We found some great vets for {activeDoggo}</h1>
                                 <div className="hero-details">
-                                Dog food comes in all shapes in sizes. It's not just about a huge bag of dry food anymore...
+                                Drop in your postal code to find a great vet near you!
                                 </div>
                             </div>
 

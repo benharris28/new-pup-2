@@ -8,7 +8,7 @@ import dog_bowl from '../Assets/dog_bowl.png'
 import collar_illustration from '../Assets/collar_illustration.png'
 import leash_illustration from '../Assets/leash_illustration.png'
 import brush_illustration from '../Assets/brush_illustration.png'
-import poo_bag_illustration from '../Assets/poo_bag_illustration.png'
+import poo_bag_test from '../Assets/poo_bag_test.png'
 import dog_tag_illustration from '../Assets/dog_tag_illustration.png'
 import treats_illustration from '../Assets/treats_illustration.png'
 import shampoo_illustration from '../Assets/shampoo_illustration.png'
@@ -259,7 +259,7 @@ export default {
                         {
                             "category_id": 6,
                             "category": "Poo Bags",
-                            "category_image": poo_bag_illustration,
+                            "category_image": poo_bag_test,
                             "category_description": "Get ready to pickup a lot of poop. Don't leave home without bags!",
                             "choice_description": "We recommend getting a few toys to add some variety",
                             "theme": "monthly-good",

@@ -5,7 +5,7 @@ import ApiContext from '../../ApiContext';
 import MarkCompleteStandAlone from '../../Components/MarkCompleteStandAlone/MarkCompleteStandAlone'
 import stock_image from '../../Assets/stock_image.png';
 import { Layout, Content, Button, Alert, Card, Avatar, Row, Col } from 'antd';
-import { UserOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
+import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined } from '@ant-design/icons';
 
 
 class Training extends React.Component {
@@ -51,33 +51,39 @@ class Training extends React.Component {
 
         return (
             <div>
+                  <div className="hero light-purple">
+                      
+                      <div className="container">
+                          <div className="selections">
+                              Step 4
+                          </div>
+                          <div className="title-centre">
+                              <h1 className="display-heading">
+                                  Puppy Class for {activeDoggo}!
+                              </h1>
+                              <div className="hero-details">
+                              This list is customized for {activeDoggo}. This is everything they will need. As long as you have an item from each category, you'll be ready. 
+                          </div>
+  
+  
+                          </div>
+  
+                      </div>
+                      <div className="time-tracker-container">
+                          <div className="checklist-icon-box">
+                              <CalendarOutlined className="checklist-icon font-white" />
+                          </div>
+                          <div className="time-tracker">
+                              <h5 className="font-black">Experts recommend completing socialization before {activeDoggo} is 12 weeks old <span className="complete-by-date">({completeByDates.training})</span></h5>
+                          </div>
+                      </div>
+                      </div>
+                
                 <Layout>
 
-                    <div className="guide-banner">
-
-                        <div className="guide-banner-image dark-purple" />
-
-
-
-                        <div className="guide-banner-title">
-                            <div className="back-to-checklist-button-test">
-                                <Link to='/checklist'>
-                                    <Button
-                                        type="primary">
-                                        Back to Checklist
-                                </Button>
-                                </Link>
-
-                            </div>
-                            <h5>{activeDoggo}'s Checklist</h5>
-                            <h1>Puppy Classes</h1>
-
-                        </div>
-
-                    </div>
 
                     <div className="content-section white">
-                        <div className="checklist-page content">
+                        <div className="content-container">
                             <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
                                 <Col className="gutter-row" xs={24} sm={24} md={12} lg={12} style={{ padding: 0 }}>
                                     <div className="grid-content">
@@ -94,14 +100,65 @@ class Training extends React.Component {
                     </div>
 
 
-                    <div className="content-section pink font-white">
-                        <div className="checklist-page content center">
-                            <div className="checklist-page-alert font-white">
-                                <ExclamationCircleOutlined className="checklist-icon" />
-                                <h3>Heads up!</h3>
-                                <h5>Experts recommend completing socialization before {activeDoggo} is 12 weeks old <span className="complete-by-date">({completeByDates.training})</span></h5>
-                            </div>
+              
+                    <div className="content-section white font-white center">
+                        <div className="content-container">
 
+                    <div className="title-centre">
+                                <h1 className="display-heading">Do I really need puppy classes?</h1>
+                               
+                            </div>
+                        
+                
+                            <div className="grid-container">
+                         
+                            <Row style={{ marginBottom: 20}}>
+                                
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    1
+                                </div>
+                                <div className="checklist-step-content">
+                                    <h4>Go through each section</h4>
+                                    <p>We break down puppyhood into 5 easy sections</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                         
+                                
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    2
+                                </div>
+                                <div className="checklist-step-content">
+                                <h4>Pay attention to dates</h4>
+                                <p>We'll tell you when to complete each section by to make sure you're ready</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                       
+                        
+                                
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    3
+                                </div>
+                                <div className="checklist-step-content">
+                                    <h4>Don't forget the guide</h4>
+                                    <p>The last step is a complete guide to your first 24 hours with pup</p>
+                                </div>
+                                </div>
+                                
+                                </Col>
+                            </Row>
+                            
+                            
+                        </div>
                         </div>
                     </div>
 
