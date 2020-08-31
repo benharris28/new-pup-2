@@ -79,7 +79,7 @@ class Training extends React.Component {
                       </div>
                       </div>
                 
-                <Layout>
+           
 
 
                     <div className="content-section white">
@@ -101,7 +101,7 @@ class Training extends React.Component {
 
 
               
-                    <div className="content-section white font-white center">
+                    <div className="content-section light-grey font-white center">
                         <div className="content-container">
 
                     <div className="title-centre">
@@ -112,7 +112,7 @@ class Training extends React.Component {
                 
                             <div className="grid-container">
                          
-                            <Row style={{ marginBottom: 20}}>
+                            <Row gutter={[10,20]} style={{ marginBottom: 20}}>
                                 
                                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                                 <div className="checklist-step-container">
@@ -120,8 +120,8 @@ class Training extends React.Component {
                                     1
                                 </div>
                                 <div className="checklist-step-content">
-                                    <h4>Go through each section</h4>
-                                    <p>We break down puppyhood into 5 easy sections</p>
+                                    <h4>Accept handling from humans, groomers, and vets</h4>
+                                  
                                 </div>
                                 </div>
                                 
@@ -134,8 +134,8 @@ class Training extends React.Component {
                                     2
                                 </div>
                                 <div className="checklist-step-content">
-                                <h4>Pay attention to dates</h4>
-                                <p>We'll tell you when to complete each section by to make sure you're ready</p>
+                                <h4>Prevent fear, anxiety, and depression</h4>
+                                
                                 </div>
                                 </div>
                                 
@@ -149,8 +149,20 @@ class Training extends React.Component {
                                     3
                                 </div>
                                 <div className="checklist-step-content">
-                                    <h4>Don't forget the guide</h4>
-                                    <p>The last step is a complete guide to your first 24 hours with pup</p>
+                                    <h4>Practice being left alone / housetrained</h4>
+                                    
+                                </div>
+                                </div>
+                                
+                                </Col>
+                                <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                                <div className="checklist-step-container">
+                                <div className="checklist-step-count">
+                                    4
+                                </div>
+                                <div className="checklist-step-content">
+                                    <h4>Learn how to play appropriately with other dogs</h4>
+                                    
                                 </div>
                                 </div>
                                 
@@ -163,50 +175,10 @@ class Training extends React.Component {
                     </div>
 
 
+                   
+
                     <div className="content-section white">
-
-
-                        <div className="checklist-page content">
-                            <div className="checklist-page-section-intro">
-                                <h2>Do I really need puppy classes?</h2>
-                                <h5>Yes! Puppy classes teach new pups vital skills to help them adapt and develop</h5>
-                            </div>
-                            <div className="nutrition-types-container">
-                                <Row
-                                    gutter={[40, 24]}
-                                >
-                                    {points.map(point =>
-
-                                        <Col
-                                            className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-
-                                            <Row>
-                                                <Col style={{ maxWidth: 30 }} className="gutter-row" xs={12} sm={12} md={12} lg={12}>
-                                                    <div className="survival-guide-steps">
-                                                        {point.number}
-                                                    </div>
-                                                </Col>
-                                                <Col style={{ width: 200 }} className="gutter-row" xs={12} sm={12} md={12} lg={12}>
-                                                    <div>
-                                                        <h5>{point.title}</h5>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-
-
-
-
-
-
-                                        </Col>
-                                    )}
-                                </Row>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="content-section">
-                        <div className="checklist-page content center">
+                        <div className="content-container">
                             <div className="trainer-container">
                                 <h2>Here are some recommended puppy classes near you</h2>
                                 <Row className="gear-row"
@@ -246,23 +218,31 @@ class Training extends React.Component {
 
                         </div>
                     </div>
-                    <div className="next-section-button dark-purple">
-                        <div className="next-section-button-content">
-                            <h4 className="font-white">You're doing awesome!</h4>
-                            <h5 className="font-white">Picked your puppy class? Let's keep this momentum going!</h5>
-                            <Link to='/guide'>
-                                <Button>
-                                    Up Next: 24 Hour Guide
-                                    </Button>
-                            </Link>
+                 
+
+
+
+             
+                <div className="cta-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">You're doing awesome!</h2>
+                                        <h5 className="font-white">Picked your puppy class? Let's keep this momentum going!</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/guide'>
+                                            <Button className="button-cta">
+                                            Up Next: 24 Hour Guide
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-
                     </div>
 
-
-
-                </Layout>
 
 
             </div>
