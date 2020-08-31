@@ -1416,38 +1416,33 @@ img {
 
 
 
+
 .gear-card {
   width: 100%;
-  max-width: 350px;
-  max-height: 550px;
+  max-width: 500px;
+  height: 500px;
 
   margin: auto;
  
-  box-shadow: rgba(64, 62, 61, 0.05) 0px 5px 15px 0px;
+  /*border: 1px solid rgb(85, 81, 255);*/
   border-radius: 10px;
   overflow: hidden;
- 
+  box-shadow: rgba(64, 62, 61, 0.05) 0px 5px 15px 0px;
+  margin-bottom: 20px;
   
 }
 
-.gear-card {
-  width: 100%;
-  max-width: 600px;
-  max-height: 550px;
-  margin-bottom: 20px;
-  position: relative;
-  -webkit-transition: box-shadow .7s;
-  transition: box-shadow .7s;
-  -webkit-transition-delay: .1s;
-  transition-delay: .1s;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-  max-width: 800px;
-  background-color: rgb(247, 244, 244);
-}
+
 
 .gear-card .ant-card-body {
   padding: 1rem;
   height: 120px;
+}
+
+.gear-card-content {
+  text-align: left;
+  margin-top: 20px;
+  height: 50px;
 }
 
 
@@ -2402,6 +2397,9 @@ padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
+  background-color: #fff8f5;
+
+
 }
 
 .gear-title-box {

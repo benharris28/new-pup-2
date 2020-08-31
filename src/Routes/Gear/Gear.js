@@ -4,7 +4,7 @@ import MarkComplete from '../../Components/MarkComplete/MarkComplete'
 import GearData from '../../BackupData/GearData'
 import ApiContext from '../../ApiContext';
 import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
-import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined, ArrowRightOutlined } from '@ant-design/icons';
+import { UserOutlined, ExclamationCircleOutlined, CalendarOutlined, RightCircleTwoTone } from '@ant-design/icons';
 import dog_gear from '../../Assets/dog_gear.jpg'
 import dog_collar from '../../Assets/dog_collar.png'
 import bowl_illustration from '../../Assets/bowl_illustration.png'
@@ -166,10 +166,12 @@ class Gear extends React.Component {
 
                     <div className="gear-list-container">
                     <div className="content-container gear-list">
-                    <div className="bg-container bg-top">
+                   
    
                             
                         <h4>Essentials</h4>
+                        <h5>These are the day-to-day items that you will need to order on a regular basis. Try a "set it and forget it" subscription so you never run out!</h5>
+
                         <div className="product-loop">
                         {gear.filter(item => item.theme == "monthly-good" ).map(gearCard =>
                                         
@@ -185,28 +187,30 @@ class Gear extends React.Component {
                                                     <Meta
                                                         className="card-content"
                                                         title={gearCard.category}
-                                                        description={gearCard.description_text}>
+                                                     >
 
                                                     </Meta>
 
-                                                    <div className="card_purchase_button">
-                                                        
-                                                        <div
-                                                            className="gear-card-button"
-                                                            type="primary"
-                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
-                                                            See products
-                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
-                                                        </div>
-
+                                                    <div className="dashboard-card-content">
+                                                        {gearCard.description_text}
 
                                                     </div>
+                                                    <div className="dashboard-card-button-box">
+                                                        <Button 
+                                                            className="dashboard-card-button"
+                                                            onClick={() => this.showDrawer(gearCard.category_id)}>
+                                                            Go
+                                                        </Button>
+                                                    </div>
+
+                                                    
 
                                           </Card>
                         )}
                         </div>
 
-                        <h4>Essentials</h4>
+                        <h4>Equipment</h4>
+                        <h5>Functional equipment will make your life easier. We've picked out the ones that will be perfect for {activeDoggo}</h5>
                         <div className="product-loop">
                         {gear.filter(item => item.theme == "apparel" ).map(gearCard =>
                                         
@@ -233,7 +237,7 @@ class Gear extends React.Component {
                                                             type="primary"
                                                             onClick={() => this.showDrawer(gearCard.category_id)}>
                                                             See products
-                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
+                                                            <RightCircleTwoTone />
                                                         </div>
 
 
@@ -243,7 +247,12 @@ class Gear extends React.Component {
                         )}
                         </div>
 
-                        <h4>Equipment</h4>
+                         <div className="gear-section-intro">
+                         <h4>Stuff for your home</h4>
+                        <h5>These will be the fixtures of {activeDoggo}'s home life. We've picked out the absolute essentials to make {activeDoggo}'s transition the smoothest possible</h5>                              
+                         </div>
+
+                        
                         <div className="product-loop">
                         {gear.filter(item => item.theme == "home-good" ).map(gearCard =>
                                         
@@ -270,7 +279,7 @@ class Gear extends React.Component {
                                                             type="primary"
                                                             onClick={() => this.showDrawer(gearCard.category_id)}>
                                                             See products
-                                                            <ArrowRightOutlined className="gear-card-icon font-black" />
+                                                            <RightCircleTwoTone />
                                                         </div>
 
 
@@ -318,6 +327,7 @@ class Gear extends React.Component {
                                             <div className="drawer-button">
                                                 <a target='_blank' rel="noopener noreferrer" href={`${product.canada_link}`}>
                                                     <Button
+                                                        
                                                         type="primary">
                                                         {product.purchase_text}
                                                     </Button>
@@ -334,7 +344,7 @@ class Gear extends React.Component {
 
 
                             
-                            </div>
+                           
                             </div>
                             </div>
 
