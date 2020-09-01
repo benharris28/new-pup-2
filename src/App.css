@@ -1631,6 +1631,71 @@ img {
 
 /* Survival Guide Styling */
 
+.guide-item {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+ 
+}
+
+.guide-item-image-box {
+  width: 100%;
+}
+
+.guide-item-image {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.guide-overview-content {
+  height: 150px;
+}
+
+.guide-item-button-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.guide-item-button {
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 40px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    -webkit-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    color: #6a35ff;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 25px;
+  
+  }
+
+
+
 .survival-guide-header {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -3148,6 +3213,24 @@ margin-left: auto;
     margin-bottom: 2rem;
   }
 
+  /* Survival Guide */ 
+
+  .guide-item {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+  padding: 15px;
+  
+    margin: 15px;
+    position: relative;
+
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+   
+
+  }
+
   /* Doggo Shop */ 
 
   .shop-product {
@@ -3159,8 +3242,7 @@ margin-left: auto;
   
     margin: 15px;
     position: relative;
-    -webkit-transition: box-shadow .7s;
-    transition: box-shadow .7s;
+
     -webkit-transition-delay: .1s;
     transition-delay: .1s;
    
@@ -3467,9 +3549,29 @@ padding: 15px;
   transition: box-shadow .7s;
   -webkit-transition-delay: .1s;
   transition-delay: .1s;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,.1)
+
 
 }
+
+/* Survival Guide */ 
+
+.guide-item {
+  width: calc(33% - 30px);
+  max-width: 100%;
+display: inline-block;
+float: none;
+padding: 15px;
+
+  margin: 15px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+
+
+}
+
   /* Gear Page */ 
 
   .gear-card {
