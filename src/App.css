@@ -405,6 +405,12 @@ h6 {
   font-size: 42px;
   font-weight: 500;
 }
+
+.column-container {
+  min-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
 /* Collapse */ 
 
 .ant-collapse {
@@ -1999,6 +2005,23 @@ img {
 }
 /* PrepareHome Page */
 
+
+
+.text-column {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+ 
+}
+
 .guide-progress {
   background-color: white;
   text-align: center;
@@ -2743,6 +2766,13 @@ margin-left: auto;
 
 
 /* navvbar styling */
+
+.survival-guide-dropdown {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
 .menu-bar{
   position: sticky;
   padding: 0 20px;
@@ -2858,7 +2888,7 @@ margin-left: auto;
   color: black;
   font-size: 1rem;
   font-weight: 600;
-  padding-top: 0.5rem;
+  
 }
 
 /* Responsive Styling */
@@ -3132,6 +3162,22 @@ margin-left: auto;
   text-align: left;
 }
 
+.text-column {
+  width: calc(50% - 30px);
+  display: flex;
+  flex-direction: column;
+  float: none;
+  padding: 15px;
+
+  margin: 15px;
+  position: relative;
+
+
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+
+}
 
 
   /* Images */ 

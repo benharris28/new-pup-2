@@ -28,7 +28,7 @@ render() {
                       <a className="logo" href="/"><h3>Doggo</h3></a>
                   </div>
                 </Col>
-                <Col style={{ "maxWidth": "200px" }} xs={0} sm={0} md={12} lg={12}  justify="space-around">
+                <Col style={{ "maxWidth": "400px" }} xs={0} sm={0} md={12} lg={12}  justify="space-around">
                     <RightMenu />
                 </Col>
                 <Col style={{ paddingBottom: 10}} xs={6} sm={6} md={0}>

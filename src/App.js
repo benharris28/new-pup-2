@@ -29,7 +29,8 @@ class App extends React.Component {
   state = {
     loggedIn: '',
     activeUser: UserData.users[0],
-    completeByDates: ''
+    completeByDates: '',
+    
 
   }
 
@@ -38,6 +39,7 @@ class App extends React.Component {
     /* Temporary Setup to set completion dates in context */
     this.handleDates()
   }
+
   handleDates = () => {
     const { activeUser } = this.state;
     const homeDate = activeUser.dogs[0].home_date

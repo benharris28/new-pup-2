@@ -36,53 +36,7 @@ class PickUpPup extends React.Component {
                         </Col>
                     </Row>
 
-                    <div className="grid-container">
-
-
-                        <Row justify="space-around" >
-                        <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide'>
-                                    <Button className="survival-guide-header-button">Guide Home</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/prepare-home'>
-                                    <Button className="survival-guide-header-button">Getting Ready</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/pickup-pup'>
-                                    <Button className="survival-guide-header-button selected">Pick Up Pup</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/pup-home'>
-                                    <Button className="survival-guide-header-button">Pup is home!</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/meal-time'>
-                                    <Button className="survival-guide-header-button">First meal</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/crate-train'>
-                                    <Button className="survival-guide-header-button">House training</Button>
-                                </Link>
-
-                            </Col>
-
-
-
-
-
-                        </Row>
-                    </div>
+                   
                 </div>
 
                 

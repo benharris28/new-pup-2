@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
-import { Link } from 'react-router-dom'
+import GuideMenu from '../../Components/GuideMenu/GuideMenu'
+import { Link, withRouter } from 'react-router-dom'
 import { Menu, Icon, Button } from 'antd';
 
 const { SubMenu } = Menu;
@@ -13,16 +14,24 @@ class RightMenu extends Component {
   }
   
   render() {
-    const { mobile } = this.props;
+    const { match, location, history, mobile } = this.props;
+
     const { activeUser } = this.context;
     const navClass = mobile? "menu-drawer mobile" : "menu-drawer"
+    const guideCheck = location.pathname.toString().includes('guide') ? true : false
+   
+
+    console.log(guideCheck)
 
     return (
       <div>
       {activeUser ? 
         <div className={navClass}>
       
-          
+            {guideCheck &&  
+              <GuideMenu />
+              }
+
             <Link to='/dashboard'>
                 <div className="menu-button">
                 Dashboard
@@ -81,4 +90,4 @@ class RightMenu extends Component {
     );
   }
 }
-export default RightMenu;
+export default withRouter(RightMenu);

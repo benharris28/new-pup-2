@@ -5,6 +5,8 @@ import { Layout, Content, Button, Row, Col, Collapse } from 'antd';
 import { LeftOutlined, RightOutlined, BulbOutlined, ToolOutlined, ClearOutlined } from '@ant-design/icons';
 import food_image from '../../Assets/food_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
+import dog_garbage from '../../Assets/dog_garbage.jpg'
+import dog_in_crate_covered_test_2 from '../../Assets/dog_in_crate_covered_test_2.png'
 
 
 
@@ -53,130 +55,144 @@ class PrepareHome extends React.Component {
                         </Col>
                     </Row>
 
-                    <div className="grid-container">
-
-
-                        <Row justify="space-around" >
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide'>
-                                    <Button className="survival-guide-header-button">Guide Home</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/prepare-home'>
-                                    <Button className="survival-guide-header-button selected">Getting Ready</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/pickup-pup'>
-                                    <Button className="survival-guide-header-button">Pick Up Pup</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/pup-home'>
-                                    <Button className="survival-guide-header-button">Pup is home!</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/meal-time'>
-                                    <Button className="survival-guide-header-button">First meal</Button>
-                                </Link>
-
-                            </Col>
-                            <Col className="survival-guide-banner-col" xs={8} sm={8} md={4} lg={4} xl={4}>
-                                <Link to='/guide/crate-train'>
-                                    <Button className="survival-guide-header-button">House training</Button>
-                                </Link>
-
-                            </Col>
-
-
-
-
-
-                        </Row>
-                    </div>
+                  
                 </div>
 
+                <div className="hero light-purple">
+                    <div className="container">
+                    <div className="selections">
+                            Prepare your home
+                        </div>
+                        
+                        <div className="title-centre image-title">
+                            <h1 className="display-heading">
+                                Preparing your home for Doggo
+                            </h1>
+                            <div className="hero-details">
+                            It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep
+                        </div>
+                       
 
-                <div className="content-section blue">
-                    <div className="checklist-page content">
-
-                        <div className="section-count">Section 1</div>
-                        <h3>Getting ready for pup</h3>
-                        <h5>It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep</h5>
-
-
+                        </div>
+                        
                     </div>
+                 
+                    
                 </div>
 
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free">
-                        <Row gutter={[40, 24]} className="grain">
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                <div className="grain-content">
-                                    <h2>How to puppy proof</h2>
-                                    <div className="content-group">
-                                        <h5>Hide any items that can be chewed or swallowed</h5>
+                    <div className="content-container">
+                    <div className="title-centre">
+                                <h1 className="display-heading">How to puppy proof</h1>
+                               
+                            </div>
+                    <div className="image-box">
+                        <img className="full-image" src={dog_garbage} alt="dog next to tipped over garbage can" />
+                    </div>
+                    <div className="title-centre">
+                                <h3 className="display-heading">Puppies can get into anything...</h3>
+                               
+                            </div>
+                            <div className="grid-container">
+                         
+                         <Row gutter={[10,20]} style={{ marginBottom: 20}}>
+                             
+                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                             <div className="checklist-step-container">
+                             <div className="checklist-step-count">
+                                 1
+                             </div>
+                             <div className="checklist-step-content">
+                             <h5>Hide any items that can be chewed or swallowed</h5>
 
-                                        <p>Socks, baby toys, toilet paper. Your pup will be an expert at getting into anything. Make sure everything is put away where pup can't access it</p>
-                                    </div>
-
-                                    <div className="content-group">
-                                        <h5>Put away anything that can be knocked over easily</h5>
+                                <p>Socks, baby toys, toilet paper. Your pup will be an expert at getting into anything. Make sure everything is put away where pup can't access it</p>
+                               
+                             </div>
+                             </div>
+                             
+                             </Col>
+                      
+                             
+                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                             <div className="checklist-step-container">
+                             <div className="checklist-step-count">
+                                 2
+                             </div>
+                             <div className="checklist-step-content">
+                             <h5>Put away anything that can be knocked over easily</h5>
 
                                         <p>Think heavy things that would hurt pup if toppled over</p>
-                                    </div>
+                             
+                             </div>
+                             </div>
+                             
+                             </Col>
+                    
+                     
+                             
+                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                             <div className="checklist-step-container">
+                             <div className="checklist-step-count">
+                                 3
+                             </div>
+                             <div className="checklist-step-content">
+                             <h5>Safely store medications, cleaning supplies, etc</h5>
 
-                                    <div className="content-group">
-                                        <h5>Safely store medications, cleaning supplies, etc</h5>
-
-                                        <p>Nothing should be kept open where pup could get it</p>
-                                    </div>
-
-
-
-                                </div>
-                            </Col>
-                            <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                <img className="food-image" src={food_image} alt="food stock" />
-                            </Col>
-                        </Row>
+                                <p>Nothing should be kept open where pup could get it</p>
+                                 
+                             </div>
+                             </div>
+                             
+                             </Col>
+                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                             <div className="checklist-step-container">
+                             <div className="checklist-step-count">
+                                 4
+                             </div>
+                             <div className="checklist-step-content">
+                                 <h5>Invest in taller garbage cans - with lids! </h5>
+                                 <p> If your garbage is not in a cupboard or closet, make sure its closed and as tall as possible</p>
+                                 
+                             </div>
+                             </div>
+                             
+                             </Col>
+                         </Row>
+                         
+                         
+                     </div>
 
                     </div>
                 </div>
 
+                
 
+              
 
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free">
-                        <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                            <Col className="video-link" xs={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={24}>
-
-                                <YouTube videoId="n6MHdWFnU7E" opts={opts} onReady={this._onReady} />
-                            </Col>
-
-                            <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={24} lg={24}>
-                                <div className="row-content-intro">
-                                    <h2>Set up your crate</h2>
-                                    <h5>Watch this video for instructions on how to set up your crate</h5>
-                                </div>
-                            </Col>
-
-
-                        </Row>
+                    <div className="content-container">
+                    <div className="title-centre">
+                                <h1 className="display-heading">How to set up your crate</h1>
+                               
+                            </div>
+                            <YouTube videoId="n6MHdWFnU7E" opts={opts} onReady={this._onReady} />
+                 
                         <div>
-
-
+                    <div className="column-container">
+                        <div className="text-column">
                             <h4>Wait! This crate looks like a jail cell!</h4>
                             <p>Force-free dog trainers agree that crates are important for puppies. While they make look like a jail, they actually provide a safe, enclosed space mimicking a den which they are used to</p>
+                        </div>
+                        <div className="text-column">
                             <h4>Ever notice how dogs tend to find small, enclosed spaces to nap or sleep?</h4>
                             <p>Dogs need small spaces to feel safe. During a stressful time like moving to a forever home, a crate becomes a safe haven for your dog</p>
+                        </div>
 
+                    </div>
+
+
+
+                           
 
 
 
@@ -186,13 +202,13 @@ class PrepareHome extends React.Component {
                 </div>
 
                 <div className="content-section light-purple">
-                    <div className="checklist-page content space grain-free">
+                    <div className="content-container">
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                 <div className="grain-content">
                                     <div className="row-content-intro">
-                                        <h3>Pro Tip</h3>
+                                        <h1>Pro Tip</h1>
                                         <h5>Drape a blanket over the crate, except for the opening, to provide an extra sense of security for your pup</h5>
                                     </div>
 
@@ -205,14 +221,14 @@ class PrepareHome extends React.Component {
                             </Col>
                             <Col className="gutter-row" xs={24} sm={24} md={24} lg={12}>
 
-                                <img className="stock-image" src="https://www.rover.com/blog/wp-content/uploads/2020/01/61d4qnb48GL.jpg" alt="crate cover" />
+                                <img className="stock-image" src={dog_in_crate_covered_test_2} alt="dog in crate with a cover" />
                             </Col>
                         </Row>
 
                     </div>
                 </div>
                 <div className="content-section white">
-                    <div className="checklist-page content space grain-free">
+                    <div className="content-container">
                         <h2>FAQ</h2>
                         <Collapse accordion className="survival-guide-faq">
                             <Panel header="Question 1 question" key="1">
