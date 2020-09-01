@@ -210,6 +210,15 @@ h6 {
   background-size: cover;
 }
 
+.next-section {
+ 
+ 
+    padding: 0px 3%;
+  
+    position: relative;
+    
+}
+
 .next-section-content {
 
   color: white;
@@ -399,6 +408,7 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
+  max-width: 700px;
 }
 
 .content-h2 {
@@ -410,6 +420,18 @@ h6 {
   min-height: 160px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.image-box {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.video-container {
+  width: 100%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* Collapse */ 
 
@@ -440,6 +462,10 @@ h6 {
 /* Colour Styling */ 
 .blue {
   background-color: rgb(105, 155, 247);
+}
+
+.font-blue {
+  color: #2d3958;
 }
 
 .light-blue {
@@ -821,6 +847,10 @@ top: -50px;
     flex-wrap: wrap;
 }
 
+
+
+
+
 .shop-product {
   width: 100%;
   max-width: 800px;
@@ -836,9 +866,49 @@ top: -50px;
  
 }
 
+
+
 .shop-product-button-box {
   margin-top: 20px;
 }
+
+/* Guide Footer */ 
+
+.column-loop {
+  min-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide-item-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+ 
+}
+
+.column-item-image-box {
+  width: 100%;
+  
+}
+
+.column-item-image {
+  width: 100%;
+  height: 300px;
+  
+  object-fit: cover;
+}
+
+
+
 /* Signup Page */
 
 .signup-form-page {
@@ -3179,6 +3249,13 @@ margin-left: auto;
 
 }
 
+.video-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 
   /* Images */ 
 
@@ -3262,6 +3339,24 @@ margin-left: auto;
   /* Survival Guide */ 
 
   .guide-item {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+  padding: 15px;
+  
+    margin: 15px;
+    position: relative;
+
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+   
+
+  }
+
+  /* Guide Footer */ 
+
+  .guide-item-container {
     width: calc(50% - 30px);
     max-width: 100%;
   display: inline-block;
@@ -3602,6 +3697,25 @@ padding: 15px;
 /* Survival Guide */ 
 
 .guide-item {
+  width: calc(33% - 30px);
+  max-width: 100%;
+display: inline-block;
+float: none;
+padding: 15px;
+
+  margin: 15px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+
+
+}
+
+/* Guide Footer */
+
+.guide-item-container {
   width: calc(33% - 30px);
   max-width: 100%;
 display: inline-block;

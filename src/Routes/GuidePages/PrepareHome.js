@@ -7,6 +7,7 @@ import food_image from '../../Assets/food_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import dog_garbage from '../../Assets/dog_garbage.jpg'
 import dog_in_crate_covered_test_2 from '../../Assets/dog_in_crate_covered_test_2.png'
+import GuideFooter from '../../Components/GuideFooter/GuideFooter'
 
 
 
@@ -25,6 +26,7 @@ class PrepareHome extends React.Component {
     render() {
         const { Content } = Layout;
         const { Panel } = Collapse;
+      
         const opts = {
 
             width: '100%',
@@ -90,7 +92,7 @@ class PrepareHome extends React.Component {
                         <img className="full-image" src={dog_garbage} alt="dog next to tipped over garbage can" />
                     </div>
                     <div className="title-centre">
-                                <h3 className="display-heading">Puppies can get into anything...</h3>
+                                <h3>Puppies can get into anything...</h3>
                                
                             </div>
                             <div className="grid-container">
@@ -175,8 +177,9 @@ class PrepareHome extends React.Component {
                                 <h1 className="display-heading">How to set up your crate</h1>
                                
                             </div>
+                            <div className="video-container">
                             <YouTube videoId="n6MHdWFnU7E" opts={opts} onReady={this._onReady} />
-                 
+                            </div>
                         <div>
                     <div className="column-container">
                         <div className="text-column">
@@ -203,13 +206,17 @@ class PrepareHome extends React.Component {
 
                 <div className="content-section light-purple">
                     <div className="content-container">
+                    <div className="selections">
+                            Pro Tip
+                        </div>
                         <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
 
                             <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
                                 <div className="grain-content">
                                     <div className="row-content-intro">
-                                        <h1>Pro Tip</h1>
-                                        <h5>Drape a blanket over the crate, except for the opening, to provide an extra sense of security for your pup</h5>
+                                   
+                                        <h1 className="font-blue">Crate Setup</h1>
+                                        <h5 className="font-blue">Drape a blanket over the crate, except for the opening, to provide an extra sense of security for your pup</h5>
                                     </div>
 
 
@@ -227,35 +234,54 @@ class PrepareHome extends React.Component {
 
                     </div>
                 </div>
-                <div className="content-section white">
-                    <div className="content-container">
-                        <h2>FAQ</h2>
-                        <Collapse accordion className="survival-guide-faq">
-                            <Panel header="Question 1 question" key="1">
-                                <p>Question 1</p>
-                            </Panel>
-                            <Panel header="Question 2 question" key="2">
-                                <p>Question 2</p>
-                            </Panel>
-                            <Panel header="Question 3 question" key="3">
-                                <p>Question 3</p>
-                            </Panel>
 
-                        </Collapse>
-                    </div>
-                </div>
-                <div className="next-section-button dark-yellow">
-                    <div>
-                        <h4>Home feeling a bit safer for pup?</h4>
-                        <h5>Let's get you ready to pick up Russell!</h5>
-                    </div>
-                    <Link to='/guide/pickup-pup'>
-                        <Button>
-                            Step 2: Pick up pup
-                                    </Button>
-                    </Link>
+                <div className="faq-section">
+                        <div className="content-container">
+                            <div className="title-wrap">
+                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about getting your home ready?</h2>
+                                <h4 className="font-purple">We've got your answers</h4>
+                            </div>
+                           
+                            <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
+                                <Panel header="Should I get a food subscription?" key="1">
+                                    <p>Subscriptions are great if you have chosen a food and want the same quantity delivered to your home regularly. If you're not sold, you can purchaes as needed</p>
+                                </Panel>
+                                <Panel header="What's the deal with grain free foods?" key="2">
+                                    <p>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</p>
+                                </Panel>
+                                <Panel header="Question 3 question" key="3">
+                                    <p>Question 3</p>
+                                </Panel>
 
-                </div>
+                            </Collapse>
+                        </div>
+                    </div>
+             
+              
+
+                <div className="next-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">Next Section</h2>
+                                        <h5 className="font-white">Picking up your doggo</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/guide/pickup-pup'>
+                                            <Button className="button-cta">
+                                                Up Next: Picking Up Your Doggo
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                <GuideFooter articles={[1,2,3]}/>
+
+               
 
             </Layout>
         )
