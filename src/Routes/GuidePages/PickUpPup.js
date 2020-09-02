@@ -2,8 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Russ_car from '../../Assets/Russ_car.JPG'
 import { Layout, Content, Button, Row, Col, Collapse } from 'antd';
+import { CheckOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import stock_image from '../../Assets/stock_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
+import dog_car_window from '../../Assets/dog_car_window.jpg'
+import puppy_pee_outside from '../../Assets/puppy_pee_outside.jpg'
+import dog_inside from '../../Assets/dog_inside.jpg'
 import GuideFooter from '../../Components/GuideFooter/GuideFooter'
 
 class PickUpPup extends React.Component {
@@ -63,68 +67,156 @@ class PickUpPup extends React.Component {
                     
                 </div>
 
-                    <div className="content-section dark-green">
-                    <div className="checklist-page content">
+                <div className="content-section white">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <h1 className="display-heading">
+                                It's time for pickup!
+                            </h1>
+                          
                        
-                        <div className="section-count">Section 2</div>
-                            <h3>The big day is here!</h3>
-                            <h5>Get ready! Your life will change forever today in the best way possible! Get excited and don't forget a few handy tips</h5>
+
                         </div>
+                    <div className="image-box">
+                        <img className="full-image" src={dog_car_window} alt="dog in car with head out window" />
+                    </div>
 
                     </div>
-        
+                </div>
+
+                <div className="cta-section-no-decoration">
+                    <div className="cta-no-decoration-container">
+                        <div className="cta-no-decoration-border-box">
+                        <div className="cta-no-decoration-content">
+                        <div className="title-centre">
+                            <ExclamationCircleOutlined className="icon-header font-coral" />
+                            <h1 className="display-heading">
+                                Don't forget time off!
+                            </h1>
+                          
+                       
+
+                        </div>
+                            <p>Your doggo will need constant care over the first few days. Plan ahead by arranging for time off work</p>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
 
                 <div className="content-section white">
-                <div className="checklist-page content">
-                            <div className="checklist-page-section-intro">
-                                <h3>What you should bring</h3>
-                                <h5>Don't forget these items when going to pick up Russell!</h5>
-                            </div>
-                            <div className="nutrition-types-container">
-                                <Row
-                                    gutter={[40, 24]}
-                                >
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <h1 className="display-heading">
+                                What you should bring
+                            </h1>
+                          
+                       
 
-                                    <Col
-                                        className="gutter-row" xs={24} sm={24} md={8} lg={8}>
-                                        <div className="nutrition-type-item">
-                                     
-                                                <img className="stock-icon" src={stock_image} alt="food stock" />
-                                           
-                                            <h4>Towels</h4>
-                                            <h5>Dogs can get nauseous and anxious during their first few trips in a car. Spread a few towels down to help catch / cleanup any mess</h5>
-                                        </div>
-                                    </Col>
-                                    <Col
-                                        className="gutter-row" xs={24} sm={24} md={8} lg={8}>
-                                        <div className="nutrition-type-item">
-                                     
-                                                <img className="stock-icon" src={stock_image} alt="food stock" />
-                                           
-                                            <h4>A friend</h4>
-                                            <h5>It will be a stressful drive home for you new pup. If possible, have a friend come with to reassure pup while you drive</h5>
-                                        </div>
-                                    </Col>
-                                    <Col
-                                        className="gutter-row" xs={24} sm={24} md={8} lg={8}>
-                                        <div className="nutrition-type-item">
-                                     
-                                                <img className="stock-icon" src={stock_image} alt="food stock" />
-                                           
-                                            <h4>Russell's gear</h4>
-                                            <h5>Bring Russell's leash, harness, collar, tags, and some poo bags</h5>
-                                        </div>
-                                    </Col>
-                                   
-                                </Row>
-                            </div>
+                        </div>
+                        <div className="column-container">
+                        <div className="text-column-three">
+                            <CheckOutlined className="column-item-icon font-coral" />
+                            <h4>A Towel</h4>
+                            <p>Dogs can get nauseous and anxious during their first few trips in a car. Spread a few towels down to help catch / cleanup any mess</p>
+                        </div>
+                        <div className="text-column-three">
+                            <CheckOutlined className="column-item-icon font-coral" />
+                            <h4>A friend</h4>
+                            <p>It will be a stressful drive home for you new pup. Your pup will need be held securely while driving. If possible, have a friend come with to reassure pup while you drive. If not, bring the pup's crate</p>
+                        </div>
+                        <div className="text-column-three">
+                            <CheckOutlined className="column-item-icon font-coral" />
+                            <h4>The Doggo's Gear</h4>
+                            <p>Bring Russell's leash, harness, collar, tags, and some poo bags. Make sure you put them all on before you the breeder or shelter</p>
+                        </div>
+
+                    </div>
+                   
+
+                    </div>
+                </div>
+
+                <div className="cta-section-no-decoration">
+                    <div className="cta-no-decoration-container">
+                        <div className="cta-no-decoration-border-box">
+                        <div className="cta-no-decoration-content">
+                            <h3>This will be a stressful trip for your new doggo. Make sure to go straight home after pickup!</h3>
+                        </div>
                         </div>
                     </div>
+
+                </div>
+
+                <div className="content-section white">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <h1 className="display-heading">
+                                Arrival at home
+                            </h1>
+                          
+                       
+
+                        </div>
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                        <h3>Introduce them to the "potty area"</h3>
+                                        <p>Before going inside, let the puppy relieve themselves in the designated bathroom spot. This will help form a habit</p>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-image-container">
+                                    <img className="grid-image" src={puppy_pee_outside} alt="puppy peeing against a tree" />
+                                    </div>
+                                    
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[100, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                        <h3>Introduce them to their home</h3>
+                                        <p>Let them sniff around and get comfortable with their new surroundings. It is recommended to keep them on leash even inside to prevent accidents</p>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                <div className="grid-image-container">
+                                    <img className="grid-image" src={dog_inside} alt="puppy inside" />
+                                </div>
+                                </Col>
+                            </Row>
+                        </div>
+
+                       
+                       
+                   
+
+                    </div>
+                </div>
+
+                <div className="cta-section-no-decoration">
+                    <div className="cta-no-decoration-container">
+                        <div className="cta-no-decoration-border-box">
+                        <div className="cta-no-decoration-content">
+                            <h3>Make sure your home is quiet and calm for your new doggo. Try to avoid "welcome home" parties!</h3>
+                        </div>
+                        </div>
+                    </div>
+
+                </div>
+
+         
+        
+
+              
 
                     <div className="faq-section">
                         <div className="content-container">
                             <div className="title-wrap">
-                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about getting your home ready?</h2>
+                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about picking up your doggo?</h2>
                                 <h4 className="font-purple">We've got your answers</h4>
                             </div>
                            
@@ -150,7 +242,7 @@ class PickUpPup extends React.Component {
                             <div className="cta-banner-dark">
                                 <div className="cta-container">
                                     <div className="next-section-content">
-                                        <h2 className="font-white">Ready for the big pickup?</h2>
+                                        <h2 className="font-white">Good luck with the pickup!</h2>
                                         <h5 className="font-white">In the next section we talk about your first few hours with pup! Let's go!</h5>
                                     </div>
                                     <div className="cta-button-container">

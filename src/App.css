@@ -184,12 +184,46 @@ h6 {
   margin-left: auto;
 }
 
+
+
+
+/* CTAs */ 
 .cta-section {
  
   padding: 100px 3%;
 
   position: relative;
   
+}
+
+.cta-section-no-decoration {
+  padding: 0px 3%;
+
+  position: relative;
+}
+
+.cta-no-decoration-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+
+.cta-no-decoration-border-box {
+  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #EBEBEB;
+  padding-top: 24px;
+  padding-bottom: 24px;
+ 
+}
+
+.cta-no-decoration-content {
+  font-weight: 600;
+  text-align: center;
+}
+
+.cta-no-decoration-content h3 {
+  font-weight: 600;
+  text-align: center;
 }
 
 .cta-banner-dark {
@@ -595,7 +629,7 @@ h6 {
    width: 100%;
    margin: auto;
    text-align: center;
-   border-radius: 24px;
+   border-radius: 10px;
  }
 
  .ant-col {
@@ -908,6 +942,15 @@ top: -50px;
   object-fit: cover;
 }
 
+.column-item-icon {
+  font-size: 24px;
+  text-align: left;
+}
+
+.icon-header {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
 
 .item-step-container {
   width: calc(50% - 30px);
@@ -1860,7 +1903,7 @@ img {
 }
 
 .grid-container {
-  text-align: center;
+
   margin: auto;
   margin-top: 40px;
 }
@@ -2141,6 +2184,21 @@ img {
 
 
 .text-column {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+ 
+}
+
+.text-column-three {
   width: 100%;
   max-width: 800px;
   padding: 15px;
@@ -3304,6 +3362,17 @@ margin-left: auto;
 
   margin: 15px;
   position: relative;
+}
+
+  .text-column-three {
+    width: calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    float: none;
+    padding: 15px;
+  
+    margin: 15px;
+    position: relative;
 
 
   -webkit-transition-delay: .1s;
@@ -3646,6 +3715,23 @@ margin-left: auto;
     margin-top: 0px;
     margin-bottom: 0px;
   }
+
+  /* Grids */ 
+
+  .grid-content {
+    vertical-align: middle;
+    align-items: center;
+    max-width: 500px;
+    padding: 20px;
+    
+    
+  }
+
+  .grid-image-container {
+    max-width: 500px;
+    align-items: center;
+    padding: 20px;
+  }
 }
 
 @media(min-width: 1000px) {
@@ -3869,6 +3955,23 @@ padding: 15px;
   
 
   /* Content Prebuilds */
+
+  .text-column-three {
+    width: calc(33% - 30px);
+    display: flex;
+    flex-direction: column;
+    float: none;
+    padding: 15px;
+  
+    margin: 15px;
+    position: relative;
+
+
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+
+}
 
   .section {
     padding-top: 100px;

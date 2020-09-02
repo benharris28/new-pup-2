@@ -51,7 +51,7 @@ class GuideFooter extends React.Component {
                 id: 3,
               image: <img className="column-item-image" src={dog_trick} alt="man giving high five to dog" />,
               step: 'Step 3',
-              title: 'Teach Russell a few tricks',
+              title: 'Your first hours with pup',
               description: 'It is easier thank you think!',
               link: '/guide/pup-home'
             },
