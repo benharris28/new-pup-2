@@ -1,5 +1,6 @@
 @import '~antd/dist/antd.css';
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
 /* Global Styles */ 
@@ -902,10 +903,55 @@ top: -50px;
 
 .column-item-image {
   width: 100%;
-  height: 300px;
+  height: 220px;
   
   object-fit: cover;
 }
+
+
+.item-step-container {
+  width: calc(50% - 30px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+  background-color: #fbf3ff;
+  padding: 20px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  justify-content: center;
+  height: 300px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.item-step-count {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(85, 81, 255);
+  margin-bottom: 20px;
+}
+
+.item-step-content {
+  text-align: center;
+  color: black;
+
+}
+
+
 
 
 
@@ -1207,6 +1253,23 @@ img {
   font-family: 'Bungee';
   padding-top: 5px;
   color: black;
+}
+
+.guide-logo {
+  font-weight: 300;
+  color: blue;
+  font-family: 'Quicksand';
+  margin: 0;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.guide-logo h3{
+  font-weight: 300;
+  font-size: 22px;
+  color: blue;
+  font-family: 'Quicksand';
+  margin: 0;
 }
 
 .logo-photo {
@@ -1873,8 +1936,8 @@ img {
 
 .survival-guide-faq .ant-collapse-item .ant-collapse-header {
   background-color: white;
-  color: rgb(85, 81, 255);
-  font-size: 1.5rem;
+  color: #2d3958;
+  font-size: 18px;
   border: 0px solid white;
 }
 
@@ -2870,7 +2933,7 @@ margin-left: auto;
   font-weight: 600;
 }
 .logo{
-  width: 150px;
+  
   float: left;
   font-size: 2rem;
 }

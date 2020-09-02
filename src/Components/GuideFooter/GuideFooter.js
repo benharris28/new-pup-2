@@ -96,9 +96,10 @@ class GuideFooter extends React.Component {
 
 
                         <div className="content-container">
-                            <div className="title-wrapper">
-                                <h2>Learn more about doggo's first 24 hours at home</h2>
-                            </div>
+                        
+                                <h3>Explore the 24 hour puppy guide</h3>
+                                
+                          
                           
                           
                             <div className="column-loop">

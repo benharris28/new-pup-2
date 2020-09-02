@@ -95,16 +95,14 @@ class PrepareHome extends React.Component {
                                 <h3>Puppies can get into anything...</h3>
                                
                             </div>
-                            <div className="grid-container">
+                            <div className="column-loop">
                          
-                         <Row gutter={[10,20]} style={{ marginBottom: 20}}>
-                             
-                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                             <div className="checklist-step-container">
-                             <div className="checklist-step-count">
+                        
+                             <div className="item-step-container">
+                             <div className="item-step-count">
                                  1
                              </div>
-                             <div className="checklist-step-content">
+                             <div className="item-step-content">
                              <h5>Hide any items that can be chewed or swallowed</h5>
 
                                 <p>Socks, baby toys, toilet paper. Your pup will be an expert at getting into anything. Make sure everything is put away where pup can't access it</p>
@@ -112,15 +110,15 @@ class PrepareHome extends React.Component {
                              </div>
                              </div>
                              
-                             </Col>
+                        
                       
                              
-                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                             <div className="checklist-step-container">
-                             <div className="checklist-step-count">
+                       
+                             <div className="item-step-container">
+                             <div className="item-step-count">
                                  2
                              </div>
-                             <div className="checklist-step-content">
+                             <div className="item-step-content">
                              <h5>Put away anything that can be knocked over easily</h5>
 
                                         <p>Think heavy things that would hurt pup if toppled over</p>
@@ -128,16 +126,15 @@ class PrepareHome extends React.Component {
                              </div>
                              </div>
                              
-                             </Col>
+                    
                     
                      
-                             
-                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                             <div className="checklist-step-container">
-                             <div className="checklist-step-count">
+                    
+                             <div className="item-step-container">
+                             <div className="item-step-count">
                                  3
                              </div>
-                             <div className="checklist-step-content">
+                             <div className="item-step-content">
                              <h5>Safely store medications, cleaning supplies, etc</h5>
 
                                 <p>Nothing should be kept open where pup could get it</p>
@@ -145,22 +142,19 @@ class PrepareHome extends React.Component {
                              </div>
                              </div>
                              
-                             </Col>
-                             <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-                             <div className="checklist-step-container">
-                             <div className="checklist-step-count">
+                 
+                             <div className="item-step-container">
+                             <div className="item-step-count">
                                  4
                              </div>
-                             <div className="checklist-step-content">
+                             <div className="item-step-content">
                                  <h5>Invest in taller garbage cans - with lids! </h5>
                                  <p> If your garbage is not in a cupboard or closet, make sure its closed and as tall as possible</p>
                                  
                              </div>
                              </div>
                              
-                             </Col>
-                         </Row>
-                         
+                     
                          
                      </div>
 
@@ -204,7 +198,7 @@ class PrepareHome extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-section light-purple">
+                <div className="content-section light-grey">
                     <div className="content-container">
                     <div className="selections">
                             Pro Tip

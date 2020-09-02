@@ -4,6 +4,7 @@ import Russ_car from '../../Assets/Russ_car.JPG'
 import { Layout, Content, Button, Row, Col, Collapse } from 'antd';
 import stock_image from '../../Assets/stock_image.png'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
+import GuideFooter from '../../Components/GuideFooter/GuideFooter'
 
 class PickUpPup extends React.Component {
     componentDidMount = () => {
@@ -40,7 +41,27 @@ class PickUpPup extends React.Component {
                 </div>
 
                 
+                <div className="hero light-purple">
+                    <div className="container">
+                    <div className="selections">
+                            Prepare your home
+                        </div>
+                        
+                        <div className="title-centre image-title">
+                            <h1 className="display-heading">
+                                Preparing your home for Doggo
+                            </h1>
+                            <div className="hero-details">
+                            It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep
+                        </div>
+                       
 
+                        </div>
+                        
+                    </div>
+                 
+                    
+                </div>
 
                     <div className="content-section dark-green">
                     <div className="checklist-page content">
@@ -100,37 +121,55 @@ class PickUpPup extends React.Component {
                         </div>
                     </div>
 
-                    <div className="content-section white">
-                    <div className="checklist-page content space grain-free">
-                        <h2>FAQ - Picking up pup</h2>
-                        <Collapse accordion className="survival-guide-faq">
-                            <Panel header="Question 1 question" key="1">
-                                <p>Question 1</p>
-                            </Panel>
-                            <Panel header="Question 2 question" key="2">
-                                <p>Question 2</p>
-                            </Panel>
-                            <Panel header="Question 3 question" key="3">
-                                <p>Question 3</p>
-                            </Panel>
+                    <div className="faq-section">
+                        <div className="content-container">
+                            <div className="title-wrap">
+                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about getting your home ready?</h2>
+                                <h4 className="font-purple">We've got your answers</h4>
+                            </div>
+                           
+                            <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
+                                <Panel header="Should I get a food subscription?" key="1">
+                                    <p>Subscriptions are great if you have chosen a food and want the same quantity delivered to your home regularly. If you're not sold, you can purchaes as needed</p>
+                                </Panel>
+                                <Panel header="What's the deal with grain free foods?" key="2">
+                                    <p>Grain free foods are marketed based on debunked food science. Our experts don't recommend grain free foods. Grains are an important part of your dog's diet!</p>
+                                </Panel>
+                                <Panel header="Question 3 question" key="3">
+                                    <p>Question 3</p>
+                                </Panel>
 
-                        </Collapse>
-                    </div>
-                </div>
-
-                    <div className="next-section-button dark-yellow">
-                    <div>
-                            <h4>Ready for the big pickup?</h4>
-                            <h5>In the next section we talk about your first few hours with pup! Let's go!</h5>
+                            </Collapse>
                         </div>
-                        <Link to='/guide/pup-home'>
-                            <Button>
-                                Step 3: Pup is home. Help!
-                                    </Button>
-                        </Link>
+                    </div>
+             
+              
 
+                <div className="next-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">Ready for the big pickup?</h2>
+                                        <h5 className="font-white">In the next section we talk about your first few hours with pup! Let's go!</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/guide/pup-home'>
+                                            <Button className="button-cta">
+                                            Step 3: Pup is home. Help!
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                <GuideFooter articles={[3,4,5]}/>
+
+              
+
+                
 
                    
                 </Layout>
