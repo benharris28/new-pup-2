@@ -45,27 +45,7 @@ class PickUpPup extends React.Component {
                 </div>
 
                 
-                <div className="hero light-purple">
-                    <div className="container">
-                    <div className="selections">
-                            Prepare your home
-                        </div>
-                        
-                        <div className="title-centre image-title">
-                            <h1 className="display-heading">
-                                Preparing your home for Doggo
-                            </h1>
-                            <div className="hero-details">
-                            It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep
-                        </div>
-                       
-
-                        </div>
-                        
-                    </div>
-                 
-                    
-                </div>
+               
 
                 <div className="content-section white">
                     <div className="content-container">
