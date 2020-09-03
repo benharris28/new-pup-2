@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Layout, Content, Button, Collapse, Row, Col } from 'antd';
-import { InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined, CloseOutlined, BulbOutlined } from '@ant-design/icons';
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import dog_pee from '../../Assets/dog_pee.png'
 import pup_sleep from '../../Assets/pup_sleep.png'
 import light_bulb from '../../Assets/light_bulb.png'
-import puppy_pee_outside from '../../Assets/puppy_pee_outside.jpg'
+import puppy_pee_outside_2 from '../../Assets/puppy_pee_outside_2.jpg'
 import dog_inside from '../../Assets/dog_inside.jpg'
+import dog_pee_rug from '../../Assets/dog_pee_rug.jpg'
+import puppy_sit_treat from '../../Assets/puppy_sit_treat.jpg'
+import GuideFooter from '../../Components/GuideFooter/GuideFooter'
 
 class PupHome extends React.Component {
     componentDidMount = () => {
@@ -43,59 +46,26 @@ class PupHome extends React.Component {
                      
                     </div>
 
-                    <div className="content-section grey">
-                        <div className="checklist-page content">
+                 
 
-                            <div className="section-count">Section 3</div>
-                            <h3>Your first hours with pup</h3>
-                            <h5>Chaos - but fun! Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
-
-
-                        </div>
-                    </div>
-
-                    <div className="content-section purple font-white">
-                        <div className="checklist-page content">
-                            <h2 className="font-white">What to expect</h2>
-                            <div className="grid-container">
-
-                                <Row className="survival-guide-steps-row font-white" justify="space-around">
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps font-white">
-                                            <div className="survival-guide-steps_num">
-                                                1
-                                    </div>
-                                            <h3>Stop!</h3>
-                                            <h5 className="font-white">Your pup can't go anywhere until they are vaccinated</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                2
-                                    </div>
-                                            <h3>Pee breaks</h3>
-                                            <h5 className="font-white">Take your pup out to pee every 45 mins (or immediately after eating/drinking or waking up from a nap)</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                3
-                                    </div>
-                                            <h3>ZZZ's</h3>
-                                            <h5 className="font-white">Your pup is going to nap - a lot!</h5>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </div>
-                        </div>
-                    </div>
 
                     <div className="content-section white">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <h1 className="display-heading">
+                                Your first few hours with pup: Napping and peeing!
+                            </h1>
+                            <div className="hero-details">
+                            There are important details to know before you go anywhere
+                        </div>
+                          
+                       
+
+                        </div>
+                        </div>
+                        </div>
+
+                    <div className="content-section light-grey">
                     <div className="content-container">
                     <div className="title-centre">
                             <h1 className="display-heading">
@@ -131,7 +101,7 @@ class PupHome extends React.Component {
                     </div>
                 </div>
 
-                <div className="content-section light-grey">
+                <div className="content-section">
                     <div className="content-container">
                     <div className="title-centre">
                             <h1 className="display-heading">
@@ -185,7 +155,7 @@ class PupHome extends React.Component {
                                 </Col>
                                 <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
                                     <div className="grid-image-container">
-                                    <img className="grid-image" src={puppy_pee_outside} alt="puppy peeing against a tree" />
+                                    <img className="grid-image" src={puppy_pee_outside_2} alt="puppy peeing in grass" />
                                     </div>
                                     
                                 </Col>
@@ -227,44 +197,27 @@ class PupHome extends React.Component {
                         <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
                                     <div className="grid-content">
                                         <div className="grid-title">
-                                        <h3>Set your doggo up for success</h3>
+                                        <h3>Accidents Happen!</h3>
                                         </div>
                                         
                                         <div className="list-item-container">
                                             <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                                <CloseOutlined className="column-item-icon font-coral" />
                                             </div>
-                                            <span className="do-list-text">Use one pee spot everytime so your doggo can mark it</span>
+                                            <span className="do-list-text">Don’t punish your dog for having an accident inside. Instead, clean it up immediately with anti-urine spray</span>
                                         </div>
                                         <div className="list-item-container">
                                             <div className="icon-list">
                                                 <CheckOutlined className="column-item-icon font-coral" />
                                             </div>
-                                            <span className="do-list-text">Take pup out after every meal and after drinking water</span>
+                                            <span className="do-list-text">If your dog is peeing inside, pick them up and carry them out to proper spot. Praise them if they finish peeing in the right spot</span>
                                         </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
-                                            </div>
-                                            <span className="do-list-text">Take pup out after waking up from a nap</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
-                                            </div>
-                                            <span className="do-list-text">Take pup out once per hour or if you see them sniffing around (looking for a place to pee)</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
-                                            </div>
-                                            <span className="do-list-text">If you live in a building, carry them to the elevator (to avoid accidents in the hall or waiting for elevator)</span>
-                                        </div>
+                                        
                                     </div>
                                 </Col>
                                 <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
                                     <div className="grid-image-container">
-                                    <img className="grid-image" src={puppy_pee_outside} alt="puppy peeing against a tree" />
+                                    <img className="grid-image" src={dog_pee_rug} alt="puppy next to soiled rug" />
                                     </div>
                                     
                                 </Col>
@@ -278,116 +231,137 @@ class PupHome extends React.Component {
                     </div>
                 </div>
 
-
-
-                    <div className="content-section blue">
-                        <div className="checklist-page content space grain-free">
-                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={12}>
-                                    <div className="grain-content">
-                                        <h2>Potty Time</h2>
-                                        <h5>House training begins the moment you get home</h5>
-
-                                        <div className="content-group">
-
-
-
-
-
-                                            <p>General rule: take your pup out to relieve themselves every 45 mins or immediately after waking up from sleep/nap or eating/drinking</p>
-
-                                            <h5>Praise a job well done!</h5>
-                                            <p>If your pup pees / poos outside, praise them ("Good boy / girl!") and offer them a treat</p>
-                                            <p>Praise / treats reinforces the positive behaviour and they will associate going to the bathroom outside with a reward!</p>
-
-                                            <h5>Accidents Happen!</h5>
-                                            <p>Don't punish your pup for having an accident!</p>
-                                            <p>If you catch them beginning to pee, lift them up and bring them outside to finish</p>
-                                            <p>Clean up all accidents throroughly with pee cleaner. Dog's have amazing noses and will pee there again!</p>
-
-
-
-
-
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={12}>
-                                    <img className="food-image" src={dog_pee} alt="dog peeing on fire hydrant" />
-                                </Col>
-                            </Row>
-
+                <div className="cta-section-decoration">
+                <div className="content-container">
+                    <div className="cta-decoration light-blue">
+                
+                    <div className="cta-2-container">
+                        <div className="cta-icon-container">
+                        <BulbOutlined className="cta-icon font-coral" />
                         </div>
-
-                    </div>
-
-                    <div className="content-section black">
-                        <div className="checklist-page content">
-                            <div>
-                                <img className="pro-tip-icon" src={light_bulb} alt="light bulb icon" />
-                            </div>
-                            <h2 className="font-white">Pro Tip</h2>
-                            <h3 className="font-white">Keep your pup tethered to you </h3>
-                            <h5 className="font-white">Don't let pup out of your sight. If you see them sniffing around or sneaking off, take them out to relieve themselves</h5>
-                            <h5 className="font-white">When pup is awake, keep them tethered to you as you move about your house. Wherever you go, pup goes. </h5>
+                        <div className="cta-2-content">
+                            <h3>Pro Tip</h3>
+                            <p>Pups have accidents when they wander unattended. When pup is awake, keep them tethered to you as you move about your house. Wherever you go, pup goes.</p>
                         </div>
                     </div>
+                    </div>
+                    </div>
+                </div>
 
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <Row gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <div className="grain-content">
-                                        <h2>Napping</h2>
-                                        <h5>Your pup will be napping constantly - that's normal!</h5>
-
-
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <img className="food-image" src={pup_sleep} alt="puppy sleeping" />
-                                </Col>
-                            </Row>
+                <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <h1 className="display-heading">
+                                Extra Credit: Teach your doggo to "sit"
+                            </h1>
+                            <div className="hero-details">
+                            It's not as hard as it sounds!
+                        </div>
+                       
 
                         </div>
-
-                    </div>
-
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <Row gutter={[40, 24]} className="grain">
-
-
-
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <div className="grain-content">
-                                        <h2>Teach pup to sit</h2>
-                                        <div className="trick-list">
-                                            <ul>
-                                                <li><h5>Use pup's food as a treat reward</h5></li>
-                                                <li><h5>Hold the treat up to their nose and lift your hand slightly upward. The pup will naturally lower their bum to the ground. When they do, give them the treat and praise!</h5></li>
-                                                <li><h5>As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</h5></li>
-                                            </ul>
-                                            
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                 
                                         
-
-                                      
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Use pup's food as a treat reward</span>
                                         </div>
-
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Hold the treat up to their nose and lift your hand slightly upward. The pup will naturally lower their bum to the ground. When they do, give them the treat and praise!</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">As pup gets the hang of it, you can add the command "sit" as you bring the treat to their nose</span>
+                                        </div>
+                                    
+                                       
                                     </div>
-
                                 </Col>
-                                <Col className="gutter-row" xs={24} sm={24} md={12} lg={12}>
-                                    <img className="food-image" src={pup_sleep} alt="puppy sleeping" />
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-image-container">
+                                    <img className="grid-image" src={puppy_sit_treat} alt="puppy sitting on command" />
+                                    </div>
+                                    
                                 </Col>
                             </Row>
-
                         </div>
+                        </div>
+                </div>
 
+                        <div className="faq-section">
+                        <div className="content-container">
+                            <div className="title-wrap">
+                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about the first few hours with Doggo?</h2>
+                                <h4 className="font-purple">We've got your answers</h4>
+                            </div>
+                           
+                            <Collapse className="survival-guide-faq" ghost>
+                                <Panel header="Question 1" key="1">
+                                    <p>Answer 1</p>
+                                </Panel>
+                                <Panel header="Question 2" key="2">
+                                    <p>Answer 2</p>
+                                </Panel>
+                                <Panel header="Question 3 question" key="3">
+                                    <p>Question 3</p>
+                                </Panel>
+
+                            </Collapse>
+                        </div>
+                    </div>
+             
+              
+
+                <div className="next-section white">
+                        <div className="container-2">
+                            <div className="cta-banner-dark">
+                                <div className="cta-container">
+                                    <div className="next-section-content">
+                                        <h2 className="font-white">You're almost there!</h2>
+                                        <h5 className="font-white">In the next section we'll walk you through feeding your new doggo</h5>
+                                    </div>
+                                    <div className="cta-button-container">
+                                        <Link to='/guide/meal-time'>
+                                            <Button className="button-cta">
+                                            Step 4: Feeding Doggo
+                                            </Button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
+                <GuideFooter articles={[4,5,1]}/>
+
+                       
+                        
+
+                       
+                       
+                   
+
+                 
 
 
+
+
+
+
+     
+
+                  
 
 
 
