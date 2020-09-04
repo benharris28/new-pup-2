@@ -5,6 +5,9 @@ import { InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined, CloseOutl
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
+import puppy_pee_outside_2 from '../../Assets/puppy_pee_outside_2.jpg'
+import dog_inside from '../../Assets/dog_inside.jpg'
+import dog_pee_rug from '../../Assets/dog_pee_rug.jpg'
 
 class MealTime extends React.Component {
     componentDidMount = () => {
@@ -138,6 +141,138 @@ class MealTime extends React.Component {
                         </div>
 
                     </div>
+                   
+
+                    </div>
+                </div>
+
+
+                <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                    <div className="guide-heading">
+                                Meal Schedule
+                            </div>
+                            <h1 className="display-heading">
+                                When should I feed my doggo?
+                            </h1>
+                     
+                       
+
+                        </div>
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                        <div className="grid-title">
+                                        <h3>Set your doggo up for success</h3>
+                                        </div>
+                                        
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Use one pee spot everytime so your doggo can mark it</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out after every meal and after drinking water</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out after waking up from a nap</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out once per hour or if you see them sniffing around (looking for a place to pee)</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">If you live in a building, carry them to the elevator (to avoid accidents in the hall or waiting for elevator)</span>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-image-container">
+                                    <img className="grid-image" src={puppy_pee_outside_2} alt="puppy peeing in grass" />
+                                    </div>
+                                    
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[100, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                        <div className="grid-content">
+                                        <div className="grid-title">
+                                        <h3>Praise a job well done!</h3>
+                                        </div>
+                                        
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Reinforce the behaviour you want. If your pup is rewarded, they are more likely to repeat that behaviour </span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Praise the pup “good dog” and offer treats if they relieve themselves in the right spot</span>
+                                        </div>
+                                      
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                <div className="grid-image-container">
+                                    <img className="grid-image" src={dog_inside} alt="puppy inside" />
+                                </div>
+                                </Col>
+                            </Row>
+                        </div>
+
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                        <div className="grid-title">
+                                        <h3>Accidents Happen!</h3>
+                                        </div>
+                                        
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CloseOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Don’t punish your dog for having an accident inside. Instead, clean it up immediately with anti-urine spray</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">If your dog is peeing inside, pick them up and carry them out to proper spot. Praise them if they finish peeing in the right spot</span>
+                                        </div>
+                                        
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-image-container">
+                                    <img className="grid-image" src={dog_pee_rug} alt="puppy next to soiled rug" />
+                                    </div>
+                                    
+                                </Col>
+                            </Row>
+                        </div>
+
+                       
+                       
                    
 
                     </div>
