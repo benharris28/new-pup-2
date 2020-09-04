@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Layout, Content, Button, Collapse, Row, Col } from 'antd';
-import { WarningOutlined } from '@ant-design/icons';
+import { InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined, CloseOutlined, BulbOutlined } from '@ant-design/icons';
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
@@ -18,38 +18,49 @@ class MealTime extends React.Component {
         return (
             <div>
                 <Layout className="white">
-                    <div className="survival-guide-header">
-                        <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 16]}>
+                  
+                    <div className="content-section light-grey">
+                    <div className="content-container">
 
-
-
-                            <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
-                                <div className="survival-guide-header-image">
-                                    <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
-
-                                    <div>
-                                        <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                                        <h4>Your guide to the first 24 hours with pup</h4>
-
-                                    </div>
-
-                                </div>
-                            </Col>
-                        </Row>
-
+                    <div className="title-centre">
+                    <div className="selections coral">
+                            Step 4 of 5
+                        </div>
+                            <h6 className="display-heading-intro font-coral">Survival Guide</h6>
+                            <h1 className="display-heading">
+                                Feeding your doggo
+                            </h1>
+                            <div className="hero-details">
+                            Everything you need to know about what, how, when, and how much to feed
+                        </div>
+                          
                        
-                    </div>
-
-                    <div className="content-section dark-yellow">
-                        <div className="checklist-page content">
-
-                            <div className="section-count">Section 4</div>
-                            <h3>Doggo's first meal at home</h3>
-                            <h5>We're going to walk you through feeding. Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
-
 
                         </div>
+                      
+                        </div>
+                        </div>
+
+                        <div className="content-section low-padding coral">
+                    <div className="content-container">
+                     
+                        <div className="topics-container">
+                            <div className="topic-item">
+                                Feeding schedules
+                            </div>
+                            <div className="topic-item">
+                                Portioning
+                            </div>
+                            <div className="topic-item"> 
+                                Feeding Strategies
+                            </div>
+                        </div>
                     </div>
+                    </div>
+
+
+
+                  
 
                     <div className="content-section black font-white">
                         <div className="checklist-page content">
@@ -93,7 +104,44 @@ class MealTime extends React.Component {
                     </div>
 
 
+                    <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <div className="guide-heading">
+                                Restrictions
+                            </div>
+                            <h1 className="display-heading">
+                                Don't forget!
+                            </h1>
+                            <div className="hero-details">
+                            There are important details to know before you go anywhere
+                        </div>
+                          
+                       
 
+                        </div>
+                        <div className="column-container">
+                        <div className="text-column-three">
+                            <InfoCircleOutlined className="column-item-icon font-coral" />
+                            <h4>Know the risks</h4>
+                            <p>Puppies are vulnerable to canine distemper and parvovirus. It takes two sets of vaccinations to immunize your pup againt these and other diseases which are found in the outside world.</p>
+                        </div>
+                        <div className="text-column-three">
+                            <ExclamationCircleOutlined className="column-item-icon font-coral" />
+                            <h4>No walks!</h4>
+                            <p>Your pup will get their first set of vaccinations at your first wellness visit and will get a second 2 - 4 weeks after that</p>
+                        </div>
+                        <div className="text-column-three">
+                            <ExclamationCircleOutlined className="column-item-icon font-coral" />
+                            <h4>No dog parks!</h4>
+                            <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
+                        </div>
+
+                    </div>
+                   
+
+                    </div>
+                </div>
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">

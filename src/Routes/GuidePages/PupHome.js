@@ -24,36 +24,21 @@ class PupHome extends React.Component {
         return (
             <div>
                 <Layout className="white">
-                    <div className="survival-guide-header">
-                        <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 16]}>
-
-
-
-                            <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
-                                <div className="survival-guide-header-image">
-                                    <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
-
-                                    <div>
-                                        <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                                        <h4>Your guide to the first 24 hours with pup</h4>
-
-                                    </div>
-
-                                </div>
-                            </Col>
-                        </Row>
-
-                     
-                    </div>
+                  
 
                  
 
 
-                    <div className="content-section white">
+                    <div className="content-section light-grey">
                     <div className="content-container">
+
                     <div className="title-centre">
+                    <div className="selections coral">
+                            Step 3 of 5
+                        </div>
+                            <h6 className="display-heading-intro font-coral">Survival Guide</h6>
                             <h1 className="display-heading">
-                                Your first few hours with pup: Napping and peeing!
+                                Your first few hours with pup
                             </h1>
                             <div className="hero-details">
                             There are important details to know before you go anywhere
@@ -62,12 +47,34 @@ class PupHome extends React.Component {
                        
 
                         </div>
+                      
                         </div>
                         </div>
 
-                    <div className="content-section light-grey">
+                        <div className="content-section low-padding coral">
+                    <div className="content-container">
+                     
+                        <div className="topics-container">
+                            <div className="topic-item">
+                                Restrictions for new pups
+                            </div>
+                            <div className="topic-item">
+                                Housetraining (potty training)
+                            </div>
+                            <div className="topic-item"> 
+                                Obedience Training
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+
+                    <div className="content-section">
                     <div className="content-container">
                     <div className="title-centre">
+                            <div className="guide-heading">
+                                Restrictions
+                            </div>
                             <h1 className="display-heading">
                                 Don't forget!
                             </h1>
@@ -104,6 +111,9 @@ class PupHome extends React.Component {
                 <div className="content-section">
                     <div className="content-container">
                     <div className="title-centre">
+                    <div className="guide-heading">
+                                Housetraining
+                            </div>
                             <h1 className="display-heading">
                                 House (potty) training your doggo
                             </h1>
@@ -251,9 +261,13 @@ class PupHome extends React.Component {
                 <div className="content-section">
                     <div className="content-container">
                     <div className="title-centre">
+                    <div className="guide-heading">
+                                Obedience
+                            </div>
                             <h1 className="display-heading">
                                 Extra Credit: Teach your doggo to "sit"
                             </h1>
+                           
                             <div className="hero-details">
                             It's not as hard as it sounds!
                         </div>
@@ -301,10 +315,18 @@ class PupHome extends React.Component {
 
                         <div className="faq-section">
                         <div className="content-container">
-                            <div className="title-wrap">
-                                <h2 className="content-h2" style={{ marginBottom: 0 }}>Have more questions about the first few hours with Doggo?</h2>
-                                <h4 className="font-purple">We've got your answers</h4>
+                        <div className="title-centre">
+                    <div className="guide-heading">
+                                FAQ
                             </div>
+                            <h1 className="display-heading">
+                                Have more questions?
+                            </h1>
+                           
+                         
+                       
+
+                        </div>
                            
                             <Collapse className="survival-guide-faq" ghost>
                                 <Panel header="Question 1" key="1">
@@ -374,37 +396,8 @@ class PupHome extends React.Component {
 
 
 
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <h2 style={{marginBottom: 0}}>FAQ</h2>
-                            <h4 className="font-purple">Pup's first few hours</h4>
-                            <Collapse defaultActiveKey={['1']} className="survival-guide-faq" ghost>
-                                <Panel header="Question 1 question" key="1">
-                                    <p>Question 1</p>
-                                </Panel>
-                                <Panel header="Question 2 question" key="2">
-                                    <p>Question 2</p>
-                                </Panel>
-                                <Panel header="Question 3 question" key="3">
-                                    <p>Question 3</p>
-                                </Panel>
+                    
 
-                            </Collapse>
-                        </div>
-                    </div>
-
-                    <div className="next-section-button dark-yellow">
-                        <div>
-                            <h4>Getting the hang of it?</h4>
-                            <h5>In the next section we talk about pup's first meal in your home</h5>
-                        </div>
-                        <Link to='/guide/meal-time'>
-                            <Button>
-                                Step 4: Meal Time!
-                                    </Button>
-                        </Link>
-
-                    </div>
 
 
 
