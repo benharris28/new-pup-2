@@ -160,118 +160,194 @@ class MealTime extends React.Component {
                        
 
                         </div>
-                        <div className="grid-container">
-                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
-                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
-                                    <div className="grid-content">
-                                        <div className="grid-title">
-                                        <h3>Set your doggo up for success</h3>
-                                        </div>
-                                        
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                        <div className="table-container">
+                            <div className="vertical-table-border">
+                                
+                            </div>
+                            <table className="doggo-table">
+                                <thead>
+                                    <tr>
+                                        <th className="doggo-table-head-key">
+                                            <span className="table-head-span-key">Sample Schedule</span>
+                                        </th>
+                                        <th className="doggo-table-head">
+                                            <span className="doggo-table-span">8 - 12 weeks</span>
+                                        </th>
+                                        <th className="doggo-table-head">
+                                            <span className="doggo-table-span">12 weeks - 6 months</span>
+                                        </th>
+                                        <th className="doggo-table-head">
+                                            <span className="doggo-table-span">6 months +</span>
+                                        </th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Wakeup</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Wakeup at 7 am with immediate pee break
                                             </div>
-                                            <span className="do-list-text">Use one pee spot everytime so your doggo can mark it</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Wakeup at 7 am with immediate pee break
                                             </div>
-                                            <span className="do-list-text">Take pup out after every meal and after drinking water</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Wakeup at 7 am with immediate pee break
                                             </div>
-                                            <span className="do-list-text">Take pup out after waking up from a nap</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Breakfast</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            7:30 am with immediate pee break afterwards
                                             </div>
-                                            <span className="do-list-text">Take pup out once per hour or if you see them sniffing around (looking for a place to pee)</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            7:30 am with immediate pee break afterwards
                                             </div>
-                                            <span className="do-list-text">If you live in a building, carry them to the elevator (to avoid accidents in the hall or waiting for elevator)</span>
-                                        </div>
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
-                                    <div className="grid-image-container">
-                                    <img className="grid-image" src={puppy_pee_outside_2} alt="puppy peeing in grass" />
-                                    </div>
-                                    
-                                </Col>
-                            </Row>
-                        </div>
-                        <div className="grid-container">
-                        <Row style={{ margin: 0 }} gutter={[100, 24]} justify="space-evenly">
-                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
-                        <div className="grid-content">
-                                        <div className="grid-title">
-                                        <h3>Praise a job well done!</h3>
-                                        </div>
-                                        
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            7:30 am
                                             </div>
-                                            <span className="do-list-text">Reinforce the behaviour you want. If your pup is rewarded, they are more likely to repeat that behaviour </span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title"> Morning Routine</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
                                             </div>
-                                            <span className="do-list-text">Praise the pup “good dog” and offer treats if they relieve themselves in the right spot</span>
-                                        </div>
-                                      
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
-                                <div className="grid-image-container">
-                                    <img className="grid-image" src={dog_inside} alt="puppy inside" />
-                                </div>
-                                </Col>
-                            </Row>
-                        </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 2 - 3 hours when awake
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 3 hour when awake
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Lunch</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            11:30 am with immediate pee break afterwards
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            11:30 am
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            11:30 am
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Afternoon Routine</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 2 - 3 hours when awake
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 3 hour when awake
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Dinner</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            6:30 pm with immediate pee break afterwards
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            6:30 pm
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            6:30 pm
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Evening Routine</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 2 - 3 hours when awake
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Play and naps. Pee breaks every 3 hour when awake
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className="doggo-table-body-cell-key">
+                                            <div className="doggo-table-row-title">Bedtime Routine</div></td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Final bathroom break 11pm before going into crate for the night
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Final bathroom break 11pm before going into crate for the night
+                                            </div>
+                                        </td>
+                                        <td className="doggo-table-row-cell">
+                                            <div className="doggo-table-row-cell-text">
+                                            Final bathroom break 11pm before going into crate for the night
+                                            </div>
+                                        </td>
+                                    </tr>
+                        
+                                  
+                                  
+            
 
-                        <div className="grid-container">
-                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
-                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
-                                    <div className="grid-content">
-                                        <div className="grid-title">
-                                        <h3>Accidents Happen!</h3>
-                                        </div>
-                                        
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CloseOutlined className="column-item-icon font-coral" />
-                                            </div>
-                                            <span className="do-list-text">Don’t punish your dog for having an accident inside. Instead, clean it up immediately with anti-urine spray</span>
-                                        </div>
-                                        <div className="list-item-container">
-                                            <div className="icon-list">
-                                                <CheckOutlined className="column-item-icon font-coral" />
-                                            </div>
-                                            <span className="do-list-text">If your dog is peeing inside, pick them up and carry them out to proper spot. Praise them if they finish peeing in the right spot</span>
-                                        </div>
-                                        
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
-                                    <div className="grid-image-container">
-                                    <img className="grid-image" src={dog_pee_rug} alt="puppy next to soiled rug" />
-                                    </div>
                                     
-                                </Col>
-                            </Row>
-                        </div>
+                                 
+                                    
 
-                       
+                                </tbody>
+                            </table>
+                        </div>
+                        
                        
                    
 

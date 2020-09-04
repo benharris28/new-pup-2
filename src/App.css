@@ -191,6 +191,127 @@ h6 {
   margin-left: auto;
 }
 
+/* Tables */
+
+.vertical-table-border {
+  position: relative !important;
+  display: inline-block !important;
+  left: 0px !important;
+  z-index: 1 !important;
+  background-color: #ffffff !important;
+  box-shadow: 8px 0 8px -4px rgba(219, 219, 219, 0.4), inset -16px 0 8px -4px #ffffff !important;
+  max-width: 176px !important;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.table-container {
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+.doggo-table {
+    width: 100% !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+
+}
+
+.doggo-table-head-key {
+  height: 80px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  text-align: left !important;
+  min-width: 176px !important;
+  max-width: 176px !important;
+}
+
+.table-head-span-key {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 800 !important;
+  line-height: 1.25em !important;
+  color: #484848 !important;
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+.doggo-table-head {
+  border-bottom: 1px solid #EBEBEB !important;
+  height: 80px !important;
+  text-align: center !important;
+  min-width: 120px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.doggo-table-body-cell-key {
+  height: 80px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  max-width: 176px !important;
+}
+
+.doggo-table-row-title {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2857142857142858em !important;
+  color: #484848 !important;
+}
+
+.doggo-table-row-cell {
+  border-bottom: 1px solid #EBEBEB !important;
+  height: 80px !important;
+  text-align: center !important;
+  min-width: 120px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+
+.doggo-table-row-cell-text {
+  margin: 0px !important;
+  word-wrap: break-word !important;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.2857142857142858em !important;
+  color: #484848 !important;
+}
+
 
 
 
