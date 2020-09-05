@@ -47,13 +47,13 @@ class CrateTrain extends React.Component {
                      
                         <div className="topics-container">
                             <div className="topic-item">
-                                Feeding schedules
+                                Crate Training
                             </div>
                             <div className="topic-item">
-                                Portioning
+                                Sleep Routines
                             </div>
                             <div className="topic-item"> 
-                                Feeding Strategies
+                                Calm Strategies
                             </div>
                         </div>
                     </div>
@@ -87,16 +87,7 @@ class CrateTrain extends React.Component {
 
                      
 
-                    <div className="content-section blue">
-                        <div className="checklist-page content">
-
-                            <div className="section-count">Section 5</div>
-                            <h3>Housetraining Doggo</h3>
-                            <h5>Let's talk about teaching doggo to love his crate. Here's what to expect. As usual, check the FAQ at the bottom for extra help!</h5>
-
-
-                        </div>
-                    </div>
+                  
 
                     <div className="content-section black font-white">
                         <div className="checklist-page content">
