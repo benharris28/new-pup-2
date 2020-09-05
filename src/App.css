@@ -762,6 +762,10 @@ tbody {
   background-color: #fff8f5;
 }
 
+.light-coral {
+  background-color: #feebe9
+}
+
 .font-white {
   color: white;
 }
@@ -1465,7 +1469,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid white;
+  border: 1px solid #f43e2e;
   border-radius: 24px;
   height: 60px;
 
@@ -1475,7 +1479,7 @@ img {
   margin-bottom: 16px;
   
   color: #29335c;
-  color: white;
+  color: #f43e2e
 }
 /* Call to Action Block */
 
@@ -2033,6 +2037,29 @@ img {
 }
 
 /* Survival Guide Styling */
+
+.guide-page-count {
+
+    top: -50px;
+    position: relative;
+    display: flex;
+    max-width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px;
+    height: 50px;
+    padding: 20px;
+    color: #5551FF;
+    font-weight: 500;
+      font-size: 16px;
+      width: 70%;
+      border: 1px solid #5551FF;
+      background-color: #efe2ff;
+  
+}
 
 .guide-item {
   width: 100%;
@@ -3525,7 +3552,7 @@ margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
+    border: 1px solid #f43e2e;
     border-radius: 24px;
     height: 60px;
     font-weight: 500;
