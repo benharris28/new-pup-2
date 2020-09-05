@@ -178,6 +178,46 @@ class MealTime extends React.Component {
                     
                 </div>
 
+                <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                            <div className="guide-heading">
+                                Portioning
+                            </div>
+                            <h1 className="display-heading">
+                                How much should I feed?
+                            </h1>
+                            <div className="hero-details">
+                            There are important details to know before you go anywhere
+                        </div>
+                          
+                       
+
+                        </div>
+                        <div className="column-container">
+                        <div className="text-column-three">
+                            <InfoCircleOutlined className="column-item-icon font-coral" />
+                            <h4>Check the label</h4>
+                            <p>Start by checking the label, which will give guidance for either cups per day or calories per day.</p>
+                        </div>
+                        <div className="text-column-three">
+                            <ExclamationCircleOutlined className="column-item-icon font-coral" />
+                            <h4>No walks!</h4>
+                            <p>Your pup will get their first set of vaccinations at your first wellness visit and will get a second 2 - 4 weeks after that</p>
+                        </div>
+                        <div className="text-column-three">
+                            <ExclamationCircleOutlined className="column-item-icon font-coral" />
+                            <h4>No dog parks!</h4>
+                            <p>Please do not bring your dog to a dog park until they are licensed, complete puppy classes, and most importantly, get their rabbies vaccination</p>
+                        </div>
+
+                    </div>
+                   
+
+                    </div>
+                </div>
+
+
                    
 
                     <div className="content-section white">
