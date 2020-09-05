@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import { Layout, Content, Button, Collapse, Row, Col } from 'antd';
+import { Layout, Content, Button, Collapse, Row, Col, Table } from 'antd';
 import { InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined, CloseOutlined, BulbOutlined } from '@ant-design/icons';
+import MealTable from '../../Components/MealTable/MealTable'
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
@@ -156,226 +157,28 @@ class MealTime extends React.Component {
                             <h1 className="display-heading">
                                 When should I feed my doggo?
                             </h1>
+                            <div className="hero-details">
+                            Puppies who are 8 - 12 weeks old need 3 - 4 meals per day. All puppies are different, but start by feeding 3 meals per day. Check out the sample schedule below
+                        </div>
+                       
                      
                        
 
                         </div>
                         <div className="table-container">
-                            <div className="vertical-table-border">
-                                
-                            </div>
-                            <table className="doggo-table">
-                                <thead>
-                                    <tr>
-                                        <th className="doggo-table-head-key">
-                                            <span className="table-head-span-key">Sample Schedule</span>
-                                        </th>
-                                        <th className="doggo-table-head">
-                                            <span className="doggo-table-span">8 - 12 weeks</span>
-                                        </th>
-                                        <th className="doggo-table-head">
-                                            <span className="doggo-table-span">12 weeks - 6 months</span>
-                                        </th>
-                                        <th className="doggo-table-head">
-                                            <span className="doggo-table-span">6 months +</span>
-                                        </th>
-                                       
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Wakeup</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Wakeup at 7 am with immediate pee break
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Wakeup at 7 am with immediate pee break
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Wakeup at 7 am with immediate pee break
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Breakfast</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            7:30 am with immediate pee break afterwards
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            7:30 am with immediate pee break afterwards
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            7:30 am
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title"> Morning Routine</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 2 - 3 hours when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 3 hour when awake
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Lunch</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            11:30 am with immediate pee break afterwards
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            11:30 am
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            11:30 am
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Afternoon Routine</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 2 - 3 hours when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 3 hour when awake
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Dinner</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            6:30 pm with immediate pee break afterwards
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            6:30 pm
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            6:30 pm
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Evening Routine</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play inside and nap. Immediate pee breaks after each nap or once per hour when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 2 - 3 hours when awake
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Play and naps. Pee breaks every 3 hour when awake
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td className="doggo-table-body-cell-key">
-                                            <div className="doggo-table-row-title">Bedtime Routine</div></td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Final bathroom break 11pm before going into crate for the night
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Final bathroom break 11pm before going into crate for the night
-                                            </div>
-                                        </td>
-                                        <td className="doggo-table-row-cell">
-                                            <div className="doggo-table-row-cell-text">
-                                            Final bathroom break 11pm before going into crate for the night
-                                            </div>
-                                        </td>
-                                    </tr>
-                        
-                                  
-                                  
-            
+                            <MealTable />
+                        </div>
 
-                                    
-                                 
-                                    
-
-                                </tbody>
-                            </table>
+                      
                         </div>
                         
                        
                    
 
-                    </div>
+                    
                 </div>
 
-                    <div className="content-section white">
-                        <div className="checklist-page content space grain-free">
-                            <Row style={{ margin: 0 }} gutter={[40, 24]} className="grain">
-                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 24, order: 1 }} lg={{ span: 12, order: 1 }}>
-                                    <div className="grain-content">
-                                        <h2>When should I feed my doggo?</h2>
-                                        <h5>Puppies who are 8 - 12 weeks old need 3 - 4 meals per day. All puppies are different, but start by feeding 3 meals per day. Breakfast should be after the first morning bathroom break when you have started your day (not 4 am). Lunch can be around noon, and dinner around 6 pm.</h5>
-                                        <h4>Check out this handy schedule</h4>
-
-
-
-
-                                    </div>
-                                </Col>
-                                <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 24, order: 2 }} lg={{ span: 12, order: 2 }}>
-                                    <img className="food-image" src={schedule_image} alt="daily shedule" />
-                                </Col>
-                            </Row>
-
-                        </div>
-
-                    </div>
+                   
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
