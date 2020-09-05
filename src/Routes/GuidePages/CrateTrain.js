@@ -5,6 +5,8 @@ import { WarningOutlined } from '@ant-design/icons';
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
+import puppy_in_crate from '../../Assets/puppy_in_crate.jpg'
+
 
 class CrateTrain extends React.Component {
     componentDidMount = () => {
@@ -18,26 +20,72 @@ class CrateTrain extends React.Component {
         return (
             <div>
                 <Layout className="white">
-                    <div className="survival-guide-header">
-                        <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 16]}>
+                <div className="content-section light-grey">
+                    <div className="content-container">
 
+                    <div className="title-centre">
+                    <div className="guide-page-count">
+                            Step 4 of 5
+                        </div>
+                            <h6 className="display-heading-intro font-coral">Survival Guide</h6>
+                            <h1 className="display-heading">
+                                Your first night with doggo
+                            </h1>
+                            <div className="hero-details">
+                            It's a huge adjustment for your new pup. We'll help you get through it
+                        </div>
+                          
+                       
 
+                        </div>
+                      
+                        </div>
+                        </div>
 
-                            <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
-                                <div className="survival-guide-header-image">
-                                    <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
-
-                                    <div>
-                                        <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                                        <h4>Your guide to the first 24 hours with pup</h4>
-
-                                    </div>
-
-                                </div>
-                            </Col>
-                        </Row>
-
+                        <div className="content-section low-padding light-coral">
+                    <div className="content-container">
+                     
+                        <div className="topics-container">
+                            <div className="topic-item">
+                                Feeding schedules
+                            </div>
+                            <div className="topic-item">
+                                Portioning
+                            </div>
+                            <div className="topic-item"> 
+                                Feeding Strategies
+                            </div>
+                        </div>
                     </div>
+                    </div>
+
+                        <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                    <div className="guide-heading">
+                                Crates
+                            </div>
+                            <h1 className="display-heading">
+                                Crate Training
+                            </h1>
+                            <div className="hero-details">
+                            Crate's are an important aspect of positive reinforcement training. They are also an extremely important tool to help your puppy establish a safe space in your home
+                        </div>
+                           
+                       
+                     
+                       
+
+                        </div>
+                        <div className="image-box">
+                        <img className="full-image" src={puppy_in_crate} alt="puppy in a dog crate" />
+                    </div>
+                    
+                        </div>
+                        </div>
+
+
+                     
 
                     <div className="content-section blue">
                         <div className="checklist-page content">
