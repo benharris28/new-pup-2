@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { Layout, Content, Button, Collapse, Row, Col } from 'antd';
-import { WarningOutlined } from '@ant-design/icons';
+import { WarningOutlined, CheckOutlined } from '@ant-design/icons';
 import survival_guide_headshot from '../../Assets/survival_guide_headshot.png'
 import schedule_image from '../../Assets/schedule_image.png'
 import light_bulb from '../../Assets/light_bulb.png'
 import puppy_in_crate from '../../Assets/puppy_in_crate.jpg'
+import puppy_pee_outside_2 from '../../Assets/puppy_pee_outside_2.jpg'
 
 
 class CrateTrain extends React.Component {
@@ -85,50 +86,35 @@ class CrateTrain extends React.Component {
                         </div>
 
 
+                        <div className="content-section">
+                    <div className="content-container">
+                    <div className="title-centre">
+                    <div className="guide-heading">
+                                Sizing
+                            </div>
+                            <h1 className="display-heading">
+                                Finding the right crate
+                            </h1>
+                            <div className="hero-details">
+                            A properly-sized crate is essential to successful training experience
+                        </div>
+                           
+                       
+                     
+                       
+
+                        </div>
+                     
+                    
+                        </div>
+                        </div>
+
+
+
                      
 
                   
 
-                    <div className="content-section black font-white">
-                        <div className="checklist-page content">
-                            <h2 className="font-white">What to expect</h2>
-                            <div className="grid-container">
-
-                                <Row className="survival-guide-steps-row font-white" justify="space-around">
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps font-white">
-                                            <div className="survival-guide-steps_num">
-                                                1
-                                    </div>
-                                            <h3>It's going to be an adjustment</h3>
-                                            <h5 className="font-white">Your doggo may not warm to his crate right away and will likely cry a lot his few first nights</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                2
-                                    </div>
-                                            <h3>Stay focused!</h3>
-                                            <h5 className="font-white">Letting your dogggo out of the crate when they cry will disrupt your progress</h5>
-                                        </div>
-
-                                    </Col>
-                                    <Col className="survival-guide-step-col" xs={24} sm={24} md={8} lg={8} xl={8}>
-                                        <div className="survival-guide-steps">
-                                            <div className="survival-guide-steps_num">
-                                                3
-                                    </div>
-                                            <h3>Trust us</h3>
-                                            <h5 className="font-white">This short term struggle will be very beneficial in the long run to raising a secure doggo</h5>
-                                        </div>
-
-                                    </Col>
-                                </Row>
-                            </div>
-                        </div>
-                    </div>
 
 
 
@@ -167,7 +153,72 @@ class CrateTrain extends React.Component {
                 
 
                     <div className="content-section white">
-                        <div className="checklist-page content">
+                        <div className="content-container">
+                        <div className="title-centre">
+                    <div className="guide-heading">
+                                Introduce crate
+                            </div>
+                            <h1 className="display-heading">
+                                Crate Training
+                            </h1>
+                            <div className="hero-details">
+                            Crate's are an important aspect of positive reinforcement training. They are also an extremely important tool to help your puppy establish a safe space in your home
+                        </div>
+                           
+                       
+                     
+                       
+
+                        </div>
+
+                        <div className="grid-container">
+                        <Row style={{ margin: 0 }} gutter={[40, 24]} justify="space-evenly">
+                        <Col className="gutter-row" xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }} lg={{ span: 12, order: 1 }} style={{ padding: 0 }}>
+                                    <div className="grid-content">
+                                        <div className="grid-title">
+                                        <h3>Set your doggo up for success</h3>
+                                        </div>
+                                        
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Use one pee spot everytime so your doggo can mark it</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out after every meal and after drinking water</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out after waking up from a nap</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">Take pup out once per hour or if you see them sniffing around (looking for a place to pee)</span>
+                                        </div>
+                                        <div className="list-item-container">
+                                            <div className="icon-list">
+                                                <CheckOutlined className="column-item-icon font-coral" />
+                                            </div>
+                                            <span className="do-list-text">If you live in a building, carry them to the elevator (to avoid accidents in the hall or waiting for elevator)</span>
+                                        </div>
+                                    </div>
+                                </Col>
+                                <Col className="gutter-row" xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }} lg={{ span: 12, order: 2 }} style={{ padding: 0 }}>
+                                    <div className="grid-image-container">
+                                    <img className="grid-image" src={puppy_pee_outside_2} alt="puppy peeing in grass" />
+                                    </div>
+                                    
+                                </Col>
+                            </Row>
+                        </div>
 
                             <div>
                                 <div className="survival-content-group">
@@ -195,6 +246,42 @@ class CrateTrain extends React.Component {
                             </div>
                         </div>
                     </div>
+
+                    <div className="content-section white">
+                    <div className="content-container">
+                    <div className="title-centre">
+                    <div className="guide-heading">
+                                Time limit
+                            </div>
+                                <h1 className="display-heading">How much time can doggo spend in the crate?</h1>
+                                <div className="hero-details">
+                                Puppies do not want to pee or poo in their crate, and will go great lengths to avoid it. Altough, puppies can't control their bladders very well, and should be let out for potty breaks often
+                        </div>
+                            </div>
+                          
+                        <div>
+                    <div className="column-container">
+                        <div className="text-column">
+                        <h4>Daytime</h4>
+                                        <p>As a general rule, a puppy should only be left in a crate for 1 hour for every month of age. Therefore, if your puppy is 4 months old, you can leave the pup for 4 hours maximum</p>
+                        </div>
+                        <div className="text-column">
+                        <h4>Nightime</h4>
+                                        <p>You can break the 1 hours per month rule at night while your puppy is sleeping. Make sure you monitor your puppy closely. If they awake and its been longer than 2 hours, take them out for a potty break.</p>
+                        </div>
+
+                    </div>
+
+
+
+                           
+
+
+
+                        </div>
+
+                    </div>
+                </div>
 
                     <div className="content-section white">
                         <div className="checklist-page content space grain-free">
