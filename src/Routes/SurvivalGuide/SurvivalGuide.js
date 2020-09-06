@@ -83,44 +83,45 @@ class SurvivalGuide extends React.Component {
 
       <div>
         <Layout className="white">
-          <div className="survival-guide-header">
-          <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 },16]}>
+        <div className="content-section light-grey">
+                        <div className="content-container">
+
+                            <div className="title-centre">
                                 
-                                  
+                                <h6 className="display-heading-intro font-coral">Survival Guide</h6>
+                                <h1 className="display-heading">
+                                    The New Puppy Survival Guide
+                            </h1>
+                                <div className="hero-details">
+                                We're going to walk you through everything you'll need to do during your first 24 hours. We'll go step by step and give you only the info you absolutely need
+                        </div>
 
-          <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
-               <div className="survival-guide-header-image">
-               <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
-               
-               <div>
-                <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                <h4>Your guide to the first 24 hours with pup</h4>
 
-               </div>
-               
-              </div>   
-          </Col>
-          </Row>
-         
-       
 
-          </div>
-          
-                   <div className="content-section purple">
-                        <div className="checklist-page content">
-                            <div className="checklist-page-alert font-white">
-                               
-                                <h3>Surival Guide Home</h3>
-                                <h5>We're going to walk you through everything you'll need to do during your first 24 hours. We'll go step by step and give you only the info you absolutely need</h5>
                             </div>
 
                         </div>
                     </div>
+          
+        
 
                     <div className="content-section white">
                     <div className="content-container">
-                            <div className="title-wrapper">
-                                <h2>Survival Guide Categories</h2>
+                    <div className="title-centre">
+                                <div className="guide-heading">
+                                    Topics
+                            </div>
+                                <h1 className="display-heading">
+                                    Survival Guide Topics
+                            </h1>
+                                <div className="hero-details">
+                                    You can go step by step or jump right to the topic where you need help
+                        </div>
+
+
+
+
+
                             </div>
                             <div className="category-section">
                          
@@ -140,9 +141,12 @@ class SurvivalGuide extends React.Component {
                                                         <p className="newsfeed-item-detail">{point.description}</p>
                                                     </div>
                                                     <div className="guide-item-button-box">
-                                                        <Button className="guide-item-button">
+                                                      <Link to={point.link}>
+                                                        <Button 
+                                                          className="guide-item-button">
                                                             Start
                                                         </Button>
+                                                        </Link>
                                                     </div>
                                                 </div>
                                             </Link>

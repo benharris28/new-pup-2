@@ -38,49 +38,46 @@ class PrepareHome extends React.Component {
 
         return (
             <Layout className="white">
-                <div className="survival-guide-header">
-                    <Row gutter={[{ xs: 8, sm: 16, md: 24, lg: 32 }, 16]}>
+                <div className="content-section light-grey">
+                        <div className="content-container">
+
+                            <div className="title-centre">
+                                <div className="guide-page-count">
+                                    Step 1 of 5
+                        </div>
+                                <h6 className="display-heading-intro font-coral">Survival Guide</h6>
+                                <h1 className="display-heading">
+                                    Prepare your home for a new puppy
+                            </h1>
+                                <div className="hero-details">
+                                It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep
+                        </div>
 
 
-
-                        <Col className="gutter-row" xs={24} sm={24} md={24} lg={24}>
-                            <div className="survival-guide-header-image">
-                                <img className="survival-guide-headshot" src={survival_guide_headshot} alt="headshot" />
-
-                                <div>
-                                    <h5 className="survival-guide-title">Doggo Survival Guide</h5>
-                                    <h4>Your guide to the first 24 hours with pup</h4>
-
-                                </div>
 
                             </div>
-                        </Col>
-                    </Row>
-
-                  
-                </div>
-
-                <div className="hero light-purple">
-                    <div className="container">
-                    <div className="selections">
-                            Prepare your home
-                        </div>
-                        
-                        <div className="title-centre image-title">
-                            <h1 className="display-heading">
-                                Preparing your home for Doggo
-                            </h1>
-                            <div className="hero-details">
-                            It's time to puppy-proof your home. We'll explain how to make your home safe and inviting for pup, and to set up a safe place for him to sleep
-                        </div>
-                       
 
                         </div>
-                        
                     </div>
-                 
-                    
-                </div>
+
+                    <div className="content-section low-padding light-coral">
+                        <div className="content-container">
+
+                            <div className="topics-container">
+                                <div className="topic-item">
+                                    Puppy proofing
+                            </div>
+                                <div className="topic-item">
+                                    Crate Setup
+                            </div>
+                                <div className="topic-item">
+                                    Pro Tips
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+              
 
                 <div className="content-section white">
                     <div className="content-container">

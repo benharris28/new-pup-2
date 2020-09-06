@@ -26,49 +26,47 @@ class PupHome extends React.Component {
                 <Layout className="white">
                   
 
-                 
+                <div className="content-section light-grey">
+                        <div className="content-container">
 
-
-                    <div className="content-section light-grey">
-                    <div className="content-container">
-
-                    <div className="title-centre">
-                    <div className="selections coral">
-                            Step 3 of 5
+                            <div className="title-centre">
+                                <div className="guide-page-count">
+                                    Step 3 of 5
                         </div>
-                            <h6 className="display-heading-intro font-coral">Survival Guide</h6>
-                            <h1 className="display-heading">
-                                Your first few hours with pup
+                                <h6 className="display-heading-intro font-coral">Survival Guide</h6>
+                                <h1 className="display-heading">
+                                    Surviving the first few hours with your new puppy
                             </h1>
-                            <div className="hero-details">
-                            There are important details to know before you go anywhere
-                        </div>
-                          
-                       
-
-                        </div>
-                      
-                        </div>
+                                <div className="hero-details">
+                                There are important details to know before you go anywhere
                         </div>
 
-                        <div className="content-section low-padding coral">
-                    <div className="content-container">
-                     
-                        <div className="topics-container">
-                            <div className="topic-item">
-                                Restrictions for new pups
+
+
                             </div>
-                            <div className="topic-item">
-                                Housetraining (potty training)
+
+                        </div>
+                    </div>
+
+                    <div className="content-section low-padding light-coral">
+                        <div className="content-container">
+
+                            <div className="topics-container">
+                                <div className="topic-item">
+                                    Restrictions
                             </div>
-                            <div className="topic-item"> 
-                                Obedience Training
+                                <div className="topic-item">
+                                    Housetraining Intro
+                            </div>
+                                <div className="topic-item">
+                                    Obedience Training Intro
+                            </div>
                             </div>
                         </div>
                     </div>
-                    </div>
 
 
+                 
                     <div className="content-section">
                     <div className="content-container">
                     <div className="title-centre">
