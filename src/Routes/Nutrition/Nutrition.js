@@ -149,8 +149,25 @@ class Nutrition extends React.Component {
 
                                 </div>
                                 </div>
-                                <div className="nutrition-page-selector">
-                                <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
+                                <div className="nutrition-page-selector light-grey">
+                                    <div className="sticky-container">
+                                        <div className="selector-container">
+                                        <div className="title-centre">
+                                
+                                <h6 className="display-heading-intro font-coral">Food Selector</h6>
+                                <h1 className="display-heading">
+                                    Select a Food
+                            </h1>
+                                
+
+
+
+                            </div>
+                                            <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
+                                        </div>
+                                    
+                                    </div>
+                                
                                 </div>
                                 </div>
                     </div>
