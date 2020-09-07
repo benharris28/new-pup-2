@@ -151,6 +151,18 @@ h6 {
 
 }
 
+.landing-heading {
+  font-size: 52px;
+  max-width: 800px;
+  margin-top: 0px;
+  margin-bottom: 24px;
+  color: #2d3958;
+  line-height: 1.07;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+
+}
+
 .display-sub-heading {
   font-size: 42px;
   max-width: 560px;
@@ -209,8 +221,8 @@ h6 {
 }
 
 .low-padding {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
 
 }
@@ -1141,7 +1153,42 @@ top: -50px;
  
 }
 
+.one-click-product-container {
+  margin-top: 18px;
+}
+.product-tile {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+}
 
+.product-tile-container {
+  display: flex;
+}
+
+.product-tile-image-box {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.product-tile-price {
+  color: #f43e2e;
+}
+
+.product-tile-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.65);
+}
 
 .shop-product-button-box {
   margin-top: 20px;
@@ -1434,6 +1481,7 @@ position: relative;
   color: #29335c;
 }
 
+
 .display-heading-intro {
   font-size: 16px;
   font-weight: 800;
@@ -1503,10 +1551,17 @@ img {
 
 /* One Click Slider */
 
+.slider-container {
+  width: 100%;
+}
 .slider-title-container {
   display: flex;
   margin-bottom: 16px;
 
+}
+
+.slick-dots {
+  bottom: 0px;
 }
 
 .slider-title {
@@ -3879,6 +3934,23 @@ margin-left: auto;
   padding: 15px;
   
     margin: 15px;
+    position: relative;
+
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+   
+
+  }
+
+  .product-tile {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+  padding: 15px;
+  
+    margin-right: 15px;
+    margin-left: 15px;
     position: relative;
 
     -webkit-transition-delay: .1s;

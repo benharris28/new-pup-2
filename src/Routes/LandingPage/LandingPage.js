@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Content, Button, Row, Col } from 'antd';
 import OneClickSlider from '../../Components/OneClickSlider/OneClickSlider'
+import OneClickProductTiles from '../../Components/OneClickProductTiles/OneClickProductTiles'
+
 import russ_puppy_no_background from '../../Assets/russ_puppy_no_background.png'
 import dog_empty_bowl from '../../Assets/dog_empty_bowl.jpg'
 import dog_groom from '../../Assets/dog_groom.jpg'
@@ -75,7 +77,7 @@ class LandingPage extends React.Component {
                             <div className="title-left">
                             <h6 className="display-heading-intro font-coral">Gear Shop</h6>
                                
-                                <h1 className="display-heading">
+                                <h1 className="landing-heading">
                                     Outfit your doggo in one-click 
                             </h1>
                              
@@ -87,6 +89,7 @@ class LandingPage extends React.Component {
                             </div>
                        
                         <OneClickSlider />
+                       
                         </div>
                     </div>
 
