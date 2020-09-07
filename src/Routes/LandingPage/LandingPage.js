@@ -1,18 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Layout, Content, Button, Row, Col } from 'antd';
-import CallToActionMobile from '../../Components/CallToActionMobile/CallToActionMobile'
-import CallToAction from '../../Components/CallToAction/CallToAction'
-import gear_list_screenshot from '../../Assets/gear_list_screenshot.png'
-import food_screenshot from '../../Assets/food_screenshot.png'
-import food_scroll from '../../Assets/food_scroll.MOV'
-import russ_headshot from '../../Assets/russ_headshot.png'
-import gear_collection from '../../Assets/gear_collection.png'
-import dog_landing_hero_test_copy from '../../Assets/dog_landing_hero_test_copy.png'
-import vet_checklist from '../../Assets/vet_checklist.png'
-import dog_food_checklist from '../../Assets/dog_food_checklist.png'
-import crate_landing_page from '../../Assets/crate_landing_page.png'
-import guide_checklist from '../../Assets/guide_checklist.png'
+import OneClickSlider from '../../Components/OneClickSlider/OneClickSlider'
 import russ_puppy_no_background from '../../Assets/russ_puppy_no_background.png'
 import dog_empty_bowl from '../../Assets/dog_empty_bowl.jpg'
 import dog_groom from '../../Assets/dog_groom.jpg'
@@ -81,12 +70,11 @@ class LandingPage extends React.Component {
                     </div>
                     </div>
 
-                    <div className="content-section white">
+                    <div className="content-section low-padding white">
                         <div className="content-container">
-                            <div className="title-centre">
-                                <div className="guide-heading">
-                                    Gear Shop
-                            </div>
+                            <div className="title-left">
+                            <h6 className="display-heading-intro font-coral">Gear Shop</h6>
+                               
                                 <h1 className="display-heading">
                                     Outfit your doggo in one-click 
                             </h1>
@@ -98,7 +86,7 @@ class LandingPage extends React.Component {
 
                             </div>
                        
-
+                        <OneClickSlider />
                         </div>
                     </div>
 
