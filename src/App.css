@@ -2650,6 +2650,46 @@ img {
 
 /* Food Page */
 
+.nutrition-page-container {
+  webkit-box-lines: multiple !important;
+    -webkit-box-pack: start !important;
+    -ms-flex-pack: start !important;
+    -webkit-box-align: stretch !important;
+    -ms-flex-align: stretch !important;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    -webkit-align-items: stretch !important;
+    align-items: stretch !important;
+    -webkit-justify-content: flex-start !important;
+    justify-content: flex-start !important;
+    -webkit-flex-wrap: wrap !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.nutrition-page-content {
+  position: relative !important;
+    width: 58.3333% !important;
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+}
+
+.nutrition-page-selector {
+  position: relative !important;
+    width: 33.3333% !important;
+    margin-left: 8.33333% !important;
+    margin-right: 0% !important;
+}
+
+
 .nutrition-step-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3376,6 +3416,7 @@ margin-left: auto;
   padding: 0.3rem;
   /*border: 3px solid black;*/
   margin: auto;
+  font-weight: 400;
 }
 
 .signup {

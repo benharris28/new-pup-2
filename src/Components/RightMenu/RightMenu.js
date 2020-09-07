@@ -32,9 +32,29 @@ class RightMenu extends Component {
               <GuideMenu />
               }
 
+            <Link to='/gear'>
+                <div className="menu-button">
+                Gear Shop
+                </div>
+                
+            </Link>
+
+            <Link to='/food'>
+                <div className="menu-button">
+                Food Shop
+                </div>
+                
+            </Link>
+
+            <Link to='/guide'>
+                <div className="menu-button">
+                Blog
+                </div>
+                
+            </Link>
             <Link to='/dashboard'>
                 <div className="menu-button">
-                Dashboard
+                My Account
                 </div>
                 
             </Link>
