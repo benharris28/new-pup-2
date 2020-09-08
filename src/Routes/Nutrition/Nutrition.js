@@ -4,6 +4,8 @@ import ApiContext from '../../ApiContext';
 import NutritionData from '../../BackupData/NutritionData'
 import NutritionMobile from '../../Components/NutritionMobile/NutritionMobile'
 import NutritionDesktop from '../../Components/NutritionDesktop/NutritionDesktop'
+import NutritionSelector from '../../Components/NutritionSelector/NutritionSelector'
+
 import NutritionTest from '../../Components/NutritionTest/NutritionTest'
 import food_image from '../../Assets/food_image.png'
 import raw_food1 from '../../Assets/raw_food1.jpg'
@@ -241,7 +243,7 @@ class Nutrition extends React.Component {
 
 
                             </div>
-                                            <NutritionDesktop food={this.state.food} choice={this.state.choice}/>
+                                            <NutritionSelector food={this.state.food} choice={this.state.choice}/>
                                         </div>
                                     
                                     </div>
