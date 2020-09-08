@@ -115,7 +115,7 @@ class NutritionSelector extends React.Component {
 
                    
 
-                        <div className="food-card white">
+                        <div className="food-card-container white">
                          
                 
                          
@@ -138,7 +138,7 @@ class NutritionSelector extends React.Component {
                                    
                                 <div className="selector-menu">
                                 <LeftCircleOutlined className="selector-icon" onClick={this.previous}/>
-                                {foodCard.type}
+                                <div className="food-card-category-title">{foodCard.type}</div>
                          <RightCircleOutlined className="selector-icon" onClick={this.next} />
                              
                             
