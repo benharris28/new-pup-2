@@ -2650,6 +2650,22 @@ img {
 
 /* Food Page */
 
+.selector-icon {
+  font-size: 30px;
+}
+
+.selector-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.selector-title {
+  font-size: 20px;
+  color: #f43e2e;
+  font-weight: 500;
+}
+
 .nutrition-page-container {
     -webkit-box-lines: multiple !important;
     -webkit-box-pack: start !important;
@@ -2687,6 +2703,15 @@ img {
     margin-left: 8.33333% !important;
     margin-right: 0% !important;
 }
+
+.sticky-container {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 80px !important;
+  z-index: 1 !important;
+  padding-right: 1px !important;
+}
+
 
 .selector-container {
     border: 1px solid rgb(221, 221, 221);
@@ -3206,6 +3231,9 @@ padding-left: 20px;
   width: 100%;
   padding-top: 29px;
   padding-bottom: 29px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;

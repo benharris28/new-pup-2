@@ -1,6 +1,8 @@
 import React from 'react';
 import ApiContext from '../../ApiContext';
 import { Layout, Row, Col, Card, Button, Collapse } from 'antd';
+import { LeftCircleOutlined, RightCircleOutlined } from '@ant-design/icons';
+
 
 class NutritionDesktop extends React.Component {
     static contextType = ApiContext;
@@ -21,6 +23,11 @@ class NutritionDesktop extends React.Component {
         }, () => this.setButtons())
 
     }
+
+
+   
+       
+    
 
     setButtons = () => {
         if (this.state.tab === 0) {
@@ -47,6 +54,7 @@ class NutritionDesktop extends React.Component {
         const activeDoggo = activeUser.dogs[0].dog_name
         const { Panel } = Collapse;
         const foodCard = this.state.food[this.state.tab]
+        
    
         console.log(this.state.tab)
         console.log(this.props.choice)
@@ -72,6 +80,16 @@ class NutritionDesktop extends React.Component {
                                 <Button className={this.state.kibbleClass} onClick={() => this.setTab(1)} type={this.state.kibbleType}>Kibble</Button>
                                 
                                 
+                            </div>
+
+                            <div className="selector-menu">
+                                <LeftCircleOutlined className="selector-icon" />
+                                <div className="selector-title">
+
+                                {foodCard.type}
+                                </div>
+
+                                <RightCircleOutlined className="selector-icon"/>
                             </div>
                              
 
