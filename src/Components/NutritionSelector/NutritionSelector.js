@@ -48,12 +48,12 @@ class NutritionSelector extends React.Component {
 
         
         var settings = {
-            dots: true,
+            dots: false,
             infinite: true,
-            arrows: true,
+            arrows: false,
             speed: 0,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 3,
             initialSlide: 0,
 
             responsive: [
@@ -64,7 +64,7 @@ class NutritionSelector extends React.Component {
                         slidesToScroll: 1,
                         initialSlide: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
@@ -74,7 +74,7 @@ class NutritionSelector extends React.Component {
                         slidesToScroll: 1,
                         initialSlide: 1,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
@@ -115,12 +115,11 @@ class NutritionSelector extends React.Component {
 
                    
 
-                        <div className="food-card light-grey">
+                        <div className="food-card white">
                          
                 
                          
-                         <LeftCircleOutlined className="selector-icon" onClick={this.previous}/>
-                         <RightCircleOutlined className="selector-icon" onClick={this.next} />
+                         
                            
                             <Slider ref={c => (this.slider = c)} {...settings}>
 
@@ -130,15 +129,23 @@ class NutritionSelector extends React.Component {
                             <div className="nutrition-desktop">
 
                             
-                              <div className="selector-menu">
-                             
-                            
-                                {foodCard.type}
-
-                                
-                            </div>
+                              
                                   
                              
+                                <div className="nutrition-selector-container">
+                                    <div className="selector-toggle">
+
+                                   
+                                <div className="selector-menu">
+                                <LeftCircleOutlined className="selector-icon" onClick={this.previous}/>
+                                {foodCard.type}
+                         <RightCircleOutlined className="selector-icon" onClick={this.next} />
+                             
+                            
+                             
+
+                             
+                            </div>
 
                                 <div className="nutrition-image-box">
                                     <img
@@ -146,7 +153,7 @@ class NutritionSelector extends React.Component {
                                         alt="example"
                                         src={foodCard.image} />
                                 </div>
-
+                                </div>
                                 <div
                                     key={foodCard.id}
 
@@ -169,7 +176,7 @@ class NutritionSelector extends React.Component {
 
                                     </div>
 
-                                    <Collapse defaultActiveKey={['1']} ghost className="nutrition-collapse">
+                                    <Collapse  ghost className="nutrition-collapse">
                                         <Panel header="Cost Estimator" key="1">
                                             <p>Estimated cost per month - Puppy: ${foodCard.cost_per_lb * 10}</p>
                                             <p>{activeDoggo}'s estimated cost per month: ${foodCard.cost_per_lb * 70}</p>
@@ -189,6 +196,7 @@ class NutritionSelector extends React.Component {
                                         </a>
                                     </div>
 
+                                </div>
                                 </div>
                             </div>
                             )}

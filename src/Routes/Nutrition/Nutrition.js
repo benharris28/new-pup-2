@@ -26,6 +26,7 @@ class Nutrition extends React.Component {
         format: '',
         windowSize: '',
         food: NutritionData.categories[0].products,
+        supplements: NutritionData.categories[1].products,
         choice: 0
     }
 
@@ -55,6 +56,7 @@ class Nutrition extends React.Component {
     render() {
 
         console.log(this.state.food)
+        const { supplements } = this.state;
         const width = window.addEventListener('resize', this.handleResize);
         const fullWidth = global.window.innerWidth;
         console.log(fullWidth)
@@ -92,8 +94,74 @@ class Nutrition extends React.Component {
                     <div className="content-container">
                         
                                 <div className="nutrition-page-container">
-                                <div className="nutrition-page-content">
-                                <div className="nutrition-types-section">
+
+                                <div className="nutrition-page-selector white">
+                                    <div className="sticky-container">
+                                        <div className="selector-container">
+                                        <div className="title-centre">
+                                     
+                                
+                                        <div className="guide-heading">
+                            Food Selector
+                            </div>
+                                <h1 className="display-sub-heading">
+                                    Select a Food
+                            </h1>
+                                
+
+
+
+                            </div>
+                                            <NutritionSelector food={this.state.food} choice={this.state.choice}/>
+                                        
+                                        <div className="supplement-container">
+                                        <h6 className="display-heading-intro font-coral">Supplements</h6>
+                                        <h2 className="div-heading">Complete the wellness routine with these recommended supplements</h2>
+                                        <p>Supplements are critical to ensure your dog thrives. Here are the top recommended supplements for an adult dog</p>
+                                        <div className="product-loop">
+                    {supplements.map(product =>
+                        <div className="product-tile">
+                            <Link to='/checklist'>
+                                <div className="product-tile-container">
+                                    <div className="product-tile-image-box">
+                                        <img className="product-thumbnail" src={product.image} alt="dog supplement"></img>
+                                    </div>
+                                    <div className="product-tile-content">
+                                        <h6 className="display-heading-intro font-coral">{product.category}</h6>
+                                        <p>{product.description_text}</p>
+                                        <h6 className="product-tile-title">{product.product}</h6>
+                                        <p className="product-tile-price">${product.cost_canada}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                         )}
+                        </div>
+                                        </div>
+                                        </div>
+                                        
+                                    
+                                    </div>
+                                    </div>
+                                
+                             
+                                
+                                </div>
+                                </div>
+                                </div>
+                    
+                
+                       
+
+
+
+
+                    
+
+                    <div className="content-section white">
+                               <div className="content-container">
+
+                    <div className="nutrition-types-section">
                                 <div className="title-centre">
                                 <div className="guide-heading">
                                 Food Types
@@ -105,6 +173,10 @@ class Nutrition extends React.Component {
                             </div>
 
                             
+                          
+
+                               
+
                            
                             <div className="nutrition-types-container">
                                 <Row
@@ -153,7 +225,12 @@ class Nutrition extends React.Component {
                             </div>
 
                                 </div>
-                               
+                                </div>
+                                </div>
+                   
+
+
+                    <div className="content-section white">
                         <div className="content-container">
                         <div className="title-centre">
                                 <h1 className="display-heading">What to look for in dog food</h1>
@@ -221,54 +298,8 @@ class Nutrition extends React.Component {
                                 </Col>
                             </Row>
                             </div>
-                            
                         </div>
-                  
-                                  
-                                </div>
-                                <div className="nutrition-page-selector light-grey">
-                                    <div className="sticky-container">
-                                        <div className="selector-container">
-                                        <div className="title-centre">
-                                     
-                                
-                                        <div className="guide-heading">
-                            Food Selector
-                            </div>
-                                <h1 className="display-sub-heading">
-                                    Select a Food
-                            </h1>
-                                
-
-
-
-                            </div>
-                                            <NutritionSelector food={this.state.food} choice={this.state.choice}/>
-                                        </div>
-                                    
-                                    </div>
-                                
-                                </div>
-                                </div>
                     </div>
-
-                    </div>
-                    
-                
-                    
-                   
-
-
-
-
-                    
-
-                   
-
-                    
-                   
-
-
 
 
                     <div className="faq-section light-blue">
