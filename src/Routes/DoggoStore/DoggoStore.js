@@ -11,7 +11,7 @@ import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
 import dog_supplement_newsfeed from '../../Assets/dog_supplement_newsfeed.png'
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
-import OneClickSlider from '../../Components/OneClickSlider/OneClickSlider'
+import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
 
 
 import { Layout, Button, Row, Col, Collapse, Card, Badge } from 'antd';
@@ -68,17 +68,35 @@ class DoggoStore extends React.Component {
             <div>
                 <Layout className="white">
 
+                <div className="content-section light-grey">
+                    <div className="content-container">
 
+                    <div className="title-centre">
+                    
+                         
+                            <h1 className="display-heading">
+                                Doggo Shop
+                            </h1>
+                            <div className="hero-details">
+                            Everything you need for your best friend - in one place
+                        </div>
+                          
+                       
+
+                        </div>
+                      
+                        </div>
+                        </div>
 
                     <div className="content-section white">
 
 
                         <div className="content-container">
-                            <div className="title-wrapper">
-                                <h2>Russell's Doggo Shop</h2>
+                            <div className="title-center">
+                                <h2 className="display-heading">Scenes</h2>
                             </div>
                             <div>
-                                <OneClickSlider />
+                                <GearScenesSlider />
                             </div>
                             <div className="category-section">
                             <div className="title-wrapper">
