@@ -11,6 +11,7 @@ import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
 import dog_supplement_newsfeed from '../../Assets/dog_supplement_newsfeed.png'
 import { Avatar } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import OneClickSlider from '../../Components/OneClickSlider/OneClickSlider'
 
 
 import { Layout, Button, Row, Col, Collapse, Card, Badge } from 'antd';
@@ -76,9 +77,12 @@ class DoggoStore extends React.Component {
                             <div className="title-wrapper">
                                 <h2>Russell's Doggo Shop</h2>
                             </div>
+                            <div>
+                                <OneClickSlider />
+                            </div>
                             <div className="category-section">
                             <div className="title-wrapper">
-                                <h2>Subscriptions</h2>
+                                <h2>Categories</h2>
                                 <h5>Russell is subscribed to the following products</h5>
                             </div>
                             <div className="product-loop">
