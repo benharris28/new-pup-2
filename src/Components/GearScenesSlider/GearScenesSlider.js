@@ -71,6 +71,7 @@ class GearSceneSlider extends React.Component {
             dots: true,
             infinite: true,
             speed: 0,
+            arrows: false,
             slidesToShow: 1,
             slidesToScroll: 1,
             initialSlide: 0,

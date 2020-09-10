@@ -27,6 +27,7 @@ class DoggoStore extends React.Component {
 
     componentDidMount = () => {
         window.scrollTo(0, 0);
+        this.handleResize()
     }
 
     setFormat = (format) => {
@@ -116,7 +117,7 @@ class DoggoStore extends React.Component {
                                 </div>
                                 { this.state.windowSize < 1000 && 
                                     <div className="category-mobile-filter">
-                                        <h3>All Products</h3>
+                                        <h3 className="filter-title">All Products</h3>
                                         <div className="mobile-filter-button-container">
                                             <Button
                                                 >
@@ -125,6 +126,10 @@ class DoggoStore extends React.Component {
                                         </div>
                                     </div>
                                 }
+                                <div className="filter-container">
+
+                                
+
                                 <div className="shop-container">
                                     { (this.state.windowSize > 1000 || this.state.windowSize === 1000) &&
                                     <div className="category-loop">
@@ -221,6 +226,7 @@ class DoggoStore extends React.Component {
 
 
                                     </div>
+                                </div>
                                 </div>
                             </div>
 
