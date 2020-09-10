@@ -3,6 +3,7 @@ import ApiContext from '../../ApiContext';
 import GuideMenu from '../../Components/GuideMenu/GuideMenu'
 import { Link, withRouter } from 'react-router-dom'
 import { Menu, Icon, Button } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 
@@ -54,20 +55,12 @@ class RightMenu extends Component {
             </Link>
             <Link to='/dashboard'>
                 <div className="menu-button">
-                My Account
+                  <UserOutlined />
                 </div>
                 
             </Link>
 
 
-            <Link to='/'>
-            <div 
-              className="menu-button"
-              onClick={this.handleLogout}>
-            Logout
-            </div>
-            
-          </Link>
           </div> 
 
           :
