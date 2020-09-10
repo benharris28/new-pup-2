@@ -1116,6 +1116,14 @@ top: -50px;
 }
 
 /* Doggo Shop */ 
+.category-loop {
+  display: flex;
+  font-size: 20px;
+}
+
+.category-item {
+  margin-right: 20px;
+}
 
 .shop-product-image-box {
   width: 100%;

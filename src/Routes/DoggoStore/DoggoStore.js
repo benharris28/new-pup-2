@@ -101,8 +101,26 @@ class DoggoStore extends React.Component {
                             <div className="category-section">
                             <div className="title-wrapper">
                                 <h2>Categories</h2>
-                                <h5>Russell is subscribed to the following products</h5>
+                             
                             </div>
+                            <div className="category-loop">
+                                <div className="category-item">
+                                Walk
+                            </div>
+                            <div className="category-item">
+                                Home
+                            </div>
+                            <div className="category-item">
+                                Groom
+                            </div>
+                            <div className="category-item">
+                                Toys
+                            </div>
+                            <div className="category-item">
+                                Apparel
+                            </div>
+                            </div>
+
                             <div className="product-loop">
                                 
                                     <div className="shop-product">
