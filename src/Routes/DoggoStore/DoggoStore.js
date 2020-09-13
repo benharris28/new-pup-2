@@ -89,6 +89,51 @@ class DoggoStore extends React.Component {
 
                         </div>
                     </div>
+                    <div className="border white">
+
+                    </div>
+
+                       <div className="content-section light-grey low-padding">
+
+
+                        <div className="content-container">
+                            <div className="filter-title center">
+                                Shopping for:
+                            </div>
+                            <div className="filter-loop">
+        
+                            <div className="dog-type-filter-card">
+                                <label className="dog-type-filter-label">
+                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+
+                            
+                                    <div className="dog-type-filter-name">Puppy</div>
+                                </label>
+                            </div>
+                            <div className="dog-type-filter-card">
+                                <label className="dog-type-filter-label">
+                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+
+                            
+                                    <div className="dog-type-filter-name">Adult</div>
+                                </label>
+                            </div>
+                            <div className="dog-type-filter-card">
+                                <label className="dog-type-filter-label">
+                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+
+                            
+                                    <div className="dog-type-filter-name">Senior</div>
+                                </label>
+                            </div>
+ 
+
+                            </div>
+                          
+                            
+                        </div>
+                        </div>
+
 
                     <div className="content-section white">
 

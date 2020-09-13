@@ -42,7 +42,7 @@ class RightMenu extends Component {
 
             <Link to='/food'>
                 <div className="menu-button">
-                Food Shop
+                Food Advisor
                 </div>
                 
             </Link>
