@@ -14,7 +14,7 @@ import { UserOutlined } from '@ant-design/icons';
 import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
 
 
-import { Layout, Button, Row, Col, Collapse, Card, Badge } from 'antd';
+import { Layout, Button, Row, Col, Collapse, Card, Checkbox } from 'antd';
 
 class DoggoStore extends React.Component {
     static contextType = ApiContext;
@@ -22,7 +22,8 @@ class DoggoStore extends React.Component {
     state = {
         format: '',
         choice: 0,
-        windowSize: ''
+        windowSize: '',
+        dogType: 'Adult'
     }
 
     componentDidMount = () => {
@@ -43,15 +44,19 @@ class DoggoStore extends React.Component {
         })
     }
 
-    setTab = (choice) => {
+    setDogType = (type) => {
         this.setState({
-            choice: choice
-        })
+            dogType: type
+        }, this.setSelected())
+    }
+
+    setSelected = () => {
+        
     }
 
     render() {
 
-        console.log(this.state.food)
+        console.log(this.state)
         const width = window.addEventListener('resize', this.handleResize);
         const fullWidth = global.window.innerWidth;
         console.log(fullWidth)
@@ -102,9 +107,9 @@ class DoggoStore extends React.Component {
                             </div>
                             <div className="filter-loop">
         
-                            <div className="dog-type-filter-card">
+                            <div className="dog-type-filter-card" onClick={() => this.setDogType("Puppy")}>
                                 <label className="dog-type-filter-label">
-                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+                                    <input class="dog-type-filter-input" type="radio" name="puppy" />
 
                             
                                     <div className="dog-type-filter-name">Puppy</div>
@@ -112,7 +117,7 @@ class DoggoStore extends React.Component {
                             </div>
                             <div className="dog-type-filter-card">
                                 <label className="dog-type-filter-label">
-                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+                                    <input class="dog-type-filter-input" type="radio" name="puppy" />
 
                             
                                     <div className="dog-type-filter-name">Adult</div>
@@ -120,7 +125,7 @@ class DoggoStore extends React.Component {
                             </div>
                             <div className="dog-type-filter-card">
                                 <label className="dog-type-filter-label">
-                                    <input class="dog-type-filter-input" type="checkbox" name="puppy" />
+                                    <input class="dog-type-filter-input" type="radio" name="puppy" />
 
                             
                                     <div className="dog-type-filter-name">Senior</div>
