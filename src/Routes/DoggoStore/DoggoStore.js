@@ -47,12 +47,10 @@ class DoggoStore extends React.Component {
     setDogType = (type) => {
         this.setState({
             dogType: type
-        }, this.setSelected())
+        })
     }
 
-    setSelected = () => {
-        
-    }
+    
 
     render() {
 
@@ -107,15 +105,15 @@ class DoggoStore extends React.Component {
                             </div>
                             <div className="filter-loop">
         
-                            <div className="dog-type-filter-card" onClick={() => this.setDogType("Puppy")}>
-                                <label className="dog-type-filter-label">
-                                    <input class="dog-type-filter-input" type="radio" name="puppy" />
+                            <div className={this.state.dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => this.setDogType("Puppy")}>
+                                <div className="dog-type-filter-label">
+                                    <div class="dog-type-filter-input" type="radio" name="puppy" />
 
                             
                                     <div className="dog-type-filter-name">Puppy</div>
-                                </label>
+                                </div>
                             </div>
-                            <div className="dog-type-filter-card">
+                            <div className={this.state.dogType === "Adult" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => this.setDogType("Adult")}>
                                 <label className="dog-type-filter-label">
                                     <input class="dog-type-filter-input" type="radio" name="puppy" />
 
@@ -123,7 +121,7 @@ class DoggoStore extends React.Component {
                                     <div className="dog-type-filter-name">Adult</div>
                                 </label>
                             </div>
-                            <div className="dog-type-filter-card">
+                            <div className={this.state.dogType === "Senior" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => this.setDogType("Senior")}>
                                 <label className="dog-type-filter-label">
                                     <input class="dog-type-filter-input" type="radio" name="puppy" />
 
@@ -146,13 +144,18 @@ class DoggoStore extends React.Component {
                         <div className="content-container">
                             <div className="title-center">
                                 <h2 className="display-heading">Scenes</h2>
+                                <div className="hero-details">
+                                    Remove the guessword. See complete setups for every part of your doggo's life
+                        </div>
                             </div>
                             <div>
                                 <GearScenesSlider />
                             </div>
                             </div>
+                            </div>
                          
 
+                        
                         <div className="content-section white">
 
 
@@ -286,7 +289,7 @@ class DoggoStore extends React.Component {
 
 
                         </div>
-                    </div>
+                   
 
 
 

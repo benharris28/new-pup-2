@@ -1477,7 +1477,7 @@ top: -50px;
 
 
 .slide-image {
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 400px;
   object-fit: cover;
@@ -1488,11 +1488,14 @@ position: relative;
 }
 
 .show-products {
-  position: relative;
-  max-width: 120px;
-  bottom: 60px;
-  right: -80px;
-  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 16px;
+  cursor: pointer;
+  z-index: 9;
+  left: unset;
+  right: 10%;
   background-color: #feebe9;
   padding: 10px;
   border: 1px solid #f43e2e;
