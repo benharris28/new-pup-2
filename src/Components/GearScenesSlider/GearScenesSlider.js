@@ -64,8 +64,8 @@ class GearSceneSlider extends React.Component {
 
     render() {
 
-        const { tilesOpen, currentSlide } = this.state;
-        
+        const { tilesOpen, slideIndex} = this.state;
+        console.log(this.state)
 
         var settings = {
             dots: true,
@@ -78,7 +78,7 @@ class GearSceneSlider extends React.Component {
             afterChange: () =>
             this.setState(state => ({ updateCount: state.updateCount + 1 })),
             beforeChange: (current, next) => this.setState({ slideIndex: next }),
-        
+      
 
             responsive: [
                 {
@@ -227,16 +227,16 @@ class GearSceneSlider extends React.Component {
             <div>
                 <div className="slider-container">
                     <div className="slider-title-container">
-                        <div className={currentSlide === 0 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(0)}>
+                        <div className={slideIndex === 0 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(0)}>
                             Walk
                         </div>
-                        <div className={currentSlide === 1 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(1)}>
+                        <div className={slideIndex === 1 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(1)}>
                             Play
                         </div>
-                        <div className={currentSlide === 2 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(2)}>
+                        <div className={slideIndex === 2 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(2)}>
                             Home
                         </div>
-                        <div className={currentSlide === 3 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(3)}>
+                        <div className={slideIndex === 3 ? "slider-title focus" : "slider-title"} onClick={() => this.slider.slickGoTo(3)}>
                             Mealtime
                         </div>
                     </div>

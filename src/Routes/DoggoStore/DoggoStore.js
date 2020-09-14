@@ -143,9 +143,9 @@ class DoggoStore extends React.Component {
 
                         <div className="content-container">
                             <div className="title-center">
-                                <h2 className="display-heading">Scenes</h2>
+                                <h2 className="display-heading">Snapshots</h2>
                                 <div className="hero-details">
-                                    Remove the guessword. See complete setups for every part of your doggo's life
+                                    Stop searching product-by-product. Check out our expert-assembled bundles of everything your doggo will need for each part of their day
                         </div>
                             </div>
                             <div>
@@ -162,7 +162,7 @@ class DoggoStore extends React.Component {
                             <div className="content-container">
                                 <div className="title-left">
                                     <h1 className="display-heading">
-                                        Categories
+                                        Full Doggo Store
                             </h1>
                                     <div className="hero-details">
                                         Everything you need for your best friend - in one place
