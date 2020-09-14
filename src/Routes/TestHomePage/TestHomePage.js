@@ -8,7 +8,8 @@ import Loading from '../../Components/Loading/Loading'
 
 const TestHomePage = () => {
     const {fetchAllProducts, products} = useContext(ShopContext)
-
+    
+    
     useEffect(() => {
         fetchAllProducts()
         return () => {
@@ -17,6 +18,8 @@ const TestHomePage = () => {
     }, [fetchAllProducts])
 
     if (!products) return <Loading />
+
+    console.log(products)
     return (
         <div>
             <Row>
@@ -25,7 +28,7 @@ const TestHomePage = () => {
                         <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
                             <div>
                                 <div>
-                                 
+                                    <img src={product.images[0].src} alt="product" />
                                     
                                 </div>
                                 {product.title}
