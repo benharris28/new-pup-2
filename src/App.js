@@ -10,6 +10,8 @@ import Training from './Routes/Training/Training';
 import SurvivalGuide from './Routes/SurvivalGuide/SurvivalGuide';
 import PrepareHome from './Routes/GuidePages/PrepareHome'
 import PickUpPup from './Routes/GuidePages/PickUpPup'
+import TestProductPage from './Routes/TestProductPage/TestProductPage'
+import TestHomePage from './Routes/TestHomePage/TestHomePage'
 import PupHome from './Routes/GuidePages/PupHome'
 import MealTime from './Routes/GuidePages/MealTime'
 import CrateTrain from './Routes/GuidePages/CrateTrain'
@@ -20,6 +22,7 @@ import DoggoStore from './Routes/DoggoStore/DoggoStore'
 import Navbar from './Components/Navbar/Navbar'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
+import ShopProvider from './context/ShopContext'
 import * as dayjs from 'dayjs'
 
 import './App.css';
@@ -99,6 +102,7 @@ class App extends React.Component {
 
     return (
       <ApiContext.Provider value={value}>
+        <ShopProvider>
         <div className="App">
           <Layout>
             
@@ -186,6 +190,16 @@ class App extends React.Component {
                       path={'/shop'}
                       component={DoggoStore}
                   />
+                   <Route
+                      exact
+                      path={'/shop-test'}
+                      component={TestProductPage}
+                  />
+                  <Route
+                      exact
+                      path={'/shop-home'}
+                      component={TestHomePage}
+                  />
                 
               </Switch>
             </Content>
@@ -196,7 +210,8 @@ class App extends React.Component {
           
 
         </div>
-      </ApiContext.Provider>
+        </ShopProvider>
+        </ApiContext.Provider>
     )
   }
 }
