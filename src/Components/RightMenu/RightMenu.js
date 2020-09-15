@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
 import GuideMenu from '../../Components/GuideMenu/GuideMenu'
+import Cart from '../../Components/Cart/Cart'
 import { Link, withRouter } from 'react-router-dom'
 import { Menu, Icon, Button, Drawer } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
@@ -117,11 +118,11 @@ onClose = () => {
         <Drawer
               
               placement="right"
-              closable={false}
+              closable={true}
               onClose={this.onClose}
               visible={this.state.visible}
             >
-                Test Cart
+                <Cart />
             </Drawer>
         </div>
 

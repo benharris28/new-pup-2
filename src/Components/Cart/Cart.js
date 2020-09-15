@@ -25,16 +25,7 @@ const Cart = () => {
 
           
           <div className="shop-cart">
-            <Drawer 
-               
-                placement="right"
-                visible={isCartOpen ? showDrawer : onClose}
-                onClose={closeCart}
-                closable={true}
-                zIndex={drawerZIndex}
-                
-                
-                >
+           
                 <div>
                    
                     <Row>
@@ -72,7 +63,7 @@ const Cart = () => {
                         </Link>
                     </Row>
                 </div>
-            </Drawer>
+          
             </div>
         )
     }
