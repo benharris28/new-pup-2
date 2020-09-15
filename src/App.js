@@ -20,6 +20,7 @@ import Login from './Routes/Login/Login'
 import Dashboard from './Routes/Dashboard/Dashboard'
 import DoggoStore from './Routes/DoggoStore/DoggoStore'
 import Navbar from './Components/Navbar/Navbar'
+import Cart from './Components/Cart/Cart'
 import UserData from './BackupData/UserData'
 import ApiContext from './ApiContext';
 import ShopProvider from './context/ShopContext'
@@ -107,6 +108,7 @@ class App extends React.Component {
           <Layout>
             
           <Navbar />
+         
             
             <Content>
                 <Switch>

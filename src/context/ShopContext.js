@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Client from "shopify-buy";
+import UserData from '../BackupData/UserData'
 
 const ShopContext = React.createContext();
 
@@ -14,6 +15,7 @@ class ShopProvider extends Component {
     product: {},
     checkout: {},
     isCartOpen: false,
+    activeUser: UserData.users[0],
   };
 
   componentDidMount() {

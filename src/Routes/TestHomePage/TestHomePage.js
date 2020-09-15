@@ -16,7 +16,7 @@ const TestHomePage = () => {
     const [choice, setChoice] = useState(0)
     const [windowSize, setWindowSize] = useState()
     const [dogType, setDogType] = useState('Adult')
-    const { fetchAllProducts, products } = useContext(ShopContext)
+    const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext)
 
     // Window Width 
     const getWidth = () => window.innerWidth
@@ -218,8 +218,13 @@ const TestHomePage = () => {
 
                                                 </div>
                                                 <div className="shop-product-content">
-                                                    <h4 className="feature-heading">{product.title}</h4>
+                                                    <h6 className="feature-heading">{product.title}</h6>
                                                     <p className="newsfeed-item-detail">${product.variants[0].price}</p>
+                                                    <div className="shop-product-button-box">
+                                                            <Button className="button-cta" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
+                                                                Add to cart
+                                                        </Button>
+                                                        </div>
                                                 </div>
                                             </div>
                                         </Link>
