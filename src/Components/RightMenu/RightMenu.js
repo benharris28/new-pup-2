@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ApiContext from '../../ApiContext';
 import GuideMenu from '../../Components/GuideMenu/GuideMenu'
 import { Link, withRouter } from 'react-router-dom'
-import { Menu, Icon, Button } from 'antd';
+import { Menu, Icon, Button, Drawer } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
@@ -10,13 +10,34 @@ const { SubMenu } = Menu;
 class RightMenu extends Component {
   static contextType = ApiContext;
 
+  state = {
+    current: 'mail',
+    visible: false
+  }
+
+  
+
+
+
+  showDrawer = () => {
+    this.setState({
+      visible: true,
+    }, this.props.closeNav)
+  };
+
+onClose = () => {
+    this.setState({
+      visible: false,
+    });
+  };
+
   handleLogout = () => {
     this.context.handleLogout()
   }
   
   render() {
     const { match, location, history, mobile } = this.props;
-
+    console.log(this.props)
     const { activeUser } = this.context;
     const navClass = mobile? "menu-drawer mobile" : "menu-drawer"
     const guideCheck = location.pathname.toString().includes('guide') ? true : false
@@ -33,7 +54,7 @@ class RightMenu extends Component {
               <GuideMenu />
               }
 
-            <Link to='/shop'>
+            <Link to='/shop-home'>
                 <div className="menu-button">
                 Gear Shop
                 </div>
@@ -59,6 +80,9 @@ class RightMenu extends Component {
                 </div>
                 
             </Link>
+            <div onClick={this.showDrawer}>
+              Cart
+            </div>  
 
 
           </div> 
@@ -90,16 +114,18 @@ class RightMenu extends Component {
           </div>
 
         }
+        <Drawer
+              
+              placement="right"
+              closable={false}
+              onClose={this.onClose}
+              visible={this.state.visible}
+            >
+                Test Cart
+            </Drawer>
         </div>
 
-      /*<Menu mode="horizontal">
-        <Menu.Item key="mail">
-          <a href="">Signin</a>
-        </Menu.Item>
-        <Menu.Item key="app">
-          <a href="">Signup</a>
-        </Menu.Item>
-      </Menu> */
+     
     );
   }
 }

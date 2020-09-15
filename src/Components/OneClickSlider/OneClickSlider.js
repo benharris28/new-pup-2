@@ -63,6 +63,7 @@ class OneClickSlider extends React.Component {
             slidesToShow: 4,
             slidesToScroll: 4,
             initialSlide: 0,
+            arrows: false,
 
             responsive: [
                 {
@@ -72,7 +73,8 @@ class OneClickSlider extends React.Component {
                         slidesToScroll: 1,
                         initialSlide: 1,
                         infinite: true,
-                        dots: true
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
@@ -82,7 +84,8 @@ class OneClickSlider extends React.Component {
                         slidesToScroll: 1,
                         initialSlide: 1,
                         infinite: true,
-                        dots: true
+                        dots: true,
+                        arrows: false
                     }
                 },
                 {
@@ -90,7 +93,8 @@ class OneClickSlider extends React.Component {
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        initialSlide: 1
+                        initialSlide: 1,
+                        arrows: false
                     }
                 },
                 {

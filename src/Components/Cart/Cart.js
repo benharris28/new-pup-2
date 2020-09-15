@@ -24,7 +24,7 @@ const Cart = () => {
             
 
           
-          
+          <div className="shop-cart">
             <Drawer 
                
                 placement="right"
@@ -73,6 +73,7 @@ const Cart = () => {
                     </Row>
                 </div>
             </Drawer>
+            </div>
         )
     }
 

@@ -55,7 +55,7 @@ render() {
               onClose={this.onClose}
               visible={this.state.visible}
             >
-                <RightMenu mobile={"true"}/>
+                <RightMenu mobile={"true"} closeNav={this.onClose}/>
             </Drawer>
 
         </nav>

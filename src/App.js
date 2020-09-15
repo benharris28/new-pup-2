@@ -108,6 +108,7 @@ class App extends React.Component {
           <Layout>
             
           <Navbar />
+          
          
             
             <Content>
