@@ -233,26 +233,6 @@ class LandingPage extends React.Component {
 
                 
 
-                <div className="cta-section dark-purple">
-                    <div className="cta">
-                        <div className="cta-content">
-                            <div>
-                            <h3 className="large-heading cta-heading">Start your new doggo journey</h3>
-                            </div>
-                            
-                            <div className="cta-button-container">
-                                <Link to='/checklist'>
-                                    <Button className="cta-button large">
-                                        Start Now
-                                    </Button>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
 
 
 

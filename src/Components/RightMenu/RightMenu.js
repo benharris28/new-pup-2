@@ -4,7 +4,7 @@ import GuideMenu from '../../Components/GuideMenu/GuideMenu'
 import Cart from '../../Components/Cart/Cart'
 import { Link, withRouter } from 'react-router-dom'
 import { Menu, Icon, Button, Drawer } from 'antd';
-import { UserOutlined } from '@ant-design/icons';
+import { UserOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 
 const { SubMenu } = Menu;
 
@@ -77,13 +77,17 @@ onClose = () => {
             </Link>
             <Link to='/dashboard'>
                 <div className="menu-button">
-                  <UserOutlined />
+                  <UserOutlined className="nav-icon" />
                 </div>
                 
             </Link>
-            <div onClick={this.showDrawer}>
-              Cart
+              
+              <Link>
+            <div className="menu-button" onClick={this.showDrawer}>
+              <ShoppingCartOutlined className="nav-icon" />
             </div>  
+            </Link>
+        
 
 
           </div> 

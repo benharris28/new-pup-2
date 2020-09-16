@@ -218,7 +218,7 @@ const TestHomePage = () => {
 
                                                 </div>
                                                 <div className="shop-product-content">
-                                                    <h6 className="feature-heading">{product.title}</h6>
+                                                    <h6>{product.title}</h6>
                                                     <p className="newsfeed-item-detail">${product.variants[0].price}</p>
                                                     <div className="shop-product-button-box">
                                                             <Button className="button-cta" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
