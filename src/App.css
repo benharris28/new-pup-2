@@ -1193,10 +1193,13 @@ top: -50px;
 .category-loop {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  width: 200px;
-  margin-right: 20px;
-  margin-top: 30px;
+  font-size: 14px;
+  width: 25%;
+  padding: 12px 48px 24px 0px;
+}
+
+.desktop-loop {
+  width: 75%;
 }
 
 .category-item {
@@ -1226,11 +1229,78 @@ top: -50px;
 
 .shop-product-image-box {
   width: 100%;
+  background-color: rgb(245, 245, 245);
 }
 
 .shop-product-image {
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
+  color: transparent;
+  background-color: rgb(245, 245, 245);
+}
+
+.shop-product-clickable-details {
+  padding: 12px 18px 0px;
+}
+
+.shop-product-title {
+  margin: 0px 0px 6px;
+}
+
+.bold-title {
+  font-weight: 700;
+  line-height: 1.43;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(33, 42, 47);
+}
+
+.shop-product-detail {
+  font-weight: 400;
+  line-height: 1.43;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(33, 42, 47);
+
+}
+
+.price-box {
+  padding: 0px 18px;
+}
+
+.shop-product-quick-add {
+ 
+    position: relative;
+    z-index: 2;
+    appearance: none;
+    width: 100%;
+    padding: 9px 9px 9px 18px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border-width: 1px 0px 0px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-top-style: solid;
+    border-top-color: rgb(211, 212, 213);
+    text-align: left;
+    display: flex;
+    height: 40px;
+    align-items: center;
+
+}
+
+.button-title {
+  margin-right: 20px;
 }
 
 .product-loop {
@@ -1240,8 +1310,28 @@ top: -50px;
 }
 
 
+.shadow-box {
+  box-shadow: rgb(211, 212, 213) 0px 6px 12px 0px;
+}
 
 
+
+
+
+.shop-product-card {
+  width: 100%;
+  max-width: 800px;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: box-shadow .7s;
+  transition: box-shadow .7s;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+ 
+  max-width: 800px;
+ 
+}
 
 .shop-product {
   width: 100%;
@@ -4145,6 +4235,22 @@ margin-left: auto;
 
   }
 
+  .shop-product-card {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  display: inline-block;
+  float: none;
+  padding: 15px;
+  
+    margin: 15px;
+    position: relative;
+
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+   
+
+  }
+
   .product-tile {
     width: calc(50% - 30px);
     max-width: 100%;
@@ -4487,6 +4593,8 @@ padding: 15px;
 
 
 }
+
+
 
 /* Survival Guide */ 
 

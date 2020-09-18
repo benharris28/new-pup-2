@@ -3,6 +3,7 @@ import { ShopContext } from '../../context/ShopContext'
 
 import { Link } from 'react-router-dom'
 import { Layout, Button, Row, Col } from 'antd';
+import { PlusCircleOutlined } from '@ant-design/icons';
 import Loading from '../../Components/Loading/Loading'
 import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
 import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
@@ -87,6 +88,9 @@ const TestHomePage = () => {
             </div>
 
             <div className="border white">
+            <div className="filter-title center">
+                        Shopping for:
+                            </div>
 
             </div>
 
@@ -94,9 +98,7 @@ const TestHomePage = () => {
 
 
                 <div className="content-container">
-                    <div className="filter-title center">
-                        Shopping for:
-                            </div>
+                    
                     <div className="filter-loop">
 
                         <div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
@@ -153,7 +155,7 @@ const TestHomePage = () => {
                 <div className="content-container">
                     <div className="title-left">
                         <h1 className="display-heading">
-                            Full Doggo Store
+                            Shop
                             </h1>
                         <div className="hero-details">
                             Everything you need for your best friend - in one place
@@ -210,24 +212,37 @@ const TestHomePage = () => {
 
                             <div className="product-loop">
                                 {products.map(product => (
-                                    <div className="shop-product" key={product.id}>
+                                    <div className="shop-product-card" key={product.id}>
+                                        <div className="shadow-box">
                                         <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
                                             <div className="product-item">
                                                 <div className="shop-product-image-box">
                                                     <img className="shop-product-image" src={product.images[0].src} alt="product" />
 
                                                 </div>
-                                                <div className="shop-product-content">
-                                                    <h6>{product.title}</h6>
-                                                    <p className="newsfeed-item-detail">${product.variants[0].price}</p>
-                                                    <div className="shop-product-button-box">
-                                                            <Button className="button-cta" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
-                                                                Add to cart
-                                                        </Button>
-                                                        </div>
+                                                <div className="shop-product-clickable-details">
+                                                    <p className="shop-product-title bold-title">{product.title}</p>
+                                                    
+                                                    
                                                 </div>
                                             </div>
                                         </Link>
+                                        <div className="price-box">
+                                            <p className="shop-product-detail">${product.variants[0].price}</p>
+                                        </div>
+                                        <div className="shop-variant-container">
+
+                                        </div>
+                                        <div className="shop-product-quick-add-box">
+                                           
+                                                            <Button className="shop-product-quick-add" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
+                                                                <p className="bold-title button-title">Quick add</p>
+                                                                <PlusCircleOutlined className="quick-add-icon" />
+                                                            </Button>
+                                                        <div className="size-picker-container">
+                                                        </div>
+                                                        </div>
+                                        </div>
                                     </div>
                                 ))}
 
