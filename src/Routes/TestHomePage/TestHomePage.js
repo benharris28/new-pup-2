@@ -2,11 +2,16 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../../context/ShopContext'
 
 import { Link } from 'react-router-dom'
-import { Layout, Button, Row, Col } from 'antd';
+import { Layout, Button, Row, Col, Collapse } from 'antd';
 import { PlusCircleOutlined } from '@ant-design/icons';
 import Loading from '../../Components/Loading/Loading'
 import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
 import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
+
+
+const { Panel } = Collapse;
+const dropdownIcon = <PlusCircleOutlined />
+
 
 
 const TestHomePage = () => {
@@ -88,8 +93,8 @@ const TestHomePage = () => {
             </div>
 
             <div className="border white">
-            <div className="filter-title center">
-                        Shopping for:
+                <div className="filter-title center">
+                    Shopping for:
                             </div>
 
             </div>
@@ -98,7 +103,7 @@ const TestHomePage = () => {
 
 
                 <div className="content-container">
-                    
+
                     <div className="filter-loop">
 
                         <div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
@@ -214,39 +219,47 @@ const TestHomePage = () => {
                                 {products.map(product => (
                                     <div className="shop-product-card" key={product.id}>
                                         <div className="shadow-box">
-                                        <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
-                                            <div className="product-item">
-                                                <div className="shop-product-image-box">
-                                                    <img className="shop-product-image" src={product.images[0].src} alt="product" />
+                                            <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
+                                                <div className="product-item">
+                                                    <div className="shop-product-image-box">
+                                                        <img className="shop-product-image" src={product.images[0].src} alt="product" />
 
+                                                    </div>
+                                                    <div className="shop-product-clickable-details">
+                                                        <p className="shop-product-title bold-title">{product.title}</p>
+
+
+                                                    </div>
                                                 </div>
-                                                <div className="shop-product-clickable-details">
-                                                    <p className="shop-product-title bold-title">{product.title}</p>
-                                                    
-                                                    
+                                            </Link>
+                                            <div className="price-box">
+                                                <p className="shop-product-detail">${product.variants[0].price}</p>
+                                            </div>
+                                            <div className="shop-variant-container">
+
+                                            </div>
+                                            <div className="shop-product-quick-add-box">
+
+                                                
+
+                                                <Collapse 
+                                                    bordered={false}
+                                                    expandIcon={({ isActive }) => <PlusCircleOutlined rotate={isActive ? 90 : 0} />}
+                                                    ghost>
+                                                    <Panel header="Quick Add" key="2">
+                                                        <div>
+                                                            {product.options[0].values.map(v => v.value)}
+                                                        </div>
+                                                    </Panel>
+                                                </Collapse>
+                                                <div className="size-picker-container">
                                                 </div>
                                             </div>
-                                        </Link>
-                                        <div className="price-box">
-                                            <p className="shop-product-detail">${product.variants[0].price}</p>
-                                        </div>
-                                        <div className="shop-variant-container">
-
-                                        </div>
-                                        <div className="shop-product-quick-add-box">
-                                           
-                                                            <Button className="shop-product-quick-add" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
-                                                                <p className="bold-title button-title">Quick add</p>
-                                                                <PlusCircleOutlined className="quick-add-icon" />
-                                                            </Button>
-                                                        <div className="size-picker-container">
-                                                        </div>
-                                                        </div>
                                         </div>
                                     </div>
                                 ))}
 
-                               
+
 
 
                             </div>
@@ -263,7 +276,7 @@ const TestHomePage = () => {
 
 
 
-           
+
 
         </div>
     )
