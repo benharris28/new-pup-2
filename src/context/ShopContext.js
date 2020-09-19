@@ -67,6 +67,35 @@ class ShopProvider extends Component {
     this.openCart();
   };
 
+  updateQuantityInCart = async (lineItemId, quantity) => {
+    
+    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
+
+    const checkout = await client.checkout.updateLineItems(
+      this.state.checkout.id,
+      lineItemsToUpdate
+    )
+
+    this.setState({
+      checkout: checkout
+    })
+
+   
+  }
+
+  removeLineItemInCart = async (lineItemId) =>  {
+    const checkout = await client.checkout.removeLineItems(
+      this.state.checkout.id,
+      [lineItemId]
+    )
+
+    this.setState({
+      checkout: checkout
+    })
+
+    
+  }
+
   addVariantToCart(variantId, quantity){
     this.setState({
       isCartOpen: true,
@@ -95,26 +124,9 @@ class ShopProvider extends Component {
     return product;
   };
 
-  updateQuantityInCart(lineItemId, quantity) {
-    const checkoutId = this.state.checkout.id
-    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
+  
 
-    return client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
-      this.setState({
-        checkout: res,
-      });
-    });
-  }
-
-  removeLineItemInCart(lineItemId) {
-    const checkoutId = this.state.checkout.id
-
-    return client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
-      this.setState({
-        checkout: res,
-      });
-    });
-  }
+  
 
   closeCart = () => {
     this.setState({ isCartOpen: false });
@@ -133,7 +145,9 @@ class ShopProvider extends Component {
           closeCart: this.closeCart,
           openCart: this.openCart,
           addItemToCheckout: this.addItemToCheckout,
-          addVariantToCart: this.addVariantToCart
+          addVariantToCart: this.addVariantToCart,
+          updateQuantityInCart: this.updateQuantityInCart,
+          removeLineItemInCart: this.removeLineItemInCart
         }}
       >
         {this.props.children}

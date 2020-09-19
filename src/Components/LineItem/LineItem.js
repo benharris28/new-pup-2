@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
+import { ShopContext } from '../../context/ShopContext'
 
 class LineItem extends Component {
+    static contextType = ShopContext;
   constructor(props) {
     super(props);
 
@@ -10,15 +12,16 @@ class LineItem extends Component {
 
   decrementQuantity(lineItemId) {
     const updatedQuantity = this.props.line_item.quantity - 1
-    this.props.updateQuantityInCart(lineItemId, updatedQuantity);
+    this.context.updateQuantityInCart(lineItemId, updatedQuantity);
   }
 
   incrementQuantity(lineItemId) {
     const updatedQuantity = this.props.line_item.quantity + 1
-    this.props.updateQuantityInCart(lineItemId, updatedQuantity);
+    this.context.updateQuantityInCart(lineItemId, updatedQuantity);
   }
 
   render() {
+      console.log(this.props)
     return (
       <li className="Line-item">
         <div className="Line-item__img">
@@ -42,7 +45,7 @@ class LineItem extends Component {
             <span className="Line-item__price">
               $ { (this.props.line_item.quantity * this.props.line_item.variant.price).toFixed(2) }
             </span>
-            <button className="Line-item__remove" onClick={()=> this.props.removeLineItemInCart(this.props.line_item.id)}>×</button>
+            <button className="Line-item__remove" onClick={()=> this.context.removeLineItemInCart(this.props.line_item.id)}>×</button>
           </div>
         </div>
       </li>
