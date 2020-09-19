@@ -22,8 +22,10 @@ const TestHomePage = () => {
     const [format, setFormat] = useState()
     const [choice, setChoice] = useState(0)
     const [windowSize, setWindowSize] = useState()
+    const [filterChoice, setFilterChoice] = useState()
     const [dogType, setDogType] = useState('Adult')
     const { fetchAllProducts, products, addItemToCheckout, addVariantToCart, client } = useContext(ShopContext)
+
 
     // Window Width 
     const getWidth = () => window.innerWidth
@@ -59,7 +61,7 @@ const TestHomePage = () => {
     }
 
     const width = useCurrentWidth();
-    console.log(width)
+    console.log(filterChoice)
 
     useEffect(() => {
         fetchAllProducts()
@@ -95,7 +97,7 @@ const TestHomePage = () => {
 
             <div className="border white">
                 <div className="filter-title center">
-                    Shopping for:
+                    Shopping for: {dogType}
                             </div>
 
             </div>
@@ -139,12 +141,12 @@ const TestHomePage = () => {
                 </div>
             </div>
 
-            <div className="content-section white">
+            <div className="content-section white low-padding">
 
 
                 <div className="content-container">
                     <div className="title-center">
-                        <h2 className="display-heading">Snapshots</h2>
+                        <h2 className="shop-title">Snapshots</h2>
                         <div className="hero-details">
                             Stop searching product-by-product. Check out our expert-assembled bundles of everything your doggo will need for each part of their day
 </div>
@@ -155,12 +157,12 @@ const TestHomePage = () => {
                 </div>
             </div>
 
-            <div className="content-section white">
+            <div className="content-section white low-padding">
 
 
                 <div className="content-container">
                     <div className="title-left">
-                        <h1 className="display-heading">
+                        <h1 className="shop-title">
                             Shop
                             </h1>
                         <div className="hero-details">
@@ -179,93 +181,62 @@ const TestHomePage = () => {
                         </div>
                     }
                     <div className="filter-container">
-
+                      
 
 
                         <div className="shop-container">
                             {(width > 1000 || width === 1000) &&
                                 <div className="category-loop">
-                                    <div className="category-item">
-                                        Leashes
+                                    <div>
+                                        <p className="filter-heading">Filters</p>
+                                    </div>
+                                    <div className="category-item" onClick={() => setFilterChoice()}>
+                                        All
                             </div>
-                                    <div className="category-item">
-                                        Collars
+                                    <div className="category-item" onClick={() => setFilterChoice("Leash")}>
+                                        Leash
                             </div>
-                                    <div className="category-item">
-                                        Harnesses
+                                    <div className="category-item" onClick={() => setFilterChoice("Collar")}>
+                                        Collar
+                            </div>
+                                    <div className="category-item" onClick={() => setFilterChoice("Harness")}>
+                                        Harness
                             </div>
 
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Grooming")}>
                                         Grooming Supplies
                             </div>
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Bowl")}>
                                         Mealtime
                             </div>
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Beds")}>
                                         Beds and Crates
                             </div>
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Toys")}>
                                         Toys
                             </div>
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Apparel")}>
                                         Apparel
                             </div>
-                                    <div className="category-item">
+                                    <div className="category-item" onClick={() => setFilterChoice("Essentials")}>
                                         Everyday essentials
                             </div>
                                 </div>
                             }
 
+                           
                             <div className="product-loop">
-                                {products.map(product => (
-                                    <div className="shop-product-card" key={product.id}>
-                                        <div className="shadow-box">
-                                            <Link to={`/product/${product.id}`} style={{ textDecoration: 'none' }}>
-                                                <div className="product-item">
-                                                    <div className="shop-product-image-box">
-                                                        <img className="shop-product-image" src={product.images[0].src} alt="product" />
-
-                                                    </div>
-                                                    <div className="shop-product-clickable-details">
-                                                        <p className="shop-product-title bold-title">{product.title}</p>
-
-
-                                                    </div>
-                                                </div>
-                                            </Link>
-                                            <div className="price-box">
-                                                <p className="shop-product-detail">${product.variants[0].price}</p>
-                                            </div>
-                                            <div className="shop-variant-container">
-
-                                            </div>
-                                            <div className="shop-product-quick-add-box">
-
-                                                
-
-                                                <Collapse 
-                                                    bordered={false}
-                                                    expandIcon={({ isActive }) => <PlusCircleOutlined rotate={isActive ? 90 : 0} />}
-                                                    ghost>
-                                                    <Panel header="Quick Add" key="2">
-                                                        <div>
-                                                            {product.options[0].values.map(v => v.value)}
-                                                        </div>
-                                                    </Panel>
-                                                </Collapse>
-                                                <div className="size-picker-container">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                ))}
-
-
-
-
-                            </div>
-                            <div className="product-loop">
-                                {products.map((product) => {
+                                {filterChoice ? products.filter(p => p.productType == filterChoice).map((product) => {
+                                    return (
+                                <Product
+                                    addVariantToCart={addVariantToCart}
+                                 
+                                    key={product.id.toString()}
+                                    product={product}
+                                  />
+                                    )
+                                }) : 
+                                products.map((product) => {
                                     return (
                                 <Product
                                     addVariantToCart={addVariantToCart}
@@ -276,6 +247,7 @@ const TestHomePage = () => {
                                     )
                                 })}
                             </div>
+                        
                         </div>
                     </div>
                 </div>

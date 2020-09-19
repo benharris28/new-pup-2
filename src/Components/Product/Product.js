@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import VariantSelector from '../VariantSelector/VariantSelector';
 import { ShopContext } from '../../context/ShopContext'
+import { Link } from 'react-router-dom'
+import { Layout, Button, Collapse } from 'antd';
+import { PlusCircleOutlined } from '@ant-design/icons';
 
 class Product extends Component {
     static contextType = ShopContext;
@@ -48,6 +51,9 @@ class Product extends Component {
   }
 
   render() {
+
+    const { Panel } = Collapse;
+    const dropdownIcon = <PlusCircleOutlined />
       console.log(this.context)
     let variantImage = this.state.selectedVariantImage || this.props.product.images[0]
     let variant = this.state.selectedVariant || this.props.product.variants[0]
@@ -62,16 +68,53 @@ class Product extends Component {
       );
     });
     return (
-      <div className="Product">
-        {this.props.product.images.length ? <img src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
-        <h5 className="Product__title">{this.props.product.title}</h5>
-        <span className="Product__price">${variant.price}</span>
+      <div className="shop-product-card">
+          <div className="shadow-box">
+          <Link to={`/product/${this.props.product.id}`} style={{ textDecoration: 'none' }}>
+          <div className="product-item">
+            <div className="shop-product-image-box">
+                {this.props.product.images.length ? <img className="shop-product-image" src={variantImage.src} alt={`${this.props.product.title} product shot`}/> : null}
+            </div>
+            <div className="shop-product-clickable-details">
+                <p className="shop-product-title bold-title">{this.props.product.title}</p>
+            </div>
+
+            </div>
+        
+        
+        </Link>
+        <div className="price-box">
+            <p className="shop-product-detail">${variant.price}</p>
+        </div>
+        <div className="shop-variant-container">
+            
+        </div>
+        <div className="shop-product-quick-add-box">
+
+                                                
+
+<Collapse 
+    bordered={false}
+    expandIcon={({ isActive }) => <PlusCircleOutlined rotate={isActive ? 90 : 0} />}
+    ghost>
+    <Panel header="Quick Add" key="2">
+        <div>
         {variantSelectors}
         <label className="Product__option">
           Quantity
           <input min="1" type="number" defaultValue={variantQuantity} onChange={this.handleQuantityChange}></input>
         </label>
         <button className="Product__buy button" onClick={() => this.context.addItemToCheckout(variant.id, variantQuantity)}>Add to Cart</button>
+          
+        </div>
+    </Panel>
+</Collapse>
+
+</div>
+        
+        
+       
+      </div>
       </div>
     );
   }

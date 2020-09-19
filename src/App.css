@@ -1118,6 +1118,7 @@ top: -50px;
 /* Doggo Shop */ 
 .shop-container {
   display: flex;
+  margin-top: 16px;
 }
 
 .filter-loop {
@@ -1222,6 +1223,9 @@ top: -50px;
     align-items: center;
 }
 
+.shop-title {
+  margin-bottom: 14px;
+}
 .filter-title {
   font-size: 20px;
   font-weight: 300;
@@ -1255,6 +1259,17 @@ top: -50px;
   margin: 0px;
   padding: 0px;
   color: rgb(33, 42, 47);
+}
+
+.filter-heading {
+  font-weight: 700;
+  line-height: 1.43;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(33, 42, 47);
+  margin-bottom: 16px;
 }
 
 .shop-product-detail {
@@ -1756,6 +1771,7 @@ img {
 .slider-title-container {
   display: flex;
   margin-bottom: 16px;
+  margin-top: 16px;
 
 }
 
