@@ -9,12 +9,15 @@ const client = Client.buildClient({
   domain: "doggo-test-outfitters.myshopify.com",
 });
 
+const stuff = 'hello'
+
 class ShopProvider extends Component {
   state = {
     products: [],
     product: {},
     checkout: {},
     isCartOpen: false,
+    client: client,
     activeUser: UserData.users[0],
   };
 
@@ -64,6 +67,21 @@ class ShopProvider extends Component {
     this.openCart();
   };
 
+  addVariantToCart(variantId, quantity){
+    this.setState({
+      isCartOpen: true,
+    });
+
+    const lineItemsToAdd = [{variantId, quantity: parseInt(quantity, 10)}]
+    const checkoutId = this.state.checkout.id
+
+    return client.checkout.addLineItems(checkoutId, lineItemsToAdd).then(res => {
+      this.setState({
+        checkout: res,
+      });
+    });
+  }
+
   fetchAllProducts = async () => {
     const products = await client.product.fetchAll();
     this.setState({ products: products });
@@ -76,6 +94,27 @@ class ShopProvider extends Component {
 
     return product;
   };
+
+  updateQuantityInCart(lineItemId, quantity) {
+    const checkoutId = this.state.checkout.id
+    const lineItemsToUpdate = [{id: lineItemId, quantity: parseInt(quantity, 10)}]
+
+    return client.checkout.updateLineItems(checkoutId, lineItemsToUpdate).then(res => {
+      this.setState({
+        checkout: res,
+      });
+    });
+  }
+
+  removeLineItemInCart(lineItemId) {
+    const checkoutId = this.state.checkout.id
+
+    return client.checkout.removeLineItems(checkoutId, [lineItemId]).then(res => {
+      this.setState({
+        checkout: res,
+      });
+    });
+  }
 
   closeCart = () => {
     this.setState({ isCartOpen: false });
@@ -94,6 +133,7 @@ class ShopProvider extends Component {
           closeCart: this.closeCart,
           openCart: this.openCart,
           addItemToCheckout: this.addItemToCheckout,
+          addVariantToCart: this.addVariantToCart
         }}
       >
         {this.props.children}

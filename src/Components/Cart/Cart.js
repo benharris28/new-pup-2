@@ -1,75 +1,69 @@
-import React, { useContext, useState } from 'react'
-import { Link } from 'react-router-dom'
-import { Layout, Card, Col, Row, Button, Drawer, Avatar } from 'antd';
-import {ShopContext} from '../../context/ShopContext'
+import React, {Component} from 'react';
+import LineItem from '../LineItem/LineItem';
+import { ShopContext } from '../../context/ShopContext'
 
-const Cart = () => {
-
-    const { isCartOpen, closeCart, checkout } = useContext(ShopContext)
-
-    const [visible, setVisible] = useState(false);
+class Cart extends Component {
+    static contextType = ShopContext;
   
-    const showDrawer = () => {
-    setVisible(true);
-  };
-  
-  const onClose = () => {
-    setVisible(false);
-  };
+    constructor(props) {
+    super(props);
 
-  const drawerZIndex = visible ? 1000 : -1;
+    this.openCheckout = this.openCheckout.bind(this);
+  }
 
-    if (checkout.lineItems) {
-        return (
-            
+  openCheckout() {
+    window.open(this.context.checkout.webUrl);
+  }
 
-          
-          <div className="shop-cart">
-           
-                <div>
-                   
-                    <Row>
-                        {checkout.lineItems.length < 1 ?
-                            <Row>
-                                <Col><p>Cart Is Empty</p></Col>
-                            </Row>
-                            :
-                            <>
-                                {checkout.lineItems && checkout.lineItems.map(item => (
-                                    <Row key={item.id}>
-                                        <Col>
-                                            <div>
-                                                <img src={item.variant.image.src} alt="item" />
-                                            </div>
-                                        </Col>
-                                        <Col>
-                                            <p>{item.title}</p>
-                                            <p>{item.variant.title}</p>
-                                            <p>{item.quantity}</p>
-                                        </Col>
-                                        <Col>
-                                            <p>{item.variant.price}</p>
-                                        </Col>
-                                    </Row>
-                                ))}
-                            </>
-                        }
-                    </Row>
-                    <Row>
-                        <Link to={checkout.webUrl} target="_blank" rel="noopener noreferrer">
-                            <Button>
-                                Checkout
-                            </Button>
-                        </Link>
-                    </Row>
-                </div>
-          
+  render() {
+    let line_items = this.context.checkout.lineItems.map((line_item) => {
+      return (
+        <LineItem
+          updateQuantityInCart={this.props.updateQuantityInCart}
+          removeLineItemInCart={this.props.removeLineItemInCart}
+          key={line_item.id.toString()}
+          line_item={line_item}
+        />
+      );
+    });
+
+    return (
+      <div className={`Cart ${this.props.isCartOpen ? 'Cart--open' : ''}`}>
+        <header className="Cart__header">
+          <h2>Your cart</h2>
+          <button
+            onClick={this.props.handleCartClose}
+            className="Cart__close">
+            ×
+          </button>
+        </header>
+        <ul className="Cart__line-items">
+          {line_items}
+        </ul>
+        <footer className="Cart__footer">
+          <div className="Cart-info clearfix">
+            <div className="Cart-info__total Cart-info__small">Subtotal</div>
+            <div className="Cart-info__pricing">
+              <span className="pricing">$ {this.context.checkout.subtotalPrice}</span>
             </div>
-        )
-    }
-
-    return null
-
+          </div>
+          <div className="Cart-info clearfix">
+            <div className="Cart-info__total Cart-info__small">Taxes</div>
+            <div className="Cart-info__pricing">
+              <span className="pricing">$ {this.context.checkout.totalTax}</span>
+            </div>
+          </div>
+          <div className="Cart-info clearfix">
+            <div className="Cart-info__total Cart-info__small">Total</div>
+            <div className="Cart-info__pricing">
+              <span className="pricing">$ {this.context.checkout.totalPrice}</span>
+            </div>
+          </div>
+          <button className="Cart__checkout button" onClick={this.openCheckout}>Checkout</button>
+        </footer>
+      </div>
+    )
+  }
 }
 
-export default Cart
+export default Cart;

@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../../context/ShopContext'
-
+import Product from '../../Components/Product/Product'
 import { Link } from 'react-router-dom'
 import { Layout, Button, Row, Col, Collapse } from 'antd';
 import { PlusCircleOutlined } from '@ant-design/icons';
 import Loading from '../../Components/Loading/Loading'
 import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
 import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
+
 
 
 const { Panel } = Collapse;
@@ -22,7 +23,7 @@ const TestHomePage = () => {
     const [choice, setChoice] = useState(0)
     const [windowSize, setWindowSize] = useState()
     const [dogType, setDogType] = useState('Adult')
-    const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext)
+    const { fetchAllProducts, products, addItemToCheckout, addVariantToCart, client } = useContext(ShopContext)
 
     // Window Width 
     const getWidth = () => window.innerWidth
@@ -262,6 +263,18 @@ const TestHomePage = () => {
 
 
 
+                            </div>
+                            <div className="product-loop">
+                                {products.map((product) => {
+                                    return (
+                                <Product
+                                    addVariantToCart={addVariantToCart}
+                                 
+                                    key={product.id.toString()}
+                                    product={product}
+                                  />
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
