@@ -75,86 +75,27 @@ const TestHomePage = () => {
     console.log(products)
     return (
         <div>
-            <div className="content-section light-grey">
-                <div className="content-container">
+          
 
-                    <div className="title-centre">
-
-
-                        <h1 className="display-heading">
-                            Doggo Shop
-                            </h1>
-                        <div className="hero-details">
-                            Everything you need for your best friend - in one place
-                        </div>
+          
 
 
-
-                    </div>
-
-                </div>
-            </div>
-
-            <div className="content-section white low-padding">
-                <div className="content-container">
-                    
-                        <Collapse ghost>
-                            <Panel header={`Shopping for: ${dogType}`} key="1">
-                                <div className="filter-loop">
-
-                                    <div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
-                                        <div className="dog-type-filter-label">
-                                            <div class="dog-type-filter-input" type="radio" name="puppy" />
+           
 
 
-                                            <div className="dog-type-filter-name">Puppy</div>
-                                        </div>
-                                    </div>
-                                    <div className={dogType === "Adult" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Adult")}>
-                                        <label className="dog-type-filter-label">
-                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
-
-
-                                            <div className="dog-type-filter-name">Adult</div>
-                                        </label>
-                                    </div>
-                                    <div className={dogType === "Senior" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Senior")}>
-                                        <label className="dog-type-filter-label">
-                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
-
-
-                                            <div className="dog-type-filter-name">Senior</div>
-                                        </label>
-                                    </div>
-
-
-                                </div>
-                            </Panel>
-
-                        </Collapse>
-
-
-                   
-                </div>
-            </div>
-
-
-
-            <div className="content-section white low-padding">
-
-
-                <div className="content-container">
+                <div className="gear-scene-container white">
                     <div className="title-center">
                         <h2 className="shop-title">Snapshots</h2>
                         <div className="hero-details">
                             Stop searching product-by-product. Check out our expert-assembled bundles of everything your doggo will need for each part of their day
 </div>
                     </div>
-                    <div>
+                    <div className="gear-scene-slider-container">
                         <GearScenesSlider />
                     </div>
-                </div>
-            </div>
+                    </div>
+              
+           
 
             <div className="content-section white low-padding">
 
@@ -257,6 +198,50 @@ const TestHomePage = () => {
 
 
             </div>
+
+            <div className="content-section white low-padding">
+                <div className="content-container">
+                    
+                        <Collapse ghost>
+                            <Panel header={`Shopping for: ${dogType}`} key="1">
+                                <div className="filter-loop">
+
+                                    <div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
+                                        <div className="dog-type-filter-label">
+                                            <div class="dog-type-filter-input" type="radio" name="puppy" />
+
+
+                                            <div className="dog-type-filter-name">Puppy</div>
+                                        </div>
+                                    </div>
+                                    <div className={dogType === "Adult" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Adult")}>
+                                        <label className="dog-type-filter-label">
+                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
+
+
+                                            <div className="dog-type-filter-name">Adult</div>
+                                        </label>
+                                    </div>
+                                    <div className={dogType === "Senior" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Senior")}>
+                                        <label className="dog-type-filter-label">
+                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
+
+
+                                            <div className="dog-type-filter-name">Senior</div>
+                                        </label>
+                                    </div>
+
+
+                                </div>
+                            </Panel>
+
+                        </Collapse>
+
+
+                   
+                </div>
+            </div>
+
 
 
 

@@ -1763,6 +1763,42 @@ img {
   max-height: 500px;
 }
 
+/* Gear Scene Slider */
+
+.gear-scene-container {
+  padding: 10px;
+}
+
+.gear-slide-image {
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+    object-fit: cover;
+
+}
+
+.slider-product-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.slider-box {
+  width: 100%;
+}
+
+.gear-scene-product-list {
+  width: 100%;
+}
+
+.gear-scene-loop {
+  min-height: 160px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
 /* One Click Slider */
 
 .slider-container {
@@ -4566,6 +4602,43 @@ margin-left: auto;
     font-weight: 300;
     font-size: 34px;
   }
+
+
+  /* Gear Scene Slider */
+
+.slider-product-container {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.slider-box {
+  width: 75%;
+}
+
+.gear-scene-product-list {
+  width: 25%;
+}
+
+.gear-slide-image {
+  width: 100%;
+  margin: auto;
+  height: 90vh;
+  object-fit: cover;
+
+}
+
+.gear-scene-loop {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.slider-tile {
+  width: 100%;
+}
 
   /* Dashboard */ 
 
