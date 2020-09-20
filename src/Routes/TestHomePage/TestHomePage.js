@@ -6,7 +6,7 @@ import { Layout, Button, Row, Col, Collapse } from 'antd';
 import { PlusCircleOutlined } from '@ant-design/icons';
 import Loading from '../../Components/Loading/Loading'
 import GearScenesSlider from '../../Components/GearScenesSlider/GearScenesSlider'
-import dog_wellness_dash from '../../Assets/dog_wellness_dash.png'
+import gear_store_header_image from '../../Assets/gear_store_header_image.jpg'
 
 
 
@@ -75,6 +75,28 @@ const TestHomePage = () => {
     console.log(products)
     return (
         <div>
+            <div className="gear-store-header">
+                <div className="gear-store-banner">
+                    <div className="gear-store-banner-content">
+                        <div className="gear-store-hero-image-container">
+                            <img src={gear_store_header_image} alt="woman running with dog" />
+                        </div>
+                        <div className="gear-store-hero-detail-container">
+                            <div className="gear-store-hero-details">
+                            <div className="gear-store-hero-title-container">
+                                <h1 className="gear-store-banner-title">Gear Store</h1>
+                            </div>
+                            <div className="gear-store-hero-sub-container">
+                                <p className="gear-store-sub-heading">Everything you need in one place</p>
+                            </div>
+
+
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
           
 
           
@@ -83,15 +105,15 @@ const TestHomePage = () => {
            
 
 
-                <div className="gear-scene-container white">
+                <div className="content-section white">
+                    <div className="content-container">
                     <div className="title-center">
-                        <h2 className="shop-title">Snapshots</h2>
-                        <div className="hero-details">
-                            Stop searching product-by-product. Check out our expert-assembled bundles of everything your doggo will need for each part of their day
-</div>
+                        <h1 className="display-heading">Shop the look</h1>
                     </div>
+                        
                     <div className="gear-scene-slider-container">
                         <GearScenesSlider />
+                    </div>
                     </div>
                     </div>
               
