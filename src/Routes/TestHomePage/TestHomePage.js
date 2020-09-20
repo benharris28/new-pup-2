@@ -94,47 +94,51 @@ const TestHomePage = () => {
 
                 </div>
             </div>
-            
-            <div className="border white">
-                <Collapse>
-                <Panel header={`Shopping for: ${dogType}`} key="1">
-                <div className="filter-loop">
 
-<div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
-    <div className="dog-type-filter-label">
-        <div class="dog-type-filter-input" type="radio" name="puppy" />
+            <div className="content-section white low-padding">
+                <div className="content-container">
+                    
+                        <Collapse ghost>
+                            <Panel header={`Shopping for: ${dogType}`} key="1">
+                                <div className="filter-loop">
 
-
-        <div className="dog-type-filter-name">Puppy</div>
-    </div>
-</div>
-<div className={dogType === "Adult" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Adult")}>
-    <label className="dog-type-filter-label">
-        <input class="dog-type-filter-input" type="radio" name="puppy" />
+                                    <div className={dogType === "Puppy" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Puppy")}>
+                                        <div className="dog-type-filter-label">
+                                            <div class="dog-type-filter-input" type="radio" name="puppy" />
 
 
-        <div className="dog-type-filter-name">Adult</div>
-    </label>
-</div>
-<div className={dogType === "Senior" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Senior")}>
-    <label className="dog-type-filter-label">
-        <input class="dog-type-filter-input" type="radio" name="puppy" />
+                                            <div className="dog-type-filter-name">Puppy</div>
+                                        </div>
+                                    </div>
+                                    <div className={dogType === "Adult" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Adult")}>
+                                        <label className="dog-type-filter-label">
+                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
 
 
-        <div className="dog-type-filter-name">Senior</div>
-    </label>
-</div>
+                                            <div className="dog-type-filter-name">Adult</div>
+                                        </label>
+                                    </div>
+                                    <div className={dogType === "Senior" ? "dog-type-filter-card selected" : "dog-type-filter-card"} onClick={() => setDogType("Senior")}>
+                                        <label className="dog-type-filter-label">
+                                            <input class="dog-type-filter-input" type="radio" name="puppy" />
 
 
-</div>
-                </Panel>
+                                            <div className="dog-type-filter-name">Senior</div>
+                                        </label>
+                                    </div>
 
-                </Collapse>
-                
 
+                                </div>
+                            </Panel>
+
+                        </Collapse>
+
+
+                   
+                </div>
             </div>
 
-           
+
 
             <div className="content-section white low-padding">
 
@@ -176,7 +180,7 @@ const TestHomePage = () => {
                         </div>
                     }
                     <div className="filter-container">
-                      
+
 
 
                         <div className="shop-container">
@@ -219,30 +223,30 @@ const TestHomePage = () => {
                                 </div>
                             }
 
-                           
+
                             <div className="product-loop">
                                 {filterChoice ? products.filter(p => p.productType == filterChoice).map((product) => {
                                     return (
-                                <Product
-                                    addVariantToCart={addVariantToCart}
-                                 
-                                    key={product.id.toString()}
-                                    product={product}
-                                  />
+                                        <Product
+                                            addVariantToCart={addVariantToCart}
+
+                                            key={product.id.toString()}
+                                            product={product}
+                                        />
                                     )
-                                }) : 
-                                products.map((product) => {
-                                    return (
-                                <Product
-                                    addVariantToCart={addVariantToCart}
-                                 
-                                    key={product.id.toString()}
-                                    product={product}
-                                  />
-                                    )
-                                })}
+                                }) :
+                                    products.map((product) => {
+                                        return (
+                                            <Product
+                                                addVariantToCart={addVariantToCart}
+
+                                                key={product.id.toString()}
+                                                product={product}
+                                            />
+                                        )
+                                    })}
                             </div>
-                        
+
                         </div>
                     </div>
                 </div>
