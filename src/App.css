@@ -1789,6 +1789,12 @@ img {
   width: 100%;
 }
 
+.gear-store-hero-image {
+  object-fit: cover;
+  height: 70vh;
+  object-position: 30% 50%;
+}
+
 .gear-store-hero-detail-container {
   width: 100%;
   text-align: center;
@@ -1821,6 +1827,8 @@ img {
 
 /* Gear Scene Slider */
 
+
+
 .gear-scene-container {
   padding: 10px;
 }
@@ -1828,7 +1836,7 @@ img {
 .gear-slide-image {
     width: 100%;
     margin: auto;
-    height: 70vh;
+    height: 60vh;
     object-fit: cover;
 
 }
@@ -1863,7 +1871,7 @@ img {
 .slider-title-container {
   display: flex;
   margin-bottom: 16px;
-  margin-top: 16px;
+  justify-content: center;
 
 }
 
@@ -4743,7 +4751,7 @@ width: 65%;
 .gear-slide-image {
   width: 100%;
   margin: auto;
-  height: 90vh;
+  height: 70vh;
   object-fit: cover;
 
 }

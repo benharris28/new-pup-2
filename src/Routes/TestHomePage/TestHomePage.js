@@ -79,7 +79,7 @@ const TestHomePage = () => {
                 <div className="gear-store-banner">
                     <div className="gear-store-banner-content">
                         <div className="gear-store-hero-image-container">
-                            <img src={gear_store_header_image} alt="woman running with dog" />
+                            <img className="gear-store-hero-image" src={gear_store_header_image} alt="woman running with dog" />
                         </div>
                         <div className="gear-store-hero-detail-container">
                             <div className="gear-store-hero-details">
@@ -107,8 +107,8 @@ const TestHomePage = () => {
 
                 <div className="content-section white">
                     <div className="content-container">
-                    <div className="title-center">
-                        <h1 className="display-heading">Shop the look</h1>
+                    <div className="title-centre">
+                        <h1 className="shop-title">Shop the look</h1>
                     </div>
                         
                     <div className="gear-scene-slider-container">
@@ -123,13 +123,11 @@ const TestHomePage = () => {
 
 
                 <div className="content-container">
-                    <div className="title-left">
+                    <div className="title-centre">
                         <h1 className="shop-title">
-                            Shop
+                            Shop All Products
                             </h1>
-                        <div className="hero-details">
-                            Everything you need for your best friend - in one place
-                        </div>
+                        
                     </div>
                     {width < 1000 &&
                         <div className="category-mobile-filter">
