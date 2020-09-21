@@ -7,6 +7,7 @@ import OneClickProductTiles from '../../Components/OneClickProductTiles/OneClick
 import russ_puppy_no_background from '../../Assets/russ_puppy_no_background.png'
 import dog_empty_bowl from '../../Assets/dog_empty_bowl.jpg'
 import dog_groom from '../../Assets/dog_groom.jpg'
+import dog_header_image_1 from '../../Assets/dog_header_image_1.jpg'
 import { WarningOutlined, InfoCircleOutlined, ExclamationCircleOutlined, CheckOutlined } from '@ant-design/icons';
 
 
@@ -32,6 +33,18 @@ class LandingPage extends React.Component {
 
         return (
             <div className="white">
+                <div className="homepage-hero">
+                    <div className="homepage-hero-image">
+
+                    </div>
+                    <div className="homepage-hero-heading">
+                        <div className="container">
+                             <h1 className="homepage-heading">The pet store. Reinvented.</h1>
+                        </div>
+
+                        
+                    </div>
+                </div>
                  <div className="content-section light-grey">
                     <div className="content-container">
 

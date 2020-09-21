@@ -183,11 +183,48 @@ h6 {
   font-weight: 400;
 }
 
+.homepage-hero {
+  position: relative;
+  height: calc(85vh - 60px);
+  min-height: 500px;
+}
+
+.homepage-hero-image {
+  height: 100%;
+background-color: rgb(245, 245, 245);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.homepage-hero-heading {
+  z-index: 10;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  padding: 0 10px;
+  transform: translateY(-50%);
+}
+
 .container {
-  width: 100%;
   max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 0 24px;
+  width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.homepage-heading {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  
 }
 
 .content-container {

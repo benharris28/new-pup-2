@@ -118,7 +118,13 @@ const TestHomePage = () => {
                     </div>
               
            
+                    <div className="content-section white low-padding">
 
+
+                            <div className="content-container">
+                                Subscribe and save
+                            </div>
+                    </div>
             <div className="content-section white low-padding">
 
 
